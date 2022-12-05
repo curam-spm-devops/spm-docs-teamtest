@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept xml:lang="en-us" id="concept_bg1_n4f_z3b">
+<title>Testing the deployment by logging in to the application</title>
+<titlealts>
+<navtitle>Testing the deployment by logging in to the application</navtitle>
+<searchtitle>Testing EAR file deployments</searchtitle>
+</titlealts>
+<shortdesc>When the application is deployed, log in to the application to display the application
+landing page, this action verifies basic functions of the application.</shortdesc>
+<conbody>
+<p>Ensure that the relevant server is started and enter the application URL in a web browser, for
+example:<codeblock>https://&lt;some.machine.com>:&lt;port>/&lt;context-root></codeblock></p>
+<?Pub Caret -2?>
+<p>Where the components of the URL are as follows:<ul id="ul_cg1_n4f_z3b">
+<li><varname>&lt;some.machine.com></varname> identifies the hostname or IP address where <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> is running.</li>
+<li><varname>&lt;port></varname> identifies the server port on which <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> is listening. For more
+information, see <codeph>curam.client.httpport</codeph> in <xref
+href="c_WEBSPHZOS_Building3PropertyFiles1.dita"/>. </li>
+<li><varname>&lt;context-root></varname> identifies the context root of the WAR module, which would
+typically be <uicontrol>Curam</uicontrol>.</li>
+</ul></p>
+<p>For the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>, the URL directs
+you to the application login page. Log in with a valid user name and password, the browser is then
+redirected to the application landing page.</p>
+<p>Some applications, like the CitizenPortal context root, don't require an explicit login and the
+landing page is entered directly. For more information about CitizenPortal, see <cite><keyword
+conref="../common_files/conrefs.dita#conrefs/UA_component_long"/></cite>.</p>
+</conbody>
+</concept>
+<?Pub *0000001878?>

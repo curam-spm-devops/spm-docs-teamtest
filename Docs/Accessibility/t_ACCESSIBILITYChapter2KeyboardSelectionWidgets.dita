@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t_ACCESSIBILITYChapter2KeyboardSelectionWidgets" xml:lang="en-us">
+<title>Multiple-selection list boxes</title>
+<shortdesc>Two widgets in the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+application contain multiple-selection list boxes, the transfer list widget and the
+multiple-selection widget. You can use a specific keyboard command to make multiple selections at
+the same time in these widgets. </shortdesc>
+<?Pub Caret 97?>
+<conbody>
+<p>A multiple-selection list box displays multiple selection options at the same time so that the
+user can make multiple selections. A keyboard or screen reader user must use specific keyboard
+commands to make multiple selections.</p>
+<p>The following steps describe how to select multiple items with a keyboard, a screen reader, or a
+combination. </p>
+<p>The <keyword conref="../common_files/conrefs.dita#conrefs/ms_edge"/> browser is supported for
+accessibility in <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>.</p>
+<p>Complete the following steps to select multiple items on the transfer list widget and the
+multiple selection widget with <keyword conref="../common_files/conrefs.dita#conrefs/ms_edge"/>. </p>
+<ol>
+<li>Give focus to the multiple-selection form field by using the Tab key.</li>
+<li>Use the Up Arrow and Down Arrow keys to navigate through items and move the selected state with
+focus, that is, single selection.</li>
+<li>Press Shift and the Up Arrow or Down Arrow keys to move focus and to toggle the selected state
+of the previous or next option, that is, multiple adjacent selections.</li>
+<li>Press Ctrl+Alt and the Up Arrow or Down Arrow keys to move focus without the selected state. In
+this mode, press the Space bar to change the selected state of each highlighted item, that is,
+multiple selections.</li>
+</ol>
+<!--<section><title>Multiple selections with <keyword conref="../common_files/conrefs.dita#conrefs/prodname_ie_long"/></title>The following steps describe multiple selections with <keyword conref="../common_files/conrefs.dita#conrefs/os_win_short"/> Internet Explorer: <ol><li>Give focus to the multiple selection form field by using the Tab key.</li><li>Press Shift+F8 to turn on the multiple selection mode. A flashing dotted line is displayed around the form field.</li><li>Use the Up Arrow and Down Arrow keys to navigate through the items in the multiple selections.</li><li>Press the Space bar to select each highlighted item.</li><li>When the needed items are selected, press Shift+F8 to exit the multiple selection mode.</li></ol></section>-->
+</conbody>
+</concept>
+<?Pub *0000001516?>

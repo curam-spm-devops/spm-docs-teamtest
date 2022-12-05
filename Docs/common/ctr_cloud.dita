@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Inc?>
+<concept id="ctr_cloud" xml:lang="en-us">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes"/></title>
+<shortdesc>You can build <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> as a
+containerized application by using <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm_mqlts_long"/> (<keyword
+conref="../common_files/conrefs.dita#conrefs/ibm_mqlts_short"/>), and <keyword
+conref="../common_files/conrefs.dita#conrefs/docker"/>. You can then deploy the containerized
+application by using <keyword conref="../common_files/conrefs.dita#conrefs/helm"/> charts and
+<keyword conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/>. The <xref
+href="https://merative.github.io/spm-kubernetes" format="html" scope="external" class="- topic/xref "
+><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes"/> Runbook</xref> provides instructions
+about how to containerize <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> and is
+accompanied by an open source <xref href="https://github.com/Merative/spm-kubernetes" format="html"
+scope="external">git repository</xref> that contains sample <keyword
+conref="../common_files/conrefs.dita#conrefs/helm"/> charts, <keyword
+conref="../common_files/conrefs.dita#conrefs/docker"/> files, and other assets.</shortdesc>
+<conbody>
+<p>As human services organizations adapt to meet citizens needs, the complexity of their IT systems
+can grow. This can be challenging, especially when trying to manage the addition of new features for
+case workers, enacting new changes in legislation, or preparing for increases in demand for
+Universal Access application renewals.</p>
+<p>To support cloud native architectures, <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname">≈</keyword> has been enhanced to support the
+technologies that are described in the following list from version 7.0.10.0. </p>
+<section id="section_kdh_m4p_vkb">
+<title>
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/></title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname">≈</keyword> supports <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/> only when it is containerized and
+deployed on <keyword conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/>.</p>
+<p>The architecture of <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/>
+provides a low-overhead <keyword conref="../common_files/conrefs.dita#conrefs/prodname_java"/>
+runtime environment that is suited for hosting cloud applications. <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/> has been designed to optimize ease
+of development and the minimization of operational costs. From a development perspective, it
+supports many programming frameworks such as <keyword
+conref="../common_files/conrefs.dita#conrefs/sprint"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/tapestry"/>, and provides easy integration with
+<keyword conref="../common_files/conrefs.dita#conrefs/docker"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/chef"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/jenkins"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/nodejs"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/os_j2ee_abbrev"/> (<keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_java"/> EE), and <keyword
+conref="../common_files/conrefs.dita#conrefs/os_lin_short"/>.</p>
+</section>
+<section id="section_els_v4p_vkb">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/></title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> supports <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/> only when containerized with
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/> . </p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/> is a managed
+container service that is built on the open source <keyword translate="no" id="kubernetes"
+>Kubernetes </keyword> system for automating the deployment, scaling, and management of
+containerized applications, while adding in IBM-specific capabilities. <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/> provides scheduling capabilities,
+self-healing, horizontal scaling, service discovery and load balancing, automated rollouts and
+rollbacks, and secret and configuration management. The <keyword translate="no">Kubernetes
+</keyword> service also has advanced capabilities that are related to simplified cluster management,
+container security and isolation policies, the ability to design your own cluster, and integrated
+operational tools for consistency in deployment.</p>
+<p/>
+</section>
+<section id="section_llw_dpp_vkb">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/docker"/>
+</title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> supports <keyword
+conref="../common_files/conrefs.dita#conrefs/docker"/> for packaging <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> for deployment on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/>.</p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/docker"/> is an open platform that enables
+organizations to package, develop, run, and ship applications in environments called containers. A
+container is a unit of software that includes the dependencies, libraries, and configuration files
+that are needed to run the application in a docker container image.</p>
+<p>Developers can now package an <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+application in containers for deployment on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/>, and include all the
+dependencies, libraries, and configuration files that are needed to run the application in a
+container image. The newly created container images can be downloaded from the container registry
+and installed in all stages of your environment, therefore simplifying deployments. </p>
+</section>
+<section>
+<title><keyword conref="../common_files/conrefs.dita#conrefs/helm"/></title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/helm"/> is a package manager that helps you
+to find, share, and use software that is built for <keyword translate="no">Kubernetes </keyword>.
+<keyword conref="../common_files/conrefs.dita#conrefs/helm"/> streamlines the installation and
+management of <keyword translate="no">Kubernetes </keyword> applications. </p>
+<p><keyword translate="no">Kubernetes </keyword> can become complex, and developers need to consider
+services, ConfigMaps, pods, and persistent volumes, in addition to managing the number of releases.
+<keyword conref="../common_files/conrefs.dita#conrefs/helm"/> provides an easier way to package
+everything into one application and to advertize what can be configured.</p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> supports Helm for deploying
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> containers on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/>.</p>
+</section>
+<section id="section_i2d_wqp_vkb">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/ibm_mqlts_long"/></title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/ibm_mqlts_short"/> offers proven,
+enterprise-grade messaging capabilities that safely move information between applications.</p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> requires <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm_mqlts_long"/> when containerized and deployed on
+<keyword conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/> . </p>
+</section>
+<section>
+<title>Technology updates</title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/> , <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes_service"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/docker"/>, Helm, and <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm_mqlts_long"/> updates occur throughout the year.
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> will be updated frequently to
+adopt newer versions of the previous technologies. For more information about the exact supported
+versions, see the <xref
+href="https://www.ibm.com/support/pages/ibm-c%C3%BAram-social-program-management-supported-prerequisites"
+format="html" scope="external">system prerequisites report</xref>.</p>
+</section>
+<section>
+<title>Up next...</title>
+<p>In the subsequent topics in this section, you can read more about the architectural differences
+in <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/> that impact <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/>, and about how to deploy to <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/> in a native, single-server
+environment.</p>
+</section>
+</conbody>
+</concept>
+<?Pub *0000000681?>

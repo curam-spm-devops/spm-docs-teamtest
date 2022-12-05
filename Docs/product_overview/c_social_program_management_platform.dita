@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_social_program_management_platform" xml:lang="en-us">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/platform"/></title>
+<shortdesc><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/PLATFORM_component_shortdesc"
+/>
+</shortdesc>
+<prolog><metadata></metadata></prolog>
+<conbody>
+<section id="section_tfn_mjm_wfb">
+<title>Social Programs Data Model</title>
+<p>The data model delivers a holistic view of clients and their household. It supports the
+incremental addition of multiple programs and cases with no client duplication at the data model
+level. As a result, the data model provides a structure for agencies to capture household-specific
+data once. From then on, that data is used to support the eligibility and enrollment process over
+multiple program types. </p>
+</section>
+<section id="section_ynw_mjm_wfb">
+<title>Platform components</title>
+<p>The following platform components are built into the <keyword
+conref="../common_files/conrefs.dita#conrefs/platform"/>.</p>
+<dl>
+<dlentry>
+<dt>Intelligent Evidence Gathering</dt>
+<dd>Automates the evidence gathering process by supporting self-service operations and providing
+scripted interview tools that reduce data entry and errors.</dd>
+</dlentry>
+<dlentry>
+<dt>Decision Assist</dt>
+<dd>Enables the dynamic creation and maintenance of assessments with limited involvement from the IT
+team.</dd>
+</dlentry>
+<dlentry>
+<dt>Financial Management</dt>
+<dd>Provides an integrated approach for efficiently managing calculation, scheduling, distribution,
+and disbursement of payments and liabilities to case participants.</dd>
+</dlentry>
+<dlentry otherprops="onprem">
+<dt>Funded Program Management</dt>
+<dd>Delivers flexible options for creating and managing funds, including the ability to control
+spending in program delivery and client service.</dd>
+</dlentry>
+<dlentry>
+<dt>Supervisor Workspace</dt>
+<dd>Allows managers to monitor and manage the task and case load of users. Supervisor Workspace
+provides an entry point from which they can view summary details of the cases and tasks that they
+manage.</dd>
+</dlentry>
+</dl>
+</section>
+</conbody>
+</concept><?Pub Caret -3?>
+<?Pub *0000000583?>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e478">
+<title>Application server configuration</title>
+<shortdesc>The configuration of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> is the same on all platforms and
+the Cúram Server Development Environment for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_java"/> (SDEJ) provides a number of Ant
+targets to aid the configuration and management of the installation.</shortdesc><conbody>
+<p>For information about the manual steps done by the configuration scripts, see <xref
+href="c_WEBLOGS_Configuration1ManualWeblogicServerConfiguration1.dita"/>.</p>
+<p>The configuration target provided by the SDEJ is a simple default configuration and may not be
+suitable for a production environment.</p>
+<note type="note">The <cmdname>configure</cmdname> target will overwrite any existing <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> domain that it is targeted to
+configure.</note>
+</conbody></concept>

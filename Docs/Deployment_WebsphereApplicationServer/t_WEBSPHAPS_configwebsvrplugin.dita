@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_WEBSPHAPS_configwebsvrplugin" xml:lang="en-us">
+<title>Configuring a web server plug-in</title>
+<titlealts>
+<searchtitle>Configuring a web server plug-in</searchtitle>
+</titlealts>
+<shortdesc>If a web server is configured in the topology, you must configure a web server plug-in in
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>. <ph
+id="verbtamper_info">For information about how to configure the web server's HTTP verb permissions
+to mitigate verb tampering, see <xref href="../Security/t_SECHAND_httpverbperms.dita" scope="peer"
+format="dita">Enabling HTTP verb permissions</xref>.</ph></shortdesc>
+<taskbody>
+<context id="context_sbz_fnk_b2b">Complete the following tasks:<ul id="ul_vmx_znk_b2b">
+<li>Add the web server virtual hosts to the client hosts configuration in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>.</li>
+<li>Propagate the plug-in key ring for the web server.</li>
+<li>Map the modules of any deployed applications to the web server.</li>
+</ul>To complete the previous tasks, you can run the <codeph>configurewebserverplugin</codeph>
+target. The target configures the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> only when web servers are
+configured in the topology. You can run the target even after the applications are deployed or
+redeployed. In such cases, the target maps only the modules of any redeployed applications to the
+web server.<note>Do not use the <codeph>configurewebserverplugin</codeph> target in a z/OS
+environment because the plug-in configuration differs.</note></context>
+<steps>
+<step>
+<cmd>To start automatic configuration, in the <filepath>SERVER_DIR</filepath> directory, run the
+<codeph>configurewebserverplugin</codeph> target, as shown in the following example
+command.</cmd><info>The <codeph>configurewebserverplugin</codeph> target requires a mandatory
+<varname>server.name</varname> argument that specifies the name of the server when the target is
+started. </info><stepxmp>
+<codeblock>build configurewebserverplugin -Dserver.name=CuramServer</codeblock>
+</stepxmp>
+</step>
+</steps>
+<postreq><ph
+conref="../Deployment_WeblogicServer/t_WEBLOGS_configweblogicplugin.dita#t_WEBLOGS_configweblogicplugin/verbtamper_info"
+/></postreq>
+</taskbody>
+</task>

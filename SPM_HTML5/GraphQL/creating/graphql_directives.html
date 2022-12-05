@@ -1,0 +1,29 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><title>GraphQL directives for code items and frequency patterns</title><link rel="stylesheet" type="text/css" href="../../commonltr.css"><link rel="stylesheet" type="text/css" href="../../dita-ot-doc.css"></head><body id="graphql-directives-for-code-items-and-frequency-patterns"><nav class="toc" role="navigation"><ul><li><a href="../../spm_welcome.html">IBM Cúram Social Program Management  8.0.0, 8.0.1, and 8.0.2</a></li><li><a href="../../spm_transition.html">Documentation updates from July 1 2022</a></li><li><a href="../../spm_prod_overview_toc.html">Product Overview</a></li><li><a href="../../glossary/glossary.html">Glossary</a></li><li><a href="../../common/ctr_deploying.html">Deploying Social Program Management</a><ul></ul></li><li><a href="../../GraphQL/summary_graphql.html">GraphQL</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">GraphQL directives for code items and frequency patterns</h1><div class="body"><p class="p">A directive in GraphQL indicates an extra configuration for a field.</p><p class="p">The following list outlines the two Cúram directives in the GraphQL server:</p><ol class="ol"><li class="li"><p class="p">The <code class="ph codeph">@code</code> directive.</p></li><li class="li"><p class="p">The <code class="ph codeph">@frequency</code> directive.</p></li></ol><p class="p">These directives are used for the special handling of Java attributes that are used for code items and frequency patterns and that result in the Java attribute being converted into an object with multiple attributes.</p><p class="p">The creation of extra directives is not supported.</p></div><article class="topic nested1" aria-labelledby="ariaid-title2" id="codes"><h2 class="title topictitle2" id="ariaid-title2">Codes</h2><div class="body"><p class="p">A facade method might return a struct that contains an attribute that was modeled in RSA with a domain definition based on a CODETABLE_CODE definition to denote that it contains a value of a code item from a code table.</p><p class="p">In the GraphQL schema, any fields in an object type definition that correspond to a struct attribute with a CODETABLE_CODE domain definition must be defined by using the <code class="ph codeph">CodeItem</code> type and by using the <code class="ph codeph">@code</code> directive. The following snippet outlines an example:</p><pre class="pre codeblock"><code>type Case 
+	id: GQL_ID
+	status: CodeItem @code </code></pre><p class="p">As the <code class="ph codeph">CodeItem</code> type is defined in the schema, it does not need to be added. The following snippet specifies the definition:</p><pre class="pre codeblock"><code>type CodeItem
+ 	code: String
+ 	description: String
+ 	tablename: String</code></pre><p class="p">where <code class="ph codeph">code</code> contains the code value, <code class="ph codeph">description</code> contains a localized description of the code, and <code class="ph codeph">tablename</code> contains the name of the code table to which the code belongs.</p><p class="p">The following example shows how a JSON response for an API that includes how the preceding <code class="ph codeph">Case</code> type might look:</p><pre class="pre codeblock"><code>"data": {
+	"case": {
+		"id": "123456789",
+		"status": {
+			"code": "RST1",
+			"description": "Open",
+			"tableName": "CaseStatus"
+		}
+	}
+}</code></pre></div></article><article class="topic nested1" aria-labelledby="ariaid-title3" id="frequency-patterns"><h2 class="title topictitle2" id="ariaid-title3">Frequency patterns</h2><div class="body"><p class="p">A facade method might return a struct that contains an attribute that was modeled in RSA with a domain definition based on a FREQUENCY_PATTERN definition to denote that it contains a value of a frequency pattern.</p><p class="p">In the GraphQL schema, any fields in an object type definition that correspond to a struct attribute with a FREQUENCY_PATTERN domain definition must be defined by using the <code class="ph codeph">FrequencyItem</code> type and by using the <code class="ph codeph">@frequency</code> directive.</p><p class="p">The following snippet outlines an example:</p><pre class="pre codeblock"><code>type Payment 
+	id: GQL_ID
+	delivery_frequency: FrequencyItem @frequency</code></pre><p class="p">As the <code class="ph codeph">FrequencyItem</code> type is already defined in the schema, it does not need to be added. The following snippet specifies the definition:</p><pre class="pre codeblock"><code>type FrequencyItem
+ 	value: String
+ 	description: String</code></pre><p class="p">where <code class="ph codeph">value</code> contains the frequency pattern value and <code class="ph codeph">description</code> contains a localized description of the pattern.</p><p class="p">The following example shows how a JSON response for an API that includes the preceding <code class="ph codeph">Payment</code> type might look:</p><pre class="pre codeblock"><code>"data": {
+	"payment": {
+		"id": "123456789",
+		"delivery_frequency": {
+			"value": "10010011",
+			"description": "Recur every 234 week(s) on Monday"
+		}
+	}
+}</code></pre></div></article></article></main></body></html>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderIEGDatastoreNew" xml:lang="en-us">
+<title>Creating a Data Store Schema</title>
+<shortdesc>A user with disabilities can create a data store schema in the administration
+application.</shortdesc>
+<taskbody>
+<context>Use the following procedure to upload a new data store schema in the administration
+application.</context>
+<steps>
+<step>
+<cmd>Compose a data store schema offline in an XML editor.</cmd>
+</step>
+<step>
+<cmd>In the administration application, select the <uicontrol>Administration Workspace</uicontrol>
+Application Section.</cmd>
+</step>
+<step>
+<cmd>In the Section Shortcuts Panel, select the <uicontrol>Intelligent Evidence
+Gathering</uicontrol> category.</cmd>
+</step>
+<step>
+<cmd>Within this category, select the <uicontrol>Datastore Schema</uicontrol> link. A page opens
+that contains a search form and an option to import data store schemas. </cmd>
+</step>
+<step>
+<cmd>To import the offline data store schema, select the <uicontrol>Import</uicontrol> page
+action.</cmd>
+</step>
+<step>
+<cmd>In the form that is displayed in a modal dialog, enter the required schema name and ID into the
+appropriate fields.</cmd>
+</step>
+<step>
+<cmd>Click the schema <uicontrol>browse</uicontrol> button. </cmd>
+</step>
+<step>
+<cmd>In the Windows Explorer dialog that opens, select the new offline data store schema and click
+<uicontrol>Save</uicontrol>. The XML in the data store schema is validated. If no validation errors
+occur, the data store schema is uploaded to the online application.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

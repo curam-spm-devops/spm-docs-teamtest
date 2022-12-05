@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d0e17" xml:lang="en-us">
+<title>Accessibility in <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"
+/></title>
+<titlealts>
+<searchtitle>Cúram Accessibility User Guide</searchtitle>
+<?Pub Caret -1?>
+</titlealts>
+<shortdesc><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/ACC_shortdesc"
+/></shortdesc>
+<conbody>
+<section>
+<title>Supported assistive technologies</title>
+<p>The accessibility information for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> assumes that you are using the
+supported assistive software to interact with the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> user interface. For more information
+about the supported assistive technologies, see the <xref format="html"
+href="http://www-01.ibm.com/support/docview.wss?uid=swg27036661#access" scope="external"><keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> Supported Prerequisites</xref>. </p>
+</section>
+</conbody>
+</concept>
+<?Pub *0000000640?>

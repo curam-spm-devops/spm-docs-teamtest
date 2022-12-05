@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e722">
+<title>Undeploy an Application</title><conbody>
+<p>The Ant target to undeploy or uninstall an application is:</p>
+<p><cmdname>build uninstallapp</cmdname></p>
+<p>and requires the following options:</p>
+<ul>
+<li><option>-Dserver.name</option>
+<p>The name of the server the application is installed on.</p></li>
+<li><option>-Dapplication.name</option>
+<p>The name of the application to uninstall (as configured during install).</p></li></ul><fig>
+<title>Example of Usage</title>
+<pre>build uninstallapp -Dserver.name=CuramServer
+-Dapplication.name=Curam</pre></fig></conbody></concept>

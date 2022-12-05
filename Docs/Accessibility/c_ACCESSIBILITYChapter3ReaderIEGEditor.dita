@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_ACCESSIBILITYChapter3ReaderIEGEditor" xml:lang="en-us">
+<title>The Intelligent Evidence Gathering Editor</title>
+<shortdesc>IEG scripts can be created and modified offline in an accessible
+manner.</shortdesc><?Pub Caret -1?>
+<conbody>
+<p>The following sections outlines how a user with disabilities can
+create and modify IEG scripts in the administration application.</p>
+<p>Before beginning, the user must have knowledge of the structure and definition of a IEG Script
+that is described in <cite>Working With Intelligent Evidence Gathering</cite>. For development
+outside of the online application an XML editor is required.</p>
+</conbody>
+</concept>
+<?Pub *0000000865?>

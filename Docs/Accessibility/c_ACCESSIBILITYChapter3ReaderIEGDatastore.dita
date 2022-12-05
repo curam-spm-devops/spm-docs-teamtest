@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_ACCESSIBILITYChapter3ReaderIEGDatastore" xml:lang="en-us">
+<title>The Data Store Editor</title>
+<shortdesc>You can create and modify data store schemas in an accessible manner.</shortdesc><?Pub Caret -1?>
+<conbody>
+<p>The procedures in the following section outline how a user with disabilities can create and
+modify data store schemas in the administration application.</p>
+<p>Before they use the procedures, users must understand the structure and definition of data store
+schemas that are described in <cite>Working With Intelligent Evidence Gathering</cite>. For
+development outside the online application, an XML editor is required.</p>
+</conbody>
+</concept>
+<?Pub *0000000866?>

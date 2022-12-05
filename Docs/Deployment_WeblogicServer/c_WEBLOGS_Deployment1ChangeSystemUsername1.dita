@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e706">
+<title>Change SYSTEM Username</title><conbody>
+<p>It is strongly recommended that you change this username after deploying the application using the WebLogic Server administration console. The <tt>Run As User</tt> property should be changed from SYSTEM to the user of choice. The password of this user does not matter, since no authentication and only identity assertion is performed by WebLogic Server for JMS invocations.</p>
+<p>The <tt>Run As Principal Name</tt> property can be found on the Configuration Tab for each of the MDB (Message Driven Bean) EJB modules deployed, and should match this value. This also requires updating <tt>Run As User</tt> property of <i>myrealmCuramAuthenticator</i> (Curam Authentication Provider) to new user of choice under <tt>Security Realms</tt> section in the WebLogic Server administration console. Consult the WebLogic Server documentation for more information on the usage of the administration console.</p>
+<p>Note, if the username is changed, the new username must exist in the Users database table and this user must have a role of 'SUPERROLE'.</p>
+<p>The SYSTEM user is the user under which JMS messages are executed.</p></conbody></concept>

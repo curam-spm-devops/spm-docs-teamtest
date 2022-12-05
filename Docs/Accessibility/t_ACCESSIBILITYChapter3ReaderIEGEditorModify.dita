@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderIEGEditorModify" xml:lang="en-us">
+<title>Modifying Existing IEG Scripts</title>
+<taskbody>
+<context>The following sections outlines the how a user with disabilities can modify and validate an existing IEG script in the administration application:</context>
+<steps>
+<step><cmd>In the administration application, select the "Administration Workspace" Application Section.</cmd></step>
+<step><cmd>In the Section Shortcuts Panel select the "Intelligent Evidence Gathering" category.</cmd></step>
+<step><cmd>Within this category select the "Scripts" link. This opens a page that contains a search form. </cmd></step>
+<step><cmd>Using the search form, search for the appropriate IEG script and select the corresponding list action button. Select the "Download" option. This allows a user to save an offline copy of the selected IEG script.</cmd></step>
+<step><cmd>Modify the downloaded IEG script in an XML Editor.</cmd></step>
+<step><cmd>Once complete, import this script by selecting the "Import" page action.</cmd></step>
+<step><cmd>This opens a modal dialog that contains a form. Enter the name of the original IEG script into the appropriate input field. </cmd></step>
+<step><cmd>Tick the check box labeled "Overwrite".</cmd></step>
+<step><cmd>Select the IEG script browse button. This opens a Windows Explorer dialog allowing the modified offline IEG script to be selected.</cmd></step>
+<step><cmd>Once selected, press the "Save" modal dialog button. This validates the XML in the IEG script. If no validation errors are encountered, the IEG script overwrites the preexisting IEG script in the online application.</cmd></step>
+<step><cmd>Once the modal has closed, search for the newly uploaded IEG script in the search form provided. The search results display in the list below the search form.</cmd></step>
+<step><cmd>Find the IEG script in question in the list and select the corresponding list action button. Select the "Validate" option. This opens a modal dialog that prompts the user to select the Datastore Schema that corresponds to the IEG script.</cmd></step>
+<step><cmd>Once a schema is selected, press the "Validate" modal button. This validates the IEG script. Any validation errors encountered are displayed in the open modal dialog.</cmd></step>
+</steps>
+</taskbody>
+</task>

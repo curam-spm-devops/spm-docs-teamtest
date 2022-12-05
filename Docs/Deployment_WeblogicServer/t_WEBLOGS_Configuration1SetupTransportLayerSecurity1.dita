@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Setup Transport Layer Security</title><taskbody>
+<context>
+<p>This task is used for setting the Transport Layer Security (TLS) protocol to TLS v1.2. </p>
+<p><b>Note</b> : TLS v1.2 is only available Java version 7.0 or higher.</p>
+</context>
+<steps>
+
+<step>
+<cmd>Navigate to <filepath>&lt;WebLogic Install
+directory&gt;/&lt;domain_repository&gt;/&lt;domain_name&gt;/bin</filepath> directory, (e.g.
+<filepath>C:/Weblogic/user_projects/domains/&lt;domain_name&gt;/bin</filepath>).</cmd>
+</step>
+<step>
+<cmd>Edit the file named<filepath> setDomainEnv.cmd</filepath> on a Microsoft Windows platform or named
+<filepath> setDomainEnv.sh</filepath> on non Microsoft Windows platforms;</cmd>
+</step>
+<step>
+<cmd>On a Microsoft Windows platform, find the last instance of <b>set JAVA_OPTIONS=%JAVA_OPTIONS%</b> in the file <filepath>
+setDomainEnv.cmd</filepath> and replace it with <b> set
+JAVA_OPTIONS=%JAVA_OPTIONS% -Dweblogic.security.SSL.minimumProtocolVersion=TLSv1.2</b></cmd>
+</step>
+<step>
+<cmd>On non Microsoft Windows platforms, find the last instance of
+<b>JAVA_OPTIONS="${JAVA_OPTIONS}"</b> in the file <filepath> setDomainEnv.sh</filepath> and replace
+it with<b> JAVA_OPTIONS="${JAVA_OPTIONS}
+-Dweblogic.security.SSL.minimumProtocolVersion=TLSv1.2"</b></cmd>
+<info>
+<note importance="recommended"><keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> automatically selects a set of
+strong ciphers for TLS1.2 communication. Over time, strong ciphers might be re-categorized as weak
+ciphers. Therefore, it is recommended that you review the selected ciphers regularly to ensure that
+they are up to date. For more information about how to review and reconfigure the ciphers, see the
+relevant <xref
+href="https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/secmg/ssl_jsse_impl.html"
+format="html" scope="external"><keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/> documentation</xref>.</note>
+</info></step>
+<step>
+<cmd>Save the file and exit.</cmd>
+</step>
+</steps>
+</taskbody></task>

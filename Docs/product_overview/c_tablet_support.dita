@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_bmj_xsk_sz" xml:lang="en-us">
+<title>Tablet support</title>
+<shortdesc>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application has
+been certified for use on a tablet.</shortdesc>
+<conbody>
+<p>For the optimum user experience on a tablet, the following prerequisites are recommended:</p>
+<p>
+<ul id="ul_xlb_jth_rz">
+<li>Use a supported web browser. For more information, see the <cite>Web Browsers</cite> section
+under the <cite>Supported Software</cite> tab in the <cite>Software Product Compatibility
+Reports</cite> related link.</li>
+<li>The minimum recommended resolution is 1366x768. The optimum DPI setting is
+<uicontrol>Normal</uicontrol> size.</li>
+<li>Use a tablet device with dimensions of approximately 8 inches (21 centimeters) and above. The
+minimum recommended view-port size is 1024x768.</li>
+<li>Use the device in a landscape orientation to maximize screen width.</li>
+<li>For users with low vision, accessibility is certified against VoiceOver on the iOS platform that
+uses an external keyboard.</li>
+<li>Use an external keyboard for intensive data entry tasks.</li>
+<li>Use a reliable network connection, for example, wifi. The application’s performance is limited
+by the quality of the network connection. Degradation in the network connection reduces application
+performance.</li>
+</ul>
+</p>
+<section>
+<title>Microsoft Word integration</title>
+<p>Android and iOS do not support integration technologies.</p>
+</section>
+</conbody>
+</concept>

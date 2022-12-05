@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1261">
+<title>Scripting support</title>
+<shortdesc>To support the execution of provided Ant scripts, change the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> property files.</shortdesc><conbody>
+<section id="section_nb2_23w_cjb">
+<title>sas.client.props</title>
+<p>Open the <filepath>sas.client.props</filepath> file found in the
+<filepath>profiles/default/properties</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> installation. It is necessary
+to set the login source to retrieve the user name and password from a properties file rather than
+having to type them in each time the scripts are run. Set or where necessary add the following
+properties:<codeblock>com.ibm.CORBA.loginSource=properties
+# RMI/IIOP user identity
+com.ibm.CORBA.loginUserid=websphere
+com.ibm.CORBA.loginPassword=websphere</codeblock></p>
+<p>Where <varname>websphere</varname> is the user name and password for the administrative
+console.</p>
+</section>
+<section id="section_gnz_23w_cjb">
+<title>soap.client.props</title>
+<p>Open the <filepath>soap.client.props</filepath> file, also found in the
+<filepath>profiles/default/properties</filepath> directory the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> installation. It is necessary
+to set the login source to retrieve the user name and password from a properties file rather than
+having to type them in each time the scripts are run. Set the following properties to match the
+credentials you configured for WebSphere as in <xref
+href="c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.dita"/>. In the example below
+the values are merely examples and the password that is specified in this file cannot be
+encrypted:</p>
+<codeblock>com.ibm.SOAP.loginUserid=websphere
+com.ibm.SOAP.loginPassword=websphere</codeblock>
+<p>where <varname>websphere</varname> is the user name and password for the administrative console
+.</p>
+<p>To avoid timeouts when you instal application EAR files, ensure that the following is set, for
+example:</p>
+<codeblock>com.ibm.SOAP.requestTimeout=3600</codeblock>
+<p>Depending on the performance of your environment you might need a different value.</p>
+</section>
+<section id="section_h5f_f3w_cjb">
+<title>server.policy</title>
+<p>Open the <filepath>server.policy</filepath> file found in the
+<filepath>profiles/default/properties</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> installation. Add the following
+lines to the end of this file:</p>
+<codeblock>grant codeBase "file:&lt;CURAMSDEJ&gt;/drivers/-" {
+permission java.security.AllPermission;
+};</codeblock>
+<p>where <varname>&lt;CURAMSDEJ&gt;</varname> is the SDEJ installation directory.</p>
+<codeblock>grant codeBase "file:${was.install.root}/
+profiles/default/installedApps/
+&lt;cell.name&gt;/&lt;SERVER_MODEL_NAME&gt;.ear/
+guice-2.0.jar" { permission java.lang.RuntimePermission
+"modifyThread"; permission java.lang.RuntimePermission
+"modifyThreadGroup"; };</codeblock>
+<p>where <varname>&lt;cell.name&gt;</varname> is the name of the target <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> cell, and
+<varname>&lt;SERVER_MODEL_NAME&gt;</varname> is the name of the application EAR file.</p>
+</section>
+</conbody></concept>

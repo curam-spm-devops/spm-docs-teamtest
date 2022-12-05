@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="t_ACCESSIBILITYChapter2ReaderShortcutPanel" xml:lang="en-us">
+<title>Section shortcut panel</title>
+<shortdesc>You can navigate and interact with the section shortcut panel in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application by using a screen reader and
+keyboard.</shortdesc><?Pub Caret 112?>
+<taskbody>
+<context>  <p>The section shortcut panel contains links to allow quick access to common user areas within the
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application. These links are
+grouped in section shortcut categories. Accessibility access features are integrated into the
+section shortcut panel to help keyboard and screen reader users. </p>
+<p>Use the following steps to navigate and interact with the section shortcut panel by using a
+screen reader and keyboard:</p> </context>
+<steps>
+<step>
+<cmd>Navigate to the expand icon on the section shortcut panel using the TAB key and press ENTER.
+This expands the section shortcut panel.</cmd>
+</step>
+<step>
+<cmd>Press the Tab key to give focus to the expanded section shortcut category. JAWS identifies this
+element as a Tab.</cmd>
+</step>
+<step>
+<cmd>Use the Up Arrow and Down Arrow keys to navigate through each section shortcut category in the
+section shortcut panel. The section is automatically expanded when it receives focus.</cmd>
+</step>
+<step>
+<cmd>When a section shortcut category receives focus, you can press the Tab key to access each link
+in that category.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001896?>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><val>
+<!-- Props to flag 800 content-->
+<prop action="exclude" att="otherprops" val="800only"/> 
+<!-- Props to include and flag 802 content-->
+<prop action="include" att="otherprops" val="8.0.2"/>
+<prop action="flag" att="otherprops" val="8020flag"> 
+<startflag imageref="images/spm_8020.png"><alt-text>Applies to version 8.0.2 and later</alt-text></startflag></prop>
+<prop action="include" att="otherprops" val="802only"/>
+<!-- Props to include and flag 801 content-->
+      <prop action="include" att="otherprops" val="8.0.1"/>
+	  <prop action="flag" att="otherprops" val="8010flag"> 
+       <startflag imageref="images/spm_8010.png"><alt-text>Applies to version 8.0.1 and later</alt-text></startflag></prop>
+	  <prop action="exclude" att="otherprops" val="801only"/>
+<!-- Version props - only set to include for one version, for use with version conrefs etc -->
+	  <prop action="include" att="otherprops" val="version_8.0.2.0"/> 
+      <prop action="exclude" att="otherprops" val="version_8.0.1.0"/>     	  
+	  <prop action="exclude" att="otherprops" val="version_8.0"/>
+<!-- Rev props - use to highlight subcontent (tags) within topic that applies only to a certain version-->
+	  <revprop action="flag" backcolor="#cbe2fe" val="8020"/> 	  
+	  <revprop action="flag" backcolor="#cbe2fe" val="8010"/>  
+	   
+ </val>

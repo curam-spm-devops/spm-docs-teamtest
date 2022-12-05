@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1664">
+<title>Restart the application server</title>
+<titlealts>
+<searchtitle>Restart the application server</searchtitle>
+</titlealts>
+<shortdesc>Restart the servers that the security changes take effect and to add additional required
+users. </shortdesc>
+<conbody>
+<p>This step is compulsory. Stop the server by using the <filepath>stopServer.bat</filepath> file in
+the <filepath>profiles/AppSrv01/bin</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> installation.</p>
+<p>Before restarting the application server (e.g. server1), you must make the registry and
+cryptography JAR files available to <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>. The registry JAR file contains
+classes necessary for the security configuration and the cryptography JAR file contains necessary
+configuration settings and data for password security.</p>
+<p>The <filepath>Registry.jar</filepath> file is located in the <filepath>lib</filepath> directory
+of the SDEJ installation. Copy this file into the <filepath>lib</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> installation.</p>
+<p>Generate the <filepath>CryptoConfig.jar</filepath> file by running the ant target
+<cmdname>configtest</cmdname> as follows, <i>build configtest -Dcrypto.ext.dir=filedir</i>. Copy the
+<filepath>CryptoConfig.jar</filepath> from the generated location. Copy this file into the <tm
+tmtype="reg" trademark="Java">Java</tm>
+<filepath>jre/lib/ext</filepath> directory. If you require customizations to the cryptographic
+configuration see the <cite>Curam Security Handbook</cite> for more information. </p>
+<p>Start the application server (e.g. server1) and open the Administrative Console to continue with
+the configuration steps. Because the security configuration is complete and the scripting changes
+have been made, you can now use the SDEJ scripts to restart the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>. See <xref
+href="c_WEBSPHAPS_Configuration4StartingStoppingWebsphereServers1.dita"/> for more details on
+restarting the server.</p>
+<p>Open the Administrative Console to continue with the configuration. Now that global security is
+enabled, you must log into the console with the username and password credentials set up
+previously.</p>
+</conbody>
+</concept>

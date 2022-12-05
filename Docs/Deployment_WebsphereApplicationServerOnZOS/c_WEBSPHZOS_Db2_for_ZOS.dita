@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e237">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/></title>
+<shortdesc>Install <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> and perform
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>-specific postinstallation
+tasks.</shortdesc><conbody>
+<section id="section_y5z_xrv_s3b">
+<title>Prerequisites and Installation</title>
+<p>See the program directory for <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> as
+specified in <xref href="https://www-01.ibm.com/support/docview.wss?uid=swg27047206" format="html"
+scope="external">Db2 12 for z/OS Product Documentation</xref> that corresponds to a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/>-supported version. See also <xref
+href="https://www-01.ibm.com/support/docview.wss?uid=swg27036661" format="html" scope="external"
+><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Supported Prerequisites</xref>. </p>
+<p>Install <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> as described in the
+relevant <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> product documentation. </p>
+</section>
+<section id="section_fv2_bsv_s3b">
+<title>Postinstallation</title>
+<p>Create a target <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/>
+subsystem that contains the database as outlined in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> 12 product documentation, see
+<xref href="https://www-01.ibm.com/support/docview.wss?uid=swg27047206" format="html"
+scope="external">Db2 12 for z/OS Product Documentation</xref>. </p>
+<p>There are many subsystem configuration options, note the following options for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+<ul id="ul_br5_5sv_s3b">
+<li>Because <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> and application
+interfaces require JDBC type 4 connectivity, DDF must be configured for the subsystem.</li>
+<li>The <parmname>RRULOCK DSNZPARM</parmname> parameter must be set to YES.</li>
+<li>Setting the <parmname>IDTHTOIN DSNZPARM</parmname> parameter too low might cause <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> batch errors such as those in the
+following shell output:
+<codeblock>[java] infrastructure:RUN_ID_RUNTIME: A runtime exception occurred: 
+[jcc][t4][10335][10366][3.63.131] Invalid operation: Connection is closed. ERRORCODE=-4470, SQLSTATE=08003.</codeblock>
+or a DSNL027I timeout message with a reason code of 00D3003B in the <keyword
+conref="../common_files/conrefs.dita#conrefs/db2zos"/> or system log.</li>
+<li>Setting the <parmname>LOBVALA</parmname> and <parmname>LOBVALS DSNZPARM</parmname> parameters
+too low can cause <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/>
+<msgph>resource unavailable</msgph> errors. A specific value depends on available local resources,
+performance targets, but, values no lower than the following are a suggested starting point:
+<codeblock>LOBVALA=192000 
+LOBVALS=32768</codeblock></li>
+</ul>When the database is installed and a target <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> subsystem is configured on
+<keyword conref="../common_files/conrefs.dita#conrefs/zos"/>, you must create a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> database. As with creating a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> subsystem there are many options
+available depending on your site requirements such as security and physical database design.</p>
+<p>For <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>, starting SQL by
+using Ant scripts requires that the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> database storage group function
+is available. For example, before you create the database, create a storage group (where the values
+in angle brackets are your local names and values:
+<codeblock>CREATE STOGROUP &lt;storage_group> VOLUMES (&lt;volumes>) VCAT &lt;catalog_name>;</codeblock>Then,
+when you create a <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> database
+you must reference the storage group with the <parmname>STOGROUP</parmname> option on the
+<cmdname>CREATE DATABASE SQL</cmdname> statement. </p>
+<p>A <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> database must be
+created before you run the Ant <cmdname>database</cmdname> and
+<cmdname>prepare.application.data</cmdname> targets as described in <cite>Building a
+database</cite>.</p>
+<p>For example:
+<codeblock>CREATE DATABASE CURAM BUFFERPOOL BP0 INDEXBP BP0 STOGROUP &lt;storage_group> ;</codeblock>For
+any shell that accesses a C ram <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/>
+database, the environment variable <varname>DB2JCC_LICENSE_CISUZ_JAR</varname>, must be defined that
+points to the fully qualified path of the <filepath>db2jcc_license_cisuz.jar</filepath> file. </p>
+</section></conbody></concept>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<map title="Cúram Accessibility User Guide" xml:lang="en-us">
+<topicmeta>
+<critdates>
+<created date="2013-10-31"/>
+<revised modified="2015-03-26"/></critdates>
+</topicmeta>
+<topicref href="Accessibility/ctr_CuramAccessibilityUserGuide.dita">
+<topicref href="product_overview/c_accessibility_statement.dita" navtitle="Accessibility"/>
+<topicref href="Accessibility/c_ACCESSIBILITYChapter2AccessibilityFeatures.dita"
+navtitle="Accessibility Features">
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2KeyboardSelectionWidgets.dita"
+navtitle="List Box Form Fields"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2singleselectlist.dita"
+navtitle="Using single select list"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2ReaderShortcutPanel.dita"
+navtitle="Section Shortcut Panel"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2ReaderTabs.dita" navtitle="Tabs"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2KeyboardRTE.dita" navtitle="Rich Text Editor"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2IEGDatePicker.dita" navtitle="IEG Date Picker"/>
+<!--<topicref href="Accessibility/t_ACCESSIBILITY_calendar-widget.dita" navtitle="The calendar widget"/>-->
+</topicref>
+<topicref href="Accessibility/c_ACCESSIBILITYChapter3Alternatives.dita"
+navtitle="Accessibility Alternatives">
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderCalendar.dita" navtitle="The Calendar"/>
+<topicref href="Accessibility/c_ACCESSIBILITYChapter3ReaderCEREditor.dita"
+navtitle="The Cúram Express Rule Editor">
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderCEREditorNew.dita"
+navtitle="Creation of a New Rule Set"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderCEREditorPublish.dita"
+navtitle="Changing Existing Published Rule sets. "> </topicref>
+</topicref>
+<topicref href="Accessibility/c_ACCESSIBILITYChapter3ReaderIEGDatastore.dita"
+navtitle="The Datastore Editor">
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderIEGDatastoreNew.dita"
+navtitle="Creation of a New Datastore Schema"> </topicref>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderIEGDatastoreModify.dita"
+navtitle="Modifying Existing Datastore Schema"> </topicref>
+</topicref>
+<topicref href="Accessibility/c_ACCESSIBILITYChapter3ReaderIEGEditor.dita"
+navtitle="The Intelligent Evidence Gathering Editor">
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderIEGEditorNew.dita"
+navtitle="Creation of a New IEG Script"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ReaderIEGEditorModify.dita"
+navtitle="Modifying Existing IEG Scripts"/>
+</topicref>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter3ZoomContextPanel.dita"
+navtitle="Context Panels"/>
+<!--<topicref href="Accessibility/t_ACCESSIBILITYChapter3FlexNewOutcome.dita"
+ navtitle="New Outcome Plan Creation"></topicref>-->
+<topicref href="Accessibility/c_obj_act_list_view.dita"/>
+<topicref href="Accessibility/c_ACCESSIBILITY_PODS.dita"/>
+</topicref>
+</topicref><?Pub Caret -1?>
+<reltable>
+<relrow>
+<relcell>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2ReaderShortcutPanel.dita"
+navtitle="Section Shortcut Panel"/>
+<topicref href="Accessibility/t_ACCESSIBILITYChapter2ReaderTabs.dita" navtitle="Tabs"/>
+</relcell>
+<relcell>
+<topicref href="WebClientReference/c_WEBCREF_Concepts1ApplicationUserInterfaceOverview-801.dita"
+navtitle="Application User Interface Overview" scope="peer"/>
+</relcell>
+</relrow>
+</reltable>
+</map>
+<?Pub *0000003638?>

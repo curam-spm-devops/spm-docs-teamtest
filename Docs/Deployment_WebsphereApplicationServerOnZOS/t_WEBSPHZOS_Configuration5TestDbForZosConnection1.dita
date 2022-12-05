@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Testing the <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/>
+connections</title>
+<shortdesc>When the application server restarts, test the <keyword
+conref="../common_files/conrefs.dita#conrefs/db2zos"/> connections.</shortdesc><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Resources</uicontrol>
+<uicontrol>JDBC</uicontrol>
+<uicontrol>Data Sources</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Check <uicontrol>curamdb DataSource</uicontrol> and/or <uicontrol>curamsibdb
+DataSource</uicontrol> check box.</cmd>
+</step>
+<step>
+<cmd>Click <uicontrol>Test Connection</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>The following messages are displayed if successful:</cmd>
+<info>
+<msgblock>Test Connection for DataSource &lt;DataSource name&gt; on
+server &lt;server name&gt; at node &lt;node name&gt; was successful.</msgblock>
+</info>
+</step>
+<step>
+<cmd>Check the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> logs
+for details of the failure, correct, and retry.</cmd>
+</step></steps></taskbody></task>

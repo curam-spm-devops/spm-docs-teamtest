@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e611">
+<title>Configuring security</title>
+<shortdesc>The default security configuration of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> involves the default file-based user
+registry and a JAAS Login Module. For more information, see the <cite>Default Configuration for IBM
+WebSphere Application Server</cite> section in the <cite>Cúram Security Handbook</cite>.</shortdesc><conbody>
+<p>There are a number of alternative security configurations that can be used with WebSphere Application Server. The configurations are available to support the use of alternative authentication mechanisms, such as an LDAP directory server or a single sign-on solution.</p>
+<p>To avail of a different configuration the properties detailed in the following sections should be set in the <filepath>AppServer.properties</filepath> file before running the <tt>configure</tt> target. Any alternative authentication mechanisms should be configured manually after running the <tt>configure</tt> target with the relevant properties set. To configure the login module for identity only authentication the curam.security.check.identity.only property should be set to <tt>true</tt>.This is to ensure that the configured alternative authentication mechanism is used.</p>
+<p>The <cite>Identity Only Authentication</cite> section in the <cite>Cúram Security Handbook</cite> should be consulted for further details.</p></conbody></concept>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1134">
+<title>Uninstall an application</title>
+<shortdesc>If you need to install a new version of an application, use the Ant
+<cmdname>uninstallapp</cmdname> target to uninstall the application. </shortdesc><conbody>
+<p>Ant <cmdname>uninstallapp</cmdname> target requires the following arguments to be specified on
+the command line:</p>
+<ul id="ul_fwd_1dp_v3b">
+<li><option>-Dapplication.name=</option><?linebreak?>The name of the application to uninstall (as
+configured during installation).</li>
+<li><option> -Dserver.name=</option><?linebreak?>The name of the server the application is installed
+on. The name can alternatively be specified in <filepath>AppServer.properties</filepath>.</li>
+</ul>
+<p>A usage example is as
+follows:<codeblock>./build.sh uninstallApp -Dapplication.name=Curam -Dserver.name=CuramServer</codeblock></p></conbody></concept>

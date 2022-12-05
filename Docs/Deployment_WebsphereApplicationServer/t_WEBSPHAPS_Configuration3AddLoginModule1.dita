@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="d1e1" xml:lang="en-us">
+<title>Add the login module</title>
+<titlealts>
+<searchtitle>Add the login module</searchtitle>
+</titlealts>
+<shortdesc>Add the login module.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Expand <uicontrol>Java Authentication and Authorization Service</uicontrol> entry in the
+<uicontrol>Authentication</uicontrol> section and select <uicontrol>System
+logins</uicontrol>.</cmd></step>
+<step><cmd>Select the relevant Alias from the list. Configure the login module for the
+<varname>DEFAULT</varname>, <varname>WEB_INBOUND</varname> and <varname>RMI_INBOUND</varname>
+aliases.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to configure a new Login Module.</cmd></step>
+<step><cmd>Set the <uicontrol>Module class name</uicontrol> field to be
+<tt>curam.util.security.CuramLoginModule</tt>.</cmd></step>
+<step><cmd>Check the <uicontrol>Use login module proxy</uicontrol> option.</cmd>
+</step>
+<step><cmd>Select <uicontrol>REQUIRED</uicontrol> in the <uicontrol>Authentication
+strategy</uicontrol> field.</cmd>
+</step>
+<step><cmd>Enter into <uicontrol>Custom properties</uicontrol> table Name/Value pairs for any
+required properties as listed in Table 1, select <uicontrol>New</uicontrol> as needed.</cmd><info>
+<table id="d1e1750" scale="70"><title>CuramLoginModule Custom Properties</title><tgroup cols="3">
+<colspec colnum="1" colwidth="30*"/>
+<colspec colnum="2" colwidth="20*"/>
+<colspec colnum="3" colwidth="50*"/>
+<thead>
+<row>
+<entry>
+<p>Name</p>
+</entry>
+<entry>
+<p>Example Value</p>
+</entry>
+<entry>
+<p>Description</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>exclude_usernames</p>
+</entry>
+<entry>
+<p>websphere, db2admin</p>
+</entry>
+<entry>
+<p>Required. A list of usernames to be excluded from authentication. The default delimiter is a
+comma, but may be overridden by exclude_usernames_delimiter. This list should include the WebSphere
+administration user (as specified in <xref
+href="t_WEBSPHAPS_Configuration3ConfigureAdministrationSecurity1.dita"/>) and the database user (as
+specified in <xref href="t_WEBSPHAPS_Configuration3CreatingDataSourceLoginAlias1.dita"/>). Any users
+listed here should be defined in the WebSphere Application Server user registry.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>exclude_usernames_delimiter</p>
+</entry>
+<entry>
+<p>|</p>
+</entry>
+<entry>
+<p><i>Optional</i>. A delimiter for the list of usernames provided in exclude_usernames. A delimiter
+other than the default comma can be useful when usernames have embedded commas as with LDAP
+users.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>login_trace</p>
+</entry>
+<entry>
+<p>true</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property should be set to true to debug the authentication process. If set
+to true the invocation of the login module will result in tracing information being added to the
+WebSphere Application Server <filepath>SystemOut.log</filepath> file.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>module_name</p>
+</entry>
+<entry>
+<p>DEFAULT, WEB_INBOUND or RMI_INBOUND</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property should be set to one of DEFAULT, WEB_INBOUND or RMI_INBOUND
+depending on the configuration the login module is being defined for. It is used only when
+login_trace is set to true for tracing purposes.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>check_identity_only</p>
+</entry>
+<entry>
+<p>true</p>
+</entry>
+<entry>
+<p><i>Optional</i>. If this property is set to true the login module will not perform the usual
+authentication verifications. Instead it will simply ensure that the user exists on the database
+table. In this case the configured WebSphere Application Server user registry will not be by-passed
+and will be queried after the login module. This option is intended where LDAP support is required
+or an alternative authentication mechanism is to be used.</p>
+<note type="note">If you are specifying identity only and using LDAP you may need to perform
+additional configuration steps; please see <xref
+href="c_WEBSPHAPS_Configuration4SpecialConfigurationStepsWhenUsingI1.dita"/>.</note>
+</entry>
+</row>
+<row>
+<entry>
+<p>user_registry_enabled</p>
+</entry>
+<entry>
+<p>true</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property is used to override the behavior of by-passing the user registry.
+If this property is set to true the WebSphere Application Server user registry will be queried
+during the authentication process. If this property is set to false, the WebSphere Application
+Server user registry will not be queried.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>user_registry_enabled_types</p>
+</entry>
+<entry>
+<p>EXTERNAL</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property is used to specify a comma-delimited list of external user types
+that will be processed against the WebSphere Application Server user registry (e.g. LDAP). See <xref
+href="c_WEBSPHAPS_Configuration4WebsphereApplicationServerUserRegis1.dita"/> for more information on
+the processing of the WebSphere Application Server user registry.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>user_registry_disabled_types</p>
+</entry>
+<entry>
+<p>EXTGEN,EXTAUTO</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property is used to specify a comma-delimited list of external user types
+that will not be processed against the WebSphere Application Server user registry (e.g. LDAP). See
+<xref href="c_WEBSPHAPS_Configuration4WebsphereApplicationServerUserRegis1.dita"/> for more
+information on the processing of the WebSphere Application Server user registry.</p>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
+<?Pub Caret 0?>
+</info></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the addition of the new login
+module.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000005856?>

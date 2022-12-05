@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><val>
+<prop action="include" att="otherprops" val="internalonly"/>
+<!-- Production only content - included only in production builds -->
+<prop action="exclude" att="otherprops" val="productiononly"/>
+<prop action="include" att="otherprops" val="ua510"/>
+</val>

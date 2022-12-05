@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1352">
+<title>Configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_long"/> for
+<keyword conref="../common_files/conrefs.dita#conrefs/zos"/> data sources</title>
+<shortdesc>Configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_long"/>. You
+can either configure by using the Type 4 <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> JDBC Universal Driver (XA) or the
+Type 2 <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> JDBC Universal
+Driver (RRS).</shortdesc><conbody/></concept>

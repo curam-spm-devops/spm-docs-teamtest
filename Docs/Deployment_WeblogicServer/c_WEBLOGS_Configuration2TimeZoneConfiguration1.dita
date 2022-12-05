@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e570">
+<title>Time Zone Configuration</title>
+<shortdesc>If multiple server machines are used, they all must have their clocks in sync and be in
+the same time zone so that the natural ordering of date/times on the database accurately reflects
+the order that the events occurred in the real world.</shortdesc><conbody>
+<p> For example, if on the database record <i>A</i> has a creation date/time field earlier than that
+on record <i>B</i>, then we can say for sure that <i>A</i> was created before <i>B</i>, no matter
+which server created either record.</p>
+<p>The time zone of the server(s) must never change during the lifetime of the application. The reason for this that the time zone assumed when storing dates in the database is the current server's time zone; therefore if the server's time zone changes then all dates entered prior to the time zone change will be out by the number of hours equal to the difference between the old and new time zones.</p></conbody></concept>

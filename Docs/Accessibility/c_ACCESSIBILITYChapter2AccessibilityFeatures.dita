@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_ACCESSIBILITYChapter2AccessibilityFeatures"
+xml:lang="en-us">
+<title>Accessibility features for desktop</title>
+<shortdesc>A number of accessibility features are available in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application for desktop users. These
+accessibility features are designed for users with restricted movement or low vision who interact
+with the application by using a keyboard, a screen reader, or both.</shortdesc><?Pub Caret 145?>
+<conbody/>
+</concept>
+<?Pub *0000000866?>

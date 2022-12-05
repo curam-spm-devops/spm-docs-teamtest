@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the database driver provider</title>
+<titlealts>
+<searchtitle>Configure the database driver provider</searchtitle>
+</titlealts>
+<shortdesc>Use the <uicontrol>Resources</uicontrol> menu to add the driver and configure the
+properties.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Select
+<menucascade><uicontrol>Resources</uicontrol><uicontrol>JDBC</uicontrol><uicontrol>JDBC
+providers</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Ensure that the appropriate scope to define the data source is selected.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to add a driver. A configuration screen is
+displayed.</cmd></step>
+<step><cmd>Select <uicontrol>DB2</uicontrol> from the <uicontrol>database type</uicontrol> drop-down
+list.</cmd></step>
+<step><cmd>Select <uicontrol>DB2 Using IBM JCC Driver</uicontrol> from the <uicontrol>Provider
+type</uicontrol> drop-down list.</cmd></step>
+<step><cmd>Select <uicontrol>XA data source</uicontrol> from the <uicontrol>Implementation
+type</uicontrol> drop-down list.</cmd></step>
+<step><cmd>Select <uicontrol>Next</uicontrol> to continue. </cmd></step>
+<step><cmd>Review the configuration properties. Typically, no change is required unless you want to
+connect to a <keyword conref="../common_files/conrefs.dita#conrefs/zos"/> database. To connect to an
+<keyword conref="../common_files/conrefs.dita#conrefs/zos"/> database, verify that the
+<filepath>${DB2_JCC_DRIVER_PATH}</filepath> field points to the correct directory for your system.
+For example, ensure that the field points to the directory that contains the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_long"/> Connect license jar
+<filepath>db2jcc_license_cisuz.jar</filepath> that is provided by <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> connectivity.</cmd></step>
+<step><cmd>Select <uicontrol>Next</uicontrol>. </cmd></step>
+<step><cmd>Select <uicontrol>Finish</uicontrol> to confirm the changes.</cmd></step>
+</steps>
+</taskbody>
+</task>

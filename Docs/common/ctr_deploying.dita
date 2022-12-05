@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="ctr_deploying" xml:lang="en-us">
+<title>Deploying <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/></title>
+<titlealts>
+<searchtitle>Deploying <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> to an
+application server</searchtitle><?Pub Caret -2?>
+</titlealts>
+<shortdesc>You can deploy <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> to an
+application server in your development or test environment. <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> is deployed into production in a clustered
+environment, which is outside the scope of this deployment information.</shortdesc>
+</task>
+<?Pub *0000000681?>

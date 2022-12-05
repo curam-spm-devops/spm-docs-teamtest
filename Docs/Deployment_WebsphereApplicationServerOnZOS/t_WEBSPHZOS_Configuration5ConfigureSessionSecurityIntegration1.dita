@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring session security integration</title><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Servers</uicontrol>
+<uicontrol>Server Types</uicontrol>
+<uicontrol>WebSphere application servers</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the relevant server from the list.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Session management</uicontrol> in the <uicontrol>Container
+Settings</uicontrol> section</cmd>
+</step>
+<step>
+<cmd>Deselect <uicontrol>Security integration</uicontrol>. </cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to apply changes.</cmd>
+</step>
+<step>
+<cmd><uicontrol>Save</uicontrol> the changes that are made to the master configuration.</cmd>
+<info>
+<note type="note">
+<p>This setting is required for <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+web applications.</p>
+</note>
+</info>
+</step></steps></taskbody></task>

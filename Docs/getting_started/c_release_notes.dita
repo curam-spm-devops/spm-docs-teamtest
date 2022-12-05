@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_release_notes" xml:lang="en-us">
+<title>Release notes</title>
+<shortdesc>Detailed release notes describe what is new and changed
+for each release. The defects that are fixed in each release are listed.</shortdesc>
+<prolog><metadata></metadata></prolog>
+<conbody>
+<p>Review the release notes for your version before installation or deployment, and before you start
+to configure or customize IBM Cúram applications. To find the release notes for your version, click
+the related link.</p>
+<section>
+<p>From July 1 2022, Watson Health solutions and resources will be established as a separate
+company. For documentation updates, see the <xref
+href="https://curam-spm-devops.github.io/wh-support-docs/spm/product-documentation" format="html"
+scope="external">WH Support Docs site</xref>.</p>
+</section>
+<?Pub Caret 128?>
+</conbody>
+ <related-links>
+  <link href="https://www.ibm.com/support/pages/node/713035" format="html" scope="external">
+<desc>To see the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+<keyword conref="../common_files/conrefs.dita#conrefs/version"/> Release Notes, click this
+link.</desc>
+</link>
+ </related-links>
+</concept>
+<?Pub *0000000770?>

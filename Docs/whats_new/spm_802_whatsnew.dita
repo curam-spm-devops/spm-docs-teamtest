@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="spm_802_whatsnew" xml:lang="en-us">
+<title>What's new in <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.2</title>
+<shortdesc>Read about updates and enhancements in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.2, released on 19 May 2022.</shortdesc>
+<conbody>
+<section>
+<p conref="spm_800_whatsnew.dita#spm_800_whatsnew/pdf" otherprops="xhtml"/>
+<p id="rns">For important installation information, and to learn more about product improvements and
+resolved issues in 8.0.2, see also the <xref
+href="http://www.ibm.com/support/docview.wss?uid=swg27037963" format="html" scope="external">Release
+Notes</xref>.</p>
+<p otherprops="video"><xref format="html" scope="external"
+href="https://mediacenter.ibm.com/media/IBM%20C%C3%BAram%20Social%20Program%20Management%20V8.0.2%20deep%20dive%3A%20Caseworker%20productivity%20%20improvements/1_lmes1dm7"
+>Click here for a video presentation about caseworker productivity improvements in 8.0.2</xref>.</p>
+</section>
+<section id="sectionlist">
+<p>Updates for caseworkers:</p>
+<p>
+<ul>
+<li><xref href="#spm_802_whatsnew/section_ndz_xmn_ktb" format="dita">New language toggle</xref></li>
+<li><xref href="#spm_802_whatsnew/section_wjt_wn2_jtb" format="dita">Support for Swedish
+language</xref></li>
+</ul>
+</p>
+<p>Updates for developers:</p>
+<p>
+<ul>
+<li><xref href="#spm_802_whatsnew/section_i2y_42y_gtb" format="dita">New customization points for
+product delivery case lifecycle processing</xref></li>
+<li><xref href="#spm_802_whatsnew/section_wky_mxy_gtb" format="dita">New customization point for
+prepopulating extra person data during application creation</xref></li>
+<li><xref href="#spm_802_whatsnew/section_j3w_nmq_3tb" format="dita">New customization point for
+application case authorization processing</xref></li>
+<li><xref href="#spm_802_whatsnew/section_q12_5h2_htb" format="dita">Updated documentation to
+clarify the purpose of the default logic for user password validation</xref></li>
+<li><xref href="#spm_802_whatsnew/section_mfw_5bk_2tb" format="dita">Introducing new guidance for
+developing outbound REST APIs</xref></li>
+</ul>
+</p>
+<p>Security update<ul>
+<li><xref href="#spm_802_whatsnew/section_yvm_2yf_tsb" format="dita">Extending SAML SSO to enable
+multifactor authentication</xref></li>
+</ul></p>
+<p>What's new for other versions:<ul>
+<li><xref href="spm_800_whatsnew.dita">What's new in 8.0.0</xref></li>
+<li><xref href="spm_801_whatsnew.dita">What's new in 8.0.1</xref></li>
+<li otherprops="8.0.3"><xref href="spm_803_whatsnew.dita">What's new in 8.0.3</xref></li>
+</ul></p>
+</section>
+<section id="section_ndz_xmn_ktb"><title>New language toggle</title><p>Caseworkers can now change
+the language in which their <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+application is displayed. A new configurable <uicontrol>Language</uicontrol> menu item is now
+available in the application menu. If configured, caseworkers can use the language toggle to change
+their application language to any language that is installed on the system.</p><p>For more
+information, see the following documentation:</p><p>
+<ul>
+<li><xref href="../WebClientReference/c_WEBCREF_Concepts1ApplicationUserInterfaceOverview-801.dita"
+scope="peer">Application user interface overview</xref></li>
+<li><xref href="../WebClientReference/r_WEBCREF_Development1ApplicationLocales1.dita" scope="peer"
+>Client application locales</xref></li>
+<li><xref href="../WebClientReference/r_WEBCREF_Localization1Localization1.dita" scope="peer"
+>Localization</xref></li>
+</ul>
+</p><xref href="#spm_802_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></section>
+<section id="section_wjt_wn2_jtb"><title>Support for Swedish language</title><p>The following
+support for the Swedish language is now available:<ul>
+<li>A Swedish language pack</li>
+<li>The ability for an administrator to set a user’s default locale to Swedish</li>
+<li>The ability for a caseworker to change their user interface language to Swedish</li>
+</ul></p><xref href="#spm_802_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></section>
+<section id="section_i2y_42y_gtb"><title>New customization points for product delivery case
+lifecycle processing</title><p>New customization points are now available to support compliant
+customization of the following processes in the product delivery case lifecycle:<ul>
+<li>Case submitted for approval</li>
+<li>Case approval</li>
+<li>Case rejection</li>
+<li>Case activation</li>
+<li>Case closure</li>
+<li>Case reactivation</li>
+</ul></p><p>For more information, see <xref
+href="../InsideEligibilityAndEntitlementUsingCER/c_INSEECER_Customizability1EligibilityEntitlementEngineEvents1.dita"
+scope="peer">Eligibility and Entitlement Engine Events</xref>.</p><xref
+href="#spm_802_whatsnew/sectionlist" format="dita">Back to what's new list</xref></section>
+<section id="section_wky_mxy_gtb"><title>New customization point for prepopulating extra person data
+during application creation</title><p>When a new application is created for a registered person, the
+application form is prepopulated with person data that is available on the system.</p><p>To support
+the ability to prepopulate extra person attributes on the application form in a compliant manner, a
+new customization point is now available. </p><p>For more information, see <xref
+href="../IntakeConfiguration/t_CINConfig_ApplicationFormPrepopulatePerson.dita" scope="peer"
+>Prepopulating Person Information</xref>. </p><xref href="#spm_802_whatsnew/sectionlist"
+format="dita">Back to what's new list</xref></section>
+<section id="section_j3w_nmq_3tb"><title>New customization point for application case authorization
+processing</title><p>During application case authorization, if the applicant is a member of an
+existing integrated case, caseworkers can create a new integrated case or associate the new
+application with the existing integrated case. If a caseworker selects an existing integrated case,
+new product delivery cases are automatically created during the authorization process and associated
+with the integrated case.</p><p>To support the ability to reuse an existing product delivery case on
+the selected integrated case in a compliant manner, a new customization point is now
+available.</p><p>For more information, see <xref
+href="../IntakeConfiguration/t_CINConfig_ProgramProductDeliveryReuse.dita" scope="peer">Reusing a
+Product Delivery Case</xref>. </p><xref href="#spm_802_whatsnew/sectionlist" format="dita">Back to
+what's new list</xref></section>
+<section id="section_q12_5h2_htb"><title>Updated documentation to clarify the purpose of the default
+logic for user password validation</title><p>Updated documentation is now available that describes
+the intended usage of the default logic to validate and update a user’s password. </p><p>For more
+information, see <xref href="../Security/c_SECHAND_Authentication1LoginPage1.dita" scope="peer">The
+Login Page</xref>.</p><xref href="#spm_802_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></section>
+<section id="section_mfw_5bk_2tb"><title>Introducing new guidance for developing outbound REST
+APIs</title><p>Developers can use outbound API requests to integrate <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> with external applications that
+expose a REST API. New guidance is now available on how to develop outbound REST APIs by using the
+Jersey REST client library to make the outbound requests.</p><p>For more information, see <xref
+format="html" scope="peer" href="../../OutboundAPI/Overview.html">Developing outbound REST
+APIs</xref>.</p><xref href="#spm_802_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></section>
+<section id="section_yvm_2yf_tsb">
+<title>Extending SAML SSO to enable multifactor authentication</title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> provides customer
+guidance and examples to configure and test a SAML SSO reference infrastructure on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>, and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/>. The SAML SSO reference
+infrastructure is configured with a regular single factor username and password authentication, that
+provides only a basic level of identity authentication. To provide a stronger authentication
+experience, you can configure the authentication flow to include multifactor user
+authentication.</p>
+<p>The guidance has been extended to include a step-by-step guide to extend the SAML SSO reference
+infrastructure to enable and verify multifactor authentication by using <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_isva"/>. For more information, see <xref
+href="../Security/c_SECHAND_SAML_SSO_MFA.dita" scope="peer">Extending the SAML SSO configuration to
+enable multifactor authentication</xref>.</p>
+<p><xref href="#spm_802_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+</conbody>
+</concept>
+<?tm 1527675457574 3 JavaScript||IBM ?>

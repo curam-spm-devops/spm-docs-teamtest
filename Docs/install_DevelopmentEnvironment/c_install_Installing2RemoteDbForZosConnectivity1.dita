@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1">
+<title>Remote <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> connectivity</title>
+<shortdesc>Before a connection can be established to a remote database, it must be configured. The
+full details of installation of <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> are
+beyond the scope of this document set. However, note the following the main postinstallation
+steps.</shortdesc><conbody>
+<section><ul>
+<li>
+<p>A database can be configured for <option>EBCDIC</option>, <option>ASCII</option>, or
+<option>UNICODE</option> mode for use by the application. You can do this when creating the database
+by using the<option>CCSID</option> keyword. For <option>ASCII</option> or <option>UNICODE</option>
+databases, the <codeph>curam.db.zos.encoding</codeph> property is required, see <xref
+href="../ServerDeveloper/c_SERDEV_ConfigParam3.dita"/>.</p>
+<itemgroup>
+<p><cmdname>CREATE DATABASE &lt;database_name&gt; BUFFERPOOL BP0 INDEXBP BP0 STOGROUP
+&lt;storage_group&gt; CCSID &lt;EBCDIC, ASCII or UNICODE&gt;;</cmdname></p>
+</itemgroup>
+</li>
+<li>
+<p>An environment variable called <codeph>DB2JCC_LICENSE_CISUZ_JAR</codeph> must be created that
+points to the installed <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> license jar
+file used for connectivity to the remote database server. This is normally named
+<filepath>db2jcc_license_cisuz.jar</filepath> and is provided with <keyword
+conref="../common_files/conrefs.dita#conrefs/db2zos"/> or <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> Connect.</p>
+</li>
+</ul></section></conbody></concept>

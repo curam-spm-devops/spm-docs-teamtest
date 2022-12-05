@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderCEREditorPublish" xml:lang="en-us">
+<title>Changing Existing Published Rule Sets</title>
+<taskbody>
+<context>The following section outlines how a user with disabilities can publish an existing rule
+set in the administration application.</context>
+<steps>
+<step>
+<cmd>In the administration application, select the <uicontrol>Administration Workspace</uicontrol>
+<wintitle>Application Section</wintitle>.</cmd>
+</step>
+<step>
+<cmd>In the <wintitle>Shortcuts Panel</wintitle>, select the <uicontrol>Rules and
+Evidence</uicontrol> category.</cmd>
+</step>
+<step>
+<cmd>Within this category, select the <uicontrol>Cúram Rule Sets</uicontrol> link. This opens a page
+containing a list of existing rule sets. Search for the rule set of interest.</cmd>
+</step>
+<step>
+<cmd>To publish this rule set, open the command prompt and navigate to the <filepath>&lt;application
+install directory&gt;/EJBServer</filepath> folder.</cmd>
+</step>
+<step>
+<cmd>Enter <uicontrol>build creole.extractrulesdata -Dcreolerulesetname=&lt;your rule set name&gt;
+-Dinedit=true</uicontrol> into the command prompt. This extracts the rule set to the
+<filepath>&lt;application install directory&gt;/EJBServer/dataextractor/blob</filepath>
+folder.</cmd>
+</step>
+<step>
+<cmd>The developer copies this rule set to their custom component and places it into a
+<filepath>Creole Rule Sets</filepath> folder. Using the preferred XML editor, the developer can
+define the rules according to the guidelines outlined in the Cúram Express Rules Reference Manual.
+To ensure consistency across the files, apply update annotations to the properties file as well as
+to the XML file.</cmd>
+</step>
+<step>
+<cmd>Once complete, the developer can validate and upload the rule set by using the command line
+targets <uicontrol>build creole.validate.rulesets</uicontrol> and <uicontrol>build
+creole.upload.rulesets</uicontrol> respectively.</cmd>
+</step>
+<step>
+<cmd>The corresponding properties file(s) can be uploaded via the <uicontrol>Application
+Resources</uicontrol> link in the <wintitle>Intelligent Evidence Gathering</wintitle> shortcut panel
+category.</cmd>
+</step>
+<step>
+<cmd>On the <wintitle>Application Resources</wintitle> page, select <uicontrol>Property</uicontrol>
+in the <wintitle>Category</wintitle> drop-down and click <uicontrol>Search</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Locate the property file with the same name as the file to upload and select
+<uicontrol>Edit</uicontrol> from the list row action menu.</cmd>
+</step>
+<step>
+<cmd>In the modal, select the <uicontrol>browse</uicontrol> button and locate the properties file to
+upload. Note: This will override the properties file store for this rule set. </cmd>
+</step>
+</steps>
+</taskbody>
+</task>

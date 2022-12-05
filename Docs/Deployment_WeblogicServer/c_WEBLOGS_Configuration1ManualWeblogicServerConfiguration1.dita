@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e792" platform="windows">
+<title>Manual <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/>
+configuration</title>
+<shortdesc>If required, the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"
+/> installation can be configured manually. However, manual configuration is not recommended. For
+informational purposes only, the following manual steps are required to configure and deploy on
+WebLogic Server on <keyword conref="../common_files/conrefs.dita#conrefs/os_win_long"/>.</shortdesc>
+<conbody/>
+</concept>

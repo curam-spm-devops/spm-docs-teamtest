@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_deprecated_features" xml:lang="en-us">
+<title>Deprecated functionality</title>
+<shortdesc>If you are upgrading from an earlier version of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/>, be aware of the various features that are
+deprecated from the current version and earlier releases of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/>. </shortdesc>
+<conbody>
+<p otherprops="deprecated"> This icon indicates deprecated functionality in the product
+documentation.</p>
+<p>Refer to the release notes for details of the artifacts that were deprecated for each feature.
+When a feature is deprecated, IBM continues to support the feature, but no longer plans to enhance
+it and might remove the capability in a subsequent release of the product. For more information
+about deprecated functionality, see the <xref
+href="http://www-01.ibm.com/support/docview.wss?uid=swg27037963" format="html" scope="external"
+>Release Notes</xref>. </p>
+<p>The descriptions indicate deprecated features that have already been removed from the product.
+For information about removed features, see <xref href="../CodeRemovals/c_removed_features.dita"
+scope="peer">Removed features</xref>.</p>
+<p>The following sections group deprecated features according to the version of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> in which they were deprecated,
+starting with more recent versions. Each section lists the features alphabetically by name.</p>
+<p>
+<ul id="version_list">
+<li otherprops="8.0.1"><xref href="#c_deprecated_features/801" format="dita"/></li>
+<li otherprops="8.0"><xref href="#c_deprecated_features/800" format="dita"
+/></li>
+<li><xref href="#c_deprecated_features/7010" format="dita"/></li>
+<li><xref href="#c_deprecated_features/702" format="dita"/></li>
+<li><xref href="#c_deprecated_features/700" format="dita"/></li>
+<li><xref href="#c_deprecated_features/6058" format="dita"/></li>
+<li><xref href="#c_deprecated_features/605" format="dita"/></li>
+<li><xref href="#c_deprecated_features/600" format="dita"/></li>
+</ul>
+</p>
+<section id="801" otherprops="8.0.1">
+<title>Version 8.0.1</title>
+<p>
+<dl>
+<dlentry>
+<dt>Configuring IEG currency symbols</dt>
+<dd>The <codeph>REACT_APP_CURRENCY_MASK_LEFT_ADDON</codeph> and
+<codeph>REACT_APP_CURRENCY_MASK_RIGHT_ADDON</codeph> environment variables are deprecated. The
+variables were used to configure the currency symbol that is displayed for currency fields in IEG
+forms. The variables have been replaced by the  <xref
+href="../CitizenEngagement/CE_UA_environment_variables.html"
+scope="peer" format="html"><codeph>REACT_APP_CURRENCY_MASK_ADDON</codeph></xref> environment
+variable. For more information, see <xref
+href="../CitizenEngagement/t_CE_config_currency_symbols.html" scope="peer"
+format="html">Configuring currency symbols</xref>.</dd>
+</dlentry>
+</dl>
+</p>
+</section>
+<section id="800" otherprops="8.0">
+<title>Version 8.0.0</title>
+<p>
+<dl>
+<dlentry>
+<dt>ClientAccess</dt>
+<dd>The ClientAccess functionality that is provided with the deprecated Case and Participant Index
+(CPI) component of the Social Enterprise Collaboration (SEC) module that allows for external client
+data to be viewed in SEC folders and in the citizen context viewer is deprecated.</dd>
+</dlentry>
+</dl>
+<dl>
+<dlentry>
+<dt><keyword conref="../common_files/conrefs.dita#conrefs/UA_component_short"/> APIs for password
+reset</dt>
+<dd>
+<p>The following APIs are not suitable for production and are now deprecated. Customers must provide
+their own authentication implementation, see <xref
+href="../CitizenEngagement/c_CECUST_Customizing7SecuringUniversalAccess1.html"
+format="html" scope="peer">Security for the Universal Access Responsive Web Application</xref>.</p>
+<ul>
+<li><codeph>/ua/email_password_reset</codeph></li>
+<li><codeph>/ua/secret_question_password_reset</codeph></li>
+<li><codeph>/ua/password_reset</codeph></li>
+</ul>
+</dd>
+</dlentry>
+</dl>
+<dl>
+<dlentry>
+<dt>Caseworker UI</dt>
+<dd>The JavaServer Pages (JSP) that render the calendar for the date picker are deprecated. The JSP
+is no longer used as it is effectively replaced by Carbon. The JSP file is
+<filepath>%CURAMCDEJ%//lib/curam/web/popups/date-selector.jsp</filepath>. The Citizen Portal does
+not use this JSP. The date picker in the Citizen Portal uses the <codeph>DateTextBox</codeph> from
+the UI toolkit and is referenced in <filepath>TextEditRenderer.java</filepath>.</dd>
+</dlentry>
+</dl>
+<dl>
+<dlentry>
+<dt>ScanMilestoneDeliveryStartDate and ScanMilestoneDeliveryEndDate</dt>
+<dd><codeph>ScanMilestoneDeliveryStartDate</codeph> and
+<codeph>ScanMilestoneDeliveryEndDate</codeph> batch processes are deprecated as they have been
+replaced by new batch processes <codeph>ScanMilestoneDeliveryStartDateBatch</codeph> and
+<codeph>ScanMilestoneDeliveryEndDateBatch</codeph> that use the batch streaming infrastructure.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version list</xref></p>
+</section>
+<section id="7010">
+<title>Version 7.0.10</title>
+<p>
+<dl>
+<dlentry>
+<dt>Flex Discussion Widget</dt>
+<dd>The Flex Discussion Widget is deprecated because it is no longer used by any UIM pages. All
+instances of the Flex version of this widget were replaced with regular UIM pages.</dd>
+</dlentry>
+<dlentry>
+<dt>Flex Widget for the SEC Rich Text Editor </dt>
+<dd>The Rich Text Editor in the Social Enterprise Collaboration (SEC) MDTWorkspace is deprecated
+because it is no longer used by any UIM pages. All instances of the Flex version of the Rich Text
+Editor were already replaced with the CKEditor JavaScript Rich Text Editor.</dd>
+</dlentry>
+<dlentry>
+<dt>Flex Widget for the Universal Access Rich Text Editor </dt>
+<dd>The Rich Text Editor in Universal Access is deprecated because it is no longer used by any UIM
+pages. All instances of the Flex version of the Rich Text Editor were already replaced with the
+CKEditor JavaScript Rich Text Editor.</dd>
+</dlentry>
+<dlentry>
+<dt>Timeline and Progress Timeline (Outcome Plan Workspace)</dt>
+<dd>The Timeline and Progress Timeline (Outcome Plan Workspace) Flex Widget is deprecated because a
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> alternative is
+available by default.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version
+list</xref></p>
+</section>
+<section id="702">
+<title>Version 7.0.2</title>
+<p>
+<dl>
+<dlentry>
+<dt>Evidence broker</dt>
+<dd>An enhanced version of the evidence broker was released in version 7.0.2 and the original
+version of the evidence broker has been deprecated. For customers who choose to continue using the
+previous version of the evidence broker, some configuration is required, as described in the
+<cite>Enabling Evidence Broker 1</cite> section in the <cite>Cúram Upgrade Guide</cite>. For more
+information about the<cite>Cúram Upgrade Guide</cite>, see <xref
+href="../getting_started/t_getting_started_with_upgrade.dita" scope="peer">Getting started with an
+upgrade</xref> in the Version 7.0.4 IBM Cúram Upgrade Helper pack. For more information about the
+previous version of the evidence broker, see <xref format="html" scope="external"
+href="https://www.ibm.com/support/knowledgecenter/SS8S5A_7.0.1/com.ibm.curam.nav.doc/common/t_ctr_evidence_broker.html"
+><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> version 7.0.1 Evidence Broker
+documentation</xref>.</dd>
+</dlentry>
+<dlentry>
+<dt>FILE_EDIT widget</dt>
+<dd>The <keyword conref="../common_files/conrefs.dita#conrefs/microsoft"/> Word integration feature
+<systemoutput>FILE_EDIT</systemoutput> is deprecated. <systemoutput>FILE_EDIT</systemoutput> widget
+allows a user to edit a Microsoft Word document on their local computer and then save it to the
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> database.</dd>
+</dlentry>
+<dlentry>
+<dt>Person/Prospect Person Evidence Sharing Automation</dt>
+<dd>This section applies only to evidence sharing with the evidence broker version 7.0.1.x and
+earlier, which corresponds to the value of the
+<parmname>ENV_ADVANCED_EVIDENCE_SHARING_SHARING_ENABLED</parmname> property being set to
+<codeph>NO</codeph>. See the <xref href="../AdvancedEvidenceSharing/c_AES_intro.dita#c_AES_intro"
+scope="peer">Evidence broker</xref> section for more information about how sharing occurs when the
+<parmname>ENV_ADVANCED_EVIDENCE_SHARING_SHARING_ENABLED</parmname> property is set to
+<codeph>YES</codeph>.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version list</xref></p>
+</section>
+<section id="700">
+<title>Version 7.0.0</title>
+<p>
+<dl>
+<dlentry>
+<dt>Business Intelligence &amp; Analytics (BI&amp;A): Oracle Warehouse Builder (OWB) and DB2
+ETLs</dt>
+<dd>Oracle Warehouse Builder ETL and DB2 ETL code is deprecated.</dd>
+</dlentry>
+</dl>
+<dl>
+<dlentry>
+<dt>Case Determination Graphical Display</dt>
+<dd> The Case Determination Flex Widget is deprecated because it is part of the Case Determination
+feature that was deprecated in <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"
+/> 7.0.0.</dd>
+</dlentry>
+</dl>
+<dl>
+<dlentry>
+<dt>Cúram Express Rules (CER) Key Decision Factors</dt>
+<dd>Key Decision Factors rules and the graphical/list view display of key events within a case that
+form part of the CER infrastructure is deprecated. Decision Details rules are available to implement
+the display of similar key event information.</dd>
+</dlentry>
+<dlentry>
+<dt>Cúram Provider Management (CPM): Performance Monitoring </dt>
+<dd> The CPM Performance Monitoring functionality that provides the ability to configure performance
+measures and evaluation criteria for a provider to enable agencies to measure provider performance
+is deprecated. </dd>
+</dlentry>
+<dlentry>
+<dt>Cúram Provider Management (CPM) Taxonomy </dt>
+<dd>The CPM taxonomy functionality that provides the ability to establish a hierarchy of terms and
+index those terms to provider service offerings for use in searching for services is deprecated.
+</dd>
+</dlentry>
+<dlentry>
+<dt> Evidence Flow </dt>
+<dd>The Evidence Flow view of evidence displayed within the Evidence Workspace was deprecated. <ph
+id="ph_removedV8">For information about the feature's removal from the product in Version 8.0.0, see
+<xref href="../CodeRemovals/c_removed_features.dita" scope="peer">Removed features</xref>.</ph> The
+Evidence Dashboard view is available to users to manage evidence within a case.</dd>
+</dlentry>
+<dlentry>
+<dt>Generic Search Server </dt>
+<dd>The Generic Search Server (GSS) that uses Lucene for indexing and search functionality within
+the product is deprecated.</dd>
+</dlentry>
+<dlentry>
+<dt>Health Care Reform (HCR): Intake Reports </dt>
+<dd>The HCR Intake Reports provided to help address the ability for agencies to manage failed
+applications is deprecated.</dd>
+</dlentry>
+<dlentry>
+<dt>Legacy Employment Contribution Entities</dt>
+<dd>Entities that enabled customers to implement contribution-based solutions in employment areas
+such as pensions and unemployment insurance tax is deprecated. <ph>For information about the
+feature's removal from the product in Version 8.0.0, see <xref
+href="../CodeRemovals/c_removed_features.dita" scope="peer">Removed features</xref>.</ph> Existing
+framework functionality including the liability product, financial manager, and employer participant
+type can be used for the basis of an employment contribution solution.</dd>
+</dlentry>
+<dlentry>
+<dt>Non-Identical Evidence Mapping (Superseded) </dt>
+<dd>The original version of non-identical evidence mapping functionality that supported evidence
+sharing only where evidence was identical down to the domain definition level is deprecated. A new
+version that provides enhanced ability to map evidence with different domains is available. </dd>
+</dlentry>
+<dlentry>
+<dt>Over/Underpayments Graphical View</dt>
+<dd>The graphical view of over/underpayments generated within a Product Delivery case is deprecated.
+<ph>For information about the feature's removal from the product in Version 8.0.0, see <xref
+href="../CodeRemovals/c_removed_features.dita" scope="peer">Removed features</xref>.</ph> The
+Statement view is available to users for understanding the history of over/underpayments within a
+case. </dd>
+</dlentry>
+<?oxy_comment_start author="BDaly@ie.ibm.com" timestamp="20210518T171321+0100" comment="Commented out - see ticket 269887. "?>
+<!--<dlentry><dt>Referrals (Legacy) </dt><dd>Referrals functionality that allows for the capture of basic information related to the referral of a client to the Service Supplier participant type is deprecated. Enhanced referrals functionality is available within the Cúram Provider Management (CPM) module.</dd></dlentry>--><?oxy_comment_end?>
+<dlentry>
+<dt>Social Enterprise Collaboration (SEC):Case &amp; Participant Index (CPI) </dt>
+<dd>CPI functionality provided as part of the SEC module to enable Master Data Management (MDM)
+capabilities and display of information from an external system within Cúram is deprecated. </dd>
+</dlentry>
+<!--<dlentry><dt>Social Enterprise Collaboration (SEC): Social Enterprise Folder (SEF) Case </dt><dd>The SEF case type that is provided as part of the SEC module to enable Multidisciplinary Team (MDTs) to collaborate on cases and clients is deprecated. The collaborative outcome plan and MDT portal functionality is available within the SEC module to support MDT collaboration on the delivery of services to clients.</dd></dlentry>-->
+<dlentry>
+<dt>Spell Checker </dt>
+<dd>The Spell Checker add-on to the rich text editing feature that is found in functionality such as
+Notes is deprecated. All supported browsers now include built in spell checking capabilities that
+can be used as an alternative.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version list</xref></p>
+</section>
+<section id="6058">
+<title>Version 6.0.5.8</title>
+<p>
+<dl>
+<dlentry>
+<dt>The Flex versions of Business Intelligence Charts </dt>
+<dd>The Flex versions of <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+Business Intelligence Charts are deprecated. All provided BIRT charts that were previously rendered
+by using Flex/Flash have been rendered in native BIRT format as PNG images since <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> 6.0.5.8.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version list</xref></p>
+</section>
+<section id="605">
+<title>Version 6.0.5</title>
+<p>
+<dl>
+<dlentry>
+<dt>Intelligent Evidence Gathering (IEG)</dt>
+<dd>IEG 1 is deprecated and superseded by IEG 2.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version list</xref></p>
+</section>
+<section id="600">
+<title>Version 6.0.0</title>
+<p>
+<dl>
+<dlentry>
+<dt>Short Name Substitution</dt>
+<dd>The short name substitution feature is deprecated. The supported third-party databases no longer
+have the SQL identifier limitations that originally necessitated the feature. Therefore, it is no
+longer necessary to use the feature and it has been removed from the product documentation. If you
+still require the feature, contact your IBM support representative for the information that was
+available previously in the documentation.</dd>
+</dlentry>
+</dl>
+</p>
+<p><xref href="#c_deprecated_features/version_list" format="dita">Back to version list</xref></p>
+</section>
+</conbody>
+</concept>

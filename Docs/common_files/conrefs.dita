@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002--><!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub Inc?><reference id="conrefs" rev="conrefs_5.8" xml:lang="en-us">
+<title translate="no">conrefs</title>
+<!--NOTE TO TRANSLATION CENTERS: Do NOT translate the text within the comment or draft-comment tags. Do not translate the text within elements for which the translate attribute is set to no (translate="no"). -->
+<!--NOTE TO TRANSLATION CENTERS: Do NOT translate trademarked terms (such as "Maximo") within phrases that are otherwise marked translate="yes". -->
+<!--NOTE TO WRITERS: This file contains frequently used conref text for Maximo solution products. Please do not edit your local copy of this file. If you want to add a conref to the master version of this file, contact Andrew Lucchesi or Maureen Hern. -->
+<!--USAGE NOTE TO WRITERS: Use trademarks only as adjectives. For example, don't say "HP-UX," say "the HP-UX operating system."-->
+<!--NOTE: For version 5.7 of this file, I have changed translate="yes" for all components. (Andrew Lucchesi, April 13, 2012-->
+<refbody>
+<section>
+                        <title translate="no">Cúram product and components</title>
+                        <ph translate="no">Product name conrefs</ph>
+                        <p><keyword id="prodname">IBM Cúram Social Program
+                                        Management</keyword></p><p><keyword id="prodname_short"
+                                        >Social Program Management</keyword></p><p><keyword
+                                        id="prodname_saas"><tm trademark="IBM" tmtype="reg">IBM</tm>
+                                        Social Program Management as a
+                                        Service</keyword></p><p><keyword id="childwelfare_aas">Child
+                                        Welfare as a Service</keyword></p>
+                        <p><keyword id="dataextractor"><tm trademark="IBM" tmtype="reg">IBM</tm>
+                                        Social Program Management Data Extractor</keyword></p><?Pub Caret -2?>
+                        <p><keyword id="platform"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram
+                                        Social Program Management Platform</keyword></p><p> </p>
+                </section>
+<section>
+<title>Versions</title>
+<p><keyword otherprops="version_8.0" id="version">8.0.0</keyword><keyword
+otherprops="version_8.0.1.0" id="version">8.0.0 and 8.0.1</keyword><keyword
+otherprops="version_8.0.2.0" id="version">8.0.0, 8.0.1, and 8.0.2</keyword><keyword
+otherprops="version_8.0.3.0" id="version">8.0.0, 8.0.1, 8.0.2, and 8.0.3</keyword></p>
+<p><keyword otherprops="version_8.0.2.0" id="CE_Supported_Versions">8.0.2</keyword><keyword
+otherprops="version_8.0.1.0" id="CE_Supported_Versions">8.0.1</keyword><keyword
+id="CE_Supported_Versions" otherprops="version_8.0">8.0.0</keyword><keyword
+otherprops="version_7.0.11.0" id="CE_Supported_Versions">7.0.11</keyword></p>
+<p><keyword otherprops="version_8.0.3.0" id="current_version">8.0.3</keyword><keyword
+otherprops="version_8.0.2.0" id="current_version">8.0.2</keyword><keyword
+otherprops="version_8.0.1.0" id="current_version">8.0.1</keyword></p>
+<p><keyword otherprops="version_8.0.2.0" id="CE_version">5.3.2</keyword><keyword
+                                                  otherprops="version_8.0.1.0" id="CE_version"
+                                                  >5.0.0</keyword><keyword id="CE_version"
+                                                  otherprops="version_8.0">4.0.3</keyword><keyword
+                                                  id="CE_version" otherprops="version_7.0.11.0"
+                                                  >3.0.7</keyword></p>
+</section>
+                                <section id="section_wxd_pfc_nvb">
+                                                <title>Copyright</title>
+                                                <lines><keyword id="copylatest_curr_release">2022</keyword></lines>
+                                </section>
+<section>
+<title translate="no">Cúram guides</title>
+<p><!--IS product name (long):-->
+<keyword id="guidename_defhcr_ic">Application Development Environment for Health Care Reform: Quick
+Installation Guide</keyword></p>
+<p><keyword id="guidename_curam_prerequisites"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram
+Social Program Management Supported Prerequisites</keyword></p>
+</section>
+<section>
+<title><tm trademark="Watson Health" tmtype="tm">Watson Health</tm> communities</title>
+<lines><keyword id="whcc"><tm trademark="IBM Watson" tmtype="reg">IBM Watson</tm> Health Client Community</keyword>
+<keyword id="whsupport"><tm trademark="IBM Watson" tmtype="reg">IBM Watson</tm> Health Support</keyword>
+<keyword id="whrfe"><tm trademark="IBM Watson" tmtype="reg">IBM Watson</tm> Health RFE Community</keyword></lines>
+</section>
+<section>
+<title translate="no">Cúram components</title>
+<p>
+<keyword id="compname_ade">Cúram Application Development Environment (ADE)</keyword></p>
+<p><keyword id="compname_devenv">SPM Development Environment</keyword></p>
+<p>
+<keyword id="compname_sdej">SPM Server Development Environment (SDEJ)</keyword></p>
+<p>
+<keyword id="compname_cdej">SPM Client Development Environment (CDEJ)</keyword></p>
+<p>
+<keyword id="compname_platform_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Program
+Management Platform</keyword></p>
+<p><keyword id="compname_cm"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Care Management
+Platform</keyword></p>
+<p>
+<keyword id="compname_platform_short"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Program
+Management Platform</keyword></p>
+<p><keyword id="VER_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Verification
+Engine</keyword></p>
+<p><keyword id="VER_component_short">Verification Engine</keyword></p>
+<p><keyword id="BROKER_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Evidence
+Broker</keyword></p>
+<p><keyword id="BROKER_component_short">Evidence Broker</keyword></p>
+<p><keyword id="AES_component_long">Evidence Broker</keyword></p>
+<p><keyword id="CPM_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider
+Management</keyword></p>
+<p><keyword id="CPM_component_short">Provider Management</keyword></p>
+<p><keyword id="CCW_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Child
+Welfare</keyword></p>
+<p><keyword id="CCW_component_short">Child Welfare</keyword></p>
+<p><keyword id="UA_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal
+Access</keyword></p>
+<p><keyword id="UA_component_short">Universal Access</keyword></p>
+<p><keyword id="CE_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal
+Access</keyword></p>
+<p><keyword id="CE_component_short">Universal Access</keyword></p>
+<p><keyword id="UARWA_long">IBM Universal Access Responsive Web Application</keyword></p>
+<p><keyword id="UARWA_short">Universal Access Responsive Web Application</keyword></p>
+<p><keyword id="UA_classic">classic client application</keyword></p>
+<p><keyword id="DS_long">IBM Social Program Management Design System</keyword></p>
+<p><keyword id="DS_short">Social Program Management Design System</keyword></p>
+<!--<p><keyword id="WDS">Web Design System</keyword></p>-->
+<p><keyword id="smartnav_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Smart
+Navigator</keyword></p>
+<p><keyword id="smartnav_short">Smart Navigator</keyword></p>
+<p><keyword id="OM_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Outcome
+Management</keyword></p>
+<p><keyword id="OM_component_short">Outcome Management</keyword></p>
+<p><keyword id="APPEALS_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram
+Appeals</keyword></p>
+<p><keyword id="APPEALS_component_short">Appeals</keyword></p>
+<p><keyword id="SEC_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social
+Enterprise Collaboration</keyword></p>
+<p><keyword id="SEC_component_short">Social Enterprise Collaboration</keyword></p>
+<p><keyword id="BI_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Business
+Intelligence and Analytics</keyword></p>
+<p><keyword id="BI_component_short">Business Intelligence and Analytics</keyword></p>
+<p><keyword id="IS_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Income
+Support</keyword></p>
+<p><keyword id="IS_component_short">Income Support</keyword></p>
+<p><keyword id="ISMA_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Income Support
+for Medical Assistance</keyword></p>
+<p><keyword id="ISMA_component_short">Income Support for Medical Assistance</keyword></p>
+<p><keyword id="HCR_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for
+Health Care Reform</keyword></p>
+<p><keyword id="HCR_component_short">Cúram Solution for Health Care Reform</keyword></p>
+<p><keyword>Health Care Reform</keyword></p>
+<p><keyword id="LEM_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Life Event
+Management</keyword></p>
+<p><keyword id="LEM_component_short">Life Event Management</keyword></p>
+<p><keyword id="WC_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Workers
+Compensation</keyword></p>
+<p><keyword id="WC_component_short">Workers Compensation</keyword></p>
+<p><keyword id="YS_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Youth
+Services</keyword></p>
+<p><keyword id="YS_component_short">Youth Services</keyword></p>
+<p><keyword id="CC_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Child
+Care</keyword></p>
+<p><keyword id="CC_component_short">Child Care</keyword></p>
+<p><keyword id="PC_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Patient
+Care</keyword></p>
+<p><keyword id="PC_component_short">Patient Care</keyword></p>
+<!--24 April 18: OPM has been removed from SPM-->
+<!--<p><keyword id="OPM_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider Match with <tm trademark="Watson" tmtype="tm">Watson</tm></keyword></p>-->
+<!--<p><keyword id="OPM_component_short"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider Match</keyword></p>-->
+<p><keyword id="OPM_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider Match
+with <tm trademark="Watson" tmtype="tm">Watson</tm></keyword></p>
+<p><keyword id="OPM_component_short"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider
+Match</keyword></p>
+<p><keyword id="II_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Identity
+Intelligence</keyword></p>
+<p><keyword id="II_component_short">Identity Intelligence</keyword></p>
+<p><keyword id="cagt"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Analysis Documentation Tooling
+(CADT)</keyword></p>
+<p><keyword id="wda_component_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Social Program
+Management Web Development Accelerator</keyword></p>
+<p><keyword id="wda_component_short">Social Program Management Web Development
+Accelerator</keyword></p>
+<p><keyword id="flash_chart_asset_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social
+Program Management 7.0 Charts and Widgets</keyword></p>
+<p><keyword id="rest_api_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram REST
+API</keyword></p>
+</section>
+<section>
+<p><keyword id="flash_chart_asset_short">SPM 7.0 Charts and Widgets</keyword></p>
+</section>
+<section>
+<title>Internal Components</title>
+<p><keyword id="ICM_component_long">Cúram Integrated Case Management</keyword></p>
+<p><keyword id="ICM_component_short">Integrated Case Management</keyword></p>
+<p><keyword id="CCI_component_long">Cúram Common Intake</keyword></p>
+<p><keyword id="CCI_component_short">Common Intake</keyword></p>
+</section>
+<section>
+<title>Prerequisite products</title>
+<p><keyword id="prodname_rsa_long"><tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="Rational" tmtype="reg">Rational</tm> Software Architect Designer</keyword></p>
+<p><keyword id="prodname_rsa_short"><tm trademark="Rational" tmtype="reg">Rational</tm> Software
+Architect Designer</keyword></p>
+<p><keyword id="prodname_rad_long"><tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="Rational" tmtype="reg">Rational</tm> Application Developer</keyword></p>
+<p><keyword id="prodname_rad_short"><tm trademark="Rational" tmtype="reg">Rational</tm> Application
+Developer</keyword></p>
+</section>
+<section>
+<title>Drivers</title>
+<p><keyword id="db2_driver_type4"><tm trademark="Db2" tmtype="reg">Db2</tm> Universal Type 4
+Driver</keyword></p>
+</section>
+<section>
+<title translate="no">Other <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> products and
+components</title>
+<p><keyword translate="no" id="ibm"><tm tmtype="reg" trademark="IBM">IBM</tm>
+</keyword></p>
+<p><keyword translate="no" id="watsonhealth"><tm tmtype="reg" trademark="IBM">IBM</tm> <tm trademark="Watson Health" tmtype="tm">Watson Health</tm></keyword></p>
+<p><keyword translate="no" id="prodname_watson_assistant_long"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Watson" tmtype="tm">Watson</tm> Assistant</keyword></p>
+<p><keyword translate="no" id="prodname_watson_assistant_short"><tm trademark="Watson" tmtype="tm">Watson</tm> Assistant</keyword></p>
+<p><keyword translate="no" id="prodname_bluemix_long"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Bluemix" tmtype="reg">Bluemix</tm></keyword></p>
+<p><keyword id="prodname_cld_long" rev="conrefs_2.2" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="CloudBurst">CloudBurst</tm></keyword></p>
+<p><keyword id="prodname_db2_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm></keyword></p>
+<p><keyword id="prodname_db2_short" translate="no"><tm trademark="Db2" tmtype="reg">Db2</tm></keyword></p>
+<p><keyword id="prodname_db2psf_long" rev="conrefs_5.0" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm>
+<tm tmclass="UNKNOWN" tmtype="reg" trademark="pureScale">pureScale</tm> Feature</keyword></p>
+<p><keyword id="prodname_db2psf_short" rev="conrefs_5.0" translate="no"><tm trademark="Db2" tmtype="reg">Db2</tm>
+<tm tmclass="UNKNOWN" tmtype="reg" trademark="pureScale">pureScale</tm> Feat</keyword></p>
+<p><keyword id="prodname_db2luwf_long" rev="conrefs_5.0" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm> for <tm tmtype="reg" trademark="Linux">Linux</tm>, <tm tmtype="reg" trademark="UNIX">UNIX</tm>, and <tm tmtype="tm" trademark="Windows">Windows</tm>
+Family</keyword></p>
+<p><keyword id="prodname_db2luwf_short" rev="conrefs_5.0" translate="no"><tm trademark="Db2" tmtype="reg">Db2</tm> for LUW Family</keyword></p>
+<p><keyword id="prodname_db2hafluw_long" rev="conrefs_5.0" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm> High Availability Feature for <tm tmtype="reg" trademark="Linux">Linux</tm>, <tm tmtype="reg" trademark="UNIX">UNIX</tm>, and <tm tmtype="tm" trademark="Windows">Windows</tm></keyword></p>
+<p><keyword id="prodname_db2hafluw_short" rev="conrefs_5.0" translate="no"><tm trademark="Db2" tmtype="reg">Db2</tm> HA Feat for LUW</keyword></p>
+<p><keyword id="prodname_db2hadr_long" rev="conrefs_5.0" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm> High Availability Disaster Recovery</keyword></p>
+<p><keyword id="prodname_db2hadr_short" rev="conrefs_5.0" translate="no"><tm trademark="Db2" tmtype="reg">Db2</tm> HADR</keyword></p>
+<p><keyword id="prodname_db2ese_long" rev="conrefs_5.8" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm> Enterprise Server Edition</keyword></p>
+<p><keyword id="prodname_db2ese_short" rev="conrefs_5.8" translate="no"><tm trademark="Db2" tmtype="reg">Db2</tm> ESE</keyword></p>
+<p><keyword id="prodname_hacmp_long" rev="conrefs_5.8" translate="no">High Availability Cluster
+Multi-Processing (<tm tmtype="tm" trademark="HACMP" tmclass="IGNORE">HACMP</tm>) for <tm tmtype="reg" trademark="AIX">AIX</tm></keyword></p>
+<p><keyword id="prodname_hacmp_short" rev="conrefs_5.8" translate="no"><tm tmtype="tm" trademark="HACMP" tmclass="IGNORE">HACMP</tm></keyword></p>
+<p><keyword id="prodname_rtc_long" rev="conrefs_5.7" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm tmtype="tm" trademark="Rational Team Concert" tmclass="IGNORE">Rational Team
+Concert</tm></keyword></p>
+<p><keyword id="prodname_rtc_short" rev="conrefs_5.7" translate="no"><tm tmtype="tm" trademark="Rational Team Concert" tmclass="IGNORE">Rational Team Concert</tm></keyword></p>
+<p><keyword id="prodname_tsamp_long" rev="conrefs_5.0" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="Tivoli">Tivoli</tm> System Automation for Multiplatforms</keyword></p>
+<p><keyword id="prodname_tsamp_short" rev="conrefs_5.3" translate="no">System Automation for
+Multiplatforms</keyword></p>
+<p><keyword id="prodname_lmt_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm> License
+Metric Tool</keyword></p>
+<p><keyword translate="no" id="prodname_installmgr_long"><tm tmtype="reg" trademark="IBM">IBM</tm>
+Installation Manager</keyword></p>
+<p><keyword id="prodname_lmt_short" translate="no">License Metric Tool</keyword></p>
+<p><keyword id="prodname_optim_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="InfoSphere">InfoSphere</tm>
+<tm tmtype="tm" trademark="Optim">Optim</tm> Archive Enterprise Edition</keyword></p>
+<p><keyword translate="no" id="compname_optim"><tm tmtype="reg" trademark="IBM">IBM</tm> Cúram
+Archiving </keyword></p>
+<p><keyword translate="no" id="prodname_optim_tool"><tm tmtype="tm" trademark="Optim">Optim</tm>
+Archive</keyword></p>
+<p><keyword id="prodname_was_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server</keyword></p>
+<p><keyword id="prodname_was_short" translate="no"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server</keyword></p>
+<p><keyword id="prodname_wasnd_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server Network
+Deployment</keyword></p>
+<p><keyword id="prodname_wasnd_short" translate="no"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server Network Deployment</keyword></p>
+<p><keyword translate="no" id="prodname_lib_long"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server Liberty</keyword></p>
+<p><keyword translate="no" id="prodname_lib_short"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Liberty</keyword></p>
+<p><keyword translate="no" id="prodname_waszos_long"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server for <tm trademark="z/OS" tmtype="reg">z/OS</tm></keyword></p>
+<p><keyword translate="no" id="prodname_waszos_short"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Application Server for <tm trademark="z/OS" tmtype="reg">z/OS</tm></keyword></p>
+<p><keyword id="prodname_tds_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="Tivoli">Tivoli</tm> Directory Server</keyword></p>
+<p><keyword id="prodname_tds_short" translate="no"><tm tmtype="reg" trademark="Tivoli">Tivoli</tm>
+Directory Server</keyword></p>
+<p><keyword id="prodname_wps_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Portal Server</keyword></p>
+<p><keyword id="prodname_wps_short" translate="no"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Portal Server</keyword></p>
+<p><keyword id="prodname_wprs_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Process Server</keyword></p>
+<p><keyword id="prodname_wprs_short" translate="no"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Process Server</keyword></p>
+<p><keyword translate="no" id="prodname_wct_long"><tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Customization Toolbox</keyword></p>
+<p><keyword translate="no" id="prodname_tradeoffanalytics">Tradeoff Analytics</keyword></p>
+<p><keyword translate="no" id="prodname_watson"><tm trademark="Watson" tmtype="tm" tmclass="IGNORE"
+>Watson</tm></keyword></p>
+<p><keyword translate="no" id="prodname_isam"><tm tmtype="reg" trademark="IBM">IBM</tm> Security
+Access Manager</keyword></p>
+<p><keyword translate="no" id="prodname_isva"><tm tmtype="reg" trademark="IBM">IBM</tm> Secure Verify
+Access</keyword></p>
+<p><keyword translate="no" id="zos"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="z/OS" tmtype="reg">z/OS</tm></keyword></p>
+<p><keyword translate="no" id="db2zos"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm trademark="Db2" tmtype="reg">Db2</tm> for <tm trademark="z/OS" tmtype="reg">z/OS</tm></keyword></p>
+<p><keyword translate="no" id="appscan"><tm tmtype="reg" trademark="IBM">IBM</tm> Security <tm trademark="AppScan" tmtype="reg">AppScan</tm></keyword></p>
+<!--Does the ISC have a brand?-->
+<p><keyword id="compname_https_long" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm> HTTP
+Server</keyword></p>
+<p><keyword translate="no" id="compname_oraclehttp_long">Oracle HTTP Server</keyword></p>
+<!--Note from Leigh Davidson: When possible, use a generic, translatable term like "the user interface" instead of using ISC.-->
+<p><keyword id="compname_isc_long" translate="yes">Integrated Solutions Console</keyword></p>
+<p><keyword id="compname_isc_abbrev" translate="yes">ISC</keyword></p>
+<p><keyword id="compname_webreplay" translate="yes">Web Replay</keyword></p>
+<p><keyword id="kubernetes_service" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cloud
+Kubernetes Service</keyword></p>
+<p><keyword translate="no" id="kubernetes">Kubernetes</keyword></p>
+<p><keyword translate="no" id="ibm_mqlts_long"><tm trademark="IBM" tmtype="reg">IBM</tm> MQ Long
+Term Support</keyword></p>
+<p><keyword translate="no" id="ibm_mqlts_short"><tm trademark="IBM" tmtype="reg">IBM</tm> MQ
+LTS</keyword>
+</p>
+                                                <p><keyword translate="no" id="ibm_mqcd_long"><tm
+                                                  trademark="IBM" tmtype="reg">IBM</tm> MQ
+                                                  Continuous Delivery</keyword></p>
+                                                <p><keyword translate="no" id="ibm_mqlcd_short"><tm
+                                                  trademark="IBM" tmtype="reg">IBM</tm> MQ
+                                                  CD</keyword>
+                                                </p>
+<p><keyword translate="no" id="ibm_mq"><tm trademark="IBM" tmtype="reg">IBM</tm> MQ</keyword>
+</p>
+<p><keyword id="carbon">Carbon</keyword></p>
+<p><keyword translate="no" id="carbon_long"><tm trademark="IBM" tmtype="reg">IBM</tm> Carbon Design
+System</keyword>
+</p>
+<p><keyword id="ibm_support"><tm trademark="IBM Watson" tmtype="reg" tmclass="IGNORE">IBM</tm>
+Support</keyword></p>
+<p><keyword id="ibm_support_ass"><tm trademark="IBM Watson" tmtype="reg" tmclass="IGNORE">IBM</tm>
+Support Assistant</keyword></p>
+<p><keyword id="ibm_support_asslite"><tm trademark="IBM Watson" tmtype="reg" tmclass="IGNORE"
+>IBM</tm> Support Assistant Lite</keyword></p>
+<p><keyword id="ibm_support_assdata"><tm trademark="IBM Watson" tmtype="reg" tmclass="IGNORE"
+>IBM</tm> Support Assistant Data Collector</keyword></p>
+<p><keyword id="ibm_assistonsite"><tm trademark="IBM Watson" tmtype="reg" tmclass="IGNORE">IBM</tm>
+Assist On-Site</keyword></p>
+</section>
+<section>
+<title translate="no">Non-<tm trademark="IBM" tmtype="reg">IBM</tm> products</title>
+<p><keyword translate="no" id="adobe"><tm trademark="Adobe" tmtype="tm">Adobe</tm></keyword></p>
+<p><keyword id="prodname_birt_long" translate="no">Business Intelligence and Reporting Tools
+</keyword></p>
+<p><keyword id="prodname_birt_abbrev" translate="no">BIRT</keyword></p>
+<p><keyword translate="no" id="microsoft"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm></keyword></p>
+<p><keyword id="prodname_mocs_long" rev="conrefs_2.3" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Office Communications Server</keyword></p>
+<p><keyword id="prodname_mssql_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm> SQL Server</keyword></p>
+<p><keyword id="prodname_mssql_short" translate="no">SQL Server</keyword></p>
+<p><keyword id="prodname_msad_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Active Directory</keyword></p>
+<p><keyword id="prodname_msad_short" translate="no">Active Directory</keyword></p>
+<p><keyword id="prodname_ora_long" translate="no">Oracle Database</keyword></p>
+<p><keyword id="prodname_orascan_long" rev="conrefs_5.8" translate="no">Oracle Single Client Access
+Name</keyword></p>
+<p><keyword id="prodname_orascan_short" rev="conrefs_5.8" translate="no">Oracle SCAN</keyword></p>
+<p><keyword id="prodname_ora_short" translate="no">Oracle</keyword></p>
+<p><keyword id="prodname_wlg_long" translate="no">Oracle WebLogic Server</keyword></p>
+<p><keyword id="prodname_wlg_short" translate="no">WebLogic Server</keyword></p>
+<p><keyword id="prodname_ora_rac_long" rev="conrefs_5.2" translate="no">Oracle Real Application
+Clusters</keyword></p>
+<p><keyword id="prodname_ora_rac_short" rev="5.2" translate="no">Oracle RAC</keyword></p>
+<p><keyword id="prodname_ffox_long" translate="no">Firefox</keyword></p>
+<p><keyword translate="no" id="google">Google</keyword></p>
+<p><keyword translate="no" id="chrome">Chrome</keyword></p>
+<p><keyword translate="no" id="chromium">Chromium</keyword></p>
+<p><keyword id="prodname_ie_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Internet Explorer</keyword></p>
+<p><keyword id="prodname_ie_short" translate="no">Internet Explorer</keyword></p>
+<p><keyword id="prodname_vmw_long" translate="no">VMware</keyword></p>
+<p><keyword id="prodname_vsvr_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Virtual Server</keyword></p>
+<p><keyword translate="no" id="prodname_MSvis_studiocode"><tm trademark="Microsoft" tmtype="tm">Microsoft</tm> Visual Studio Code</keyword></p>
+<p><keyword translate="no" id="MS_Word"><tm trademark="Microsoft" tmtype="tm">Microsoft</tm>
+Word</keyword></p>
+<p><keyword translate="no" id="MS_Excel"><tm trademark="Microsoft" tmtype="tm">Microsoft</tm>
+Excel</keyword></p>
+<p><keyword translate="no" id="prodname_apache_http">Apache HTTP Server</keyword></p>
+<p><keyword translate="no" id="prodname_javascript"><tm trademark="JavaScript" tmtype="tm">JavaScript</tm></keyword></p>
+<p><keyword translate="no" id="prodname_java"><tm trademark="Java" tmtype="tm">Java</tm></keyword></p>
+<p><keyword id="liberty_project" translate="no">Open Liberty</keyword></p>
+<p><keyword id="sprint" translate="no">Sprint</keyword></p>
+<p><keyword id="tapestry" translate="no">Tapestry</keyword></p>
+<p><keyword id="chef" translate="no">Chef</keyword></p>
+<p><keyword id="jenkins" translate="no">Jenkins</keyword></p>
+<p><keyword translate="no" id="helm">Helm</keyword></p>
+<p><keyword id="nodejs" translate="no"><tm tmtype="reg" trademark="IBM">Node.js</tm></keyword></p>
+<p><keyword id="docker" translate="no"><tm trademark="Docker" tmtype="reg">Docker</tm></keyword></p>
+<p><keyword translate="no" id="Swagger">Swagger</keyword></p>
+<p><keyword translate="no" id="log4j2">Apache Log4j 2</keyword></p>
+<p><keyword translate="no" id="react">React</keyword></p>
+</section>
+<section>
+<title translate="no">Operating system names</title>
+<p><keyword id="os_aix_short" translate="no"><tm tmtype="reg" trademark="AIX">AIX</tm></keyword></p>
+<p><keyword id="os_hpux" rev="conrefs_1.4" translate="no">HP-UX</keyword></p>
+<p><keyword id="os_systemi" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="System i">System i</tm></keyword></p>
+<p><keyword id="os_systemp" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="System p" tmclass="IGNORE">System p</tm></keyword></p>
+<p><keyword id="os_systemz" translate="no"><tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="System z">System z</tm></keyword></p>
+<p><keyword id="os_j2ee_abbrev" translate="no"><tm trademark="Java" tmtype="tm">Java</tm> Platform,
+Enterprise Edition</keyword></p>
+<p><keyword id="os_j2ee_long" translate="no"><tm trademark="Java" tmtype="tm">Java</tm> Platform,
+Enterprise Edition</keyword></p>
+<p><keyword translate="no" id="os_j2ee_short"><tm trademark="Java" tmtype="tm">Java</tm>
+EE</keyword></p>
+<p><keyword id="os_lin_short" translate="no"><tm tmtype="reg" trademark="Linux">Linux</tm></keyword></p>
+<p><keyword id="os_zlin_long" translate="no"><tm tmtype="reg" trademark="Linux">Linux</tm> on <tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="System z">System z</tm></keyword></p>
+<p><keyword id="os_win_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm></keyword></p>
+<p><keyword translate="no" id="os_win10_long"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> 10</keyword></p>
+<p><keyword id="os_win7_long" rev="conrefs_2.7" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> 7</keyword></p>
+<p><keyword id="os_winsrv_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> Server</keyword></p>
+<p><keyword id="os_xp_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> XP</keyword></p>
+<p><keyword id="os_vista_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> Vista</keyword></p>
+<p><keyword id="os_2000_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> 2000</keyword></p>
+<p><keyword id="os_2003_long" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> Server 2003</keyword></p>
+<p><keyword id="os_2008_long" rev="conrefs_1.5" translate="no"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+<tm tmtype="tm" trademark="Windows">Windows</tm> Server 2008</keyword></p>
+<p><keyword translate="no" id="ms_edge"><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+Edge</keyword></p>
+<p><keyword id="powershell">PowerShell</keyword></p>
+<p><keyword id="os_rhel_long" translate="no"><tm trademark="Red Hat" tmtype="reg">Red Hat</tm> Enterprise <tm tmtype="reg" trademark="Linux">Linux</tm></keyword></p>
+<p><keyword id="rh_os"><tm trademark="Red Hat" tmtype="reg">Red Hat</tm>
+<tm trademark="OpenShift" tmtype="reg">OpenShift</tm></keyword></p>
+<p><keyword id="OCP"><tm trademark="Red Hat" tmtype="reg">Red Hat</tm>
+<tm trademark="OpenShift" tmtype="reg">OpenShift</tm> Container Platform</keyword></p>
+<p><keyword id="os_sol_short" translate="no">Solaris</keyword></p>
+<p><keyword id="os_sol_long" rev="conrefs_3.7" translate="no">Oracle Solaris</keyword></p>
+<p><keyword id="os_suse_long" translate="no">SUSE <tm tmtype="reg" trademark="Linux">Linux</tm>
+Enterprise Server</keyword></p>
+<p><keyword id="os_unix_short" translate="no"><tm tmtype="reg" trademark="UNIX">UNIX</tm></keyword></p>
+<p><keyword id="os_win_short" translate="no"><tm tmtype="tm" trademark="Windows">Windows</tm></keyword></p>
+<p><keyword id="os_winsrv_short" translate="no"><tm tmtype="tm" trademark="Windows">Windows</tm>
+Server</keyword></p>
+<p><keyword id="os_vista_short" translate="no"><tm tmtype="tm" trademark="Windows">Windows</tm>
+Vista</keyword></p>
+</section>
+<section>
+<title>SPM uicontrols</title>
+<lines><!--25 Aug 2017: Adding keyword for Evidence Sharing uicontrol for use in admin commands, as might be updated to Evidence Broker, pending decision--><uicontrol id="uic_evsharing">Evidence Sharing</uicontrol></lines>
+</section>
+</refbody>
+
+</reference><?Pub *0000018734?><?tm 1622748561599 194 z/OS||pureScale||Windows||WebSphere||Watson Health||Watson||UNIX||Tivoli||System z||System p||System i||Red Hat||Rational Team Concert||Rational||Optim||OpenShift||Microsoft||Linux||JavaScript||Java||InfoSphere||IBM Watson||IBM||HACMP||Docker||Db2||CloudBurst||Bluemix||AppScan||Adobe||AIX ?>

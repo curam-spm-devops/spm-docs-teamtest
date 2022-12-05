@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter2KeyboardRTE" xml:lang="en-us">
+<title>Rich Text Editor</title>
+<shortdesc>You can enter formatted text information in the Rich Text Editor with a keyboard or
+screen reader by placing focus on the Rich Text Editor toolbar.</shortdesc><?Pub Caret 78?>
+<taskbody>
+<context><p>The Rich Text Editor in the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+application enables users to enter, format, and style text. By default, focus is given to the text
+area in the editor that allows users to enter unformatted text information. To enter formatted text
+information, you must access the Rich Text Editor toolbar. </p>
+<p>Use the following steps to enter formatted text with a keyboard, screen reader, or a combination
+of both:</p></context>
+<steps>
+<step>
+<cmd>Give focus to the Rich Text Editor text area by using the Tab key.</cmd>
+</step>
+<step><cmd>Press Alt+F10 to give focus to the toolbar.</cmd></step>
+<step>
+<cmd>Navigate through options in the toolbar by using the Tab key or the Up Arrow or Down Arrow
+keys.</cmd>
+</step>
+<step><cmd>Press Enter to select an option in the toolbar. The focus is automatically brought back
+to the text area.</cmd></step>
+<step><cmd>Press Esc to exit the toolbar without making a selection.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001496?>

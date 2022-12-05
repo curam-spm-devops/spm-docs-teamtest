@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="d1e86" xml:lang="en-us">
+<title>The <keyword conref="../common_files/conrefs.dita#conrefs/compname_ade"/></title>
+<shortdesc>IBM Cúram provides an environment for producing Java EE-compliant
+applications for social enterprises.</shortdesc>
+<conbody>
+<p>This environment includes the following features:</p>
+<ul>
+<li>Development aids that make it easier to produce n-tier Java EE-compliant
+applications.</li>
+<li>A high-level business infrastructure that is needed by most enterprise-class
+systems, and especially social enterprises. In particular, infrastructure
+is provided to allow the capture of eligibility and entitlement rules
+for products or programs, and to run these rules within IBM Cúram
+applications.</li>
+<li>A UML application model for these industries.</li>
+<li>Commercial off-the-shelf software components that are based on
+the application model.</li>
+<li>A pre-built reference application that is constructed with these
+components.</li>
+</ul>
+<section id="section_e41_dwr_wfb">
+<title>Development Environment objectives</title>
+<p>A summary of the Development Environment objectives.</p>
+<dl>
+<dlentry>
+<dt>Focus on the business problem:</dt>
+<dd>IBM Cúram minimizes the amount of non-business-specific functionality that needs to be
+developed. Because developers are freed up from some of the more tedious and error-prone aspects of
+client/server development, they can spend more time on activities directly concerned with the
+business solution.</dd>
+</dlentry>
+<dlentry>
+<dt>Model-based development:</dt>
+<dd>The starting point for all IBM Cúram software development is a platform-independent application
+model, developed using the Unified Modeling Language (UML).</dd>
+</dlentry>
+<dlentry>
+<dt>Code generation:</dt>
+<dd>Many parts of an application are formulaic in nature, and can be expressed concisely through
+stereotypes and patterns in the application design. By adhering to a model-driven approach, the
+tools provided with the environment maximize the amount of code that can be generated.</dd>
+</dlentry>
+<dlentry>
+<dt>Avoidance of platform dependencies:</dt>
+<dd>The IBM Cúram architecture packages specific platform dependencies in generated code and
+infrastructure components, minimizing the effects of changing them at a later stage, and thus
+maximizing the architecture's portability.</dd>
+</dlentry>
+<dlentry>
+<dt>Use of recognized architectural patterns:</dt>
+<dd>The IBM Cúram architecture makes extensive use of patterns, such as factory and proxy
+mechanisms, to enhance application maintainability, performance and portability.</dd>
+</dlentry>
+<dlentry>
+<dt>Simplified user interface development:</dt>
+<dd>Considerable effort can be expended producing quality user interfaces. IBM Cúram generates user
+interfaces based on simple platform-independent definitions, resulting in a dramatic increase in
+developer productivity.</dd>
+</dlentry>
+<dlentry>
+<dt>Industry-standard applications:</dt>
+<dd>IBM Cúram facilitates easier application development, producing robust client/server
+applications based on industry-standard technologies. Runtime performance, cross-platform
+deployment, and user interface elegance are key goals of IBM Cúram application development.</dd>
+</dlentry>
+</dl>
+</section>
+</conbody>
+</concept>
+<?Pub *0000001201?>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the database driver data source</title>
+<titlealts>
+<searchtitle>Configure the database driver data source</searchtitle>
+</titlealts>
+<shortdesc>Add the data source for the database driver and configure the properties for the data
+source.</shortdesc>
+<taskbody>
+<context>
+<p>Perform the following list of steps for each of the data sources. For each data source,
+substitute <codeph>curamdb</codeph>, <codeph>curamsibdb</codeph>, and <codeph>curamtimerdb</codeph>
+for <varname>&lt;DatasourceName&gt;</varname>. <note>In the data source name, do not use angle
+brackets.</note></p>
+</context>
+<steps>
+<step><cmd>Select <uicontrol>DB2 Using IBM JCC Driver(XA)</uicontrol> that is displayed on the
+<uicontrol>JDBC Providers</uicontrol> list. The configuration screen for the provider is
+displayed.</cmd></step>
+<step><cmd>Select the <uicontrol>Data sources</uicontrol> link that is listed under
+<uicontrol>Additional Properties</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to add a data source.</cmd></step>
+<step><cmd>Use the following list of properties for the fields:</cmd><info>
+<ul>
+<li><uicontrol>Data source name</uicontrol>
+<varname>&lt;DatasourceName&gt;</varname></li>
+<li><uicontrol>JNDI name</uicontrol>
+<varname>jdbc/&lt;DatasourceName&gt;</varname></li>
+</ul>
+</info></step>
+<step><cmd>Select <uicontrol>Next</uicontrol> to continue.</cmd></step>
+<step><cmd>Use the following list of properties for the fields:</cmd><info>
+<ul>
+<li><uicontrol>Driver type</uicontrol> 4.</li>
+<li><uicontrol>Database name</uicontrol> The name of the Db2 database.</li>
+<li><uicontrol>Server name</uicontrol> The name of the Db2 database server.</li>
+<li><uicontrol>Port number</uicontrol> The Db2 database server port.</li>
+</ul>
+<p>Ensure that the <uicontrol>Use this data source in container managed persistence
+(CMP)</uicontrol> checkbox is selected.</p>
+</info><!--<info><p>Select <uicontrol>Next</uicontrol>.</p></info><info><p><uicontrol>Database name</uicontrol> : The name of the DB2 database;</p><p><uicontrol>Server name</uicontrol> : The name of the DB2 database server;</p><p><uicontrol>Port number</uicontrol> : The DB2 database server port;</p><p>Ensure that the "Use this data source in container managed persistence (CMP)" checkbox is checked.</p><p/></info>--></step>
+<step><cmd>Select <uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Use the following list of properties for the fields:</cmd><info>
+<ul>
+<li>Set the <uicontrol>Component-managed authentication alias</uicontrol> drop-down value to
+<varname>&lt;valid for database&gt;</varname>.</li>
+<li>Set the <uicontrol>Mapping-configuration alias</uicontrol> drop-down value to
+DefaultPrinicipalMapping.</li>
+<li>Set the <uicontrol>Container-managed authentication alias</uicontrol> drop-down value to
+<varname>&lt;valid for database&gt;</varname> where the <varname>&lt;valid for
+database&gt;</varname> alias used is the alias that you configured in the security setting. For more
+information, see the <cite>Creating the Data Source Login Alias</cite> related link. </li>
+</ul>
+</info><!--<info><p>Set the <uicontrol>Mapping-configuration alias</uicontrol> drop down value to: DefaultPrinicipalMapping</p></info><info><p>Set the <uicontrol>Container-managed authentication alias</uicontrol> drop down value to: <varname>&lt;valid for database&gt;</varname>;</p><p>where the <varname>&lt;valid for database&gt;</varname> alias used is the one set up in the security setting. For more information, see the <cite>Creating the Data Source Login Alias</cite> related link.</p></info>--><info>
+<p>Unless a specific change is required, do not modify the other fields.</p>
+</info></step>
+<step><cmd>Select <uicontrol>Next</uicontrol> to continue.</cmd></step>
+<step><cmd>Select <uicontrol>Finish</uicontrol> to confirm the changes and continue.</cmd></step>
+<step><cmd>Select the newly created <varname>DatasourceName</varname> data source from the displayed
+list.</cmd></step>
+<step><cmd>Select the <uicontrol>Custom Properties</uicontrol> link in <uicontrol>Additional
+Properties</uicontrol>.</cmd></step>
+<step><cmd>Select <option>fullyMaterializeLobData</option>.</cmd></step>
+<step><cmd>Set the <option>value</option> to <uicontrol>false</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the change.</cmd></step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the port access</title>
+<titlealts>
+<searchtitle>Configure the port access</searchtitle>
+</titlealts>
+<shortdesc>Configure the port access.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the appropriate server from the list.</cmd></step>
+<step><cmd>Select the <uicontrol>Ports</uicontrol> link in the <uicontrol>Communications</uicontrol>
+section.</cmd></step>
+<step><cmd>Click <uicontrol>details</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>New</uicontrol> and set the following fields for the Client TCP/IP
+port:</cmd>
+<info>
+<ul>
+<li><uicontrol>User-defined Port Name</uicontrol> : <tt>CuramClientEndPoint</tt></li>
+<li><uicontrol>Host</uicontrol>: <tt>*</tt></li>
+<li><uicontrol>Port</uicontrol>: <tt>9044</tt></li>
+</ul>
+</info></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to apply the changes.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> and set the following fields for the WebServices TCP/IP
+port:</cmd><info>
+<ul>
+<li><uicontrol>User-defined Port Name</uicontrol>: <tt>CuramWebServicesEndPoint</tt></li>
+<li><uicontrol>Host</uicontrol>: <tt>*</tt></li>
+<li><uicontrol>Port</uicontrol>: <tt>9082</tt></li>
+</ul>
+</info>
+</step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to apply the changes.</cmd></step>
+<step><cmd>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application Servers</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the relevant server from the list.</cmd></step>
+<step><cmd>Expand the <uicontrol>Web Container Settings</uicontrol> branch in the
+<uicontrol>Container Settings</uicontrol> section.</cmd></step>
+<step><cmd>Select the <uicontrol>Web container transport chains</uicontrol> link;</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> and set the following fields for the Client transport
+chain:</cmd>
+<info>
+<ol>
+<li><uicontrol>Name</uicontrol>: <tt>CuramClientChain</tt></li>
+<li><uicontrol>Transport Chain Template</uicontrol>: WebContainer-Secure</li>
+<li>Select <uicontrol>Next</uicontrol></li>
+<li><uicontrol>Use Existing Port</uicontrol>: CuramClientEndPoint</li>
+<li>Select <menucascade><uicontrol>Next</uicontrol><uicontrol>Finish</uicontrol></menucascade></li>
+</ol>
+</info></step>
+<step><cmd>Select <uicontrol>New</uicontrol> and set the following fields for the WebServices
+transport chain:</cmd>
+<info>
+<ol>
+<li><uicontrol>Name</uicontrol>: <tt>CuramWebServicesChain</tt></li>
+<li><uicontrol>Transport Chain Template</uicontrol>: WebContainer</li>
+<li>Select <uicontrol>Next</uicontrol></li>
+<li><uicontrol>Use Existing Port</uicontrol>: CuramWebServicesEndPoint</li>
+<li>Select <menucascade><uicontrol>Next</uicontrol><uicontrol>Finish</uicontrol></menucascade></li>
+</ol>
+</info></step>
+<step><cmd>Select the newly created <uicontrol>CuramClientChain</uicontrol>.</cmd></step>
+<step><cmd>Select the <uicontrol>HTTP Inbound Channel</uicontrol> link.</cmd></step>
+<step><cmd>Ensure the <uicontrol>Use persistent keep alive connections</uicontrol> check box is
+checked.</cmd></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the addition.</cmd></step>
+<step><cmd>Navigate to <menucascade><uicontrol>Environment</uicontrol><uicontrol>Virtual
+hosts</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to add a new <tt>Virtual Host</tt> by setting the
+following fields</cmd>
+<info>
+<p><uicontrol>Name</uicontrol> = <varname>client_host</varname></p>
+<p>Repeat this step, replacing <varname>client_host</varname> with
+<varname>webservices_host</varname>.</p>
+</info></step>
+<step><cmd>Select the <uicontrol>client_host</uicontrol> link from the list of virtual hosts.</cmd>
+</step>
+<step><cmd>Select the <uicontrol>Host Aliases</uicontrol> link in the <uicontrol>Additional
+Properties</uicontrol> section.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to add a new <tt>Alias</tt> by setting the following
+fields.</cmd><info>
+<ul>
+<li><uicontrol>Host Name</uicontrol> = *</li>
+<li><uicontrol>Port</uicontrol> = <varname>9044</varname><p>where <varname>9044</varname> is the
+port used in step 5. Repeat this step for the other Virtual Host and port used (e.g.
+webservices_host, 9082);</p></li>
+</ul>
+</info></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the addition;</cmd></step>
+<step><cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/>.</cmd></step>
+</steps>
+</taskbody>
+</task>

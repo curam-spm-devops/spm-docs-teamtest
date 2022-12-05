@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="spm_800_whatsnew" xml:lang="en-us">
+<title>What's new in <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.0</title>
+<shortdesc>Read about updates and enhancements in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.0, released on 29 July
+2021.</shortdesc>
+<conbody>
+<section>
+<p otherprops="xhtml" id="pdf">A <xref
+href="https://www.ibm.com/docs/en/SS8S5A/pdf/spm_whatsnew_80x.pdf" format="pdf" scope="external"
+>PDF</xref> version of this information is also available.</p>
+<p id="rns">For important installation information, and to learn more about product improvements and
+resolved issues in 8.0.0, see also the <xref
+href="http://www-01.ibm.com/support/docview.wss?uid=swg27037963" format="html" scope="external"
+>Release Notes</xref>.</p>
+</section>
+<section id="sectionlist">
+<p>
+<ul>
+<li><xref href="#spm_800_whatsnew/ibmdocs" format="dita"/></li>
+</ul>
+</p>
+<p>Updates for caseworkers:</p>
+<ul>
+<li><xref href="#spm_800_whatsnew/ui_impr" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/caseworker_ui" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/watsonassistantjwt" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/wordintass" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/evidbroker" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/empsearch" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/casegrpelig" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/summarypdf" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/uniaccess" format="dita"/></li>
+</ul>
+<p>Updates for administrators:</p>
+<ul>
+<li><xref href="#spm_800_whatsnew/addproduct" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/cerreassess" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/ieglog" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/milestonebatch" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/apachel4j" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/extapis" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/ejbtimer" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/perftuning" format="dita"/></li>
+</ul>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/adobe"/> Flash updates:</p>
+<ul>
+<li><xref href="#spm_800_whatsnew/flasheditors" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/flashwidgets" format="dita"/></li>
+</ul>
+<p>Security updates:</p>
+<ul>
+<li><xref href="#spm_800_whatsnew/ssowls" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/securexml" format="dita"/></li>
+<li><xref href="#spm_800_whatsnew/csrf" format="dita"/></li>
+</ul>
+<p>Removed features:</p>
+<ul>
+<li><xref href="#spm_800_whatsnew/coderemovals" format="dita"/></li>
+</ul>
+<p otherprops="8.0.1">What's new for other versions:<ul>
+<li><xref href="spm_801_whatsnew.dita">What's new in 8.0.1</xref></li>
+<li otherprops="8.0.2"><xref href="spm_802_whatsnew.dita">What's new in 8.0.2</xref></li>
+<li otherprops="8.0.3"><xref href="spm_803_whatsnew.dita">What's new in 8.0.3</xref></li>
+</ul></p>
+</section>
+<section id="ibmdocs">
+<title>Introducing <keyword conref="../common_files/conrefs.dita#conrefs/ibm"/>
+Documentation</title>
+<p>All existing <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+documentation and content is now hosted in <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Documentation. <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Documentation, which replaces <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Knowledge Center, was released in April 2021 and
+all Knowledge Center URLs are redirected to <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Documentation. <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Documentation has a modernized user experience
+that is hosted  on <keyword conref="../common_files/conrefs.dita#conrefs/ibm"/> Cloud and was built
+by using <keyword conref="../common_files/conrefs.dita#conrefs/ibm"/> Design Language to make it
+easier to find content. Its design has been guided by analysis of metrics, and extensive user
+research.</p>
+<p>You can find the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+documentation family page at <xref href="https://www.ibm.com/docs/spm" format="html"
+scope="external">ibm.com/docs/spm</xref>. The landing pages include links to get started, such as
+deep dive videos, release notes, and the product download document. The landing pages also have
+quick links to new features documentation, and to other resources, such as links to support pages,
+flashes and alerts, and fixes and updates.</p>
+<p>You can choose to display either the whole table of contents, or just the contents for the
+section that you are interested in. Click the Download PDF link that is displayed at the end of the
+table of contents to access the documentation in PDF format from the PDF library.</p>
+<p otherprops="video">To view a guided tour, see <xref href="https://www.ibm.com/docs" format="html"
+scope="external">ibm.com/docs</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="ui_impr">
+<title>User interface improvements</title>
+<p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> user interface has
+been updated with caseworker productivity and accessibility in mind. New global styling changes to
+typography, color, and icons provide an immediate benefit to the user experience, and help
+caseworkers to read screens more easily. </p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> is incrementally adopting
+components from the open source <xref href="https://v10.carbondesignsystem.com" format="html"
+scope="external">IBM Carbon Design System v10</xref>, with many existing components replaced with Carbon
+equivalents in the 8.0 release. The improved and fully accessible components help caseworkers work
+more efficiently, and provide a more satisfying user experience.</p>
+<p>Modals were a key focus area, as caseworkers use them daily for data entry throughout the
+application. Improved dropdowns, date interactions, and buttons with increased click space are now
+easier for caseworkers to use. Text input controls, checkboxes, and search pop-up controls have also
+been improved. The components are fully responsive to preserve the caseworker experience across
+devices, and to enable caseworkers with a reduced screen size to have multiple documents or screens
+open simultaneously for data entry.</p>
+<p>New layouts, with labels over fields, provide an effective use of space and help caseworkers
+focus on content. Lists have been improved, with dynamic distribution of widths based on the content
+for improved readability. The system-wide improvements can help all caseworkers to efficiently
+deliver benefits and services to citizens.</p>
+<!--<p>A new UI upgrade helper tool means that developers can upgrade to <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> with less manual steps, greater confidence, and lower cost than in previous releases.</p>-->
+<p><!--<dl><dlentry><dt>Color scheme</dt><dd>The overall color scheme was updated to use the <keyword>Carbon</keyword> monochrome scheme, which aligns with accessibility requirements.</dd></dlentry></dl>--><!--<dl><dlentry><dt>Iconography</dt><dd>Icons were refreshed and updated to SVG format to provide sharper images in the user interface. Where possible, icons were aligned with <keyword>Carbon</keyword> icons. Some icons that were not available in <keyword>Carbon</keyword> were replaced with more intuitive versions based on current <keyword>Carbon</keyword> design guidelines.</dd></dlentry></dl>--><!--<dl><dlentry><dt>Typography</dt><dd>The font in the application was updated to IBM Plex.</dd></dlentry></dl>--></p>
+<!--<p>The layout of application pages was updated as follows, including the underlying HTML and CSS:<dl><dlentry><dt>Modals and Clusters</dt><dd>Modals and Clusters are now more responsive and adjust content to the best fit for the available viewport.</dd><dd>Modals now have four width options. The height of a modal automatically adjusts to fit the content.</dd><dd>Clusters render field labels over the field, and wrap values under the field when the width of the viewport is too small.</dd><dd>For more information, see the <xref href="../WebClientReference/r_WEBCREF_Reference1Cluster1.dita" scope="peer">CLUSTER element</xref>.</dd></dlentry></dl><dl><dlentry><dt>Form controls</dt><dd>Many of the most common form controls in forms were updated to be more responsive, for example, text input fields, drop-down menus, date, and date-time controls.</dd></dlentry></dl></p>-->
+<p>For test automation purposes, a new attribute is included in the rendered HTML of the user
+interface in the 8.0 release. The attribute <codeph>data-testid</codeph> has been added to the HTML
+for the UIM components that were updated for the 8.0 release. The addition of this new attribute in
+the HTML makes these UI components more easily and uniquely identifiable for the automation
+frameworks that target them. The improvement enables easier targeting of specific UI components in
+automated framework selectors, which in turn improves the automation script and framework
+maintenance and robustness. The result is that less effort is required when you upgrade to future
+product versions.</p>
+<p otherprops="video"><xref href="https://mediacenter.ibm.com/media/t/1_d51dj469" format="mp4"
+scope="external">Click here for a video presentation about the user interface changes.</xref></p>
+<p>For more detailed information about user interface changes, see <xref
+href="../WebClientReference/c_WEBCREF_Concepts1ApplicationUserInterfaceOverview-801.dita"
+scope="peer">Application user interface overview</xref> and the <cite>Look and Feel</cite> section
+in the release notes.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="caseworker_ui">
+<title>Caseworker experience improvements</title>
+<p>A case overview is now available to address the need for caseworkers to quickly identify key
+information in an integrated case. The new <uicontrol>Overview</uicontrol> tab on integrated cases
+is designed to consolidate the most important case information into cards on a single view, which
+improves the caseworker experience and productivity.</p>
+<p>In the 8.0 release, the case overview contains a configurable Entitlements card that provides
+caseworkers a concise summary with high-level information about eligibility, entitlements, and
+payments across multiple benefits on a case. </p>
+<p>For cases with payments, details about the latest payment and expected next payment are presented
+in an intuitive manner. Caseworkers can expand the payment summaries to see the benefit components,
+deductions, and overpayments or underpayments. Further links are provided, so caseworkers can go
+directly to the full details in the application if needed.</p>
+<p otherprops="video"><xref href="https://mediacenter.ibm.com/media/t/1_046n3dz4" format="mp4"
+scope="external">Click here for a video presentation about the new case overview and Entitlements
+card</xref>.</p>
+<p>For more information about enabling and configuring the case overview tab in the product
+documentation, see <xref href="../IntegratedCaseManagement/c_ICM_case_overview_tab.dita"
+scope="peer">The case overview</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="watsonassistantjwt">
+<title>Virtual assistant support in the caseworker application</title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> now provides support for
+secure integration with <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_watson_assistant_long"/>. Caseworkers can now
+get answers to case specific queries, which reduces the time required to complete tasks. In
+addition, caseworkers are supported with workflow and process guidance.</p>
+<p>Customers can now customize a virtual assistant to link relevant <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> data into caseworker conversations. A
+new GitHub repository provides sample content and guidance for a caseworker virtual assistant. The
+content can be used as a starting point to build custom content and includes the following sample
+use cases: </p>
+<ul>
+<li>Querying data, for example, asking about outstanding verifications on a case or client.</li>
+<li>Caseworker procedures, for example, asking how to update client details for a specific change of
+circumstance.</li>
+</ul>
+<p otherprops="video"><xref href="https://mediacenter.ibm.com/media/t/1_668wvc9s" format="mp4"
+scope="external">Click here for a video presentation about virtual assistants in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/></xref>.</p>
+<p>For more information about the sample content, see <xref
+href="https://merative.github.io/spm-chatbot" format="html" scope="external"/></p>
+<p>For more information about secure integration with Watson Assistant, see <xref
+href="../../Chatbot/ctr_integrate_wa_chatbot.html" format="html" scope="peer">Integrating with
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_watson_assistant_short"/></xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="wordintass">
+<title>Improved Word Integration Assistant</title>
+<p>The Word Integration Assistant client desktop <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_java"/> application enables users to edit
+<keyword conref="../common_files/conrefs.dita#conrefs/MS_Word"/> documents through the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application. Support for the latest
+<keyword conref="../common_files/conrefs.dita#conrefs/ms_edge"/> browser based on <keyword
+conref="../common_files/conrefs.dita#conrefs/chromium"/> has been added. The installation process
+has been improved to make it easier to install the Word Integration Assistant and enhanced
+troubleshooting capabilities have also been provided.</p>
+<p otherprops="video"><xref href="https://mediacenter.ibm.com/media/t/1_yv059s54" format="mp4"
+scope="external">Click here for a video presentation about the Word integration
+improvements.</xref></p>
+<p>For more information, see <xref href="../SystemAdministration/SYSCONFIGInstallWordAsst.dita"
+scope="peer">Installing the Word Integration Assistant</xref> and <xref
+href="../SystemAdministration/SYSCONFIGTshootWordAsst.dita" scope="peer">Troubleshooting scripts for
+the Word Integration Assistant</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="evidbroker">
+<title>Evidence broker improvements </title>
+<!--<p>By using the evidence broker, you can share evidence across multiple cases without the need for caseworkers to intervene unless to resolve conflict or if the system is configured to share evidence for manual review.</p><p>When manually processing incoming evidence, caseworkers might already have the same type of evidence on their case. The incoming evidence is not an exact match, but is comparable and can potentially be used to update the existing evidence.</p><p>The following list outlines ways that the caseworker experience has been enhanced in 8.0.0 when incoming evidence is comparable to existing evidence: <ol><li>Caseworkers can use a new <uicontrol>Update</uicontrol> action to update the existing evidence with the incoming evidence. The <uicontrol>Update</uicontrol> action automatically processes all updates to the existing evidence, including child evidence records, in one step.</li><li>The <uicontrol>Update</uicontrol> action is displayed only when the incoming evidence and existing evidence are similar. The <uicontrol>Update</uicontrol> action is displayed with labels, informational messages, and options that are relevant to the incoming and existing evidence that is being compared. The <uicontrol>Update</uicontrol> action and the associated features provide guidance and the context that is required to help caseworkers to determine whether to update the existing evidence with the incoming evidence or, instead, to add the incoming evidence as new evidence or to ignore it. The following list outlines the types of scenarios for which guidance is provided:<ul><li>The incoming and existing evidence have conflicting information on the same date that must be resolved.</li><li>The incoming and existing evidence can be combined to form a new timeline on the existing case.</li><li>The incoming and existing evidence can be combined to form a new timeline on the existing case and have conflicting information that must also be resolved.</li></ul></li><li>Caseworkers can use an enhanced timeline view to analyze how to process the incoming evidence, for example to understand where the conflicts in the incoming and existing evidence exist.</li><li>The incoming evidence might be the same type as more than one existing evidence type on the case. Now caseworkers are prompted to select the appropriate existing evidence at the beginning of the process. Caseworkers can also view current descriptions of the evidence to help them to select comparable evidence.</li></ol></p>-->
+<!--<p>The caseworker experience related to the processing of logically equivalent evidence has also been enhanced. Where logically equivalent evidence is shared and the incoming evidence has missing mandatory information, labels, informational messages, and icons are displayed to caseworkers to indicate what details are missing and how to provide the details.</p>-->
+<p>Caseworkers can now use an enhanced Evidence Comparison View page to process incoming evidence
+that is comparable to existing evidence. The enhanced view provides caseworkers with the capacity to
+process the incoming evidence in one step by using a new <uicontrol>Update</uicontrol> action. New
+cards and confirmation modals, along with an enhanced timeline of changes view, help to guide
+caseworkers through the process based on the evidence that is being compared.</p>
+<p otherprops="video"><xref href="https://mediacenter.ibm.com/media/t/1_85xqxlr5" format="mp4"
+scope="external">Click here for a video presentation about the evidence broker improvements.
+</xref></p>
+<p>For more information, see <xref href="../AdvancedEvidenceSharing/t_AES_insertevrecord.dita"
+scope="peer">Reviewing evidence on a case's incoming list</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="empsearch">
+<title>Employer search improvements</title>
+<p>When users are recording employments for a participant, users must search for and select a
+registered employer. Previously, prospect employers were always returned in the search results, even
+though users cannot use prospect employers to record an employment. The employer search has been
+enhanced to allow a user to indicate whether to return prospect employers in the search results.</p>
+<p>For more information, see <xref href="../Participant/c_PARTEmployments.dita" scope="peer"
+>Employments</xref> and <xref
+href="../Participant/c_PARTMaintainingAccessingInformationSearchParticipants.dita" scope="peer"
+>Searching for participants</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="casegrpelig">
+<title>Sharing eligibility data between non-MAGI Medicaid and MAGI Medicaid programs uses a new case
+groups-based approach</title>
+<p>MAGI Medicaid eligibility can be denied where an individual is determined eligible for a non-MAGI
+Medicaid program (Traditional Medical Assistance). To support the requirement, information about the
+eligibility decisions on an Income Support case must be shared to an Insurance Affordability case
+that the MAGI Medicaid rules uses to determine eligibility. How eligibility information is shared
+between Income Support non-MAGI Medicaid and Insurance Affordability MAGI Medicaid has been
+enhanced.</p>
+<!--<p>Where an individual is determined eligible for a non-Magi Medicaid program, that is, Traditional Medicaid, the individual might be denied Magi Medicaid. As a result, <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> must share information about the eligibility decisions on an Income Support case to an Insurance Affordability case so that Magi Medicaid rules can use the information to determine eligibility. </p>-->
+<p>Previously, eligibility information between Income Support non-MAGI Medicaid and Insurance
+Affordability MAGI Medicaid was shared by using evidence to represent the eligibility decisions on
+an Income Support case. A new case groups-based approach has been introduced to store and share
+eligibility data for non-MAGI Medicaid programs, for use by MAGI Medicaid rules when determining
+eligibility.</p>
+<p>Using a case groups-based approach to share eligibility data, rather than an evidence-based
+approach, enhances how <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+implements and maintains cascading eligibility. A case groups-based approach is also consistent with
+how other areas of <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> share
+eligibility.</p>
+<p>A hook point has also been introduced to enable organizations to control the non-MAGI Medicaid
+programs that the MAGI Medicaid rules use. Organizations can also use the hook point to determine
+where to store eligibility data.</p>
+<p>For more information, see <xref
+href="../IncomeSupport/c_INCSPRT_CustomizingCascadingEligibilityNonMagiMagi.dita" scope="peer"
+>Customizing cascading eligibility between non-MAGI Medicaid and MAGI Medicaid programs</xref>. For
+more information about storing eligibility decisions for non-MAGI Medicaid programs, see <xref
+href="../IncomeSupport/c_INCSPRT_SettingCertificationPeriod.dita" scope="peer">Setting certification
+period</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="summarypdf">
+<title>Improved summary PDF</title>
+<p>A new template that you can use to create an improved PDF summary of the information that is
+entered by citizens during an online application is now available. The new
+<filepath>IntakeApplicationPDFTemplate.xsl</filepath> template uses the summary page in Intelligent
+Evidence Gathering (IEG) scripts to generate the PDF summary form. You can also customize the header
+and logo for your organization. To benefit from the improved PDF summary, you must configure your
+system to use the new template. For more information, see <xref
+href="../CitizenEngagement/t_CE_configure_pdf_summary_template.html"
+format="html" scope="peer">Configuring the generic PDF summary template</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="uniaccess">
+<title>New in <keyword conref="../common_files/conrefs.dita#conrefs/UA_component_long"/></title>
+<p>For more information about what's new in <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Citizen Engagement, see the <xref
+href="../CitizenEngagement/c_CEINST_UA_release_notes.html"
+format="html" scope="peer">What's new and release notes for <keyword
+conref="../common_files/conrefs.dita#conrefs/UA_component_short"/></xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="addproduct">
+<title>Making it easier to add a product to the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> solution for Health Care Reform </title>
+<p><codeph>HealthCareProductManager</codeph> is the business interface that creates and maintains
+products within the Health Care Reform cascade. Adding a custom product to the Health Care Reform
+cascade requires an implementation of <codeph>HealthCareProductManager</codeph> and, within the
+implementation, the creation and maintenance of the product delivery and case groups records. </p>
+<p>The following list outlines the new class and interface that have been introduced to make the
+implementation of <codeph>HealthCareProductManager</codeph> easier: <ul>
+<li><codeph>HealthCareProductManagerHelper</codeph> is a new class that provides developers with
+methods to create and maintain product delivery cases.</li>
+<li><codeph>HCRCaseGroupsRuleReference</codeph> is a new interface that custom products can
+implement. Custom products specify the Cúram Express Rules (CER) that represent the case groups of
+type member and benefit. The Health Care Reform infrastructure then maintains the case groups of
+type member and benefit as part of the <codeph>maintainCaseGroups</codeph> method that is provided
+in <codeph>HealthCareProductManagerHelper</codeph>.</li>
+</ul></p>
+<p>For more information, see <xref href="../HCRDeveloper/t_hcr_product_management.dita" scope="peer"
+>Product management examples</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="cerreassess">
+<title>Optimizations for Cúram Express Rules (CER) reassessment</title>
+<p>The way that Cúram Express Rules (CER) reassessment processing works has been enhanced. The
+following list outlines the improvements to help optimize the reassessment of cases that are long
+lived and have much static evidence with many changes:<ul>
+<li>Evidence Descriptor caching is now used when retrieving static evidence.</li>
+<li>Data from the EvidenceChangeHistory and AprovalRequest tables that is not required for
+reassessment is no longer being read.</li>
+</ul></p>
+<p>You can use application properties to disable both optimizations. For more information, see <xref
+href="../InsideEligibilityAndEntitlementUsingCER/ctr_InsideCuramEligibilityAndEntitlementUsingCER.dita"
+scope="peer">Developing with Eligibility and Entitlement by using Cúram Express Rules</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="ieglog">
+<title>Intelligent Evidence Gathering (IEG) logging improvement</title>
+<p>New logging functionality has been added to the IEG engine that you can use, in particular, to
+analyze unexpected exceptions. You can deploy the logging functionality at any stage during the
+execution of an IEG script.</p>
+<p>The logging function prints a message to the server logs in the following
+format:<codeblock>=================================================
+Script Execution Failed - Current Script Details:
+=================================================
+Script ID : ...
+Script Version : ...
+Script Type : ...
+Question Page ID : ...
+=================================================</codeblock>The functionality is called when a
+<codeph>NoSuchElement</codeph> exception occurs in the IEG engine. The functionality is accessible
+anywhere in the IEG engine if the script execution details can be accessed, so you can deploy the
+logging functionality wherever new exceptions occur.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="milestonebatch">
+<title>New milestone delivery batch processes use batch streaming infrastructure</title>
+<p>The new batch processes <codeph>ScanMilestoneDeliveryStartDateBatch</codeph> and
+<codeph>ScanMilestoneDeliveryEndDateBatch</codeph> replace the existing
+<codeph>ScanMilestoneDeliveryStartDate</codeph> and <codeph>ScanMilestoneDeliveryEndDate</codeph>
+batch processes. While the new batch processes provide the same functionality, they use the batch
+streaming infrastructure that permits the defining of processing chunks and provides a better
+fail-over strategy.</p>
+<p>The existing <codeph>ScanMilestoneDeliveryStartDate</codeph> and
+<codeph>ScanMilestoneDeliveryEndDate</codeph> batch processes have been deprecated. </p>
+<p>For more information about the new batch processes, see the <xref
+href="../BatchProcesses/r_ctr_batch_process_reference.dita" scope="peer">Cúram batch process
+reference</xref>. <ph otherprops="xhtml">For more information about the deprecated batch processes,
+see <xref href="../product_overview/c_deprecated_features.dita"/>.</ph><ph otherprops="pdf">For more
+information about the deprecated batch processes, see <xref
+href="https://www.ibm.com/docs/en/spm/8.0.0?topic=overview-deprecated-functionality" format="html"
+scope="external">Deprecated functionality</xref>.</ph></p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="apachel4j">
+<title>Introducing <keyword conref="../common_files/conrefs.dita#conrefs/log4j2"/> support</title>
+<p>Because Log4j 1.x has reached end of support, the logging framework that is used in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> has been upgraded to <keyword
+conref="../common_files/conrefs.dita#conrefs/log4j2"/>. For more information, see <xref
+href="https://logging.apache.org/log4j/2.x/" format="html" scope="external"/></p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="extapis">
+<title>Introducing new externalized APIs and classes to support customization</title>
+<p>A set of APIs and classes in the following areas that were previously classified as restricted
+have been externalized.  You can now extend and call the following APIs compliantly from custom
+implementations: <ul>
+<li>Health Care Reform annual renewals processing</li>
+<li>Health Care Reform electronic verification data processing</li>
+<li>Health Care Reform interfaces</li>
+<li>Health Care Reform plan management integration</li>
+<li>Case home page menu</li>
+<li>Intake address data processing</li>
+</ul>For more information about the classes that have been changed in each case, see the <xref
+href="http://www-01.ibm.com/support/docview.wss?uid=swg27037963" format="html" scope="external"
+>Release Notes</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="ejbtimer">
+<title>Introducing support for shared Enterprise <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_java"/> Beans (EJB) persistent timer tables
+for <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/></title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> has been enhanced to
+support shared EJB persistent timer tables for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/>. The timer tables store timer
+information for <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> timers that
+are created from the application.</p>
+<p>The original <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> timer
+infrastructure design is based on traditional deployments of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/>. A separate timer table is created
+for each <keyword conref="../common_files/conrefs.dita#conrefs/prodname_java"/> Virtual Machine
+(JVM) in an on-premises deployment, and a relatively small number of static timer tables are
+created.</p>
+<p>However, a deployment of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/> on <keyword
+conref="../common_files/conrefs.dita#conrefs/kubernetes"/> is more dynamic, where pods are created
+and destroyed based on system demands. If the original timer design is used in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/>, timer tables would be created
+each time that a pod starts. Therefore, orphan timer tables would build up in the database, and a
+database administrator would have to remove the orphan tables.</p>
+<p> The introduction of shared timer tables in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/> drastically reduces the number of
+associated timer tables that would otherwise be created in such a deployment. Therefore, a database
+administrator does not need to manage the timer tables.</p>
+<p>The use of timer tables in traditional <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> deployments is unchanged.</p>
+</section>
+<section id="perftuning">
+<title>Performance tuning guide moved to a GitHub runbook</title>
+<p>To unify on premises and cloud performance tuning information, the performance tuning guide has
+been removed from the documentation. Instead, a single on premises and cloud performance tuning
+runbook has been published in a GitHub repository. For more information, see <xref
+href="https://merative.github.io/spm-performance-tuning/" format="html" scope="external"/>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="flasheditors">
+<title>Removal of <keyword conref="../common_files/conrefs.dita#conrefs/adobe"/> Flash dependencies
+for editors</title>
+<p>You can remove <keyword conref="../common_files/conrefs.dita#conrefs/adobe"/> Flash dependencies
+for <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> by downloading and
+installing the Editor Applications software asset. For <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> 7.0.0 or later, the asset enables
+stand-alone versions of editors that previously needed Flash support in the browser.</p>
+<p>The following editors were updated:</p>
+<p>
+<ul>
+<li id="LI1">Cúram Express Rules (CER) editor</li>
+<li id="LI2">Data Mapping editor</li>
+<li id="LI3">Data Store editor</li>
+<li id="LI4">Intelligent Evidence Gathering (IEG) editor</li>
+<li id="LI5">Decision Matrix editor</li>
+<li id="LI6">Dynamic Evidence editor</li>
+</ul>
+</p>
+<p>For more information, see <xref
+href="../install_DevelopmentEnvironment/install_editor_applications.dita" scope="peer">Installing
+the Editor Applications asset to remove browser Flash dependencies</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="flashwidgets">
+<title>Removal of <keyword conref="../common_files/conrefs.dita#conrefs/adobe"/> Flash dependencies
+for charts and widgets</title>
+<p>Charts and widgets based on <keyword conref="../common_files/conrefs.dita#conrefs/adobe"/> Flex
+have been replaced with responsive versions based on modern React <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> components. The current
+functionality of the charts and widgets has been maintained for existing customers, with enhanced
+accessibility where appropriate. A new color scheme from the IBM Carbon Design System provides an
+accessible and enhanced user experience.</p>
+<p>The following charts and widgets have been updated to improve the user experience and to make
+them accessible:</p>
+<p>
+<ul>
+<li>The Citizen Context Viewer (CCV)
+widget<!-- reduces the amount of navigation that is needed to understand the relationships between people and cases, see <xref href="../CitizenContextViewer/c_CCV_UsingViewing.dita" scope="peer">Viewing client information for family members</xref>. Viewing client information for family members by opening a new CCV for each family member was enhanced to improve the user experience for the CCV users and to make the CCV accessible. The right-click action to view a new CCV for a family member is now replaced by an overflow action (...) for each family member. Select the overflow action (...) to display a hidden overflow menu and then select the <uicontrol>View Citizen Context</uicontrol> option. The drag interaction to change the existing CCV client with a family member was also enhanced to improve the user experience. When a user drags a family member to the top panel of the CCV, the allowable drop area is now highlighted.--></li>
+<li>The Enhanced Client Selection
+widget<!-- is used in Outcome Management to select multiple clients when you create an Outcome Plan, see <xref href="../OutcomeManagement/c_OUTCOMEPlanCreatePlan.dita" scope="peer">Creating an outcome plan for clients</xref>. Removing client information for a family member was enhanced to improve the user experience for the user and to make the Enhanced Client Selection Widget accessible. Removing client information for a family member was enhanced to improve the user experience for the user and to make the Enhanced Client Selection Widget accessible. The right-click <uicontrol>Remove ...</uicontrol> action to remove a family member is now replaced by a <uicontrol>Remove</uicontrol> tertiary button for each family member. Selecting the <uicontrol>Remove</uicontrol> tertiary button removes the family member from the client list. The drag and drop interaction to manage the clients for an outcome plan was also enhanced to provide an accessible and enhanced user experience. When a user drags the CCV Client, family component or a family member to the list of clients that makes up the outcome plan, the allowable drop area is highlighted. An inline error message is displayed if a user drops on a disallowed area. In addition, a new option <b>Add To Client List</b> was added to the overflow action (…) for the CCV Client, family component and each family member. Select the overflow action (...) to display a hidden overflow menu and then select the <uicontrol>Add to Client List</uicontrol> option.--></li>
+<li>The Create Social Enterprise Folder
+widget<!-- is used in Social Enterprise Collaboration to select multiple clients and cases when you create a Social Enterprise Folder. Removing cases and client information for a family member was enhanced to improve the user experience for the user and to make the Create Social Enterprise Folder Widget accessible.--></li>
+<li>The Assessment Delivery Details
+chart<!-- is used in Outcome Management to provide a view of Assessment details that helps with usability. It provides an embedded Bar and Radar chart when the Assessment list item is expanded from the <uicontrol>Assessments &amp; Factors</uicontrol> tab of the Outcome Plan. To improve the user experience and to make the Assessment Delivery Details Chart accessible, an enlarge button for maximizing and minimizing the Chart is available. Labels are truncated to better maintain the scale and readability of the Chart. Users can click the enlarge button to see a larger view and to read truncated labels.--></li>
+<li>The Assessment Tracking
+chart<!-- is used in Income Support to enable a caseworker to quickly establish strengths and needs. To improve the user experience and to make the Assessment Tracking Chart accessible, an enlarge button for maximizing and minimizing the Chart is available. Labels are truncated to better maintain the scale and readability of the Chart. Users can click the enlarge button to see a larger view and to read truncated labels.--></li>
+<li>The Factor Activities
+widget<!-- is a calendar view widget that is used on the <uicontrol>Activities</uicontrol> section of the <wintitle>Factors</wintitle> home page. A <uicontrol>Today</uicontrol> button, which brings the user back to the current date, was added to the Factor Activities Widget to improve the user experience.--></li>
+<li>Horizontal Bar
+charts<!-- are used throughout the application. For example, to let supervisors see what tasks are due for users in the next week or month. To improve the user experience and to make Horizontal Bar Chart accessible, an enlarge button for maximizing and minimizing the Chart is available. Labels are truncated to better maintain the scale and readability of the Chart. Users can click the enlarge button to see a larger view and to read truncated labels.--></li>
+</ul>
+</p>
+<p otherprops="video"><xref format="mp4" scope="external"
+href="https://mediacenter.ibm.com/media/t/1_nv0ynlnt">Click here for a video presentation about the
+flex charts and widgets replacement.</xref></p>
+<p>For more information, see the <xref href="https://www.ibm.com/support/pages/node/6378334"
+format="html" scope="external"><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"
+/> has removed Adobe Flash dependencies in 2020</xref> technote.</p>
+<!--<dl><dlentry><dt>Enhanced Client Selection Widget</dt><dd><p>For more information, </p></dd></dlentry><dlentry><dt>Create Social Enterprise Folder Widget</dt><dd><p>The Create Social Enterprise Folder Widget is used in Social Enterprise Collaboration to select multiple clients and cases when you create a Social Enterprise Folder. Removing cases and client information for a family member was enhanced to improve the user experience for the user and to make the Create Social Enterprise Folder Widget accessible. The right-click <uicontrol>Remove ...</uicontrol> action to remove a case or a family member is now replaced by a <uicontrol>Remove</uicontrol> tertiary button for each case and family member. Selecting the <uicontrol>Remove</uicontrol> tertiary button removes case or the family member from the appropriate list. The drag interactions to manage the clients and cases for a SEF was also enhanced to provide an accessible and enhanced user experience. When the user drags cases within the care and protection component to the list of cases, or the CCV Client, family component or a family member to the list of clients that make up a SEF, the allowable drop areas are highlighted. An inline error message is displayed if a user drops on a disallowed area. In addition, a new option <uicontrol>Add to Case List</uicontrol> was added to the overflow action (…) for each case and the option <uicontrol>Add To Client List</uicontrol> was added to the overflow action (…) for the CCV Client family component, and each family member. Select the overflow action (...) to display a hidden overflow menu and then select the <uicontrol>Add to Case List</uicontrol> or <uicontrol>Add to Client List</uicontrol> option.</p></dd></dlentry><dlentry><dt>Assessment Delivery Details Chart</dt><dd><p/></dd></dlentry><dlentry><dt>Assessment Tracking Chart</dt><dd><p>The Assessment Tracking chart is used in Income Support to enable a caseworker to quickly establish strengths and needs. To improve the user experience and to make the Assessment Tracking Chart accessible, an enlarge button for maximizing and minimizing the Chart is available. Labels are truncated to better maintain the scale and readability of the Chart. Users can click the enlarge button to see a larger view and to read truncated labels.</p></dd></dlentry><dlentry><dt>Factor Activities Widget</dt><dd><p>Factor Activities Widget is a calendar view widget that is used on the <uicontrol>Activities</uicontrol> section of the <wintitle>Factors</wintitle> home page. A <uicontrol>Today</uicontrol> button, which brings the user back to the current date, was added to the Factor Activities Widget to improve the user experience.</p></dd></dlentry><dlentry><dt>Horizontal Bar Charts</dt><dd><p>Horizontal Bar Charts are used throughout the application. For example, to let supervisors see what tasks are due for users in the next week or month. To improve the user experience and to make Horizontal Bar Chart accessible, an enlarge button for maximizing and minimizing the Chart is available. Labels are truncated to better maintain the scale and readability of the Chart. Users can click the enlarge button to see a larger view and to read truncated labels. </p></dd></dlentry></dl>-->
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="ssowls">
+<title>Configuring SSO for <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"
+/></title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> currently provides
+customer guidance to configure SAML Single Sign On (SSO) with <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_lib_long"/>. The guidance has now been
+extended to include <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/>. The
+documentation provides a step-by-step guide to configure SSO with <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/>.</p>
+<p>For more information, see <xref href="../Security/t_WLSCONFIG_sso-ua.dita" scope="peer"
+>Configuring SAML SSO on <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"
+/></xref>. The documentation includes Service Provider (SP) and Identity Provider (IdP) initiated
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/UA_component_short"/> SSO flows.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="securexml">
+<title>Securing the XML server</title>
+<p>To enhance communication security, particularly in distributed environments, communication
+between the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application and
+the XML Server has been updated to use a TCP/IP connection over TLS 1.2 (Transport Layer Security)
+socket. For more information, see <xref href="../XMLInfrastructure/t_SECHAND_secure_XMLserver.dita"
+scope="peer">Securing the XML server</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="csrf">
+<title>Enhanced cross-site request forgery (CSRF) protection</title>
+<p>Enhanced Cross-Site Request Forgery (CSRF) hardening has been included in version 8.0.0. The
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> user interface (UI)
+infrastructure has been enhanced by adding extra security measures to further protect <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> against CSRF. Only requests from
+trusted domains are permitted. For more information, see <xref
+href="../Security/c_SECHAND_CSRF.dita" scope="peer">Cross-Site Request Forgery (CSRF) protection for
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> web pages</xref>.</p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+<section id="coderemovals">
+<title>Code removals</title>
+<p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> product development
+team continue to optimize the application by removing previously deprecated features. Removing
+deprecated features ensures that we maintain a lean product, which enables us to focus on delivering
+business value. <ph otherprops="xhtml">For more information, see <xref
+href="../CodeRemovals/c_removed_features.dita" scope="peer">Removed functionality</xref>.</ph><ph
+otherprops="pdf">For more information, see <xref
+href="https://www.ibm.com/docs/en/spm/8.0.0?topic=overview-removed-functionality" format="html"
+scope="external">Removed functionality</xref>.</ph></p>
+<p><xref href="#spm_800_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></p>
+</section>
+</conbody>
+</concept>
+<?tm 1527675457574 3 JavaScript||IBM ?>

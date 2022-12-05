@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e872">
+<title>Security custom properties</title>
+<shortdesc>Use the <varname>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</varname> to
+determine the behavior of a single sign-on LTPA Token2 login.</shortdesc><conbody>
+<section>
+<title>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</title>
+<p>The <varname>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</varname> property
+determines the behavior of a single sign-on LTPA Token2 login. When this property value is set to
+true, the token contains a custom cache key, and the custom Subject cannot be found. Then the token
+is used to log in directly because the custom information needs to be gathered again. Therefore, a
+challenge occurs requiring the user to log in again. </p>
+<p>When this property value is set to false and the custom Subject is not found, the LTPA Token2 is
+used to login and gather all of the registry attributes. However, the token might not obtain any of
+the special attributes that downstream applications might expect.</p>
+<p>By default, the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> configuration
+script sets the property, com.ibm.ws.security.webChallengeIfCustomSubjectNotFound, to <tt>false</tt>
+to ensure that web sessions can seamlessly transfer between two servers in a cluster (for example in
+a failover scenario) without being asked for security credentials. This setting allows the security
+token that is used by <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+to be validated correctly, without user input.</p>
+<p>If this behavior is not required, you can change this property to true, see <xref
+href="c_WEBSPHZOS_Configuration5SetUpSystemJaasLoginModule1.dita"/> for more information on setting
+<i>Security custom properties</i>. If the property is set to <tt>true</tt>, when a web session
+switches from one server in the cluster to another, perhaps due to the original server failing, the
+user will be asked for security information before being able to proceed.</p>
+</section></conbody></concept>

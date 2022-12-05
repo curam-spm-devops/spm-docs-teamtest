@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e679">
+<title>Deploy an Application</title><conbody>
+<p>The Ant target to deploy or install an application (in the form of an <filepath>.ear</filepath> file) is:</p>
+<p><cmdname>build installapp</cmdname></p>
+<p>and requires the following options:</p>
+<ul>
+<li><option>-Dserver.name</option>
+<p>The name of the server to install the application on.</p></li>
+<li><option>-Dear.file</option>
+<p>The fully qualified name of the <filepath>.ear</filepath> file to install.</p></li>
+<li><option>-Dapplication.name</option>
+<p>The name to identify the application when it is installed.</p></li></ul><fig>
+<title>Example of Usage</title>
+<pre>build installapp -Dserver.name=CuramServer -Dear.file=$SERVER_DIR/build/ear/Curam.ear -Dapplication.name=Curam</pre></fig>
+<note type="note">The EAR file containing the server module must be deployed before installing any other (client-only) EAR files.</note></conbody></concept>

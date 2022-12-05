@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e629">
+<title>Configuring identity only and LDAP</title>
+<titlealts>
+<searchtitle>Configuring identity only and LDAP</searchtitle>
+</titlealts>
+<shortdesc>Configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> with
+the Ant <cmdname>configure</cmdname> target to use identity only and LDAP</shortdesc>
+<conbody>
+<section id="section_whw_411_z3b">
+<title>About this task</title>
+<p>To configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> with the
+Ant <cmdname>configure</cmdname> target to use identity only and LDAP, set the
+<varname>curam.security.check.identity.only</varname> property to true in
+<filepath>AppServer.properties</filepath> before running the Ant <cmdname>configure</cmdname>
+target. This step configures the CuramLoginModule behavior to be compatible with the identity only
+and LDAP authentication mechanism. For a previously configured server see the steps in <xref
+href="c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita"/>. to set the corresponding
+<varname>CuramLoginModule</varname>
+<varname>check_identity_only</varname> property.</p>
+<p>However, when using identity only in combination with <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> and LDAP you might need to
+perform additional manual configuration steps; this is regardless of whether configuration is done
+using the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> Administrative
+Console or the Ant <cmdname>configure</cmdname> target. For more information, see <xref
+href="../Security/c_SECHAND_Authentication1IdentityOnlyAuthentication1.html"
+format="html" scope="peer"> Identity Only Authentication</xref>.</p>
+<p><b>Troubleshooting Identity Only and LDAP</b></p>
+<p>With this combination you may find that <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> fails to start successfully
+because you must add a WebSphere Application Server for z/OS-generated username to the login module
+exclude list property (exclude_usernames) described in <xref
+href="c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita"/>. If the application server fails
+to start there will be a SECJ0270E error message in the <filepath>SystemOut.log</filepath> file
+before the failure.</p>
+<p>These are the steps needed to resolve this error:</p>
+</section>
+<section id="section_smf_t11_z3b">
+<ol id="ol_n51_511_z3b">
+<li>Identify the username that is causing the application server start to fail. Configure the login
+module trace as described in <xref
+href="c_WEBSPHAPS_Configuration4LoggingAuthenticationProcess1.dita"/> (in regard to the
+<tt>configure</tt> target) or <xref href="t_WEBSPHAPS_Configuration3AddLoginModule1.dita"/> (in
+regard to configuring via the Administrative Console), and restart WebSphere Application Server.
+With the login module trace running, prior to the SECJ0270E error in the
+<filepath>SystemOut.log</filepath> file, the trace data will identify the failing username with a
+record like this:<fig id="fig_o51_511_z3b">
+<pre>SystemOut     O Username: server:MyNodeCell_MyNode_CuramServer</pre>
+</fig>
+<p>Where "MyNode" is the node name, "MyNodeCell" is the cell name, and "CuramServer" is the
+WebSphere server name. Following the login module trace data will be the error, which will look like
+this:</p><fig id="fig_p51_511_z3b">
+<pre>SECJ0270E: Failed to get actual credentials.
+   The exception is javax.security.auth.login.LoginException:
+   Context: MyNodeCell/nodes/MyNode/servers/CuramServer,
+   name: curamejb/LoginHome:
+   First component in name curamejb/LoginHome not found.</pre>
+</fig></li>
+<li>Specify the failing username in the login module exclude_usernames property in the WebSphere
+Application Server configuration. Since WebSphere Application Server is failing to start you cannot
+make this change via the Administrative Console and you must edit the WebSphere Application Server
+configuration file directly. In the WebSphere Application Server configuration file system edit
+<filepath>config\cells\MyNodeCell\security.xml</filepath>, which will have three occurrences of the
+exclude_usernames property (one for each alias); e.g.:<fig id="fig_q51_511_z3b">
+<pre>&lt;options xmi:id="Property_1301940482165"
+   name="exclude_usernames"
+   value="websphere,db2admin"
+   required="false"/&gt;</pre>
+</fig>
+<p>You must modify the three occurrences to include the newly identified username from the trace
+entry above; e.g.:</p><fig id="fig_r51_511_z3b">
+<pre>&lt;options xmi:id="Property_1301940482165"
+   name="exclude_usernames"
+   value="websphere,db2admin,server:MyNodeCell_MyNode_CuramServer"
+   required="false"/&gt;</pre>
+</fig>
+<p>Note that in the exclude_usernames occurrences the id attribute will vary per your system
+configuration and the comma separator in the example value attribute represents the default
+curam.security.usernames.delimiter value, which may be different in your case.</p></li>
+<li>Restart WebSphere Application Server.</li>
+</ol>
+</section>
+</conbody>
+</concept>

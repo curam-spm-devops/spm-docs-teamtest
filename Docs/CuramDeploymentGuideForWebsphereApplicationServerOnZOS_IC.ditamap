@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Cúram Deployment Guide for WebSphere Application Server on z/OS" xml:lang="en-us"><topicmeta><critdates><created date="2013-10-31"/><revised modified="2015-03-26"/></critdates><?Pub Caret -1?></topicmeta>
+<topicref href="Deployment_WebsphereApplicationServerOnZOS/ctr_CuramDeploymentGuideForWebsphereApplicationServerOnZOS.dita" navtitle="Cúram Deployment Guide for WebSphere Application Server on z/OS">
+<topicref navtitle="Third-Party Tools"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ThirdpartyTools1.dita"
+>
+<topicref href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Db2_for_ZOS.dita">
+<topicref
+href="install_DevelopmentEnvironment/c_install_Installing2RemoteDbForZosConnectivity1.dita"
+navtitle="Remote DB2 for z/OS Connectivity"/>
+</topicref>
+<topicref navtitle="WebSphere Application Server for z/OS"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1WebsphereApplicationServerForZos1.dita"/>
+<topicref navtitle="Apache Ant"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ApacheAnt1.dita"/>
+<topicref navtitle="JRE and Java EE"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1JreJavaEe1.dita"/></topicref>
+        <topicref navtitle="Building EAR Files"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3BuildingEarFiles1.dita"/>
+<topicref href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_instCur_onZOS.dita"/>
+<topicref navtitle="Property Files"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3PropertyFiles1.dita">
+<topicref navtitle="Bootstrap properties"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Bootstrapproperties1.dita"/>
+<topicref navtitle="AppServer properties"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Appserverproperties1.dita"/>
+<topicref navtitle="Checking the Configuration"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CheckingConfiguration1.dita">
+<topicref navtitle="Alternate JAR File Locations"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6AltJarLocations.dita"/>
+</topicref>
+</topicref>
+        <topicref navtitle="Application Server Configuration"
+            href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6ApplicationServerConfiguration1.dita">
+            <topicref navtitle="WebSphere Application Server Configuration"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.dita"/>
+            <topicref navtitle="Security Configuration"
+                href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityConfiguration1.dita">
+                <topicref navtitle="Special Configuration Steps When Using Identity Only and LDAP"
+                    href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration6SpecialConfigurationStepsWhenUsingI1.dita"/>
+                <topicref navtitle="WebSphere Application Server User Registry"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.dita"/>
+                <topicref navtitle="Logging the Authentication Process"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6LoggingAuthenticationProcess1.dita"/>
+                <topicref navtitle="Establishing an Alternate Exclude Username Delimiter"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6EstablishingAlternateExcludeUsernam1.dita"/>
+                <topicref navtitle="WebSphere Application Server Caching Behavior"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerCachingBe1.dita"/>
+                <topicref navtitle="Security custom properties"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCustomProperties1.dita"/>
+                <topicref navtitle="Security hardening measures"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityHardeningMeasures1.dita"/>
+                <topicref navtitle="Cúram Cryptography"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCryptography.dita"
+                />
+            </topicref>
+            <topicref navtitle="Starting and Stopping WebSphere Servers"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.dita"/>
+        </topicref>
+        <topicref navtitle="Deployment"
+            href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment1.dita">
+<topicref navtitle="Pre-compiling JSPs"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3PrecompilingJsps1.dita"/>
+            <topicref navtitle="Deployment"
+                href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment2.dita">
+                <topicref navtitle="Install an Application"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3InstallApplication1.dita"/>
+                <topicref navtitle="Uninstall an Application"
+                    href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3UninstallApplication1.dita"
+                />
+            </topicref>
+            <topicref navtitle="Creating a Database"
+                href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CreatingDatabase1.dita"/>
+            <topicref navtitle="Testing Deployment"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3TestingDeployment1.dita"/>
+        </topicref>
+        <topicref navtitle="Manual WebSphere Application Server Configuration"
+            href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ManualWebsphereApplicationServerCon1.dita">
+<topicref navtitle="The Administrative Console"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AdministrativeConsole1.dita"/>
+<topicref navtitle="Scripting Support"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ScriptingSupport1.dita"/>
+<topicref navtitle="Creating the Data Source Login Alias"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.dita"/>
+<topicref navtitle="Configure DB2 for z/OS Data Sources"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigureDbForZosDataSources1.dita">
+<topicref navtitle="Configuring For a Type 4 JDBC Universal Driver (XA)"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv1.dita"/>
+<topicref navtitle="Configuring For a Type 2 JDBC Universal Driver (RRS)"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv2.dita"
+/>
+</topicref>
+<topicref navtitle="Configure Administration Security"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.dita"/>
+<topicref navtitle="Restart the Application Server"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5RestartApplicationServer1.dita"/>
+<topicref navtitle="Test the DB2 for z/OS Connection"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5TestDbForZosConnection1.dita"/>
+<topicref navtitle="Configure Users"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureUsers1.dita"/>
+<topicref navtitle="Set up the System JAAS Login Module"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SetUpSystemJaasLoginModule1.dita">
+<topicref navtitle="Add the Login Module"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AddLoginModule1.dita"/>
+<topicref navtitle="Reorder the Login Module"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ReorderLoginModule1.dita"/>
+<topicref navtitle="Disable Cross Cluster Authentication"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>
+</topicref>
+<topicref navtitle="Server Configuration"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ServerConfiguration1.dita">
+<topicref navtitle="Configure 64-bit support"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureBitSupport1.dita"/>
+<topicref navtitle="Configure your JNDI lookup port"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJndiLookupPort1.dita"/>
+<topicref navtitle="Configure your ClassLoader settings"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourClassloaderSettings1.dita"/>
+<topicref navtitle="Configure your ORB Pass By Reference"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourOrbPassByReference1.dita"/>
+<topicref navtitle="Configure your Java Virtual Machine"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJavaVirtualMachine1.dita"/>
+<topicref navtitle="Configure the Timer Service"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureTimerService1.dita"/>
+<topicref navtitle="Set up the Port Access"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetUpPortAccess1.dita"/>
+<topicref navtitle="Configure Session Security Integration"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureSessionSecurityIntegration1.dita"
+/>
+</topicref>
+<topicref navtitle="Setup the Service Integration Bus"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupServiceIntegrationBus1.dita"/>
+<topicref navtitle="JMS Configuration"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5JmsConfiguration1.dita">
+<topicref navtitle="Setup the JMS Connection Factories"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupJmsConnectionFactories1.dita"/>
+<topicref navtitle="Setup the Required Queues"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueues1.dita"/>
+<topicref navtitle="Setup the Required Topics"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopics1.dita"/>
+<topicref navtitle="Setup the Required Queue Activation Specifications"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueueActivationSpecifi1.dita"/>
+<topicref navtitle="Setup the Required Topic Activation Specifications"
+href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopicActivationSpecifi1.dita"
+/>
+</topicref>
+<topicref navtitle="Post Configuration"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5PostConfiguration1.dita"/>
+            <topicref navtitle="Manual Application Deployment"
+                href="Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ManualApplicationDeployment1.dita"/>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5WebsphereNetworkDeployment1.dita">
+<topicref navtitle="Synchronizing Changes"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SynchronizingChanges1.dita"/>
+<topicref navtitle="Configuration of Node"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigurationNode1.dita"/>
+<topicref navtitle="Deploying on the Node"
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DeployingOnNode1.dita"/>
+</topicref>
+        </topicref>
+</topicref>
+<reltable>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.dita"
+/>
+</relcell>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.dita"
+linking="targetonly"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell/>
+<relcell/>
+</relrow>
+<relrow>
+<relcell/>
+<relcell/>
+</relrow>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityConfiguration1.dita"
+/>
+</relcell>
+<relcell>
+<topicref
+href="Security/c_SECHAND_Authentication1DefaultConfigurationForWebsphere1.html"
+format="html" linking="targetonly" scope="peer" navtitle="Default Configuration for WebSphere"/>
+<topicref
+href="Security/c_SECHAND_Authentication1IdentityOnlyAuthentication1.html"
+format="html" linking="targetonly" scope="peer" navtitle="Identity Only Authentication"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerCachingBe1.dita"
+/>
+</relcell>
+<relcell>
+<topicref href="Security/c_SECHAND_Securitycache1CachingBehavior1.html"
+format="html" linking="targetonly" scope="peer" navtitle="Default Configuration for WebSphere"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigurationNode1.dita"
+/>
+</relcell>
+<relcell>
+<topicref
+href="WebClientReference/ctr_CuramWebClientReferenceManual.html"
+format="html" linking="targetonly" scope="peer" navtitle="Cúram web client reference"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3BuildingEarFiles1.dita"/>
+</relcell>
+<relcell>
+<topicref href="ServerDeveloper/c_BuildConfigCuramApplication.html"
+format="html" linking="targetonly" scope="peer"
+navtitle="Building and configuring a Cúram application"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Appserverproperties1.dita"/>
+</relcell>
+<relcell>
+<topicref
+href="Security/c_SECHAND_Authentication1DefaultConfigurationForWebsphere1.html"
+format="html" linking="targetonly" scope="peer" navtitle="Default Configuration for WebSphere"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3PropertyFiles1.dita"
+/>
+</relcell>
+<relcell>
+<topicref
+href="ServerDeveloper/r_SERDEV_Configuration8ApplicationProperties1.html"
+format="html" linking="targetonly" scope="peer" navtitle="Application properties"/>
+</relcell>
+</relrow>
+</reltable>
+
+</map>

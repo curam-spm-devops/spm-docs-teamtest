@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Creating the data source login alias</title>
+<shortdesc>Use the administrator console to create the data source login alias. </shortdesc><taskbody><context>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> is the database that is supported
+on <keyword conref="../common_files/conrefs.dita#conrefs/zos"/>. The <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> administrative console is used
+to configure a login alias for the <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/>
+data sources as follows:</p></context>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Expand the <uicontrol>Java Authentication and Authorization Service</uicontrol> option in the
+<uicontrol>Authentication</uicontrol> box and select the <uicontrol>J2C authentication
+data</uicontrol> option.</cmd>
+</step>
+<step>
+<cmd>Click <uicontrol>New</uicontrol> to open the Configuration screen.</cmd>
+</step>
+<step><cmd>Set the following fields:</cmd>
+<info>
+<ul>
+<li><uicontrol>Alias</uicontrol> = dbadmin</li>
+<li><uicontrol>User ID</uicontrol> = <varname>&lt;database username&gt;</varname></li>
+<li><uicontrol>Password</uicontrol> = <varname>&lt;database password&gt;</varname></li>
+<li><uicontrol>Description</uicontrol> = The database security alias </li>
+</ul>
+<p>where <varname>&lt;database username&gt;</varname> and <varname>&lt;database
+password&gt;</varname> are the user name and password that is used to log in to the database.</p>
+</info></step>
+<step>
+<cmd>Press <uicontrol>OK</uicontrol> to confirm the changes.</cmd>
+</step></steps></taskbody></task>

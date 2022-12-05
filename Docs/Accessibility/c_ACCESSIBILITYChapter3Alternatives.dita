@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_ACCESSIBILITYChapter3Alternatives" xml:lang="en-us">
+<title>Accessible alternatives for desktop</title>
+<shortdesc>A number of user interface elements in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> (SPM) application have alternative
+accessibility features for keyboard and screen reader users on desktop computers.</shortdesc>
+<conbody>
+<!--<p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application provides accessible alternatives to ensure that users with disabilities can access and interact with all content in the application. These accessibility features are designed for users with restricted movement or low vision who interact with the application by using a keyboard or screen reader. Instructions are provided for users with disabilities on how to use the accessible alternatives available in the SPM application for screen reader and keyboard users.</p>--><?Pub Caret 452?>
+</conbody>
+</concept>
+<?Pub *0000001015?>

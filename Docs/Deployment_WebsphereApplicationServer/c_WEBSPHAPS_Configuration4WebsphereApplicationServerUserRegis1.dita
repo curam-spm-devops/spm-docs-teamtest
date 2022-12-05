@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e679">
+<title>User registry</title>
+<titlealts>
+<searchtitle>User registry</searchtitle>
+</titlealts>
+<shortdesc>When the <varname>CuramLoginModule</varname> login module is configured for identity
+only, the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> user registry
+is queried.</shortdesc>
+<conbody>
+<p>By default the configured user registry is not queried as part of authentication. When the
+<varname>CuramLoginModule</varname> login module is configured for identity only, the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> user registry is queried. You can
+override this default behavior before running the Ant <cmdname>configure</cmdname> target to set the
+<varname>curam.security.user.registry.enabled</varname> property in
+<varname>AppServer.properties</varname>. For a previously configured server see the steps in <xref
+href="c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita"/> to set the corresponding
+<varname>CuramLoginModule</varname><varname>user_registry_enabled</varname> property.</p>
+<p>If this property is set to true the user registry is queried during the authentication process,
+regardless of whether identity only authentication is enabled or disabled. If this property is set
+to false, the user registry is not queried. For example, if
+<varname>curam.security.check.identity.only</varname> (<varname>check_identity_only</varname>) is
+set to true and <varname>curam.security.user.registry.enabled</varname>
+(<varname>user_registry_enabled</varname>) is set to false, neither the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> authentication verifications nor the
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> user registry is used as
+part of the authentication process.</p>
+<p>You can also control the authentication of different types of external users against the user
+registry by using the <varname>curam.security.user.registry.enabled.types</varname> and/or the
+<varname>curam.security.user.registry.disabled.types</varname> properties in
+<filepath>AppServer.properties</filepath> before running the Ant <cmdname>configure</cmdname>
+target. For a previously configured server see the steps in <xref
+href="c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita"/> to set the corresponding
+<varname>CuramLoginModule</varname>
+<varname>user_registry_enabled_types</varname> or <varname>user_registry_disabled_types</varname>
+properties. The following properties specify a comma-delimited list of external user types that
+might be authenticated using the user registry:<ul id="ul_hk3_rv1_x3b">
+<li> User types specified in the curam.security.user.registry.enabled.types
+(user_registry_enabled_types) list are processed against the user registry (for example, LDAP) and
+your <varname>ExternalAccessSecurity</varname> implementation. See <xref
+href="../Security/ctr_CuramSecurityHandbook.html" format="html"
+scope="peer">Securing the application</xref> for more information on <varname>ExternalAccessSecurity
+</varname>implementations.</li>
+<li>User types specified in the <varname>curam.security.user.registry.disabled.types</varname>
+(<varname>user_registry_disabled_types</varname>) list are not processed against the user registry
+and the processing of your ExternalAccessSecurity implementation is the authority for
+authentication.</li>
+</ul></p>
+<p>The precedence order in processing these properties and the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> user or external (LDAP) registry
+is as follows:<ol id="ol_pgk_xw1_x3b">
+<li>By default the  user registry is not checked and the application authentication is used.</li>
+<li>The setting of the <varname>curam.security.user.registry.enabled</varname> property
+(<varname>user_registry_enabled</varname>) to true requires authentication by both the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>, or external (LDAP), user
+registry and application security for internal users or your
+<varname>ExternalAccessSecurity</varname> implementation for external users.</li>
+<li>An external user of a type specified in the
+<varname>curam.security.user.registry.enabled.types</varname>
+(<varname>user_registry_enabled_types</varname>) list must be authenticated by the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>, or external, user registry and
+your <varname>ExternalAccessSecurity</varname> implementation.</li>
+<li>An external user of a type specified in the
+<varname>curam.security.user.registry.disabled.types</varname>
+(<varname>user_registry_disabled_types</varname>) list is not authenticated by the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>, or external, user registry and
+your <varname>ExternalAccessSecurity</varname> implementation is the authority.</li>
+</ol></p>
+</conbody>
+</concept>

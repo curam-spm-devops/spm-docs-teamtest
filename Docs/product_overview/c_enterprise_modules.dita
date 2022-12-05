@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_enterprise_modules" xml:lang="en-us">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Application Modules</title>
+<shortdesc><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application
+modules provide the foundation of repeatable common business processes, regardless of program.
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application modules meet the
+requirements of a single program or multiple programs in a configurable and reusable
+package.</shortdesc><?Pub Caret -1?>
+<prolog><metadata></metadata></prolog>
+<conbody>
+<p otherprops="onprem">The following <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application modules provide extra
+capabilities to handle the complex processes that are associated with specific programs. These
+application modules reduce the time and risk that is associated with developing the complex
+processes of those programs, and provide simplified maintenance update capabilities:<ul>
+<li><keyword conref="../common_files/conrefs.dita#conrefs/IS_component_long"/></li>
+<li><keyword conref="../common_files/conrefs.dita#conrefs/ISMA_component_long"/></li>
+<li><keyword conref="../common_files/conrefs.dita#conrefs/CCW_component_long"/></li>
+</ul></p>
+<p otherprops="saas">The <keyword conref="../common_files/conrefs.dita#conrefs/CCW_component_long"/>
+application module provides extra capabilities to handle the complex processes that are associated
+with specific programs. It reduces the time and risk that is associated with developing the complex
+processes of the programs, and provide simplified maintenance update capabilities.</p>
+<section id="section_dxy_4hm_wfb" otherprops="onprem">
+<title>Appeals</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/APPEALS_component_shortdesc"
+/></p>
+</section>
+<section id="section_mlm_xhm_wfb" otherprops="onprem">
+<title>Business Intelligence and Analytics</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/BI_component_shortdesc"
+/></p>
+</section>
+<section id="section_cmv_xhm_wfb" otherprops="onprem">
+<title>Evidence Broker</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/BROKER_component_shortdesc"
+/></p>
+</section>
+<section id="section_ipy_xhm_wfb">
+<title>Outcome Management</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/OM_component_shortdesc"
+/></p>
+</section>
+<section id="section_sq4_yhm_wfb">
+<title>Provider Management</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/CPM_component_shortdesc"
+/></p>
+</section>
+<section id="section_f1r_yhm_wfb">
+<title>Social Enterprise Collaboration</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/SEC_component_shortdesc"
+/></p>
+</section>
+<section id="section_qvs_yhm_wfb" otherprops="onprem">
+<title>Universal Access</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/UA_component_shortdesc"
+/></p>
+</section>
+<section id="section_cgw_yhm_wfb" otherprops="onprem">
+<title>Verification Engine</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/VER_component_shortdesc"
+/></p>
+</section>
+<section id="section_pby_yhm_wfb" otherprops="onprem">
+<title>Income Support </title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/IS_component_long"/> provides complete
+eligibility determination and benefit calculation for social programs that provide food, cash and
+medical assistance to families in need. <keyword
+conref="../common_files/conrefs.dita#conrefs/IS_component_short"/> is a commercial integrated
+service delivery solution that equips organizations with a powerful, proven set of business tools
+and processes designed specifically for the effective management of income support programs.</p>
+</section>
+<section id="section_zcq_v3m_wfb" otherprops="onprem">
+<title>Income Support for Medical Assistance</title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/ISMA_component_long"/> enables social
+program organizations to improve the efficiency and effectiveness of managing eligibility and
+entitlement services for medical assistance. <keyword
+conref="../common_files/conrefs.dita#conrefs/ISMA_component_short"/>equips organizations with a
+powerful set of business tools and processes designed specifically for the effective management of
+traditional medical assistance, Affordable Care Act (ACA), and Modified Adjusted Gross Income
+(MAGI)-based Medicaid and Children's Health Insurance Program (CHIP) programs.</p>
+</section>
+<section id="section_ett_v3m_wfb">
+<title>Child Welfare</title>
+<p><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/CCW_component_shortdesc"
+/></p>
+</section>
+</conbody>
+</concept>
+<?Pub *0000000693?>

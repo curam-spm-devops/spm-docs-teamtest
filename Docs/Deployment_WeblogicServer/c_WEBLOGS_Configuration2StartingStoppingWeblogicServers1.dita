@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e578">
+<title>Starting and Stopping WebLogic Servers</title>
+<shortdesc>For Windows platforms, the Cúram SDEJ provides Ant targets to aid in the starting and
+stopping of the WebLogic server. </shortdesc><conbody>
+<p>These targets must be executed from the <filepath>&lt;SERVER_DIR&gt;</filepath> directory and,
+for the <cmdname>configure</cmdname> target, they require the
+<filepath>AppServer.properties</filepath> file to be set up correctly. For more information, see
+<xref href="c_WEBLOGS_Configuration2WeblogicServerConfiguration1.dita"/>. They also require a number
+of extra parameters to be specified. These are detailed below.</p></conbody></concept>

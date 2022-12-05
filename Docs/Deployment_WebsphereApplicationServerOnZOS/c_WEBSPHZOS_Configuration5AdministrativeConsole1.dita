@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1240">
+<title>The administrative console</title>
+<shortdesc>Configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/>
+by using the administrative console.</shortdesc><conbody>
+<p>To run the administrative console, you must start the server in the default profile. This step is
+required because the console is installed as a web application on this server. For more information,
+see <xref href="c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.dita"/>.</p>
+<p>To open the console, point a web browser at the following URL:</p>
+<pre>http://&lt;Your WebSphere host&gt;:&lt;protocol_http_port&gt;/ibm/console</pre>
+<p>Where:</p>
+<p><varname>&lt;Your WebSphere host&gt;</varname> identifies the hostname or IP address where your
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> system is running and
+<varname>&lt;protocol_http_port&gt;</varname> identifies the port that is assigned in your
+installation and customization of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/>.</p>
+<p>Any settings that are entered under the <uicontrol>Resources</uicontrol> section of the
+Administrative Console can be configured at multiple levels that control the JNDI scope. These
+include cell, node, or server. Upon selecting a <uicontrol>Resource</uicontrol>, the top of the main
+browser window shows this scope and allows the various resources in the current scope to be viewed.
+The scope, and in turn the location of any resources set, should be based upon planned use. That is,
+if you are working in a cluster it might not be necessary to set the same settings on each server,
+so the scope may be set to cell or node.</p>
+</conbody></concept>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e400">
+<title>Web Service WSDL</title><conbody>
+<p>A <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Axis web service exposes its own WSDL once it is deployed.</p>
+<p>For instance, if there is a service at the URL:</p>
+<p><filepath>http://localhost:7001/CuramWS/services/MyTestService</filepath></p>
+<p>the WSDL description will be at the URL:</p>
+<p><filepath>http://localhost:7001/CuramWS/services/MyTestService?wsdl</filepath></p>
+<p>The URL</p>
+<p><filepath>http://localhost:7001/CuramWS/services</filepath></p>
+<p>will return a web page that lists all Axis web services deployed and a link to their WSDL files.</p>
+<p>The general URL format of the locations above is</p>
+<p><filepath>http://&lt;web-server&gt;:&lt;port-number&gt;/&lt;ServerModelName&gt;WS/services/&lt;BPO-name&gt;</filepath>.</p></conbody></concept>

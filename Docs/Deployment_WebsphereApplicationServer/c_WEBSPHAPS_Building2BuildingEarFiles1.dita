@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e42">
+<title>Building EAR files</title>
+<shortdesc>Package <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>  into EAR
+(Enterprise ARchive) files.</shortdesc>
+<conbody>
+<p>The main step before deployment of a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application is to package it into EAR
+(Enterprise ARchive) files. The server application (which incorporates the web client and server)
+and web services application are packaged into separate EAR files, and the <keyword
+conref="../common_files/conrefs.dita#conrefs/compname_sdej"/> provides build targets that perform
+this task.</p>
+<p>Before the targets described in the following section are executed, ensure that the
+<varname>WAS_HOME</varname> environment variable is set.</p>
+<p>This should point to the base directory of the base WebSphere Application Server installation.
+For example: <filepath>d:\WebSphere\AppServer</filepath> or
+<filepath>/opt/WebSphere/AppServer</filepath>.</p>
+</conbody></concept>

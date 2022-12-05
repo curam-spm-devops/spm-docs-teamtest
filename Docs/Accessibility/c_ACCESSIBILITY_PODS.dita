@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_ACCESSIBILITY_PODS" xml:lang="en-us">
+<title>Pods</title>
+<shortdesc>Pods are user interface widgets that users can customize.</shortdesc>
+<conbody>
+<p>Similar to the widgets in the <uicontrol>Home</uicontrol> section of each Application view, Pods
+are shortcuts to view information and perform actions within the application. Pods are not
+accessible, but because Pods act as containers of shortcuts, alternative accessible ways exist to
+reach the same information or perform the same actions. Pods can contain whatever artifact you want,
+for example, links to <uicontrol>Search person</uicontrol> pages or <uicontrol>Case</uicontrol>
+pages.</p>
+</conbody>
+</concept>

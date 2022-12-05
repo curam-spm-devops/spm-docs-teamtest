@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e924">
+<title>Starting and stopping <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/></title>
+<shortdesc>Use the Ant <cmdname>startserver</cmdname> and <cmdname>stopserver</cmdname> targets to
+start and stop <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+servers. </shortdesc><conbody>
+<p> The Ant targets require the following cconfiguration steps:<ul id="ul_edq_kgj_v3b">
+<li>Run the target from the <filepath>$SERVER_DIR</filepath> directory.</li>
+<li>Set up the <filepath>AppServer.properties</filepath> file as described in <xref
+href="c_WEBSPHZOS_Building3PropertyFiles1.dita"/>.</li>
+<li>Specify the <varname>server.name</varname> property that specifies the name of the application
+server on the command line by using <cmdname>-Dserver.name=</cmdname>. Alternatively, specify
+<varname>server.name</varname> directly in <filepath>AppServer.properties</filepath>. The
+<varname>server.name</varname> property can be added to the
+<filepath>AppServer.properties</filepath> file along with
+<varname>curam.server.name</varname>. </li>
+</ul>Example commands are as follows:<ul id="ul_uqt_v3j_v3b">
+<li>To start a server:   
+<codeblock>cd $SERVER_DIR    
+. SetEnvironment.sh    
+./build.sh startserver -Dserver.name=CuramServer</codeblock></li>
+<li>To stop a server:   
+<codeblock>cd $SERVER_DIR    
+. SetEnvironment.sh    
+./build.sh stopserver -Dserver.name=CuramServer</codeblock> </li>
+<li>To restart a server:   
+<codeblock>cd $SERVER_DIR    
+. SetEnvironment.sh    
+./build.sh restartserver -Dserver.name=CuramServer</codeblock></li>
+</ul>      Running <cmdname>restartserver</cmdname> when the server is already stopped starts it. </p>
+</conbody></concept>

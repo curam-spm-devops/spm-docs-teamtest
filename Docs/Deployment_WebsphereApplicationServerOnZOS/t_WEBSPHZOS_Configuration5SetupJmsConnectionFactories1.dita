@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring the JMS connection factories</title><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Resources</uicontrol>
+<uicontrol>JMS</uicontrol>
+<uicontrol>JMS providers</uicontrol>
+</menucascade>. The appropriate scope where the JMS resources are to be defined are selected.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Default messaging provider</uicontrol> link;</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Connection factories</uicontrol> link in the <uicontrol>Additional
+Properties</uicontrol> box;</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following fields:</cmd>
+<info>
+<ul>
+<li><uicontrol>Name</uicontrol>: CuramQueueConnectionFactory </li>
+<li><uicontrol>JNDI Name</uicontrol>: jms/CuramQueueConnectionFactory </li>
+<li><uicontrol>Description</uicontrol>: The factory for all connections to the application queues. </li>
+<li><uicontrol>Bus Name</uicontrol>: CuramBus</li>
+<li><uicontrol>Authentication alias for XA recovery</uicontrol>: Same as for the
+<tt>jdbc/curamdb</tt> data source (for example, <varname>&lt;SERVERNAME&gt;</varname> /dbadmin) </li>
+<li><uicontrol>Mapping-configuration alias</uicontrol>: DefaultPrinicipalMapping </li>
+<li><uicontrol>Container-managed authentication alias</uicontrol>: Same as for the Authentication
+alias for XA recovery.</li>
+<li>Leave all other fields as default and select <uicontrol>OK</uicontrol> to apply the changes.
+</li>
+</ul>
+</info>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following fields:</cmd>
+<info>
+<ol>
+<li><uicontrol>Name</uicontrol>: CuramTopicConnectionFactory </li>
+<li><uicontrol>JNDI Name</uicontrol>: jms/CuramTopicConnectionFactory </li>
+<li><uicontrol>Description</uicontrol>: The factory for all connections to the application
+queues.</li>
+<li><uicontrol>Bus Name</uicontrol>: CuramBus </li>
+<li><uicontrol>Authentication alias for XA recovery</uicontrol>: Same as for the
+<tt>jdbc/curamdb</tt> data source (for example, <varname>&lt;SERVERNAME&gt;</varname>/dbadmin)</li>
+<li><uicontrol>Mapping-configuration alias</uicontrol>: DefaultPrinicipalMapping </li>
+<li><uicontrol>Container-managed authentication alias</uicontrol>: Same as for the
+<tt>jdbc/curamdb</tt> data source (for example, <varname>&lt;SERVERNAME&gt;/dbadmin)</varname></li>
+</ol>
+<p>Leave all other fields as default and select <uicontrol>OK</uicontrol> to apply the changes.</p>
+</info>
+</step>
+<step>
+<cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</cmd>
+</step>
+</steps>
+<result>
+<note type="note">Using these manual configuration steps, you cannot correctly configure security
+for the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> queue and topic
+connection factories. To complete this part of the configuration, you must use the <tt>wsadmin</tt>
+tool, exit the administrative console, and follow these steps: <ol>
+<li>Identify the queue and topic connection factory entries in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> configuration
+<filepath>resources.xml</filepath> file. This file is in the
+<filepath>%WAS_HOME%\profiles\&lt;profile_name&gt;\config</filepath> file system hierarchy,
+depending on your naming conventions and the scope where you defined your JMS resources. For
+instance, by using a node-level scope with a profile name of <tt>AppSrv01</tt>, a cell name of
+<tt>MyNodeCell</tt> and a node name of <tt>MyNode</tt> you would find this file here:
+<filepath>C:\WebSphere\profiles\AppSrv01\config\cells\MyNodeCell\nodes\MyNode\resources.xml</filepath>.
+In this file, find the <tt>&lt;factories&gt;</tt> entities for the
+<tt>CuramQueueConnectionFactory</tt> and <tt>CuramTopicConnectionFactory</tt> and make note of the
+ID for each that begins <tt>J2CConnectionFactory_</tt> followed by a numeric (for example,
+1264085551611).</li>
+<li>Start the <tt>wsadmin</tt>
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> script. In these
+examples the language is JACL, so the <i>-lang jacl</i> argument might need to be specified along
+with login credentials, etc. depending on your local configuration.</li>
+<li>In <tt>wsadmin</tt> start the following commands; again, assuming node-scope definitions, a cell
+name of <tt>MyNodeCell</tt>, and a node name of <tt>MyNode</tt>, the resource IDs are different in
+your environment: <ol>
+<li>Get the node and cell identifier: <tt>$AdminConfig getid /Node:MyNode</tt></li>
+<li>Using the node and cell identifier from the previous step, combine it and the connection factory
+identifier you obtained to display the connection factory: <tt>$AdminTask
+showSIBJMSConnectionFactory
+CuramQueueConnectionFactory(cells/MyNodeCell/nodes/MyNode|resources.xml#J2CConnectionFactory_1264085551611)</tt>
+<p>From the command output, verify that authDataAlias is not set (e.g. <tt>authDataAlias=</tt>),
+else you're done, as shown in this sample wsadmin
+output:</p><codeblock>{password=, logMissingTransactionContext=false,
+readAhead=Default, providerEndpoints=,
+shareDurableSubscriptions=InCluster,
+targetTransportChain=, authDataAlias=, userName=,
+targetSignificance=Preferred,
+shareDataSourceWithCMP=false,
+nonPersistentMapping=ExpressNonPersistent,
+persistentMapping=ReliablePersistent, clientID=,
+jndiName=jms/CuramQueueConnectionFactory,
+manageCachedHandles=false,
+consumerDoesNotModifyPayloadAfterGet=false,
+category=, targetType=BusMember, busName=CuramBus,
+description=None,
+xaRecoveryAuthAlias=crouch/databaseAlias,
+temporaryTopicNamePrefix=, remoteProtocol=,
+producerDoesNotModifyPayloadAfterSet=false,
+connectionProximity=Bus, target=,
+temporaryQueueNamePrefix=,
+name=CuramQueueConnectionFactory}</codeblock></li>
+<li>To set the authDataAlias use the same connection factory information, for example:
+<tt>$AdminTask modifySIBJMSConnectionFactory
+CuramQueueConnectionFactory(cells/MyNodeCell/nodes/MyNode|resources.xml#J2CConnectionFactory_1264085551611)
+{-authDataAlias crouch/databaseAlias}</tt></li>
+<li>Save the changes: <tt>$AdminConfig save</tt></li>
+<li>You can start the <tt>showSIBJMSConnectionFactory</tt> command to verify the change.</li>
+<li>Repeat the steps for the <tt>CuramTopicConnectionFactory</tt>.</li>
+<li>Exit the wsadmin session by using the <tt>quit</tt> command, ensuring you save your
+changes.</li>
+</ol></li>
+</ol></note></result></taskbody></task>

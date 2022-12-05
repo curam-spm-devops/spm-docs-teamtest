@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Starting the WebLogic Administration Service</title><taskbody>
+<steps>
+<step><cmd>Open a command prompt and navigate to <filepath>&lt;WebLogic Install directory&gt;/&lt;domain_repository&gt;/&lt;DomainName&gt;</filepath> directory, (e.g. <filepath>C:/Weblogic/user_projects/domains/&lt;domain_name&gt;</filepath>). Execute the command <cmdname>startWeblogic</cmdname> from this directory. When the server has started correctly the following line should be displayed: <varname>&lt;Server started in RUNNING mode&gt;</varname> in the log file, which was configured previously in <xref href="c_WEBLOGS_Configuration1JavaVirtualMachineConfiguration1.dita"/> or in the command prompt if it's not already configured.</cmd></step>
+<step><cmd>To open the Administration Console, the following URL should be opened in a web browser:</cmd>
+<info><p><filepath>http://&lt;IP Address&gt;:7001/console</filepath></p></info></step>
+<step><cmd>Login with the username and password configured during installation (e.g. <q>weblogic</q> / <q>weblogic1</q>).</cmd></step></steps></taskbody></task>

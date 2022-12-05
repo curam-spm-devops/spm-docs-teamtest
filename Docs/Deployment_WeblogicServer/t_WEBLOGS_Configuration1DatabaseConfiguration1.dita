@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="d1e1" xml:lang="en-us">
+<title>Database Configuration</title>
+<taskbody>
+<context> <p>Open the Administration Console as detailed in the previous
+section.</p></context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName></uicontrol>
+<uicontrol>Services</uicontrol><uicontrol>JDBC</uicontrol><uicontrol>Data
+Sources</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button;</cmd></step>
+<step><cmd>Enter the following fields:</cmd><info><p><uicontrol>Name:</uicontrol> <q>curamdb</q></p> <p><uicontrol>JNDI
+Name:</uicontrol> <q>jdbc/curamdb</q></p> <p>Change the <uicontrol>Database
+Type</uicontrol> to be <q>Oracle</q></p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button</cmd></step>
+<step><cmd>Set the <uicontrol>Database Driver</uicontrol> to be <q>Oracles
+Driver (Thin XA) for Instance connections; Versions:9.0.1,9.2.0,10,11</q>;</cmd>
+</step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button</cmd></step>
+<step><cmd>Leave the default for <uicontrol>Transaction Options</uicontrol> and
+click the <uicontrol>Next</uicontrol> button.</cmd></step>
+<step><cmd>Set the following fields:</cmd><info><p><uicontrol>Database
+Name</uicontrol> : This setting depends on how you want to connect
+to the Oracle database; i.e., either using the Oracle service name
+or Oracle SID name.</p> <p>Set this value to the value of curam.db.oracle.servicename
+in <filepath>&lt;SERVER_DIR>/project/properties/Bootstrap.properties</filepath> to
+connect to database using the Oracle service name, e.g..</p> <p>If
+you want to connect to an Oracle database using the SID name, then
+set this value to the value of curam.db.name in <filepath>&lt;SERVER_DIR>/project/properties/Bootstrap.properties</filepath> e.g. <q>yourhost</q>.</p> <p><uicontrol>Hostname</uicontrol> :
+Set this value to the value of curam.db.servername in <filepath>&lt;SERVER_DIR>/project/properties/Bootstrap.properties</filepath>,
+e.g. <q>gonzo.&lt;host_name></q>.</p> <p><uicontrol>Port</uicontrol> :
+Set this value to the value of curam.db.serverport in <filepath>&lt;SERVER_DIR>/project/properties/Bootstrap.properties</filepath>,
+e.g. <q>1521</q>.</p> <p><uicontrol>Database Username</uicontrol>:
+Set this value to the value of curam.db.username in <filepath>&lt;SERVER_DIR>/project/properties/Bootstrap.properties</filepath>,
+e.g. <q>curam</q>.</p> <p><uicontrol>Password</uicontrol>: Set this
+value to the value of curam.db.password in <filepath>&lt;SERVER_DIR>/project/properties/Bootstrap.properties</filepath>.
+Note that password in the <filepath>Bootstrap.properties</filepath> property
+file is encrypted, and you need to set the unencrypted, plain-text
+version of this password here.</p> <p><uicontrol>Confirm Password</uicontrol> :
+confirm the entered password.</p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button</cmd></step>
+<step><cmd>Here if you are connecting using Oracle service name, then
+change the <uicontrol>URL</uicontrol> value as shown below before
+testing the configuration:</cmd><info><p><filepath>jdbc:oracle:thin:/@//serverName:port/databaseServiceName</filepath></p> <p>Where <varname>serverName</varname> is
+the name of the server hosting the database.</p> <p>Where <varname>port</varname> is
+the port number the database is listening on.</p> <p>Where <varname>databaseServiceName</varname> is
+the service name of the database.</p> <p>Leave all other fields untouched
+unless a specific change is required.</p> <p>Click the <uicontrol>Test
+Configuration</uicontrol> button to test settings.</p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button;</cmd></step>
+<step><cmd>Review the settings and click the <uicontrol>Next</uicontrol> button;</cmd>
+</step>
+<step><cmd>Select <uicontrol>AdminServer</uicontrol> as the target
+server;</cmd><info><p>For manual configuration you will need to set
+the value of curam.server.name property in <filepath>AppServer.properties</filepath> file
+to be <tt>AdminServer</tt>.</p><?Pub Caret -3?></info></step>
+<step><cmd>Click the <uicontrol>Finish</uicontrol> button;</cmd><info><p>It
+is a good idea to restart the AdminServer at this point, to ensure
+the changes are correct. To do this:</p></info>
+<substeps>
+<substep><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName></uicontrol>
+<uicontrol>Environment</uicontrol><uicontrol>Servers</uicontrol>
+</menucascade>;</cmd></substep>
+<substep><cmd>Select the <uicontrol>Control</uicontrol> tab, then
+select AdminServer in the Server's list and click <menucascade>
+<uicontrol>Shutdown</uicontrol><uicontrol>When work completes</uicontrol>
+</menucascade>;</cmd></substep>
+<substep><cmd>Click the <uicontrol>Yes</uicontrol> button to shutdown
+the AdminServer.</cmd></substep>
+</substeps>
+<info>Although it is very easy to kill managed servers by using Ctrl
++ C when it is running in a command prompt, never do this. Always
+use the Administration Console to shutdown all managed servers as
+described above. Using Ctrl + C from a Command Prompt will significantly
+slow down a machine after a couple of restarts. This is because memory
+is not released as it should be and the only remedy is to restart
+the machine.</info></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000005435?>

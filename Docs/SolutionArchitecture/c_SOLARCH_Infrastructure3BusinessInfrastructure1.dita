@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e1142" xml:lang="en-us">
+<title>Business infrastructure</title>
+<shortdesc> IBM Cúram provides a comprehensive business infrastructure.</shortdesc>
+<?Pub Caret 11?>
+<conbody>
+<section id="section_sgy_dvr_wfb">
+<title>Rules Development Environment</title>
+<p>Cúram Express Rules (CER) is a language for defining questions that can be asked, and the rules
+for determining the answers to those questions. The environment for developing CER rules is the CER
+Rules Editor.</p>
+<p>In CER, each question specifies:</p>
+<ul id="ul_w51_hvr_wfb">
+<li>The question name.</li>
+<li>The type of data which provides the answer to the question.</li>
+<li>The rules for providing the answer (if the question is asked).</li>
+</ul>
+<p>The answer to a question can be as simple as yes or no. For example, the question "Is this person
+eligible to receive benefits?". However, CER lets you define answer types to be as complex as you
+need. For example, the question "Which groups of people in the household have an urgent need?" is
+answered by providing a list of household groups, with each household group containing a list of
+people.</p>
+<p>The environment for developing CER rules is the CER Rules Editor. This editor provides a
+user-friendly environment and interface for both technical and business users to create, edit and
+validate a rule set and its rule classes. For more information on the CER Rules Editor, please see
+<cite>IBM Cúram Express Rules Reference Manual</cite> and <cite>Working With Cúram Express
+Rules</cite> guides</p>
+</section>
+<section id="section_xmk_fvr_wfb">
+<title>Eligibility and entitlement processing</title>
+<p>The Eligibility and Entitlement Engine provides a mechanism for determining eligibility and
+entitlement on a case over arbitrary periods of time. This determination allows Cúram to
+automatically assess and reassess cases, taking into account legislative changes, changes in rates,
+citizen changes in circumstances, and other complexities.</p>
+<p>Eligibility and Entitlement uses Cúram Express Rules for this functionality. The CER engine
+supports this process by acting on the rules that are defined in the CER Rules Editor and the
+evidence that is captured on a case. The flexibility of CER rules means they can also be used to
+define display rules to convey information about a case to business users. These rules can be as
+terse or as verbose as they need to be.</p>
+<p>For more information about the determination of eligibility and entitlement and the CER Rules
+Engine, see the <cite>Inside Cúram Eligibility and Entitlement Using Cúram Express Rules</cite>
+guide.</p>
+</section>
+<section id="section_bq4_fvr_wfb">
+<title>Workflow</title>
+<p>The IBM Cúram workflow management system, which is based on the Workflow Management Coalition's
+standards, allows organizations to break down business processes into their constituent activities
+and to then build flexible relationships between them.</p>
+<p>Procedural automation of a business process is done by managing the sequence of work activities
+and the allocation of appropriate human and/or system resources associated with the various activity
+steps.</p>
+<p>The IBM Cúram Workflow Management System comprises an interactive Process Definition Tool used to
+define the workflow activities and transitions, and a Workflow Engine which manages the workflow in
+the production environment. It also includes an administration component for maintaining instances
+of workflow process definitions.</p>
+<p>This approach ensures that organizations can implement and manage their processes in a flexible
+manner and maximizes their ability to respond to change.</p>
+<p>Workflow activities may involve an automated step (calling a Cúram Business Process), or a manual
+step (creating a task for a user to perform manually).</p>
+</section>
+</conbody>
+</concept>
+<?Pub *0000000428?>

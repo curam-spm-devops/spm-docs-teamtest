@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map id="productoverview" xml:lang="en-us">
+   <title>Product overview</title>
+   <topicmeta>
+      <critdates>
+         <created date="2013-10-31"/>
+         <revised modified="2014-06-30"/>
+      </critdates>
+      <othermeta content="com.ibm.eou.tmtool.representation.outline" name="vis_view"/>
+      <othermeta content="2" name="vis_zoom"/>
+      <othermeta content="com.ibm.ut.ditamap.domainAttribute.dita.ibm.operatingSystem"
+         name="vis_labels"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.concept" name="vis_node"/>
+      <othermeta content="com.ibm.ut.ditamap.domainAttribute.dita.taxonomy.filteringValues"
+         name="vis_symbols"/>
+      <othermeta content="com.ibm.ut.ditamap.domainAttribute.dita.ibm.operatingSystem"
+         name="vis_colors"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.troubleshooting"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.taxonomyContributions"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.cshelp"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.samples"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.ibm" name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.tutorial"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita" name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.vccContributions"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.messaging"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.eou.tmtool.domainDictionary.scenarios" name="dictionary_reference"/>
+      <othermeta content="com.ibm.ut.ditamap.domainDictionary.dita.ditaval"
+         name="dictionary_reference"/>
+      <othermeta content="com.ibm.eou.tmtool.domainDictionary.core" name="dictionary_reference"/>
+      <othermeta content="{{value}}=[[product_overview\r_]] "
+         name="com.ibm.eou.tmtool.domainAttribute.core.modelReferenceStubPath"/>
+      <othermeta content="{{value}}=[[product_overview\c_]] "
+         name="com.ibm.eou.tmtool.domainAttribute.core.modelConceptStubPath"/>
+      <othermeta content="{{value}}=[[product_overview\t_]] "
+         name="com.ibm.eou.tmtool.domainAttribute.core.modelTaskStubPath"/>
+   </topicmeta>
+   <topicref format="dita" href="product_overview/spm_prodname_intro.dita"
+      navtitle="Product overview" scope="local">
+      <!--\\DSLVM348.curamsoftware.com\SCMBuildResults\DOC_CURAM_MAIN_20151116_224612_20151116_224801_ant.txt-->
+      <topicref href="spm_whatsnew_toc.ditamap" format="ditamap"/>
+<!--<topicref href="product_overview/c_smarter_social_programs.dita"/>-->
+      <topicref href="product_overview/c_curam_social_program_management_overview.dita"
+         navtitle="Social Program Management overview">
+         <topicref href="product_overview/c_social_program_management_platform.dita"
+            navtitle="Social Program Management Platform">
+            <topicref href="product_overview/c_case_management.dita"
+navtitle="Integrated Case Management"/>
+         </topicref>
+         <topicref href="product_overview/c_enterprise_modules.dita"
+navtitle="IBM Cúram Enterprise Modules" type="concept"/>
+      </topicref>
+      <topicref href="product_overview/c_curam_social_program_management_technical_overview.dita"
+         navtitle="Social Program Management technical overview" type="concept">
+         <topicref
+copy-to="SolutionArchitecture/c_SOLARCH_Environment1CuramApplicationDevelopmentEnvironm1_dup.dita"
+format="dita"
+href="SolutionArchitecture/c_SOLARCH_Environment1CuramApplicationDevelopmentEnvironm1.dita"
+navtitle="The Cúram Application Development Environment" scope="local" type="concept"/>
+         <topicref
+copy-to="SolutionArchitecture/c_SOLARCH_Architecture3RuntimeArchitecture1_dup.dita"
+href="SolutionArchitecture/c_SOLARCH_Architecture3RuntimeArchitecture1.dita"
+navtitle="Runtime architecture" type="concept"/>
+         <topicref
+copy-to="SolutionArchitecture/c_SOLARCH_Architecture2DevelopmentArchitecture1_dup.dita"
+href="SolutionArchitecture/c_SOLARCH_Architecture2DevelopmentArchitecture1.dita"
+navtitle="Development architecture" type="concept"/>
+         <topicref
+copy-to="SolutionArchitecture/c_SOLARCH_Infrastructure3BusinessInfrastructure1_dup.dita"
+href="SolutionArchitecture/c_SOLARCH_Infrastructure3BusinessInfrastructure1.dita"
+navtitle="Business infrastructure" type="concept"/>
+      </topicref>
+      <topicref href="product_overview/c_pdf_library.dita" navtitle="PDF library"/>
+<topicref href="product_overview/c_KC_find_by_search.dita"
+navtitle="Finding information by searching"/>
+<topicref format="ditamap" href="CuramAccessibilityUserGuide_toc.ditamap"
+navtitle="Accessibility in Cúram"/>
+<topicref href="product_overview/c_tablet_support.dita"/>
+<topicref href="product_overview/c_deprecated_features.dita" navtitle="Deprecated functionality"/>
+<!--Code removals instantiated as peer link for internal builds, to enable dev to build separately, and local link for production (so it's included for translation in the overview). Therefore, must build the content/overview map to update production.-->
+<topicref href="../CodeRemovals/code_removals_toc.ditamap" format="ditamap"
+navtitle="Removed features" scope="peer" otherprops="internalonly"/>
+<topicref href="CodeRemovals/c_removed_features.dita" format="dita" otherprops="productiononly"
+navtitle="Removed functionality"/>
+<topicref format="dita" href="common_files/pdf_notices.dita" navtitle="Notices" otherprops="xhtml"
+scope="local" type="concept">
+<topicref href="common_files/trademarks.dita" navtitle="Trademarks" otherprops="xhtml" toc="no"/>
+<topicref href="common_files/pdf_interface.dita" navtitle="Programming Interface Information"
+otherprops="xhtml" toc="no"/>
+<?Pub Caret -1?>
+<topicref href="common_files/doc_terms_and_conditions.dita"/>
+<topicref href="common_files/gdpr.dita"/>
+<topicref href="common_files/logs_pii.dita"
+navtitle="Log files and personal identifiable information (PII)"/>
+</topicref>
+   </topicref>
+   <reltable>
+      <!--The reltable below is used to set up external and cross-product links. For external links, in the target topics on the right, the scope is set to "external" and the format is set to "html". For cross-product links, in the target topics on the right, the scope is set to "peer". Note that the product version numbers in the topicref>navtitle and in the topicmeta>shortdesc might need updating from release to release. The topicmeta>shortdesc is added so that when the links appear at the bottom of a topic, the shortdesc value will be used in the ToolTip (or link preview); no shortdesc means no ToolTip.-->
+      <relrow>
+         <relcell><!--SOURCE ONLY plus TWO-WAY LINKING--></relcell>
+         <relcell><!--TARGET ONLY plus TWO-WAY LINKING--></relcell>
+      </relrow>
+<relrow>
+<relcell>
+<topicref href="product_overview/c_tablet_support.dita" linking="sourceonly"
+navtitle="Tablet support" scope="local"/>
+</relcell>
+<relcell>
+<topicref format="html" scope="external" linking="targetonly"
+href="https://www.ibm.com/software/reports/compatibility/clarity/index.html"
+navtitle="Software Product Compatibility Reports"/>
+</relcell>
+</relrow>
+<relrow>
+<relcell>
+<topicref href="product_overview/c_deprecated_features.dita"/>
+</relcell>
+<relcell>
+<topicref href="ServerDeveloper/c_SERDEV_Deprecation1Deprecation1.dita" linking="targetonly"
+scope="peer" navtitle="Deprecation"/>
+</relcell>
+</relrow>
+   </reltable>
+</map>
+<?Pub *0000014311?>

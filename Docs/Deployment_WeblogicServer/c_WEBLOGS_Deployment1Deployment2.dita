@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e663" xml:lang="en-us">
+<title>Deployment</title>
+<conbody>
+<p>Before deploying an application, restart (or start) the WebLogic
+server as detailed in <xref
+href="c_WEBLOGS_Configuration2StartingStoppingWeblogicServers1.dita"></xref>.
+When deploying the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application
+ensure that the database is configured correctly. If the database
+does not contain the necessary information deployment may fail for
+security/validation reasons.</p><?Pub Caret -1?>
+<p>The SDEJ provides Ant targets for deploying and undeploying applications
+on a WebLogic server. As with the <cmdname>startserver/stopserver</cmdname> targets,
+the <cmdname>installapp/uninstallapp</cmdname> targets require the <filepath>AppServer.properties</filepath> file
+to be configured correctly (see <xref
+href="c_WEBLOGS_Configuration2WeblogicServerConfiguration1.dita"></xref>).
+The targets also require a number of options detailed in the following
+sections.</p>
+</conbody>
+</concept>
+<?Pub *0000001211?>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e237">
+<title><keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/></title>
+<shortdesc>Install <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>,
+and perform postinstallation tasks.</shortdesc><conbody>
+<section>
+<title>Prerequisites and installation</title>
+<p>See <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> supported prerequisites for
+the supported versions of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>. Then, follow the <xref
+href="https://www.ibm.com/support/knowledgecenter/en/SS7K4U/mapfiles/product_welcome_waszos.html"
+format="html" scope="external">WebSphere Application Server for z/OS</xref> documentation to install
+it.</p>
+</section>
+<section>
+<title>Postinstallation</title>
+<p>As part of installing <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> you create a stand-alone
+application server cell. This cell is where you configure the application server as described in
+<xref href="c_WEBSPHZOS_Configuration6ApplicationServerConfiguration1.dita"/>.</p>
+<p>Based on the name of the cell and the file system you create as part of installing the
+application server, you must define Ant targets in the <varname>WAS_HOME</varname>environment
+variable.  <varname>WAS_HOME</varname> must point to the <filepath>WebSphereAppServer</filepath>
+folder; for example:</p>
+<codeblock>export WAS_HOME=/IBM/WebSphere/X1CELL/AppServer</codeblock>
+</section>
+<section>
+<title>Security</title>
+<p>Generally, <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application
+security is contained within the Java<tm trademark="z/OS" tmtype="reg"/> EE and application server
+contexts. Integrating <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+and <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> security with RACF is
+outside the scope of <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> as
+delivered. </p>
+</section></conbody></concept>

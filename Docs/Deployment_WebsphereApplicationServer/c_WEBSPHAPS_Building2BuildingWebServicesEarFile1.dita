@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e317">
+<title>Building the web services EAR file</title>
+<titlealts>
+<searchtitle>Building the web services EAR file</searchtitle>
+</titlealts>
+<shortdesc>Build the web services EAR file.</shortdesc>
+<conbody>
+<section id="section_ey2_ft3_chb">
+<title>The EAR file</title>
+<p>Execute the following target from the root directory of the project to create the EAR file for
+web services: </p>
+<p><cmdname>build websphereWebServices</cmdname></p>
+<p>Optional overrides are:</p>
+<ul id="ul_cvs_gt3_chb">
+<li><option>prp.webipaddress</option> is the IP address on which the server hosting the web services
+is listening. The default is <filepath>http://localhost:2809</filepath>.</li>
+<li><option>prp.contextproviderurl</option> is the URL of the JNDI context provider. This is the
+address of the server that hosts the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"
+/> components being made accessible though web services. The default is
+<filepath>iiop://localhost:2809</filepath>.</li>
+<li><option>prp.contextfactoryname</option> is the JNDI context factory name. The default for this
+is <option>com.ibm.websphere.naming.WsnInitialContextFactory</option> and should rarely need to be
+changed.</li>
+</ul>
+<p>This target creates a ready to install EAR file,
+<filepath>&lt;SERVER_MODEL_NAME&gt;WebServices.ear</filepath> located in
+<filepath>&lt;SERVER_DIR&gt;/build/ear/WAS</filepath>.</p>
+<p>Before executing this target, a fully built <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application, ready for deployment, must
+exist.</p>
+</section>
+<section id="section_j5q_ht3_chb">
+<title>Under the hood</title>
+<p>The <cmdname>websphereWebServices</cmdname> target takes a number of previously generated Java
+files and deployment descriptors and packages them up into an EAR file.</p>
+<p>The Java files and deployment descriptors are generated during the build process (see the
+<cite>Cúram Server Developer's Guide</cite>) based on the <i>web service components</i> that have
+been defined in the model. BPO classes should be mapped to server components with a stereotype of
+webservice for this generation to occur. Any server component with a stereotype of webservice is
+treated as if it also had a stereotype of ejb. This is because Web Service interfaces are wrappers
+on publicly available BPOs.</p>
+<note>Consult the <cite>Cúram Server Modelling Guide</cite> for details on assigning BPOs to server
+components.</note>
+</section>
+</conbody>
+</concept>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2933">
+<title>Federating a node</title>
+<titlealts>
+<searchtitle>Federating a node</searchtitle>
+</titlealts>
+<shortdesc>Start the targeted Deployment Manager before federating an application server
+profile.</shortdesc>
+<conbody>
+<p>Run the following command to start the Deployment Manager from the
+<filepath>profiles/&lt;deployment manager profile name&gt;/bin</filepath> directory of the WebSphere
+Network Deployment installation:</p>
+<p><cmdname>startServer dmgr</cmdname></p>
+<p>To add your application server profile to the Deployment Manager node, run the following command
+from the <filepath>profiles/&lt;Application Server profile name&gt;/bin</filepath> directory of the
+WebSphere Application Server installation:</p>
+<p><cmdname>addNode &lt;deploymgr host&gt; &lt;deploymgr port&gt;</cmdname></p>
+<p>Where the <varname>&lt;deploymgr host&gt;</varname> and <varname>&lt;deploymgr port&gt;</varname>
+are the listen host and port for the Deployment Manager 's SOAP Connector. The SOAP Connector
+details can be found in the Deployment Manager Administrative Console under:</p>
+<ol>
+<li>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade>;</li>
+<li>Select the relevant server from the list;</li>
+<li>Expand <uicontrol>Ports</uicontrol> in the <uicontrol>Communications</uicontrol> section and
+press the <uicontrol>Details</uicontrol> button;</li>
+<li>The required details are listed as the <uicontrol>Host</uicontrol> and
+<uicontrol>Port</uicontrol> for the <uicontrol>SOAP_CONNECTOR_ADDRESS</uicontrol>.</li>
+</ol>
+</conbody>
+</concept>

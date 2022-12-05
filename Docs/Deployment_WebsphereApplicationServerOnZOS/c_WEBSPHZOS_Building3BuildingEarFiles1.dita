@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e389">
+<title>Building EAR files</title>
+<shortdesc>Before deploying an <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+application the application EAR files must be built on a platform that supports building of Cúram.
+For more information see <xref href="https://www-01.ibm.com/support/docview.wss?uid=swg27036661"
+format="html" scope="external"><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> Supported
+Prerequisites</xref>.</shortdesc>
+<conbody>
+<p>In summary, the building of application EAR files involves invoking the Ant server, client,
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> EAR, and release targets
+on a supported build platform. See <cite>Building and configuring a Cúram application</cite> for
+more information to perform these builds.</p>
+</conbody></concept>

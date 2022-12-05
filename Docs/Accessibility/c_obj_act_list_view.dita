@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_exp_mrv_3q" xml:lang="en-us">
+<title>Planning workspace</title>
+<shortdesc>Use the planning workspace to manage Activities and Objectives.</shortdesc>
+<taskbody>
+<context>
+<p>Planning workspace manages Activities and Objectives. Some functionality, such as the drag and
+drop, timeline view, and the objective and activity progress graphs are not fully accessible. Use
+the <uicontrol>Objective</uicontrol> tab and <uicontrol>Activity</uicontrol> tab to view an
+accessible version of the information that is contained in the planning workspace and to perform the
+same actions.</p>
+</context>
+</taskbody>
+</task>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e503" xml:lang="en-us">
+<title>WebLogic Server configuration</title>
+<shortdesc>To configure the WebLogic Server, you must set up a data source, a domain, a server, and
+configure the JMS and security settings. You can do all of these tasks by executing the
+<cmdname>configure</cmdname> target that is provided by the Cúram SDEJ.</shortdesc>
+<conbody>
+<p>The command <cmdname>build configure</cmdname> must be executed from the
+<filepath>&lt;SERVER_DIR></filepath> directory to invoke automatic configuration. This target
+requires that the files <filepath>AppServer.properties</filepath> and
+<filepath>Bootstrap.properties</filepath> exist in the
+<filepath>&lt;SERVER_DIR>/project/properties</filepath>.<note>You can overwrite this default
+location for the properties file by specifying <tt>-Dprop.file.location</tt> when executing the
+<cmdname>configure</cmdname> target.</note>directory. For more information about how to set up a
+<filepath>Bootstrap.properties</filepath>, see the <xref
+href="../ServerDeveloper/ctr_CuramServerDeveloperGuide.dita" scope="peer"/>. <xref
+href="c_WEBLOGS_Configuration2WeblogicServerConfiguration1.dita"/> details the required contents of
+the <filepath>AppServer.properties</filepath> file.</p>
+<fig><title>AppServer properties sample</title>
+<pre>## APPLICATION SERVER PROPERTIES
+
+## IT IS VERY IMPORTANT TO USE '/' FOR DIRECTORY PATHS. ##
+
+# Property to indicate WebLogic Server is installed.
+as.vendor=BEA
+
+# The username and password for admin server.
+# The password must be encrypted.
+security.username=&lt;e.g. weblogic>
+security.password=&lt;e.g. encrypted password>
+
+# The name of the WebLogic Server Domain Name.
+node.name=MYNODE
+
+# The name of the server on which the application will be hosted.
+curam.server.name=CuramServer
+curam.server.port=7001
+
+####################################################
+## THE FOLLOWING PROPERTIES ARE FOR WEBLOGIC ONLY ##
+####################################################
+
+# Property to set JVM initial and maximum heap size
+# when starting and stopping WebLogic Server.
+curam.server.jvm.heap.size=1024</pre><?Pub Caret 94?>
+</fig>
+<note type="note"> <ol>
+<li>The security.username used here in the <filepath>AppServer.properties</filepath> file
+should not be the same as any user that will exist as an application
+user. <p>With the implementation of strong password enforcement in
+WebLogic Server 11g Release 1, the Weblogic application server password
+must be at least eight alphanumeric characters in length with at least
+one number or a special character.</p></li>
+<li>The <cmdname>configure</cmdname> target cannot be run while H2
+database is in use. For more information on H2 database consult the <cite>Cúram
+Third-Party Tools Installation Guide for Windows</cite>.</li>
+<li>The <filepath>CuramMBean.jar</filepath> is copied from the <filepath>&lt;SDEJ>/lib</filepath> directory
+to the <filepath>&lt;WebLogic Server Install directory>/wlserver/server/lib/mbeantypes</filepath> directory
+by the configure target. The location of the <filepath>CuramMBean.jar</filepath> can
+be changed by manually copying to any location supported by the WebLogic
+Server. However, depending on the location, an extra parameter may
+be needed when executing the <cmdname>startserver</cmdname> command.
+For more details, please refer to <xref
+href="c_WEBLOGS_Configuration2StartWeblogicServer1.dita"></xref> .</li>
+<li>You have the option of setting <varname>curam.principal.name</varname> in the
+<filepath>AppServer.proerties</filepath> file. This defaults to Curam but if changed will update the
+principle-name in <filepath>weblogic.xml</filepath> and <filepath>weblogic-ejb-jar.xml</filepath>
+files.<table frame="all" id="table_khj_wsx_2q">
+<title/>
+<tgroup cols="3">
+<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+<thead>
+<row>
+<entry>Element</entry>
+<entry>Required Optional</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>&lt;principal-name></entry>
+<entry> Required if &lt;externally-defined> is not defined. </entry>
+<entry>Specifies the name of a principal that is defined in the security realm. You can use multiple
+&lt;principal-name> elements to map principals to a role. For more information on security
+realms</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</li>
+</ol></note>
+</conbody>
+</concept>
+<?Pub *0000003722?>

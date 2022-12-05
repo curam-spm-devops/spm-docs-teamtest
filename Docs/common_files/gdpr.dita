@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="gdpr" xml:lang="en-us">
+<title>GDPR</title>
+<shortdesc><keyword conref="conrefs.dita#conrefs/prodname"/> has documentation to assist customers
+in relation to addressing the General Data Protection Regulation (GDPR). </shortdesc>
+<conbody>
+<p>For more information, see <xref href="http://www.ibm.com/support/docview.wss?uid=swg22014838"
+format="html" scope="external"><keyword conref="conrefs.dita#conrefs/prodname"/> - GDPR
+Information</xref>.</p>
+</conbody>
+</concept>

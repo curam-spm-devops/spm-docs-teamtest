@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e61">
+<title>The enterprise application EAR file</title>
+<titlealts>
+<searchtitle>The enterprise application EAR file</searchtitle>
+</titlealts>
+<shortdesc>Create the application EAR file for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/></shortdesc>
+<conbody>
+<section id="section_r2r_zr3_chb">
+<title>Building the application EAR file</title><p>Execute the following target from the root
+directory of the server project to create the application EAR file for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>:</p>
+<cmdname>build websphereEAR</cmdname>
+<p>This target creates a ready to install EAR file, <filepath>&lt;SERVER_MODEL_NAME>.ear</filepath>
+located in <filepath>&lt;SERVER_DIR>/build/ear/WAS</filepath></p><p>The environment variables
+<varname>SERVER_MODEL_NAME</varname> and <varname>SERVER_DIR</varname> specify the name of the model
+in the project and the root directory of the project respectively. <?Pub Caret -1?>Before executing
+this target, a fully built application must be available. For more information, see the <cite>Cúram
+Server Developer's Guide</cite>. </p><note type="note">An EAR file cannot be built for H2 database
+For more information see the <cite>Cúram Third-Party Tools Installation Guide for
+Windows</cite>.</note><p>The <cmdname>websphereEAR</cmdname> target takes a number of
+previously-generated Java files and deployment descriptors and packages them up into an EAR
+file.</p><p>The Java files and deployment descriptors are generated during the build process based
+on the existence of Business Process Object (BPO) classes, that is, the methods of <i>Facade</i>
+classes or WebService classes and can be called by remote clients.</p><p>By default, all remote
+calls to the server are handled by the session bean <codeph>curam.util.invoke.EJBMethod</codeph>,
+rather than a session bean per publicly available interface. This bean provides support for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> features such as authorization, auditing,
+and tracing. If required it is also possible to generate a Facade interface.<note>The optional build
+parameter<option>-Denablefacade=true</option> turns on the generation of facade
+code.</note><?Pub Caret 0?></p></section>
+<section>
+<title>Contents of the application EAR file</title>
+<p>The EAR file has the following structure and contents:</p>
+<ul>
+<li><filepath>META-INF</filepath> Directory :<ul>
+<li><filepath>application.xml</filepath>: A generated file that lists the mapping of EJB modules to
+JAR files that are contained in the application.</li>
+<li><filepath>ibm-application-bnd.xmi</filepath>: A generated WebSphere Application Server-specific
+extension file.</li>
+<li><filepath>ibm-application-ext.xmi</filepath>: A generated WebSphere Application Server-specific
+extension file.</li>
+<li><filepath>was.policy</filepath>: A security policy file that grants the application the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_java"/> permission
+<option>java.security.AllPermission</option>.</li>
+<li><filepath>MANIFEST.MF</filepath>: The manifest file that details the contents of the EAR
+file.</li>
+</ul></li>
+<li> Core JAR Files:<p>The version numbers are not listed for the JAR files detailed. The core JAR
+files include: <filepath>antlr.jar</filepath>, <filepath>appinf.jar</filepath>,
+<filepath>appinf_internal.jar</filepath>, <filepath>coreinf.jar</filepath>,
+<filepath>rules.jar</filepath>, <filepath>jde_commons.jar</filepath>, <keyword
+conref="../common_files/conrefs.dita#conrefs/log4j2"/> jar files:
+<filepath>log4j-api.jar</filepath>, <filepath>log4j2.jar</filepath>, and
+<filepath>log4j2-config.jar</filepath>, <filepath>commons-pool.jar</filepath>,
+<filepath>commons-codec.jar</filepath>, <filepath>commons-discovery.jar</filepath>,
+<filepath>jdom.jar</filepath>, <filepath>axis.jar</filepath>, <filepath>castor.jar</filepath>,
+<filepath>jaxrpc.jar</filepath>, <filepath>saaj.jar</filepath>, <filepath>java_cup.zip</filepath>,
+<filepath>InfrastructureModule.jar</filepath>, <filepath>InvalidationModule.jar</filepath>,
+<filepath>DBtoJMS.war</filepath>, <filepath>ClientModule.war</filepath></p></li>
+<?Pub Caret 108?>
+<li> Facade JAR Files:<p>These are only present if facade generation has been enabled. All facades
+defined in the application are packaged into one JAR file, <filepath>FacadeModule.jar</filepath>.
+This JAR file contains the bean implementation classes for the EJB modules that represent the
+facades. The JAR file contains the following files in the <filepath>META-INF</filepath> directory: </p><ul>
+<li><filepath>ejb-jar.xml</filepath>: Automatically generated and contains the definition of every
+EJB module contained in the JAR file. All the publicly available methods are listed and the details
+of the resources available to the EJB modules.</li>
+<li><filepath>ibm-ejb-jar-bnd.xmi</filepath>: A generated WebSphere Application Server -specific
+extension file.</li>
+<li><filepath>ibm-ejb-jar-ext.xmi</filepath>: A generated WebSphere Application Server -specific
+extension file.</li>
+<li><filepath>Manifest.mf</filepath>: The manifest file, detailing the classpath for the EJB.</li>
+</ul></li>
+<li> Other JAR Files:<p>The other JAR files contain the generated and hand crafted code from the
+application. These include <filepath>application.jar</filepath>, <filepath>codetable.jar</filepath>,
+<filepath>events.jar</filepath>, <filepath>struct.jar</filepath>, <filepath>messages.jar</filepath>,
+<filepath>implementation.jar</filepath> and <filepath>properties.jar</filepath>. The
+<filepath>properties.jar</filepath> file contains the <filepath>Bootstrap.properties</filepath>
+file. This is the file containing the machine specific configuration properties for initially
+getting a connection to the database.</p></li>
+</ul>
+</section>
+</conbody>
+</concept>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e623">
+<title>Application server configuration</title>
+<shortdesc>You can configure an application server either by using the Ant
+<cmdname>configure</cmdname> target, or by using the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> administrative
+console.</shortdesc><conbody>
+<p>Before you configure the application server, you must install <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> for <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/>. For more information, see <xref
+href="c_WEBSPHZOS_Third1ThirdpartyTools1.dita"/>.</p>
+<p>Use one of the following methods to configure an application server:<ul id="ul_dg1_twh_v3b">
+<li>By using the Ant <cmdname>configure</cmdname> target. This approach applies to simple
+single-cell test environments.</li>
+<li>By using the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>
+administrative console as described in <xref
+href="c_WEBSPHZOS_Configuration5ManualWebsphereApplicationServerCon1.dita"/>. This approach applies
+to more complex clustered environments.</li>
+</ul>A number of Ant targets are available to help you configure and deploy <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> as described in the following
+topics.</p>
+<p>The Ant <cmdname>configure</cmdname> target that is provided by <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> represents a simple default configuration
+and might not be suitable for a production environment.</p>
+<note type="note">On <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> for
+<keyword conref="../common_files/conrefs.dita#conrefs/zos"/> the only profile available is the
+default profile. No other option is possible. <p>Therefore, before you configure the application
+server, either by using the Ant <cmdname>configure</cmdname> target or the administrative console,
+back up the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>
+configuration file system in case you need to rerun the configuration process.</p></note>
+<p>The following topics provide more information about the configuration process and options:</p>
+</conbody></concept>

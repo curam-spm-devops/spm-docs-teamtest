@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e589">
+<title>Start a WebLogic Server</title><conbody>
+<p>The Ant target for starting a WebLogic server is:</p>
+<p><cmdname>build startserver</cmdname></p>
+<p>and requires the following option:</p>
+<ul>
+<li><option>-Dserver.name</option>
+<p>The name of the server to be started.</p></li></ul>
+<p>The following parameter is optional and is only needed where the <filepath>CuramMBean.jar</filepath> file has been placed in a directory other than the default <filepath>&lt;WebLogic Server Install directory&gt;/wlserver/server/lib/mbeantypes</filepath> or the <filepath>/domaindir/lib/mbeantypes</filepath> directory, (where <filepath>domaindir</filepath> represents the location of your domain.) </p>
+<ul>
+<li>
+<option>-Dweblogic.alternateMbeanTypesDir</option>
+<p>The location of the <filepath>CuramMBean.jar</filepath></p>
+</li>
+</ul>
+<fig>
+<title>Example of Usage</title>
+<pre>build startserver -Dserver.name=CuramServer</pre></fig>
+<fig>
+<title>Example of Usage with alternateMbeanTypesDir set</title>
+<pre>build startserver -Dserver.name=CuramServer -Dweblogic.alternateMbeanTypesDir=C:\Location</pre></fig>
+<note type="important">Before starting the application server for the first time you must have run the <cmdname>database</cmdname> target followed by the <cmdname>prepare.application.data</cmdname> target. Failing to run this sequence will likely result in transaction timeouts during first login and a failure to initialize and access the application. Whenever the <cmdname>database</cmdname> target is rerun (e.g. in a development environment) the <cmdname>prepare.application.data</cmdname> target must also be rerun.</note>
+</conbody></concept>

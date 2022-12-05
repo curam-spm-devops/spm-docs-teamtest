@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring the queue activation specifications</title><taskbody><context>
+<p>Take the following steps, substituting <varname>&lt;QueueName&gt;</varname>, without the angle
+brackets, with each of the following queue names: DPEnactment, DPError, CuramDeadMessageQueue,
+WorkflowActivity, WorkflowEnactment, and WorkflowError.</p></context>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Resources</uicontrol>
+<uicontrol>JMS</uicontrol>
+<uicontrol>JMS providers</uicontrol>
+</menucascade></cmd>
+</step>
+<step><cmd>Select the <uicontrol>Default messaging provider</uicontrol> link</cmd></step>
+<step><cmd>Select the <uicontrol>Activation specifications</uicontrol> link in the
+<uicontrol>Additional Properties</uicontrol> box</cmd></step>
+<step>
+<cmd>Create a specification by selecting <uicontrol>New</uicontrol> and setting the following
+fields:</cmd>
+<info>
+<ul>
+<li><uicontrol>Name</uicontrol>: &lt;QueueName&gt;</li>
+<li><uicontrol>JNDI name</uicontrol>: eis/ <varname>&lt;QueueName&gt;</varname> AS </li>
+<li><uicontrol>Destination Type</uicontrol>: Queue </li>
+<li><uicontrol>Destination JNDI name</uicontrol>: jms/ <varname>&lt;QueueName&gt;</varname></li>
+<li><uicontrol>Bus Name</uicontrol>: CuramBus </li>
+<li><uicontrol>Authentication Alias</uicontrol>: Same as for the <tt>jdbc/curamdb</tt> data source
+(for example, <varname>&lt;SERVERNAME&gt;</varname>/dbadmin)</li>
+</ul>
+<p>Leave all other fields as default and select <uicontrol>OK</uicontrol> to add the port.</p>
+</info>
+</step></steps>
+<result>
+<p>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</p></result></taskbody></task>

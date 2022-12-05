@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring the required queues</title><taskbody><context>
+<p>Use the administrative console to carry out these steps, substituting
+<varname>&lt;QueueName&gt;</varname> (without the angle brackets) with each of the following queue
+names: DPEnactment, DPError, CuramDeadMessageQueue, WorkflowActivity, WorkflowEnactment, and
+WorkflowError.</p></context>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Service integration</uicontrol>
+<uicontrol>Buses</uicontrol>
+<uicontrol>CuramBus</uicontrol>
+</menucascade>;</cmd>
+</step>
+<step><cmd>Select the <uicontrol>Destinations</uicontrol> link in the <uicontrol>Destination resources</uicontrol> box;</cmd></step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> to open the <q>Create new destination</q> wizard.</cmd>
+</step>
+<step><cmd>Select <uicontrol>Queue</uicontrol> as the destination type and click
+<uicontrol>Next</uicontrol>:</cmd></step>
+<step>
+<cmd>Set the following queue attribute: <uicontrol>Identifier</uicontrol>: SIB_
+<varname>&lt;QueueName&gt;</varname></cmd>
+<info>
+<p>Leave all other attributes as default and select <uicontrol>Next</uicontrol>.</p>
+</info>
+</step>
+<step><cmd>Use the <uicontrol>Selected Bus Member</uicontrol> and click <uicontrol>Next</uicontrol>:</cmd></step>
+<step><cmd>Click <uicontrol>Finish</uicontrol> to confirm the queue creation:</cmd></step>
+<step>
+<cmd>Select the newly added SIB_ <varname>&lt;QueueName&gt;</varname> queue now displayed on the
+list of existing providers.</cmd>
+</step>
+<step>
+<cmd>Use the <uicontrol>Specify</uicontrol> button and the entries in table 1 to set the Exception
+Destination and associated text filed:</cmd>
+<info>
+<table id="d1e2720">
+<title>Exception Destination Settings</title>
+<tgroup cols="2">
+<colspec colnum="1" colwidth="36*"/>
+<colspec colnum="2" colwidth="35*"/>
+<thead>
+<row>
+<entry>
+<p>Queue Name</p>
+</entry>
+<entry>
+<p>Exception Destination</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>SIB_CuramDeadMessageQueue</p>
+</entry>
+<entry>
+<p>System</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>SIB_DPEnactment</p>
+</entry>
+<entry>
+<p>SIB_DPError</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>SIB_DPError</p>
+</entry>
+<entry>
+<p>SIB_CuramDeadMessageQueue</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>SIB_WorkflowActivity</p>
+</entry>
+<entry>
+<p>SIB_WorkflowError</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>SIB_WorkflowEnactment</p>
+</entry>
+<entry>
+<p>SIB_WorkflowError</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>SIB_WorkflowError</p>
+</entry>
+<entry>
+<p>SIB_CuramDeadMessageQueue</p>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</info>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to apply the changes.</cmd>
+</step>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Resources</uicontrol>
+<uicontrol>JMS</uicontrol>
+<uicontrol>JMS providers</uicontrol>
+</menucascade>;</cmd>
+</step>
+<step><cmd>Select the <uicontrol>Default messaging provider</uicontrol> link;</cmd></step>
+<step><cmd>Select the <uicontrol>Queues</uicontrol> link in the <uicontrol>Additional Properties</uicontrol> box;</cmd></step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following fields:</cmd>
+<info>
+<p><uicontrol>Name</uicontrol>: <varname>&lt;QueueName&gt;</varname></p>
+<p><uicontrol>JNDI Name</uicontrol>: jms/ <varname>&lt;QueueName&gt;</varname></p>
+<p><uicontrol>Bus Name</uicontrol>: CuramBus</p>
+<p><uicontrol>Queue Name</uicontrol>: SIB_ <varname>&lt;QueueName&gt;</varname></p>
+<p><uicontrol>Delivery Mode</uicontrol>: Persistent</p>
+<p>Leave all other fields as default and select <uicontrol>OK</uicontrol> to apply the changes.</p>
+</info>
+</step></steps>
+<result>
+<p>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</p>
+</result></taskbody></task>

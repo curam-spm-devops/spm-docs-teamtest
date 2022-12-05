@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e424">
+<title>Property files</title>
+<shortdesc>To run <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Ant targets, you
+must have the required property files in the <filepath>$SERVER_DIR/project/property</filepath>
+directory.</shortdesc><conbody>
+<p> The following topics identify relevant contents of these property files for <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> and how to verify those contents. For more
+detailed information on <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+properties, see <cite>Application properties</cite></p></conbody></concept>

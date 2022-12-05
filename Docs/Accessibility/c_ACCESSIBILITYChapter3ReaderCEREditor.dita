@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_ACCESSIBILITYChapter3ReaderCEREditor" xml:lang="en-us">
+<title>The Cúram Express Rule Editor</title>
+<shortdesc>Create and publish new rule sets and modify existing ones
+in an accessible manner via the administration application.</shortdesc><?Pub Caret -1?>
+<conbody>
+<p>Cúram Express Rule Sets contain rules that can be used in a number
+of ways. A rule set can contain legislative rules that govern the
+eligibility and entitlement for a related program  or some advisory
+rules to assist a case working to process a clients application.</p>
+<p>A CER rule set is stored as XML on the database and is maintained
+through a number of administration screens in the online application.
+There is also a Flex based CER editor that is used for periodic maintenance
+however certain aspects of this editor are not accessible. </p>
+<p>Many rule sets are used during the execution of key client application
+processing, therefore all changes to rules are performed within a
+development or staging environment where those changes can be tested
+and approved. </p>
+<p>The developer must have knowledge of the structure and definition
+of a CER rule set that is described in the <cite>Cúram Express Rules
+Reference Manual</cite>. For development outside of the online application
+an XML editor is required. As this is a development activity it is
+expected that the developer has access to the application database
+and can log into the online application at any time.</p>
+</conbody>
+</concept>
+<?Pub *0000001670?>

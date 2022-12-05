@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure administration security</title>
+<titlealts>
+<searchtitle>Configure administration security</searchtitle>
+</titlealts>
+<shortdesc>Configure administration security on the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> administration
+interface.</shortdesc>
+<taskbody>
+<context>
+<p>The default user registry used is the default <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> file- based user registry.</p>
+</context>
+<steps>
+<step>
+<cmd>Navigate to <menucascade>
+<uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Set the <uicontrol>Available realm definitions</uicontrol> to be <uicontrol>Federated
+repositories</uicontrol> and click the <uicontrol>Configure</uicontrol> button.</cmd>
+</step>
+<step>
+<cmd>Set the <uicontrol>Primary administrative username</uicontrol> to be <tt>websphere</tt>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Automatically generated server identity</uicontrol> radio button.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Ignore case for authorization</uicontrol> and click
+<uicontrol>OK</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Enter the password for the default administrative user, e.g. <tt>websphere</tt>, enter the
+confirmation and click <uicontrol>OK</uicontrol> to confirm the changes.</cmd>
+</step>
+<step>
+<cmd>Set the <uicontrol>Available realm definitions</uicontrol> to be <uicontrol>Federated
+repositories</uicontrol> and click the <uicontrol>Set as current</uicontrol> button.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Enable administrative security</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Enable application security</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Clear the <uicontrol>Use Java 2 security to restrict application access to local
+resources</uicontrol> option.</cmd>
+</step>
+<step>
+<cmd>Click the <uicontrol>Apply</uicontrol> button to confirm the changes.</cmd>
+</step>
+<step><cmd>Set the <uicontrol>Available realm definitions</uicontrol> to be <uicontrol>Federated
+repositories</uicontrol></cmd></step>
+<step>
+<cmd>Click the <uicontrol>Apply</uicontrol> button to confirm the changes.</cmd>
+</step>
+<step>
+<cmd>Navigate to <menucascade>
+<uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Expand <uicontrol>Web and SIP Security</uicontrol> and select <uicontrol>Single sign-on
+(SSO)</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Requires SSL</uicontrol>.</cmd>
+</step>
+<step><cmd>Click <uicontrol>OK</uicontrol> to confirm the change</cmd></step>
+<step><cmd>Navigate to <menucascade><uicontrol>Security</uicontrol><uicontrol>Global
+Security</uicontrol></menucascade></cmd></step>
+<step>
+<cmd>Select the <uicontrol>Custom Properties</uicontrol> link.</cmd>
+</step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button and set the name and value as follows:</cmd>
+<info>
+<p>Name : <tt>com.ibm.ws.security.web.logoutOnHTTPSessionExpire</tt></p>
+<p>Value : <tt>true</tt></p>
+</info></step>
+<step><cmd>Click the <uicontrol>OK</uicontrol> button to add the new property.</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button and set the name and value as follows:</cmd>
+<info>
+<p>Name : <tt>com.ibm.ws.security.addHttpOnlyAttributeToCookies</tt></p>
+<p>Value : <tt>true</tt></p>
+</info></step>
+<step><cmd>Click <uicontrol>OK</uicontrol> to confirm the change</cmd></step>
+<step><cmd>Save the changes to the master configuration.</cmd></step>
+</steps>
+</taskbody>
+</task>

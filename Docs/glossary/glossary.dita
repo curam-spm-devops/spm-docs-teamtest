@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<reference id="glossary" xml:lang="en-us">
+<title>Glossary</title>
+<titlealts>
+<navtitle>Glossary</navtitle>
+<searchtitle>Glossary terms for <keyword conref="../common_files/conrefs.dita#conrefs/prodname"
+/>.</searchtitle>
+</titlealts>
+<prolog>
+<copyright><copyryear year="2017"/><copyrholder></copyrholder>
+</copyright>
+<metadata>
+<keywords><indexterm>glossary</indexterm></keywords>
+</metadata></prolog>
+<refbody>
+<section><p>This glossary provides terms and definitions for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/>.</p><p>The following cross-references are used in this glossary: <ul>
+<li><ph><i>See</i></ph> refers you from a nonpreferred term to the preferred term or from an abbreviation to the spelled-out form.</li>
+<li><ph><i>See also</i></ph> refers you to a related or contrasting term.</li>
+</ul></p> </section>
+<!--Remove the following section if you do not want to insert shortcuts to each letter at the top of your glossary topic.-->
+<section>
+<xref href="#gloss_A"></xref>
+<xref href="#gloss_B"></xref>
+<xref href="#gloss_C"></xref>
+<xref href="#gloss_D"></xref>
+<xref href="#gloss_E"></xref>
+<xref href="#gloss_F"></xref>
+<xref href="#gloss_G"></xref>
+<xref href="#gloss_H"></xref>
+<xref href="#gloss_I"></xref>
+<xref href="#gloss_J"></xref>
+<xref href="#gloss_K"></xref>
+<xref href="#gloss_L"></xref>
+<xref href="#gloss_M"></xref>
+<xref href="#gloss_N"></xref>
+<xref href="#gloss_O"></xref>
+<xref href="#gloss_P"></xref>
+<xref href="#gloss_Q"></xref>
+<xref href="#gloss_R"></xref>
+<xref href="#gloss_S"></xref>
+<xref href="#gloss_U"></xref>
+<xref href="#gloss_V"></xref>
+<xref href="#gloss_W"></xref>
+<xref href="#gloss_Z"></xref>
+</section>
+</refbody>
+<reference id="gloss_A" xml:lang="en-us">
+  <title>A</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2048370">
+        <dt>accelerator</dt>
+        <dd>A set of pre-defined configuration files that provide a sample end-to-end solution when
+installed on <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>. An accelerator
+is designed as an enablement tool to help developers and business analysts in understanding the
+technologies and configuration that are required to build their own use cases.</dd>
+      </dlentry>
+      <dlentry id="x2012974">
+        <dt>action</dt>
+        <dd>In the context of an outcome plan, an activity that a caseworker can add to a client's outcome plan.</dd>
+      </dlentry>
+      <dlentry id="x2007910">
+        <dt>administrator</dt>
+        <dd>A person responsible for administrative tasks such as access authorization and content management. Administrators can also grant levels of authority to users.</dd>
+      </dlentry>
+      <dlentry id="x6198479">
+        <dt>alien sponsor</dt>
+        <dd>A person who has signed an affidavit of support on behalf of an alien as a condition of the alien's entry or admission to the U.S., and who is financially responsible for the alien. Other conditions also apply.</dd>
+      </dlentry>
+      <dlentry id="x2867692">
+        <dt>analytics</dt>
+        <dd>The science of studying data in order to find meaningful patterns in the data and draw conclusions based on those patterns.</dd>
+      </dlentry>
+      <dlentry id="x3126056">
+        <dt>announcement</dt>
+        <dd>A message from the organization that can be configured to be displayed on the user home page.</dd>
+      </dlentry>
+      <dlentry id="x6539991">
+        <dt>appeal</dt>
+        <dd>A request to review a decision that is made on a program application, product delivery case, product delivery determination, or issue case.</dd>
+      </dlentry>
+      <dlentry id="x6856607">
+        <dt>application case</dt>
+        <dd>A case that is used to manage the information that is related to an application for programs by a household or related group of individuals.</dd>
+      </dlentry>
+      <dlentry id="x9569574">
+        <dt>application intake script</dt>
+        <dd>An Intelligent Evidence Gathering script that is used to capture information about a claimant during the intake process.</dd>
+      </dlentry>
+      <dlentry id="x5835637">
+        <dt>applied deduction</dt>
+        <dd>An amount that can be deducted from a benefit payment and applied toward an outstanding liability owed to the organization.</dd>
+      </dlentry>
+      <dlentry id="x2219017">
+        <dt>assessment</dt>
+        <dd>The initial determination of eligibility and entitlement that occurs when a case is activated.</dd>
+      </dlentry>
+      <dlentry id="x6198735">
+        <dt>assessment definition</dt>
+        <dd>A set of configuration settings that define how an assessment is managed and how the assessment results are displayed.</dd>
+      </dlentry>
+      <dlentry id="x6198741">
+        <dt>assessment determination</dt>
+        <dd>A determination that is made when a case is initially assessed during case activation or subsequently reassessed due to a change in circumstance.</dd>
+      </dlentry>
+      <dlentry id="x6106425">
+        <dt>assessment engine</dt>
+        <dd>The technical infrastructure that is responsible for determining an assessment result.</dd>
+      </dlentry>
+      <dlentry id="x9569588">
+        <dt>assessment questionnaire</dt>
+        <dd>An interactive Intelligent Evidence Gathering (IEG) question script that is specific to an assessment type, such as a Self-Sufficiency assessment. A caseworker can gather information about a client by stepping through the interactive script.</dd>
+      </dlentry>
+      <dlentry id="x6217925">
+        <dt>assessment role</dt>
+        <dd>A role that represents the part that a client plays in terms of an assessment. For example, an assessment might be assessing a client in their role as primary caregiver or  secondary caregiver.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_B" xml:lang="en-us">
+  <title>B</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x9569594">
+        <dt>benefit</dt>
+        <dd>Payment or service that is given by an agency to a client deemed eligible for a benefit product.</dd>
+      </dlentry>
+      <dlentry id="x6198843">
+        <dt>benefit product</dt>
+        <dd>A benefit or liability delivered by the organization. Typically a benefit product will result in payments to clients.</dd>
+      </dlentry>
+      <dlentry id="x9569599">
+        <dt>Beveridge program delivery model</dt>
+        <dd>Delivery of services and benefits that are provided and financed by the government through tax payments.</dd>
+      </dlentry>
+      <dlentry id="x9569609">
+        <dt>Bismarck program delivery model</dt>
+        <dd>Delivery of services and benefits that are financed by the contributions of the citizens.</dd>
+      </dlentry>
+      <dlentry id="x9569614">
+        <dt>bulk base reassessment</dt>
+        <dd>The reassessment of a large number of cases following a system-wide change in data or configuration.</dd>
+      </dlentry>
+      <dlentry id="x9569604">
+        <dt>Business Intelligence Reporting Tools</dt>
+        <dd>An Eclipse-based open source reporting system for web applications.</dd>
+      </dlentry>
+      <dlentry id="x2180025">
+        <dt>business process</dt>
+        <dd>A defined set of business activities that represent the required steps to achieve a business objective. A business process includes the flow and use of information and resources.</dd>
+      </dlentry>
+      <dlentry id="x2266457">
+        <dt>business rule</dt>
+        <dd>A representation of how business policies or practices apply to a business activity.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_C" xml:lang="en-us">
+  <title>C</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x6198913">
+        <dt>caregiver</dt>
+        <dd>A person who takes responsibility for someone who cannot fully care for themselves.</dd>
+      </dlentry>
+      <dlentry id="x7738540">
+        <dt>care plan</dt>
+        <dd>A plan that holds patient information and provides the functions that are needed for a care coordinator to manage patients towards successful outcomes.</dd>
+      </dlentry>
+      <dlentry id="x9569623">
+        <dt>caretaker relative</dt>
+        <dd>A person who takes responsibility for someone in the person's own home. For example, a child's caretaker relative can be either a parent, or a non-parent such as a grandparent, a sibling, or an uncle or aunt.</dd>
+      </dlentry>
+      <dlentry id="x2264025">
+        <dt>case</dt>
+        <dd>A business object that is used to manage information that is pertinent to the type of interaction that a client has with an organisation. For example, an "Application Case" is used to manage all the information that is required for processing a benefits application.</dd>
+      </dlentry>
+      <dlentry id="x6198935">
+        <dt>case audit</dt>
+        <dd>An examination of an agency's cases by a third party.</dd>
+      </dlentry>
+      <dlentry id="x7738575">
+        <dt>case decision</dt>
+        <dd>A record of eligibility and entitlement for a period of time on a case.</dd>
+      </dlentry>
+      <dlentry id="x9569633">
+        <dt>case deduction</dt>
+        <dd>A portion of a benefit that is put toward a liability or a third party.</dd>
+      </dlentry>
+      <dlentry id="x7738585">
+        <dt>case eligibility</dt>
+        <dd>A determination of the primary client's entitlement to one or more case components.</dd>
+      </dlentry>
+      <dlentry id="x6218135">
+        <dt>case event</dt>
+        <dd>A significant milestone in a particular case.</dd>
+      </dlentry>
+      <dlentry id="x9569642">
+        <dt>case lifetime</dt>
+        <dd>The length of time that a case lasted or is expected to last, with reference to the case's start and end dates.</dd>
+      </dlentry>
+      <dlentry id="x6198959">
+        <dt>case nominee</dt>
+        <dd>A case participant who receives payments or bills.</dd>
+      </dlentry>
+      <dlentry id="x5835682">
+        <dt>caseworker</dt>
+        <dd>A user responsible for the ongoing management of cases.</dd>
+      </dlentry>
+      <dlentry id="x2219227">
+        <dt>certification</dt>
+        <dd>An official recognition of a provider member's skill or qualification.</dd>
+      </dlentry>
+      <dlentry id="x8457114">
+        <dt>citizen</dt>
+        <dd>A public beneficiary of social services.</dd>
+      </dlentry>
+      <dlentry id="x9569651">
+        <dt>citizen identity</dt>
+        <dd>The identity for a public beneficiary of social services.</dd>
+      </dlentry>
+      <dlentry id="x2000644">
+        <dt>client</dt>
+        <dd>An individual who is assessed for suitable programs or services based on the individual's personal circumstances.</dd>
+      </dlentry>
+      <dlentry id="x7738794">
+        <dt>collaborative investigation case</dt>
+        <dd>A social enterprise folder that is used by non-agency multidisciplinary team members to collaborate with agency workers in the investigation of allegations made against one or more clients.</dd>
+      </dlentry>
+<!--<dlentry id="x9569660"><dt>contribution management</dt><dd>The central management by agencies of employer, employee, and citizen contribution-based fund models throughout the entire funding and distribution lifecycle.</dd></dlentry>-->
+      <dlentry id="x4970877">
+        <dt>copayment</dt>
+        <dd>A payment that is made by a beneficiary for healthcare services in addition to that made by an insurer.</dd>
+      </dlentry>
+      <dlentry id="x9569666">
+        <dt>correction set</dt>
+        <dd>A set of related evidence records that reflects the history of the system's record of evidence. Older items in the correction set were initially thought to be true but are now known to have been recorded incorrectly.</dd>
+      </dlentry>
+      <dlentry id="x6199174">
+        <dt>countable income</dt>
+        <dd>The amount of income that is included in a benefit assessment or calculation.</dd>
+      </dlentry>
+      <dlentry id="x5835750">
+        <dt>coverage period</dt>
+        <dd>A period within a determination of constant eligibility, entitlement and explanation.</dd>
+      </dlentry>
+      <dlentry id="x9569673">
+        <dt>current assessment determination</dt>
+        <dd>The most up-to-date assessment determination, which is currently being used to deliver the product. Typically, it is used to calculate the amounts payable under the case.</dd>
+      </dlentry>
+      <dlentry id="x9569678">
+        <dt>custom entity</dt>
+        <dd>A database table that is not included with an application and is added to the application by the customer.</dd>
+      </dlentry>
+      <dlentry id="x9569683">
+        <dt>custom evidence type</dt>
+        <dd>A type of dynamic or non-dynamic evidence that is not included with an application and is added to the application by the customer.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_D" xml:lang="en-us">
+  <title>D</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2052849">
+        <dt>data store</dt>
+        <dd>A place, such as a database system, file, or directory, where data is stored.</dd>
+      </dlentry>
+      <dlentry id="x9569688">
+        <dt>decision assist</dt>
+        <dd>A simplified component that captures and processes information from questionnaires to assist with assessment-based decision making, so that the appropriate interventions can be established to achieve the required outcomes.</dd>
+      </dlentry>
+      <dlentry id="x6199238">
+        <dt>decision detail</dt>
+        <dd>Free-form calculated output that helps explain to a caseworker how the eligibility and entitlement results were determined.</dd>
+      </dlentry>
+      <dlentry id="x9569694">
+        <dt>decision period</dt>
+        <dd>A period within a determination of constant eligibility and entitlement.</dd>
+      </dlentry>
+      <dlentry id="x6246845">
+        <dt>deferred processing</dt>
+        <dd>Background processing that occurs outside of main online processing. Requests for deferred processing can be added to a queue.</dd>
+      </dlentry>
+      <dlentry id="x2001477">
+        <dt>dependent</dt>
+        <dd>A person who relies on another for financial support; for example, a child is a dependent of a parent.</dd>
+      </dlentry>
+      <dlentry id="x5835780">
+        <dt>desk-based hearing</dt>
+        <dd>A hearing that is completed by a hearing official and is based solely on a consideration of evidence and statements that are submitted by the case participants.</dd>
+      </dlentry>
+      <dlentry id="x6856743">
+        <dt>determination</dt>
+        <dd>The act of making a decision based on the evidence available on a case.</dd>
+      </dlentry>
+      <dlentry id="x6218415">
+        <dt>determination-based assessment</dt>
+        <dd>An assessment that is run to make decisions on an organization's clients using the rules configured in the Decision Assist Administration application.</dd>
+      </dlentry>
+      <dlentry id="x6199308">
+        <dt>determination result</dt>
+        <dd>A record of the outcome of an eligibility and entitlement assessment.</dd>
+      </dlentry>
+      <dlentry id="x9569707">
+        <dt>dynamic evidence</dt>
+        <dd>Evidence that can be configured and maintained from the administration application without the need for code development.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_E" xml:lang="en-us">
+  <title>E</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2856827">
+        <dt>eligibility</dt>
+        <dd>Determination of whether a product can be delivered. Typically, whether a case will result in the generation of financial payments or liabilities.</dd>
+      </dlentry>
+      <dlentry id="x9569718">
+        <dt>eligibility and entitlement management</dt>
+        <dd>A process that includes capturing evidence, calculating entitlements, processing changes in citizens circumstances, managing delivery of services and payments.</dd>
+      </dlentry>
+      <dlentry id="x9569713">
+        <dt>eligible alien</dt>
+        <dd>An individual who is both classified as a qualified alien and who meets the qualified alien eligibility criteria to be eligible for Cash Assistance.</dd>
+      </dlentry>
+      <dlentry id="x2213075">
+        <dt>entitlement</dt>
+        <dd>A right to a benefit, program, or service during a period of eligiblity.</dd>
+      </dlentry>
+      <dlentry id="x2760633">
+        <dt>entity resolution</dt>
+        <dd>A process that compares the incoming identity and determines whether they represent an existing entity or a new entity. If an incoming identity is determined to represent an existing entity, person, organization, place, or item, they are resolved into a single entity.</dd>
+      </dlentry>
+      <dlentry id="x5633626">
+        <dt>evidence</dt>
+        <dd>Any information that is captured for a client and used to determine eligibility and entitlement to a program or benefit.</dd>
+      </dlentry>
+      <dlentry id="x9569726">
+        <dt>evidence brokering</dt>
+        <dd>The sharing of evidence across <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> components, such as between cases and
+person evidence, and between enterprises.</dd>
+      </dlentry>
+      <dlentry id="x9569731">
+        <dt>evidence lifecycle management</dt>
+        <dd>A part of the eligibility and entitlement management process, the evidence lifecycle includes the design, collection, verification, activation, correction, and sharing of evidence.</dd>
+      </dlentry>
+      <dlentry id="x9569736">
+        <dt>explanation</dt>
+        <dd>Additional calculated data that helps a case worker understand how a case's eligibility and entitlement were determined.</dd>
+      </dlentry>
+      <dlentry id="x9569741">
+        <dt>external clinical system</dt>
+        <dd>A system of record that is external to the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> system and that stores patient
+clinical data.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_F" xml:lang="en-us">
+  <title>F</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2022506">
+        <dt>factor</dt>
+        <dd>An aspect of a client circumstance, such as a need or barrier, that is of interest to an organization. Client needs are assessed by using factors.</dd>
+      </dlentry>
+      <dlentry id="x4518071">
+        <dt>financial instrument</dt>
+        <dd>A record of actual payments, liabilities, or payments received that has been issued or received by the organization.</dd>
+      </dlentry>
+      <dlentry id="x3252718">
+        <dt>financial management</dt>
+        <dd>An integrated process for managing the calculation, scheduling, distribution, and disbursement of payments and liabilities to participants.</dd>
+      </dlentry>
+      <dlentry id="x7739290">
+        <dt>financial schedule</dt>
+        <dd>A schedule of payments or liabilities for a nominee.</dd>
+      </dlentry>
+      <dlentry id="x9569754">
+        <dt>fit gap analysis</dt>
+        <dd>A problem solving methodology that is used to identify gaps in current business processes.</dd>
+      </dlentry>
+      <dlentry id="x7019586">
+        <dt>frequency pattern</dt>
+        <dd>A recurring time interval over which to deliver a product, such as daily, weekly, or monthly.</dd>
+      </dlentry>
+      <dlentry id="x9569760">
+        <dt>funded program management</dt>
+        <dd>A flexible process that social enterprises use to create and manage funds that can be given to clients in need of assistance.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_G" xml:lang="en-us">
+  <title>G</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2554034">
+        <dt>Gantt chart</dt>
+        <dd>A graphical representation of a project timeline and duration in which schedule data is displayed as horizontal bars along a time scale.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_H" xml:lang="en-us">
+  <title>H</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x3574198">
+        <dt>heat map</dt>
+        <dd>A graphical representation of data values in a two-dimensional table format, in which higher values are represented by darker colors and lower values by lighter ones.</dd>
+      </dlentry>
+      <dlentry id="x6310026">
+        <dt>hybrid application</dt>
+        <dd>An application that is primarily written in web-oriented languages (HTML5, CSS, and JS), but is wrapped in a native shell so that the app behaves like, and provides the user with all the capabilities of, a native app.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_I" xml:lang="en-us">
+  <title>I</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x9569938">
+        <dt>IEG</dt>
+        <dd>See <xref href="#gloss_I/x7739525">Intelligent Evidence Gathering</xref>.</dd>
+      </dlentry>
+      <dlentry id="x9569766">
+        <dt>inbound web services</dt>
+        <dd>A web service that is called by external systems, applications or clients.</dd>
+      </dlentry>
+      <dlentry id="x9569771">
+        <dt>income support</dt>
+        <dd>Social programs that provide food, cash, and medical assistance benefits to citizens in need.</dd>
+      </dlentry>
+      <dlentry id="x9569776">
+        <dt>in-edit evidence</dt>
+        <dd>Changes to evidence that have not yet been activated.</dd>
+      </dlentry>
+      <dlentry id="x6196716">
+        <dt>intake</dt>
+        <dd>The process of adding individuals and all their details to the system.</dd>
+      </dlentry>
+      <dlentry id="x6199620">
+        <dt>integrated case</dt>
+        <dd>A case that is used to manage the delivery of products and services to a household or related group of individuals. An integrated case can contain one or more child product delivery cases.</dd>
+      </dlentry>
+      <dlentry id="x7739525">
+        <dt>Intelligent Evidence Gathering (IEG)</dt>
+        <dd>An automated evidence gathering process that supports self-service operations by providing scripted interview tools.</dd>
+      </dlentry>
+      <dlentry id="x9569788">
+        <dt>Interface Rule Class</dt>
+        <dd>A CER rule class that enforces a data interface between the rules engine and custom business rules.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_J" xml:lang="en-us">
+  <title>J</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x6199668">
+        <dt>judicial review</dt>
+        <dd>An appeal that is conducted by a court to overturn a decision on a case or a prior appeal.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_K" xml:lang="en-us">
+  <title>K</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x8175435">
+        <dt>keyboard user</dt>
+        <dd>A user who uses a keyboard exclusively to navigate and interact with an application.</dd>
+      </dlentry>
+      <dlentry id="x6199684">
+        <dt>key decision factor</dt>
+        <dd>An event, such as a birth or marriage, or a data change, such as an increase in annual income, that is used to make a determination of eligibility or entitlement.</dd>
+      </dlentry>
+      <dlentry id="x2426406">
+        <dt>key performance indicator (KPI)</dt>
+        <dd>A quantifiable measure that is designed to track one of the critical success factors of a business process.</dd>
+      </dlentry>
+      <dlentry id="x5835838">
+        <dt>kith</dt>
+        <dd>A non-familial contact such as a neighbor or community member who is emotionally bonded to a child.</dd>
+      </dlentry>
+      <dlentry id="x2481601">
+        <dt>KPI</dt>
+        <dd>See <xref href="#gloss_K/x2426406">key performance indicator</xref>.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_L" xml:lang="en-us">
+  <title>L</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x6199732">
+        <dt>legislation</dt>
+        <dd>The laws that determine the requirements for eligibility and entitlement calculations.</dd>
+      </dlentry>
+      <dlentry id="x3727530">
+        <dt>liability</dt>
+        <dd>A charge for funds from an organization to a participant.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_M" xml:lang="en-us">
+  <title>M</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x9569802">
+        <dt>manual eligibility check determination</dt>
+        <dd>An active determination that is manually requested by a case worker to provide an interim determination on a case. The determination can be based on in-edit evidence or only on active evidence.</dd>
+      </dlentry>
+      <dlentry id="x6199788">
+        <dt>means test</dt>
+        <dd>A determination of whether someone qualifies for a financial assistance program.</dd>
+      </dlentry>
+      <dlentry id="x7636517">
+        <dt>mobile app</dt>
+        <dd>See <xref href="#gloss_M/x4258535">mobile application</xref>.</dd>
+      </dlentry>
+      <dlentry id="x4258535">
+        <dt>mobile application (mobile app)</dt>
+        <dd>An application that has been designed for a mobile platform. Similar to web applications, mobile apps provide some function beyond static display of information, for example, allowing the user to filter news in near real-time.</dd>
+      </dlentry>
+      <dlentry id="x6218921">
+        <dt>multidisciplinary team</dt>
+        <dd>A group of individuals, which might include agency staff, other agencies, local providers, and interested community partners, that works together to help clients and families.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_N" xml:lang="en-us">
+  <title>N</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x5599598">
+        <dt>native app</dt>
+        <dd>An app that is compiled into binary code for use on the mobile operating system on the device.</dd>
+      </dlentry>
+      <dlentry id="x3728356">
+        <dt>native application</dt>
+        <dd>See <xref href="#gloss_N/x5599598">native app</xref>.</dd>
+      </dlentry>
+      <dlentry id="x6199954">
+        <dt>nominee</dt>
+        <dd>A recipient of an attained objective on a case. Typically the nominee is the primary client of the product delivery case but can be any person.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_O" xml:lang="en-us">
+  <title>O</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2118241">
+        <dt>objective</dt>
+        <dd>A small specific step that a client can complete to move towards achieving their outcome plan.</dd>
+      </dlentry>
+      <dlentry id="x6200042">
+        <dt>objective tag</dt>
+        <dd>A tag that indicates the frequency at which an objective can be delivered; for example, weekly for income assistance benefit, or daily for income assistance benefit. Larger frequencies are typically used for recurring delivery periods; smaller periods are typically used for ramp-up and ramp-down delivery periods.</dd>
+      </dlentry>
+      <dlentry id="x2220662">
+        <dt>organization unit</dt>
+        <dd>A parent element that contains positions. A default location can be specified for an organization unit.</dd>
+      </dlentry>
+      <dlentry id="x5835908">
+        <dt>outcome management</dt>
+        <dd>An approach to social service delivery that focuses on the results a client is trying to achieve. With this approach, social enterprises create and manage plans to help clients achieve better outcomes rather than focusing only on the services available.</dd>
+      </dlentry>
+      <dlentry id="x6107919">
+        <dt>outcome plan</dt>
+        <dd>A set of activities and actions that a caseworker can create for one or more clients to help clients to achieve their goals and objectives.</dd>
+      </dlentry>
+      <dlentry id="x6200134">
+        <dt>outreach campaign</dt>
+        <dd>A method of delivering targeted campaign messages to a client that are based on the client's needs.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_P" xml:lang="en-us">
+  <title>P</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2003653">
+        <dt>participant</dt>
+        <dd>An individual or agency that health and social enterprises interact with, for example, a person.</dd>
+      </dlentry>
+      <dlentry id="x7739857">
+        <dt>participant data case (PDC)</dt>
+        <dd>A case for entering data for a single participant.</dd>
+      </dlentry>
+      <dlentry id="x2244892">
+        <dt>PDC</dt>
+        <dd>See <xref href="#gloss_P/x7739857">participant data case</xref>.</dd>
+      </dlentry>
+      <dlentry id="x8461823">
+        <dt>pod</dt>
+        <dd>A container for a set of data that is presented to the user in a list, a chart, or another graphical view. For example, a pod might contain a snapshot view of key data that is required by the user to complete their work for that particular day.</dd>
+      </dlentry>
+      <dlentry id="x2011359">
+        <dt>policy</dt>
+        <dd>Procedures and rules that are specified by an expert department, based on legislation for a product.</dd>
+      </dlentry>
+      <dlentry id="x6247424">
+        <dt>precedent</dt>
+        <dd>A value, such as an attribute, that another value depends on.</dd>
+      </dlentry>
+      <dlentry id="x2034899">
+        <dt>product</dt>
+        <dd>A set of pre-configured end-to-end functions that supports a defined set of project requirements.</dd>
+      </dlentry>
+      <dlentry id="x3985734">
+        <dt>product configuration</dt>
+        <dd>Configuration affecting a product's behavior, including: the splitting of the product's lifetime into product periods; the association of business rules for calculating the product's eligibility, entitlement and explanation; and the categories of explanation that are available and the dynamic UIM screens that are available for displaying the explanations.</dd>
+      </dlentry>
+      <dlentry id="x6200458">
+        <dt>product delivery case</dt>
+        <dd>A case that is used to deliver a product.</dd>
+      </dlentry>
+      <dlentry id="x9569845">
+        <dt>product period</dt>
+        <dd>A period within a product's lifetime that has a single set of business rules for the calculation of eligibility, entitlement and explanation.</dd>
+      </dlentry>
+      <dlentry id="x6200490">
+        <dt>product provider</dt>
+        <dd>An organization that offers products to clients on behalf of a health or social enterprise, for example, an educational organization that provides training resources to clients.</dd>
+      </dlentry>
+      <dlentry id="x9569851">
+        <dt>prospect person participant</dt>
+        <dd>An individual who is registered with minimal information when an agency does not have enough information to register them as person participants.</dd>
+      </dlentry>
+      <dlentry id="x9569856">
+        <dt>provider management</dt>
+        <dd>An agency's process for managing relationships and interactions with third-party providers.</dd>
+      </dlentry>
+      <dlentry id="x2265150">
+        <dt>publication</dt>
+        <dd>The act of taking pending changes from a sandbox and making those changes part of the running system's configuration.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_Q" xml:lang="en-us">
+  <title>Q</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x6200615">
+        <dt>quantitative audit</dt>
+        <dd>An audit that measures compliance with statutes and policy, and is based on available case data.</dd>
+      </dlentry>
+      <dlentry id="x6108167">
+        <dt>question script</dt>
+        <dd>A script that specifies the behavior of a questionnaire, such as the sequence of the questions, or whether the questions are asked of all clients or a subset of clients.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_R" xml:lang="en-us">
+  <title>R</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x5740835">
+        <dt>rate table</dt>
+        <dd>A table of numerical system-wide data that may change over time.</dd>
+      </dlentry>
+      <dlentry id="x9569865">
+        <dt>reactive determination</dt>
+        <dd>An automatic determination by the Eligibility and Entitlement Engine of changes in
+eligibility for products and services in response to data changes on a case.</dd>
+      </dlentry>
+      <dlentry id="x6200646">
+        <dt>reassessment</dt>
+        <dd>A determination of eligibility and entitlement that occurs after a case is activated, either because of a change in circumstances within the case and/or a change to product configuration that might affect its calculations.</dd>
+      </dlentry>
+      <dlentry id="x9569871">
+        <dt>reassessment aggregation</dt>
+        <dd>A workflow responsible for ensuring that a particular case is reassessed by only one process at a time.</dd>
+      </dlentry>
+      <dlentry id="x5692777">
+        <dt>recommendation</dt>
+        <dd>A suggestion of an activity, such as a service, action, or referral, or objective that is targeted to address a client's specific circumstances.</dd>
+      </dlentry>
+      <dlentry id="x2036300">
+        <dt>referral</dt>
+        <dd>A written recommendation from a care provider for an individual to see a healthcare specialist or to receive specific services.</dd>
+      </dlentry>
+      <dlentry id="x6200818">
+        <dt>rule attribute</dt>
+        <dd>A named piece of data on a CER Rule Class; for example, a Person rule class might have a firstName rule attribute.</dd>
+      </dlentry>
+      <dlentry id="x6120647">
+        <dt>rule category</dt>
+        <dd>A categorization of a CER rule set to allow for filtering when a user is searching for a rule set.</dd>
+      </dlentry>
+      <dlentry id="x6200826">
+        <dt>rule class</dt>
+        <dd>A defined type of data manipulated by CER rules; for example, a rule set might contain a Person rule class.</dd>
+      </dlentry>
+      <dlentry id="x5081633">
+        <dt>rule object</dt>
+        <dd>An instance of a rule class; for example, a Person rule class might have rule object instances for James Smith and Linda Smith.</dd>
+      </dlentry>
+      <dlentry id="x9569886">
+        <dt>rule object converter</dt>
+        <dd>Software which makes data available to CER as rule objects. Some types of rule object converters can be configured.</dd>
+      </dlentry>
+      <dlentry id="x9569811">
+        <dt>rule objective</dt>
+        <dd>An item to be delivered on a case to a particular target. It is typically, a payment on a case, such as an income assistance benefit or a medical allowance benefit.</dd>
+      </dlentry>
+      <dlentry id="x6200896">
+        <dt>rule object propagator</dt>
+        <dd>Software thgat automatically maintains rule objects when application data changes in the application. Some types of rule object propagators can be configured.</dd>
+      </dlentry>
+      <dlentry id="x2065665">
+        <dt>rule set</dt>
+        <dd>A collection of rule classes, that might be maintained and published. Typically, all the rule classes in a rule set have a similar purpose.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_S" xml:lang="en-us">
+  <title>S</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2267825">
+        <dt>sandbox</dt>
+        <dd>An area where a developer or an administrator can accumulate pending changes before publication. Sandbox data does not affect calculations that are based on published data.</dd>
+      </dlentry>
+      <dlentry id="x2221214">
+        <dt>screen reader</dt>
+        <dd>An assistive technology that transforms displayed content into non-visual communication, such as text-to-speech or Braille.</dd>
+      </dlentry>
+      <dlentry id="x4427370">
+        <dt>screen reader user</dt>
+        <dd>A user who uses a screen reader to navigate and interact with an application.</dd>
+      </dlentry>
+      <dlentry id="x9766766">
+        <dt>Section 508</dt>
+        <dd>An amendment to the Workforce Rehabilitation Act of 1973 to require that electronic and information technology that is developed by or purchased by American federal agencies be accessible by people with disabilities.</dd>
+      </dlentry>
+      <dlentry id="x2038343">
+        <dt>service</dt>
+        <dd>An activity that is paid for and tracked by the organization, but that is delivered by a third party or agency. A service  can be added by a caseworker to a client's outcome plan.</dd>
+      </dlentry>
+      <dlentry id="x6201289">
+        <dt>service authorization</dt>
+        <dd>The instrument through which the organization authorizes a provider to provide specific services to a specific client in return for payment.</dd>
+      </dlentry>
+      <dlentry id="x4484217">
+        <dt>service plan</dt>
+        <dd>A mechanism by which a social enterprise organization can plan the delivery of services and activities to help a client achieve a specific goal.</dd>
+      </dlentry>
+      <dlentry id="x6201375">
+        <dt>service supplier</dt>
+        <dd>An organization that supplies services to a health or social enterprise.</dd>
+      </dlentry>
+      <dlentry id="x9569904">
+        <dt>snapshot determination</dt>
+        <dd>A point-in-time record of a case's eligibility, entitlement and explanation.</dd>
+      </dlentry>
+      <dlentry id="x2116290">
+        <dt>SOAP</dt>
+        <dd>A lightweight, XML-based protocol for exchanging information in a decentralized, distributed environment. SOAP can be used to query and return information and invoke services across the Internet.</dd>
+      </dlentry>
+      <dlentry id="x6108532">
+        <dt>social enterprise</dt>
+        <dd>An organization that delivers social benefits and services to clients, for example, a human services organization or social security organization.</dd>
+      </dlentry>
+      <dlentry id="x9569910">
+        <dt>social program management</dt>
+        <dd>A set of processes for managing social programs from needs to outcomes. The processes support the work of social enterprises.</dd>
+      </dlentry>
+      <dlentry id="x9569915">
+        <dt>social programs data model</dt>
+        <dd>A data structure in which social enterprises can capture client information and reuse it across many social programs, for example, a social enterprise can use the data structure to collect information about a client's household. The data is reusable in the eligibility and enrollment processes of multiple programs.</dd>
+      </dlentry>
+      <dlentry id="x9569920">
+        <dt>SPMP analytics</dt>
+        <dd>An accelerator that provides business intelligence and analytics to support core business intelligence, performance management, and analytics.</dd>
+      </dlentry>
+      <dlentry id="x7685618">
+        <dt>succession set</dt>
+        <dd>A set of related evidence records that reflects the history of real-world changes in circumstance. Older items in the succession set apply to circumstances that used to be true in the real world but that are no longer true.</dd>
+      </dlentry>
+      <dlentry id="x9569926">
+        <dt>supervisor workspace</dt>
+        <dd>An interface from which managers can monitor and manage the cases, tasks, and workloads of the users, organization units, and work queues that they supervise.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_U" xml:lang="en-us">
+  <title>U</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x3672598">
+        <dt>UMF</dt>
+        <dd>See <xref href="#gloss_U/x3672593">Universal Message Format</xref>.</dd>
+      </dlentry>
+      <dlentry id="x9569931">
+        <dt>universal access</dt>
+        <dd>A web interface that is provided by social enterprises that give clients a single point of access to all social programs and services.</dd>
+      </dlentry>
+      <dlentry id="x3672593">
+        <dt>Universal Message Format (UMF)</dt>
+        <dd>An extensible XML dialect used for structuring data source files. UMF contains standard tags that represent key pieces of identities, relationships, and activities. Before data can be processed by the pipelines, it must be converted into UMF and follow the UMF specification.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_V" xml:lang="en-us">
+  <title>V</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x6202302">
+        <dt>verification engine</dt>
+        <dd>A function of <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>
+that interprets evidence based on verification rules to determine eligibility and entitlement as
+part of program delivery.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_W" xml:lang="en-us">
+  <title>W</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x9766763">
+        <dt>WCAG</dt>
+        <dd>See <xref href="#gloss_W/x9766759">Web Content Accessibility Guidelines</xref>.</dd>
+      </dlentry>
+      <dlentry id="x9766759">
+        <dt>Web Content Accessibility Guidelines (WCAG)</dt>
+        <dd>A set of recommendations developed by the World Wide Web Consortium (W3C) that defines how to increase the accessibility of web content for people with disabilities.</dd>
+      </dlentry>
+      <dlentry id="x2116539">
+        <dt>Web Services Description Language (WSDL)</dt>
+        <dd>An XML-based specification for describing networked services as a set of endpoints operating on messages containing either document-oriented or procedure-oriented information.</dd>
+      </dlentry>
+      <dlentry id="x2116580">
+        <dt>WSDL</dt>
+        <dd>See <xref href="#gloss_W/x2116539">Web Services Description Language</xref>.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+<reference id="gloss_Z" xml:lang="en-us">
+  <title>Z</title>
+  <refbody>
+    <section><dl>
+      <dlentry id="x2043503">
+        <dt>zoom</dt>
+        <dd>To progressively increase or decrease the size of a part of an image on a display or window.</dd>
+      </dlentry>
+    </dl></section>
+  </refbody>
+</reference>
+</reference>

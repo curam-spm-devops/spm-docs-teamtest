@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/>
+environment variable</title>
+<titlealts>
+<searchtitle>Configure the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"
+/> environment variable</searchtitle>
+</titlealts>
+<shortdesc>Select the <filepath>DB2_JCC_DRIVER_PATH</filepath> link and configure the environment
+variable.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Select <menucascade><uicontrol>Environment</uicontrol><uicontrol>WebSphere
+variables</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the <filepath>DB2_JCC_DRIVER_PATH</filepath> link from the list of environment
+variables. A configuration screen for the variable is displayed.</cmd></step>
+<step><cmd>Set the <uicontrol>Value</uicontrol> field so that the field points to the directory that
+contains the Type 4 drivers. Typically, the directory is the <filepath>drivers</filepath> directory
+that is under the SDEJ installation. For example,
+<filepath>D:\Curam\CuramSDEJ\drivers</filepath>.</cmd></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the changes.</cmd></step>
+</steps>
+</taskbody>
+</task>

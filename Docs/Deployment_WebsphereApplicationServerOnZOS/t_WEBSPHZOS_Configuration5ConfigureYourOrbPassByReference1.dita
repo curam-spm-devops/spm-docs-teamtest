@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure ORB to pass by reference</title><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Servers</uicontrol>
+<uicontrol>Server Types</uicontrol>
+<uicontrol>WebSphere application servers</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the relevant server from the list.</cmd>
+</step>
+<step>
+<cmd>In the <uicontrol>Container Settings</uicontrol> section expand <uicontrol>Container
+Services</uicontrol> and click the <uicontrol>ORB service</uicontrol> link.</cmd>
+</step>
+<step><cmd>Select the <uicontrol>Pass by reference</uicontrol> option from the <uicontrol>General Properties</uicontrol> section.</cmd></step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to apply changes.</cmd>
+</step>
+<step>
+<cmd><uicontrol>Save</uicontrol> the changes that are made to the master configuration.</cmd>
+</step></steps></taskbody></task>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><val>
+<prop action="include" att="otherprops" val="xhtml"/>
+<prop action="exclude" att="otherprops" val="pdf"/>
+<prop action="include" att="otherprops" val="onprem"/>
+<prop action="exclude" att="otherprops" val="saas"/>
+<prop action="flag" att="platform" val="windows"><startflag imageref="images/windows.png"
+><alt-text>Applies to Windows platforms</alt-text></startflag></prop>
+<prop action="flag" att="platform" val="linux"><startflag imageref="images/linux.png"
+><alt-text>Applies to Linux platforms</alt-text></startflag></prop>
+<!-- 7.0.9 props. Include links to the new IEG plugin (com.ibm.curam.ieg.doc) in UA from 7.0.9.0 onwards-->
+<prop action="passthrough" att="otherprops" val="link_7.0.9.0"/>
+<!-- 7.0.10 props for CE and related -->
+<prop action="passthrough" att="otherprops" val="7.0.10.0"/>
+<!--7.0.11.0 props: to include from version 7011, apply flag icon, for CE and related -->
+<prop action="passthrough" att="otherprops" val="7.0.11.0"/>
+<prop action="passthrough" att="otherprops" val="7011flag"/>
+<!--8.0 props: to include from version 8.0 for CE and related -->
+<prop action="passthrough" att="otherprops" val="8.0"/>
+<prop action="passthrough" att="otherprops" val="800only"/>
+<prop action="exclude" att="otherprops" val="8.0.1"/>
+<prop action="exclude" att="otherprops" val="8010flag"/>
+<prop action="exclude" att="otherprops" val="801only"/>
+<prop action="exclude" att="otherprops" val="8.0.2"/>
+<prop action="exclude" att="otherprops" val="8020flag"/>
+<prop action="exclude" att="otherprops" val="802only"/>
+<prop action="exclude" att="otherprops" val="8.0.3"/>
+<prop action="exclude" att="otherprops" val="8030flag"/>
+<prop action="exclude" att="otherprops" val="803only"/>
+<!--Version props - only one version prop is included in any build, eg for conref version etc.-->
+<prop action="exclude" att="otherprops" val="version_7.0.4.0"/>
+<prop action="exclude" att="otherprops" val="version_7.0.9.0"/>
+<prop action="exclude" att="otherprops" val="version_7.0.10.0"/>
+<prop action="exclude" att="otherprops" val="version_7.0.11.0"/>
+<prop action="include" att="otherprops" val="version_8.0"/>
+<prop action="exclude" att="otherprops" val="version_8.0.1.0"/>
+<prop action="exclude" att="otherprops" val="version_8.0.2.0"/>
+<prop action="exclude" att="otherprops" val="version_8.0.3.0"/>
+<!--Deprecated content -->
+<prop action="flag" att="otherprops" val="deprecated">
+<startflag imageref="images/spn_depfeat.png"><alt-text>Deprecated icon</alt-text></startflag></prop>
+<!-- Video cue -->
+<prop action="flag" att="otherprops" val="video">
+<startflag imageref="images/video_cue.png"><alt-text>Video icon</alt-text></startflag></prop>
+<!--Cloud specific content flag-->
+<prop action="flag" att="otherprops" val="k8flag">
+<startflag imageref="images/kubernetes.png"><alt-text>Applies to Cloud
+deployments</alt-text></startflag></prop>
+<!-- Internal only content - included only in test builds -->
+<prop action="exclude" att="otherprops" val="internalonly"/>
+<!-- Production only content - included only in production builds -->
+<prop action="include" att="otherprops" val="productiononly"/>
+<!-- Revprops for highlighting version specific info-->
+<revprop action="passthrough" backcolor="#cbe2fe" val="705"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="706"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="707"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="708"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="709"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="7011"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="800"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="8010"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="8020"/>
+<revprop action="passthrough" backcolor="#cbe2fe" val="8030"/>
+<prop action="passthrough" att="otherprops" val="706flag">
+<startflag imageref="images/spm_7060.png">
+<alt-text>Applies to version 7.0.6.0</alt-text>
+</startflag>
+</prop>
+<prop action="passthrough" att="otherprops" val="707flag">
+<startflag imageref="images/spm_7070.png">
+<alt-text>Applies to version 7.0.7.0</alt-text>
+</startflag>
+</prop>
+<prop action="passthrough" att="otherprops" val="708flag">
+<startflag imageref="images/spm_7080.png">
+<alt-text>Applies to version 7.0.8.0</alt-text>
+</startflag>
+</prop>
+<prop action="passthrough" att="otherprops" val="709flag">
+<startflag imageref="images/spm_7090.png">
+<alt-text>Applies to version 7.0.9.0</alt-text>
+</startflag>
+</prop>
+</val>

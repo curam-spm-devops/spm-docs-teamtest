@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e651" xml:lang="en-us">
+<title>Alternative crypto JAR file locations</title>
+<shortdesc>If the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/>
+configuration file system is mounted as read-only, the placement of the Cúram registry and
+cryptography JAR files fail. </shortdesc>
+<conbody>
+<p>By default, each time that the Ant <cmdname>configtest</cmdname> target is run, the JAR files are
+copied into the configuration file system directories <filepath>$JAVA_HOME/lib/ext</filepath> and
+<filepath>$WAS_HOME/lib</filepath>. If the underlying installation file system is mounted as
+read-only, the copy of the JAR files fails. You might not be able to remount the installation file
+system as read/write for each invocation of the Ant <cmdname>configtest</cmdname> target. However,
+you can set up a symbolic link with the file system mounted as read/write, which is a one-time
+activity. You can then specify an alternative location for the files to be copied to.</p>
+<p> The following steps show the one-time procedure:</p>
+<ol>
+<li>Mount the installation file system, for example, <filepath>/usr/lpp/zWebSphere/</filepath>, as
+read/write.</li>
+<li>Create a symbolic link in the  <filepath>lib</filepath> directory for the Cúram
+<filepath>Registry.jar</filepath> file, which contains the <codeph>CuramLoginModule</codeph>, as
+shown in the following example:
+<codeblock>ln -s /curam/EJBServer/CuramSDEJ/lib/Registry.jar /usr/lpp/zWebSphere/lib/Registry.jar</codeblock></li>
+<li>Create a symbolic link in the Java <filepath>lib/ext</filepath> directory for the Cúram
+cryptography <filepath>CryptoConfig.jar</filepath> file, as shown in the following
+example:<codeblock>ln -s /curam/EJBServer/project/properties/CryptoConfig.jar /usr/lpp/zWebSphere/java/lib/ext/CryptoConfig.jar</codeblock></li>
+<li>Remount the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+installation file system as read-only.</li>
+</ol>
+<p> The previous steps enable your <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> file system to remain read-only
+when the Ant <cmdname>configtest</cmdname> target is run, which copies the files to the alternative
+location that points to the installation file system. When you run the Ant
+<cmdname>configtest</cmdname> target, specify the properties that are shown in the following code
+sample, which uses the example locations from the previous
+steps:<codeblock>-Dcrypto.ext.dir=/curam/EJBServer/project/properties/
+-Dregistry.jar.file.location=/curam/EJBServer/CuramSDEJ/lib/</codeblock></p>
+</conbody>
+</concept>

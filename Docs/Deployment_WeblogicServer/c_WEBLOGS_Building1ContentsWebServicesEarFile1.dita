@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e347">
+<title>Contents of Web Services.ear File</title><conbody>
+<p>The web services <filepath>.ear</filepath> file that is produced has the following structure and contents:</p>
+<ul>
+<li><filepath>META-INF</filepath> Directory
+<ul>
+<li><filepath>application.xml</filepath>
+<p>This file details the core module for the web services application, which is the <filepath>webservices.war</filepath> file.</p></li>
+<li><filepath>MANIFEST.MF</filepath>
+<p>The manifest file which details the contents of the <filepath>.ear</filepath> file.</p></li></ul></li>
+<li><b> Web Service <filepath>.war</filepath> File</b>
+<p>This file contains support <filepath>.jar</filepath> files in the <filepath>WEB-INF/lib</filepath> directory, including:</p>
+<ul>
+<li><filepath>coreinf.jar</filepath>
+<p>This <filepath>.jar</filepath> file contains the conversion methods which are used to support the serialization of the complex types used in the interface.</p></li>
+<li><filepath>axis.jar</filepath>
+<p>This <filepath>.jar</filepath> file contains the Apache Axis web services engine.</p></li>
+<li><filepath>appwebservices.jar</filepath>
+<p>This <filepath>.jar</filepath> file contains the wrapper classes which enable the Axis web services to connect to <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> session bean(s) and the classes for the complex types which are used in the interface to the web services.</p></li>
+<li><filepath>server-config.wsdd</filepath>
+<p>The <filepath>.wsdd</filepath> file is located in the <filepath>WEB-INF</filepath> directory and contains the web service engine configuration which maps <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> BPO s to web services.</p></li></ul></li></ul></conbody></concept>

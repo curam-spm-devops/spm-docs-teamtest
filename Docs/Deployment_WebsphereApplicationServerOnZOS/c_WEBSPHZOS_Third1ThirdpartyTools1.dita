@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e116">
+<title>Third-party tools</title>
+<shortdesc>To use the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application,
+you must install and configure third-party software.</shortdesc>
+<conbody>
+<p>It is beyond the scope of this topic to give detailed information of all <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> specific software and their various dependencies
+that are required  to support <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"
+/>. </p>
+<p>The prerequisites, installation notes, or postinstallation configuration activities that are
+relevant to <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> are outlined for
+the following:</p>
+</conbody></concept><?tm 1568813538498 3 Java ?>

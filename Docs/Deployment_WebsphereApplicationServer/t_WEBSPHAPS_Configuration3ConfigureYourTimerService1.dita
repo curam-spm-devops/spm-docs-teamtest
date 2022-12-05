@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the timer service</title>
+<titlealts>
+<searchtitle>Configure the timer service</searchtitle>
+</titlealts>
+<shortdesc>Configure the timer service</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the appropriate server from the list.</cmd></step>
+<step><cmd>In the <uicontrol>Container Settings</uicontrol> section expand <uicontrol>EJB Container
+Settings</uicontrol>.</cmd></step>
+<step><cmd>Select the <uicontrol>EJB timer service settings</uicontrol> link;</cmd></step>
+<step><cmd>In the <wintitle>Scheduler Type</wintitle> panel select the <uicontrol>Use internal EJB
+timer service scheduler instance</uicontrol> option;</cmd></step>
+<step><cmd>Set the fields as follows:</cmd><info>
+<ul>
+<li><uicontrol>Data source JNDI name</uicontrol>: <option>jdbc/curamtimerdb</option></li>
+<li><uicontrol>Data source alias</uicontrol> : <varname>&lt;valid for database&gt;</varname><p>where
+the alias used is the one set up in <xref
+href="t_WEBSPHAPS_Configuration3CreatingDataSourceLoginAlias1.dita"/>.</p></li>
+</ul>
+</info>
+</step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the changes.</cmd></step>
+<step><cmd><uicontrol>Save</uicontrol> the changes made to the master configuration.</cmd></step>
+</steps>
+</taskbody>
+</task>

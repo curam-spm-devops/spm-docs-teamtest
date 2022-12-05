@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e37">
+<title>Building EAR files</title>
+<shortdesc>The main step before deployment of an <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application is to package it into
+enterprise archive (<filepath>.ear</filepath>) files. The application (web client, server) and web
+services application are all packaged into separate <filepath>.ear</filepath> files.  </shortdesc><conbody>
+<p>The Server Development Environment for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_java"/> (SDEJ) provides Apache Ant targets for
+packaging <filepath>.ear</filepath> files.</p>
+<p>Before running build targets in the following section, you must set WLS_HOME environment
+variable, and the previously set environment variables, see <xref
+href="../common/t_ctr_install.dita" scope="peer">Installing a development environment</xref>.</p>
+<p>The WLS_HOME variable should point to the <filepath>server</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> installation, for example:
+<filepath platform="windows">d:\weblogic\server</filepath> or <filepath platform="linux"
+>/opt/weblogic/server</filepath>.</p>
+</conbody></concept>

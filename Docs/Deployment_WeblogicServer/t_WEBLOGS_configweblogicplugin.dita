@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_WEBLOGS_configweblogicplugin" xml:lang="en-us">
+<title>Configuring a web server plug-in in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/></title>
+<shortdesc>If a web server is configured in the topology, you must configure a web server plug-in in
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/>. The web server plug-in
+enables <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> to communicate
+with the web server. <ph id="verbtamper_info">For information about how to configure the web
+server's HTTP verb permissions to mitigate verb tampering, see <xref
+href="../Security/t_SECHAND_httpverbperms.dita" scope="peer" format="dita">Enabling HTTP verb
+permissions</xref>.</ph></shortdesc>
+<taskbody>
+<context id="context_sbz_fnk_b2b">To enable a web server plug-in in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/>, you can run the
+<codeph>configurewebserverplugin</codeph> target.</context>
+<steps>
+<step>
+<cmd>To start automatic configuration, in the <filepath>SERVER_DIR</filepath> directory, run the
+<codeph>configurewebserverplugin</codeph> target, as shown in the following example
+command.</cmd><info>The <codeph>configurewebserverplugin</codeph> target requires a mandatory
+<varname>server.name</varname> argument that specifies the name of the server when the target is
+started. </info><stepxmp>
+<codeblock>build configurewebserverplugin -Dserver.name=CuramServer</codeblock>
+</stepxmp>
+</step>
+</steps>
+<postreq><ph conref="#t_WEBLOGS_configweblogicplugin/verbtamper_info"/></postreq>
+</taskbody>
+</task>

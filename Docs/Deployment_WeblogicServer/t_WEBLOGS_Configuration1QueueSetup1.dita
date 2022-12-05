@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Queue Setup</title><taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Services</uicontrol><uicontrol>Messaging</uicontrol><uicontrol>JMS Modules</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button and enter the following details:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>op-jms</q></p>
+<p><uicontrol>Descriptor File Name</uicontrol> : <q>jms/op-jms.xml</q></p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button and check the <uicontrol>AdminServer</uicontrol> checkbox as the target server;</cmd></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button;</cmd></step>
+<step><cmd>Click the <uicontrol>Would you like to add resources?</uicontrol> checkbox and click the <uicontrol>Finish</uicontrol> button to complete;</cmd>
+<info><p>There are four regular queues and two error queues that must be configured. The error queues must be configured first. The following setup should be repeated, replacing &lt;QueueName&gt; with each of the following queues (in the order listed): <tt>CuramDeadMessageQueue</tt>, <tt>DPError</tt>, <tt>WorkflowError</tt>, <tt>DPEnactment</tt>, <tt>WorkflowEnactment</tt>, and <tt>WorkflowActivity</tt>.</p></info></step>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Services</uicontrol><uicontrol>Messaging</uicontrol><uicontrol>JMS Modules</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click on <uicontrol>op-jms</uicontrol> in <uicontrol>JMS Modules</uicontrol> list;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button inside the <uicontrol>Configuration</uicontrol> tab;</cmd></step>
+<step><cmd>Select <uicontrol>Type</uicontrol> <q>Quota</q> and click the <uicontrol>Next</uicontrol> button;</cmd></step>
+<step><cmd>Enter the following details:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>&lt;QueueName&gt;.Quota</q></p>
+<p>Leave the default for the <uicontrol>Bytes Maximum</uicontrol> : <q>9223372036854775807</q></p>
+<p>Leave the default for the <uicontrol>Messages Maximum</uicontrol> : <q>9223372036854775807</q></p>
+<p>Leave the default for the <uicontrol>Policy</uicontrol> : <q>FIFO</q></p>
+<p>Leave the default for the <uicontrol>Shared</uicontrol> : <q>False</q>.</p></info></step>
+<step><cmd>Click the <uicontrol>OK</uicontrol> button;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button and select <uicontrol>Type</uicontrol> <q>Queue</q>;</cmd></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button and enter the following details:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>&lt;QueueName&gt;</q></p>
+<p><uicontrol>JNDI Name</uicontrol> : <q>jms/&lt;QueueName&gt;</q>.</p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button;</cmd></step>
+<step><cmd>If the <uicontrol>SubDeployments</uicontrol> drop-down list is empty click on <uicontrol>Create a New SubDeployment</uicontrol> and enter <uicontrol>SubDeployment Name</uicontrol> : <q>CuramJMSServer</q>;</cmd></step>
+<step><cmd>Click the <uicontrol>OK</uicontrol> button;</cmd></step>
+<step><cmd>Set <uicontrol>SubDeployment</uicontrol> : <q>CuramJMSServer</q></cmd></step>
+<step><cmd>Select <q>CuramJMSServer</q> as the target JMS Server;</cmd></step>
+<step><cmd>Click the <uicontrol>Finish</uicontrol> button;</cmd></step>
+<step><cmd>Click the <q>&lt;QueueName&gt;</q> just configured.</cmd></step>
+<step><cmd>Click on <uicontrol>Thresholds and Quotas</uicontrol> tab;</cmd></step>
+<step><cmd>Set the <uicontrol>Quota</uicontrol> : <q>&lt;QueueName&gt;.Quota</q>;</cmd></step>
+<step><cmd>Click the <uicontrol>Save</uicontrol> button;</cmd></step>
+<step><cmd>Select the <uicontrol>Overrides</uicontrol> tab and set the <uicontrol>Delivery Mode Override</uicontrol> to <q>Persistent</q>. Click <uicontrol>Save</uicontrol>;</cmd></step>
+<step><cmd>Select the <uicontrol>Delivery Failure</uicontrol> tab and set the <uicontrol>Redelivery Limit</uicontrol> to <q>1</q>. Set the <uicontrol>Error Destination</uicontrol> to <q>none</q> for <q>CuramDeadMessageQueue</q>, <q>CuramDeadMessageQueue</q> for <q>DPError</q> and <q>WorkflowError</q>, <q>DPError</q> for <q>DPEnactment</q>, and <q>WorkflowError</q> for <q>WorkflowEnactment</q> and <q>WorkflowActivity</q>.</cmd></step>
+<step><cmd>Click the <uicontrol>Save</uicontrol> button;</cmd></step></steps></taskbody></task>

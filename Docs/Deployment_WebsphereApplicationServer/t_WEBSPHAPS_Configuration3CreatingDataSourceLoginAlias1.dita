@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Creating the data source login alias</title>
+<titlealts>
+<searchtitle>Creating the data source login alias</searchtitle>
+</titlealts>
+<shortdesc>Create the data source login alias.  <tm tmtype="reg" trademark="IBM">IBM</tm>
+<tm tmtype="reg" trademark="DB2">DB2</tm> , IBM DB2 for <tm tmtype="reg" trademark="z/OS">z/OS</tm>
+, and <tm tmtype="reg" trademark="Oracle">Oracle</tm> Database are the databases
+supported.</shortdesc>
+<taskbody>
+<context>
+<p>Use the administrative console to configure a login alias for both the DB2 and Oracle data
+sources as follows:</p>
+</context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Security</uicontrol><uicontrol>Global
+security</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Expand the <uicontrol>Java Authentication and Authorization Service</uicontrol> option in
+the <uicontrol>Authentication</uicontrol> section and select the <uicontrol>J2C authentication
+data</uicontrol> option;</cmd></step>
+<step><cmd>Click <uicontrol>New</uicontrol> to open the Configuration screen;</cmd></step>
+<step><cmd>Set the following fields:</cmd>
+<info>
+<p><uicontrol>Alias</uicontrol> = dbadmin</p>
+<p><uicontrol>User ID</uicontrol> = <varname>&lt;database username&gt;</varname></p>
+<p><uicontrol>Password</uicontrol> = <varname>&lt;database password&gt;</varname></p>
+<p><uicontrol>Description</uicontrol> = The database security alias</p>
+<p>where <varname>&lt;database username&gt;</varname> and <varname>&lt;database
+password&gt;</varname> are set to the username and password used to login to the database;</p>
+</info></step>
+<step><cmd>Click <uicontrol>OK</uicontrol> to confirm the changes.</cmd></step>
+</steps>
+</taskbody>
+</task>

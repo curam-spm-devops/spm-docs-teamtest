@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e515">
+<title>Installing <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> on <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/></title>
+<shortdesc>When <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> is built, it
+must be installed on <keyword conref="../common_files/conrefs.dita#conrefs/zos"/></shortdesc><conbody>
+<p>Running the Ant <cmdname>release</cmdname> target on the build platform with the
+<cmdname>-Dcreate.zip=true</cmdname> command line argument creates a
+<filepath>release.zip</filepath> file in the <filepath>$SERVER_DIR/release</filepath> folder on the
+build machine. Copy  <filepath>release.zip</filepath> file to the target <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> file system.</p>
+<p>Take the following steps on <keyword conref="../common_files/conrefs.dita#conrefs/zos"/>:<ol>
+<li>Unzip the release.zip file in the target folder.</li>
+<li>Convert the <filepath>build.sh</filepath> and <filepath>SetEnvironment.sh</filepath> scripts to
+EBCDIC format; for
+example:<codeblock>iconv -t IBM-1047 -f ISO8859-1 build.sh > /tmp/build.sh
+mv /tmp/build.sh .
+iconv -t IBM-1047 -f ISO8859-1 build.sh > /tmp/SetEnvironment.sh
+mv /tmp/SetEnvironment.sh .</codeblock></li>
+<li>Make the <filepath>build.sh</filepath> file executable; for
+example:<codeblock>chmod u+x build.sh</codeblock></li>
+</ol></p>
+</conbody></concept>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the required queue activation specifications</title>
+<titlealts>
+<searchtitle>Configure the required queue activation specifications</searchtitle>
+</titlealts>
+<shortdesc>Configure the required queue activation specifications</shortdesc>
+<taskbody>
+<context>
+<p>As with the setting up of queues, perform these steps, substituting
+<varname>&lt;QueueName&gt;</varname> (without the angle brackets) with each of the following queue
+names: DPEnactment, DPError, CuramDeadMessageQueue, WorkflowActivity, WorkflowEnactment and
+WorkflowError.</p>
+</context>
+<steps>
+<step><cmd>Navigate to
+<menucascade><uicontrol>Resources</uicontrol><uicontrol>JMS</uicontrol><uicontrol>JMS
+providers</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Select the <uicontrol>Default messaging provider</uicontrol> link;</cmd></step>
+<step><cmd>Select the <uicontrol>Activation specifications</uicontrol> link in the
+<uicontrol>Additional Properties</uicontrol> section;</cmd></step>
+<step><cmd>Create a new specification by selecting <uicontrol>New</uicontrol> and set the following
+fields:</cmd>
+<info>
+<ul>
+<li>
+<p><uicontrol>Name</uicontrol>: &lt;QueueName&gt;</p>
+</li>
+<li>
+<p><uicontrol>JNDI name</uicontrol>: eis/ <varname>&lt;QueueName&gt;</varname> AS</p>
+</li>
+<li>
+<p><uicontrol>Destination Type</uicontrol>: Queue</p>
+</li>
+<li>
+<p><uicontrol>Destination JNDI name</uicontrol>: jms/ <varname>&lt;QueueName&gt;</varname></p>
+</li>
+<li>
+<p><uicontrol>Bus Name</uicontrol>: CuramBus</p>
+</li>
+<li>
+<p><uicontrol>Authentication Alias</uicontrol>: Same as for the <tt>jdbc/curamdb</tt> data source
+(e.g. <varname>&lt;SERVERNAME&gt;</varname> /dbadmin)</p>
+</li>
+</ul>
+</info><info>
+<p>Leave everything else as the default and select <uicontrol>OK</uicontrol> to add the port.</p>
+</info></step>
+</steps>
+<result>
+<p>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/>.</p>
+</result>
+</taskbody>
+</task>

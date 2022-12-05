@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1061">
+<title>Scripting support</title>
+<titlealts>
+<searchtitle>Scripting support</searchtitle>
+</titlealts>
+<shortdesc>Change the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/>
+property files to support the execution of provided Ant scripts.</shortdesc>
+<conbody>
+<section>
+<title>sas.client.props</title>
+<p>Open <filepath>sas.client.props</filepath> in the
+<filepath>profiles/AppSvr01/properties</filepath> directory. Set the login source to retrieve the
+username and password from a properties file. Set, or where necessary, add the following
+properties:</p>
+<codeblock>
+com.ibm.CORBA.loginSource=properties
+# RMI/IIOP user identity
+com.ibm.CORBA.loginUserid=websphere
+com.ibm.CORBA.loginPassword=websphere</codeblock>
+<p>Where <varname>websphere</varname> is the username and password for the Administration
+Console.</p>
+</section>
+<section>
+<title>soap.client.props</title>
+<p>Open <filepath>soap.client.props</filepath> in <filepath>profiles/AppSvr01/properties</filepath>.
+Set the login source to retrieve the username and password from a properties file. Set the following
+properties to match the credentials you configured for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> as in <xref
+href="c_WEBSPHAPS_Configuration4WebsphereApplicationServerConfigura1.dita"/>. In the following
+sample the values are examples and the password specified in this file cannot be encrypted:</p>
+<codeblock>
+com.ibm.SOAP.loginUserid=websphere
+com.ibm.SOAP.loginPassword=websphere</codeblock>
+<p>where <varname>websphere</varname> is the username and password for the Administrative
+Console.</p>
+<p>To avoid timeouts when installing EAR files ensure that the following is at least:</p>
+<codeblock>com.ibm.SOAP.requestTimeout=3600</codeblock>
+</section>
+<section>
+<title>server.policy</title>
+<p>Open <filepath>server.policy</filepath> in the <filepath>profiles/AppSvr01/properties</filepath>
+directory. Add the following lines to the end of this file:</p>
+<codeblock>
+grant codeBase "file:&lt;CURAMSDEJ&gt;/drivers/-" {
+permission java.security.AllPermission;
+};</codeblock>
+<p>where <varname>&lt;CURAMSDEJ&gt;</varname> is the SDEJ installation directory.</p>
+<codeblock>
+grant codeBase "file:${was.install.root}/
+profiles/&lt;profile.name&gt;/installedApps/
+&lt;cell.name&gt;/&lt;SERVER_MODEL_NAME&gt;.ear/
+guice-2.0.jar" { permission java.lang.RuntimePermission
+"modifyThread"; permission java.lang.RuntimePermission
+"modifyThreadGroup"; };</codeblock>
+<p>Where:<ol>
+<li><varname>&lt;profile.name&gt;</varname> is the name of the target <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> profile.</li>
+<li><varname>&lt;cell.name&gt;</varname> is the name of the target WebSphere Application Server
+cell.</li>
+<li><varname>&lt;SERVER_MODEL_NAME&gt;</varname> is the name of the application (base name of the
+EAR file).</li>
+</ol>
+</p>
+</section>
+</conbody>
+</concept>

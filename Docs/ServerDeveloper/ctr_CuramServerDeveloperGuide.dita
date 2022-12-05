@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="d0e17" xml:lang="en-us">
+<title>Cúram server developer</title><titlealts><searchtitle>Cúram Server Developer's Guide</searchtitle></titlealts>
+<shortdesc><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/SERDEV_shortdesc"></keyword></shortdesc><?Pub Caret 1?>
+<conbody>
+<p>Model-driven generation facilitates client and server development by taking a Unified Modeling
+Language (UML) model and producing the following generated artifacts:</p>
+<ul id="ul_vgc_mqz_52b">
+<li>Generated <tm tmtype="reg" trademark="Java">Java</tm> code</li>
+<li>Data Definition Language (DDL) describing the database entities in the model, enabling instances
+of a database to be defined in a human and machine-readable form</li>
+<li>Support for remote invocation</li>
+</ul>
+</conbody>
+</concept>
+<?Pub *0000000486?>

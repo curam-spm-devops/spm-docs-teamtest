@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderIEGEditorNew" xml:lang="en-us">
+<title>Creation of a New IEG Script</title>
+<taskbody>
+<context>The following sections outlines how a user with disabilities can upload and validate a new IEG script in the administration application:</context>
+<steps>
+<step><cmd>Compose an IEG Script offline in an XML editor.</cmd></step>
+<step>
+<cmd>In the administration application, select the <uicontrol>Administration Workspace</uicontrol>
+Application Section.</cmd>
+</step>
+<step>
+<cmd>In the Section Shortcuts Panel select the <uicontrol>Intelligent Evidence Gathering</uicontrol>
+category.</cmd>
+</step>
+<step>
+<cmd>Within this category select the <uicontrol>Scripts</uicontrol> link. This opens a page that
+contains a search form and an option to import IEG Scripts. </cmd>
+</step>
+<step>
+<cmd>To import the offline IEG Script, select the <uicontrol>Import </uicontrol>page action.</cmd>
+</step>
+<step><cmd>This opens a modal dialog that contains a form. Enter the required IEG script name into the appropriate input field. </cmd></step>
+<step>
+<cmd>Select the IEG script <uicontrol>Browse</uicontrol> button. This opens a Windows Explorer
+dialog allowing the newly created offline IEG script to be selected.</cmd>
+</step>
+<step>
+<cmd>Once selected, press the <uicontrol>Save</uicontrol> modal dialog button. This validates the
+XML in the IEG script. If no validation errors are encountered, the IEG script is uploaded to the
+online application.</cmd>
+</step>
+<step><cmd>Once the modal has closed, search for the newly uploaded IEG script in the search form provided. The search results display in the list below the search form.</cmd></step>
+<step>
+<cmd>Find the IEG script in question in the list and select the corresponding list action button.
+Select the <uicontrol>Validate</uicontrol> option. This opens a modal dialog that prompts the user
+to select the Datastore Schema that corresponds to the IEG script.</cmd>
+</step>
+<step>
+<cmd>Once a schema is selected, press the <uicontrol>Validate</uicontrol> modal button. This
+validates the IEG script. Any validation errors encountered are displayed in the open modal
+dialog.</cmd>
+</step>
+<step>
+<cmd>The corresponding properties file(s) can be uploaded via the <uicontrol>Application
+Resources</uicontrol> link in the Intelligent Evidence Gathering shortcut panel category.</cmd>
+</step>
+<step>
+<cmd>On the Application Resources page, select the <uicontrol>Add Resource</uicontrol> page
+action.</cmd>
+</step>
+<step><cmd>This opens a modal dialog that contains a form. Fill in the appropriate details for the required property resource.</cmd></step>
+<step>
+<cmd>Select the content <uicontrol>Browse</uicontrol> button. This opens a Windows Explorer dialog
+allowing a new property file to be selected.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Save</uicontrol> modal button. This will add the resource to the online
+application.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

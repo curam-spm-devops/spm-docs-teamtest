@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="d1e1076" xml:lang="en-us">
+<title>Install an application</title>
+<shortdesc>Use the Ant <cmdname>installapp</cmdname> target to install the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> EAR files. </shortdesc>
+<conbody>
+<p>The Ant target requires the following arguments:<ul id="ul_ixl_p2p_v3b">
+<li><option>-Dear.file</option>
+<?linebreak?>The fully qualified name of the EAR file to install.</li>
+<li><option>-Dapplication.name</option>
+<?linebreak?>The name of the application.</li>
+<li><option>-Dserver.name</option>
+<?linebreak?>The name of the server to install the application, which can alternatively be specified
+in <filepath>AppServer.properties</filepath>.</li>
+</ul></p>
+<p>Example of Usage:</p>
+<codeblock>./build.sh installapp -Dear.file=$SERVER_DIR/build/ear/Curam.ear 
+-Dapplication.name=Curam -Dserver.name=CuramServer</codeblock>
+<note type="note">The EAR file that contains the server module must be deployed before you install
+any other client-only EAR files.</note>
+<p>Use the following optional Ant property to pass more arguments to the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/>
+<cmdname>wsadmin</cmdname> command: <codeblock>wsadmin.extra.args</codeblock>For example, the
+following command sets new <tm tmtype="reg" trademark="Java">Java</tm> heap sizes and passes the
+option to append <cmdname>wsadmin</cmdname> tracing: <fig>
+<codeblock>-Dwsadmin.extra.args="-javaoption -Xms1024m -javaoption -Xmx1024m -appendtrace true"</codeblock>
+<?Pub Caret -2?>
+</fig> Depending on your shell you might need to escape the quotation marks, for
+example:<codeblock>-Dwsadmin.extra.args=\"-appendtrace true\"</codeblock></p>
+</conbody>
+</concept>
+<?Pub *0000001929?>

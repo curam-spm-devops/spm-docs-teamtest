@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1159">
+<title>Configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> data
+sources</title>
+<shortdesc>Configure the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/>
+environment variable, the database driver provider, and the database driver data source.</shortdesc><conbody/></concept>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1152">
+<title>Precompiling JSPs</title>
+<shortdesc>To improve initial page load performance, use the Ant <cmdname>precompile</cmdname>
+target to precompile the JSPs in an application EAR file before deployment.</shortdesc><conbody>
+<p>The  Ant <cmdname>precompile</cmdname> target requires the following argument on the command
+line:<codeblock> -Dear.file=</codeblock>The fully qualified path of the EAR file to install.</p>
+<p>An example of invocation is as follows:</p>
+<codeblock>./build.sh precompilejsp -Dear.file=$SERVER_DIR/build/ear/WAS/Curam.ear</codeblock>
+<note>Depending on factors such as the capabilities of your system and the size of the EAR file, the
+<cmdname>precompile</cmdname> target can take up to several hours to complete. Ensure that your
+environment is not significantly restricted regarding available CPU, memory, and free space in the
+<filepath>$CURAMSDEJ</filepath> file system.</note>
+</conbody></concept>

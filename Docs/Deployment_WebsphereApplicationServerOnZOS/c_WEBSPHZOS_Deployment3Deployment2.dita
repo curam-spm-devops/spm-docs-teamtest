@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1064">
+<title>Deploying an application</title>
+<shortdesc>Before you deploy or install a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application, you must change the JMS
+credentials.</shortdesc><conbody>
+<p>You must undeploy or uninstall an application before you install an updated version of the
+application.</p>
+</conbody></concept>

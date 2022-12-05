@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e979" xml:lang="en-us">
+<title>Testing the deployment</title>
+<titlealts>
+<searchtitle>Testing the deployment</searchtitle>
+</titlealts>
+<shortdesc>Start and test the deployed application.</shortdesc>
+<conbody>
+<p>When the application is installed on a configured WebSphere Application Server installation the
+next step is to start and test the application. <note>The installation of a web services application
+might also be required.</note></p>
+<p>Ensure the relevant server is started and open the following page in a web browser:</p>
+<codeblock>https://&lt;some.machine.com>:&lt;port>/&lt;context-root></codeblock>
+<?Pub Caret -2?>
+<p>where,</p>
+<p><varname>&lt;some.machine.com></varname> identifies the the host name or IP address where your
+WebSphere Application Server is running, <varname>&lt;port></varname> identifies the server port on
+which client application is deployed and <varname>&lt;context-root></varname> identifies the Context
+Root of the WAR module (see <xref href="c_WEBSPHAPS_Building2MultipleEarFiles1.dita"/>, for
+details). There is no need to restart the server after an application is deployed.</p>
+<p>Before the page can be opened, the browser will be directed to the login page. Log in with a
+valid Cúram username and password and the browser will be redirected to the requested page.</p>
+<note type="note">The usage of EAR file name <filepath>Curam.ear</filepath> for
+option<option>-Dear.file</option> and usage of application server name <tt>Curam</tt> for
+option<option>-Dapplication.name</option> in the examples of this chapter are for illustrative
+purposes. Based on your customized application and deployment strategy these values may
+change.</note>
+</conbody>
+</concept>
+<?Pub *0000001802?>

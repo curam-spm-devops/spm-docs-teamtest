@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e741">
+<title>Pre-compiling JSPs</title>
+<shortdesc>During deployment, use the Ant <cmdname>precompilejsp</cmdname> target to pre-compile the
+JSPs of a client EAR before installing the EAR file. Pre-compiling the JSPs before installation
+speeds up the display of a page in the web browser the first time it is accessed.</shortdesc><conbody>
+<p>The options for the <cmdname>precompilejsp</cmdname> target are:</p>
+<ul>
+<li><option>-Dear.file</option>
+<p>The fully qualified name of the <filepath>.ear</filepath> file to be pre-compiled.</p></li></ul><fig>
+<title>Example of Usage</title>
+<pre>build precompilejsp -Dear.file=$SERVER_DIR/build/ear/WLS/Curam.ear</pre></fig>
+<p>This target will overwrite the <varname>&lt;Curam.ear&gt;</varname> with a copy that contains the pre-compiled JSP s and can then be deployed as described in <xref href="c_WEBLOGS_Deployment1Deployment2.dita"/>.</p></conbody></concept>

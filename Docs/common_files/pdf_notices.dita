@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002--><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?><?Pub Inc?><concept id="d0e282" xml:lang="en-us">
+<title>Notices</title>
+<shortdesc>This information was developed for products and services offered in the United
+States.</shortdesc>
+ <conbody>
+  <p><tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> may not offer the products,
+   services, or features discussed in this document in other countries. Consult your local <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> representative for information on the
+   products and services currently available in your area. Any reference to an <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> product, program, or service is not intended to state or
+   imply that only that <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> product, program,
+   or service may be used. Any functionally equivalent product, program, or service that does not
+   infringe any <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> intellectual property    right may be used instead. However, it is the user's responsibility to evaluate and verify the    operation of any non-<tm trademark="IBM" tmtype="reg">IBM</tm> product, program, or service.</p>
+  <p><tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> may have patents or pending patent
+applications covering subject matter described in this document. The furnishing of this document
+does not grant you any license to these patents. You can send license inquiries, in writing, to:</p>
+<p><i><tm trademark="IBM" tmtype="reg">IBM</tm> Director of Licensing <tm trademark="IBM"
+tmtype="reg">IBM</tm> Corporation North Castle Drive, MD-NC119 Armonk, NY 10504-1785 US </i></p>
+  <p>For license inquiries regarding double-byte character set (DBCS) information, contact the <tm
+tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> Intellectual Property Department in your
+country or send inquiries, in writing, to:</p>
+<p><i>Intellectual Property Licensing Legal and Intellectual Property Law <tm trademark="IBM"
+tmtype="reg">IBM</tm> Japan Ltd. 19-21, Nihonbashi-Hakozakicho, Chuo-ku Tokyo 103-8510, Japan
+</i></p>
+  <p>INTERNATIONAL BUSINESS MACHINES CORPORATION PROVIDES THIS PUBLICATION "AS IS" WITHOUT WARRANTY
+   OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+   NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Some jurisdictions do not
+   allow disclaimer of express or implied warranties in certain transactions, therefore, this
+   statement may not apply to you.</p>
+  <p>This information could include technical inaccuracies or typographical errors. Changes are
+   periodically made to the information herein; these changes will be incorporated in new editions
+   of the publication. <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> may make
+   improvements and/or changes in the product(s) and/or the program(s) described in this publication
+   at any time without notice. </p>
+  <p>Any references in this information to non-<tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> websites are provided for convenience only and do not in any manner serve as an
+   endorsement of those websites. The materials at those websites are not part of the materials for
+   this <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> product and use of those websites
+   is at your own risk.</p>
+  <p><tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> may use or distribute any of the
+   information you provide in any way it believes appropriate without incurring any obligation to
+   you.</p>
+  <p>Licensees of this program who wish to have information about it for the purpose of enabling:
+(i) the exchange of information between independently created programs and other programs (including
+this one) and (ii) the mutual use of the information which has been exchanged, should contact:</p>
+<p><i><tm trademark="IBM" tmtype="reg">IBM</tm> Director of Licensing <tm trademark="IBM"
+tmtype="reg">IBM</tm> Corporation North Castle Drive, MD-NC119 Armonk, NY 10504-1785 US </i></p>
+  <p>Such information may be available, subject to appropriate terms and conditions, including in
+   some cases, payment of a fee.</p>
+  <p>The licensed program described in this document and all licensed material available for it are
+   provided by <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> under terms of the <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> Customer Agreement, <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> International Program License Agreement or any equivalent
+   agreement between us.</p>
+  <!--All documentation as required: Use one of the following statements if the documentation contains performance data (including benchmark statements), client examples, or both.-->
+  <!--OR-->
+  <!--OR-->
+  <p>The performance data and client examples cited are presented for illustrative purposes only.
+   Actual performance results may vary depending on specific configurations and operating
+   conditions. </p>
+  <p>Information concerning non-<tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> products
+   was obtained from the suppliers of those products, their published announcements or other
+   publicly available sources. <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> has not
+   tested those products and cannot confirm the accuracy of performance, compatibility or any other
+   claims related to non-<tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm>products.
+   Questions on the capabilities of non-<tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm>
+   products should be addressed to the suppliers of those products.</p>
+  <p>Statements regarding <tm trademark="IBM" tmtype="reg">IBM</tm>'s future direction or intent are subject to change or withdrawal    without notice, and represent goals and objectives only. </p>
+  <p>All <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> prices shown are <tm trademark="IBM" tmtype="reg">IBM</tm>'s suggested    retail prices, are current and are subject to change without notice. Dealer prices may vary.</p>
+  <!--All documentation: Use the following text in all documentation that is released before the product that it supports is released and in all documentation that contains information that might change before the product is available.-->
+  <p>This information is for planning purposes only. The information herein is subject to change
+   before the products described become available.</p>
+  <!--All documentation: Use the following text in all documentation that contains examples that use fictitious names.-->
+  <p>This information contains examples of data and reports used in daily business operations. To
+   illustrate them as completely as possible, the examples include the names of individuals,
+   companies, brands, and products. All of these names are fictitious and any similarity to actual
+   people or business enterprises is entirely coincidental.</p>
+  <!--Software documentation: Use the following text in all documentation that contains code samples. If each code sample has an IBM copyright, retain those notices. Ensure that IBM really owns the code and that the owner (even if an IBM employee) knows that code is in the documentation.-->
+  <p>COPYRIGHT LICENSE: </p>
+  <p>This information contains sample application programs in source language, which illustrate
+   programming techniques on various operating platforms. You may copy, modify, and distribute these
+   sample programs in any form without payment to <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm>, for the purposes of developing, using, marketing or distributing application programs
+   conforming to the application programming interface for the operating platform for which the
+   sample programs are written. These examples have not been thoroughly tested under all conditions.
+    <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm>, therefore, cannot guarantee or imply
+   reliability, serviceability, or function of these programs. The sample programs are provided "AS
+   IS", without warranty of any kind. <tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm>
+   shall not be liable for any damages arising out of your use of the sample programs.</p>
+  <!--Software (programming) documentation: Use the following text in all documentation that contains large or complex samples. Acknowledge IBM as the source of large or complex samples that are created by IBM developers. Complete the copyright year or years and include the information in the following paragraph in each copy or any portion of these sample programs or any derivative works. If you have questions, contact your local Intellectual Property attorney regarding this text in your notices.-->
+  <!--Each copy or any portion of these sample programs or any derivative work must include a copyright notice as shown in the next column.-->
+<!--<lines>© (your company name) (year).  Portions of this code are derived from <tm trademark="IBM" tmtype="reg">IBM</tm> Corp. Sample Programs.  © Copyright <tm trademark="IBM" tmtype="reg">IBM</tm> Corp. _enter the year or years_. </lines>-->
+ </conbody>
+<concept id="privacypolicyconsiderations" xml:lang="en-us">
+<title>Privacy Policy considerations</title>
+<conbody>
+<p><tm trademark="IBM" tmtype="reg">IBM</tm> Software products, including software as a service solutions, (“Software Offerings”) may use cookies or other technologies to collect product usage information, to help improve the end user experience, to tailor interactions with the end user or for other purposes. In many cases no personally identifiable information is collected by the Software Offerings. Some of our Software Offerings can help enable you to collect personally identifiable information.  If this Software Offering uses cookies to collect personally identifiable information, specific information about this offering’s use of cookies is set forth below. </p>
+<p>Depending upon the configurations deployed, this Software Offering
+may use session cookies or other similar technologies that collect
+each user’s name, user name, password, and/or other personally identifiable
+information for purposes of session management, authentication, enhanced
+user usability, single sign-on configuration and/or other usage tracking
+and/or functional purposes.  These cookies or other similar technologies
+cannot be disabled.</p>
+<p>If the configurations deployed for this Software Offering provide
+you as customer the ability to collect personally identifiable information
+from end users via cookies and other technologies, you should seek
+your own legal advice about any laws applicable to such data collection,
+including any requirements for notice and consent. </p>
+<p>For more information about the use of various technologies, including cookies, for these
+purposes, see <tm trademark="IBM" tmtype="reg">IBM</tm>’s Privacy Policy at <xref format="html"
+href="http://www.ibm.com/privacy" scope="external">http://www.ibm.com/privacy</xref> and <tm
+trademark="IBM" tmtype="reg">IBM</tm>’s Online Privacy Statement at <xref format="html"
+href="http://www.ibm.com/privacy/details" scope="external">http://www.ibm.com/privacy/details</xref>
+the section entitled “Cookies, Web Beacons and Other Technologies” and the “<tm trademark="IBM"
+tmtype="reg">IBM</tm> Software Products and Software-as-a-Service Privacy Statement” at
+http://www.ibm.com/software/info/product-privacy.</p><?Pub Caret -2?>
+</conbody>
+</concept>
+</concept><?Pub *0000009039?><?tm 1462521728022 42 IBM ?>

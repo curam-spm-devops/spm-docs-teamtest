@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e515">
+<title>AppServer properties</title>
+<shortdesc><filepath>AppServer.properties</filepath> contains properties that are related to the
+application server environment.</shortdesc><conbody>
+<p>Tables 1 to 3 identify the most relevant properties in <filepath>AppServer.properties</filepath>.
+However, there are more security-related properties that are covered in more detail elsewhere. For
+more information, see <cite>Default Configuration for WebSphere</cite>. <note>This file must be
+stored in ASCII format. EBCDIC format is not readable by the Ant tool.</note></p>
+<p>Pay specific attention to the following properties:</p>
+<ul>
+<li>Structure-related properties for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> are shown in Table 1. <table
+id="d1e550"><title>Structure-related properties</title><tgroup cols="2">
+<colspec colnum="1" colwidth="1*"/>
+<colspec colnum="2" colwidth="2*"/>
+<thead>
+<row>
+<entry>Property</entry>
+<entry>Value</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>curam.server.host</entry>
+<entry>The hostname or IP address of your <keyword conref="../common_files/conrefs.dita#conrefs/zos"
+/> host.</entry>
+</row>
+<row>
+<entry>curam.server.name</entry>
+<entry>Must match the name of the target <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> server name that is
+established during its configuration.</entry>
+</row>
+<row>
+<entry>cell.name</entry>
+<entry>Must match the name of the target <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> cell name that is established
+during its configuration.</entry>
+</row>
+<row>
+<entry>node.name</entry>
+<entry>Must match the name of the target <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> node name that is established
+during its configuration.</entry>
+</row>
+<row>
+<entry>profile.name</entry>
+<entry>For <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>, the
+profile name is always "default".</entry>
+</row>
+<row>
+<entry>as.vendor</entry>
+<entry>Value must be set to <uicontrol>IBM</uicontrol>.</entry>
+</row>
+<row>
+<entry>curam.server.jvm.heap.size</entry>
+<entry>Used by the Ant <cmdname>configure</cmdname> target to set the JVM heap size to the specified
+number of megabytes. The default value is 1024. Monitor the size and performance of your JVM heap to
+determine an optimal value.</entry>
+</row>
+</tbody>
+</tgroup></table></li>
+<li>Port-related properties for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> are shown in Table 2. <table
+id="d1e523"><title>Port-related properties</title><tgroup cols="2">
+<colspec colnum="1" colwidth="1*"/>
+<colspec colnum="2" colwidth="1.63*"/>
+<thead>
+<row>
+<entry>Property</entry>
+<entry>Value</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>curam.server.port</entry>
+<entry>Must match the application server RMI port value.</entry>
+</row>
+<row>
+<entry>curam.client.httpport</entry>
+<entry>Must be bound to the CuramClientEndPoint port definition as described in Set up the port
+access.</entry>
+</row>
+<row>
+<entry>curam.webservices.httpport</entry>
+<entry>Must be bound to the CuramWebServicesEndPoint port definition as described in Set up the port
+access.</entry>
+</row>
+</tbody>
+</tgroup></table></li>
+<li>
+<table id="table_kvd_zbs_y3b"><title> Security-related properties</title><tgroup cols="2">
+<colspec colnum="1" colwidth="1*"/>
+<colspec colnum="2" colwidth="1.63*"/>
+<thead>
+<row>
+<entry>Property</entry>
+<entry>Value</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>security.username</entry>
+<entry>The user name for the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> administrator.</entry>
+</row>
+<row>
+<entry>security.password</entry>
+<entry>The encrypted password for the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> administrator. Generate the
+encrypted value by starting the Ant <cmdname>encrypt</cmdname> target. For more information, see
+<xref href="../ServerDeveloper/ctr_CuramServerDeveloperGuide.html"
+format="html" scope="peer">Cúram Server Developers Guide</xref>.</entry>
+</row>
+<row>
+<entry>curam.security.credentials.async.username</entry>
+<entry>The user name JMS invocations must run under, the default value is SYSTEM.</entry>
+</row>
+<row>
+<entry>curam.security.credentials.async.password</entry>
+<entry>The encrypted password associated with the JMS user name. The password must be encrypted by
+using the Ant <cmdname>encrypt</cmdname> target. For more information, see the <xref
+href="../ServerDeveloper/ctr_CuramServerDeveloperGuide.html"
+format="html" scope="peer">Cúram Server Developers Guide</xref>.</entry>
+</row>
+</tbody>
+</tgroup></table>
+</li></ul></conbody></concept>

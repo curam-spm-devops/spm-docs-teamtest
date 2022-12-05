@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="spm_801_whatsnew" xml:lang="en-us">
+<title>What's new in <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.1</title>
+<shortdesc>Read about updates and enhancements in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.1, released on 25 November
+2021.</shortdesc>
+<conbody>
+<section>
+<p conref="spm_800_whatsnew.dita#spm_800_whatsnew/pdf" otherprops="xhtml"/>
+<p id="rns">For important installation information, and to learn more about product improvements and
+resolved issues in 8.0.1, see also the <xref
+href="http://www-01.ibm.com/support/docview.wss?uid=swg27037963" format="html" scope="external"
+>Release Notes</xref>.</p>
+<p otherprops="video"><xref href="https://mediacenter.ibm.com/media/t/1_03sinzqw" format="html"
+scope="external">Click here for a video presentation about caseworker and developer productivity
+improvements in 8.0.1</xref>.</p>
+</section>
+<section id="sectionlist">
+<p>Updates for caseworkers:</p>
+<p>
+<ul>
+<li><xref href="#spm_801_whatsnew/changehistory" format="dita"/></li>
+<li><xref href="#spm_801_whatsnew/verificationengine" format="dita"/></li>
+<li><xref href="#spm_801_whatsnew/filtering" format="dita"/></li>
+<li><xref href="#spm_801_whatsnew/uniaccess" format="dita"/></li>
+</ul>
+</p>
+<p>Updates for developers:</p>
+<p>
+<ul>
+<li><xref href="#spm_801_whatsnew/spm-components" format="dita"/></li>
+<li><xref href="#spm_801_whatsnew/data-testid" format="dita"/></li>
+<li><xref href="#spm_801_whatsnew/newAPI" format="dita"/></li>
+</ul>
+</p>
+<p>What's new for other versions:<ul>
+<li><xref href="spm_800_whatsnew.dita">What's new in 8.0.0</xref></li>
+<li otherprops="8.0.2"><xref href="spm_802_whatsnew.dita">What's new in 8.0.2</xref></li>
+<li otherprops="8.0.3"><xref href="spm_803_whatsnew.dita">What's new in 8.0.3</xref></li>
+</ul></p>
+</section>
+<section id="changehistory">
+<title>Evidence change history improvements</title>
+<p>Improvements to how information is displayed in the change history for evidence have been
+introduced. Caseworkers now have a more consistent view of the information regardless of where in
+the application they view the evidence. In addition, caseworkers can more reliably see which users
+made each update to the evidence over time. For more information, see <xref
+href="../EvidenceConsolidatedGuides/Introduction/c_EV_ManagingAdditionalHistory.dita" scope="peer"
+>How are changes to evidence recorded</xref> and <cite>WorkItem:273340</cite> in the <xref
+href="https://www.ibm.com/support/pages/node/6516652" format="html" scope="external">8.0.1 Release
+Notes</xref>.</p>
+<p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="verificationengine">
+<title>Enhanced verification engine processing</title>
+<p>The way that verification engine processing works during product authorization has been enhanced.
+When evidence is captured for an integrated case for use by product delivery cases, and
+verifications are configured at the product delivery case level, the verifications are created
+during product authorization. During the process, the status of each verification that is created is
+determined.</p>
+<p>An improvement was made to help optimize product authorization, when an integrated case has a
+large amount of evidence of the same type that requires verification at the product delivery case
+level. Now, as each new verification is created, the status of only that verification is determined.
+Previously the status of all existing verifications for the evidence type was evaluated.</p>
+<p>For more information, see <cite>WorkItem:273436</cite> in the <xref
+href="https://www.ibm.com/support/pages/node/6516652" format="html" scope="external">8.0.1 Release
+Notes</xref>.</p>
+<p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="filtering">
+<title>Improved filtering for <keyword conref="../common_files/conrefs.dita#conrefs/carbon"/>
+dropdowns</title>
+<p>Two significant usability improvements have been made to the <keyword
+conref="../common_files/conrefs.dita#conrefs/carbon"/> dropdowns that are used in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application. These improvements help
+caseworker to quickly find and select options.</p>
+<ul>
+<li>Options in the dropdowns are now filtered based on input that caseworkers type into the
+dropdown.</li>
+<li>Option in the dropdown are also filtered to show all options that contain the typed input, based
+on the <codeph>contains</codeph> filter method. Dropdowns in v7 were filtered based on 'Starts
+with'.</li>
+</ul>
+<p>Intelligent Evidence Gathering (IEG) has not been updated to use <keyword
+conref="../common_files/conrefs.dita#conrefs/carbon"/>, so it does not use the <keyword
+conref="../common_files/conrefs.dita#conrefs/carbon"/> dropdown.</p>
+<p>For more information, see the <xref href="../WebClientReference/r_WEBCREF_Reference1Field1.dita"
+scope="peer">UIM FIELD element</xref> topic in the <cite>Web Client Reference</cite>.</p>
+<p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="uniaccess">
+<title>New in <keyword conref="../common_files/conrefs.dita#conrefs/UA_component_long"/></title>
+<p>For more information about what's new in <keyword
+conref="../common_files/conrefs.dita#conrefs/ibm"/> Citizen Engagement, see the <xref
+href="../CitizenEngagement/c_CEINST_UA_release_notes.html"
+format="html" scope="peer">What's new and release notes for <keyword
+conref="../common_files/conrefs.dita#conrefs/UA_component_short"/></xref>.</p>
+<p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="spm-components">
+<title>Introducing the ability to extend UIM by using <keyword
+conref="../common_files/conrefs.dita#conrefs/carbon"/>, <keyword
+conref="../common_files/conrefs.dita#conrefs/react"/>, GraphQL, and Apollo Client</title>
+<p>A new open source repository on GitHub provides a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> development environment.
+Developers can extend UIM by using the latest <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> user interface front-end tools
+and libraries.</p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> developers can now:</p>
+<ul>
+<li>Use a lightweight JavaScript development environment that complements the existing web client
+development environment.</li>
+<li>Develop complex views with the latest front-end tools and libraries, and integrate them into
+their <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> web client.</li>
+<li>Develop front-end content quickly and iteratively. <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> developers can view their
+changes without a client build.</li>
+<li>Use GraphQL and Apollo Client to configure complex data queries.</li>
+<li>Build robust front-end content through easier test automation.</li>
+</ul>
+<p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> UI Addon Development
+Environment provides:</p>
+<ul>
+<li>Documentation: Instructions to get up and running in a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> environment, with examples and
+design guidance.</li>
+<li>Samples: For example, a sample <keyword conref="../common_files/conrefs.dita#conrefs/react"/>
+component that contains <keyword conref="../common_files/conrefs.dita#conrefs/ibm"/>
+<keyword conref="../common_files/conrefs.dita#conrefs/carbon"/> styles and GraphQL queries.</li>
+<li>Storybook: Developers can use Storybook to render the sample component locally.</li>
+<li>Code: Commands to integrate your compiled <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> into the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> user interface.</li>
+</ul>
+<p>The <codeph>spm-ui-addon-devenv</codeph> repository contains links to the following packages: <ul>
+<li>Carbon Design System, which is the <keyword conref="../common_files/conrefs.dita#conrefs/ibm"/>
+open source design system. It consists of working code, design tools and resources, and human
+interface guidelines. For more information, see <xref href="https://v10.carbondesignsystem.com"
+format="html" scope="external">IBM Carbon Design System v10</xref>.</li>
+<li><keyword conref="../common_files/conrefs.dita#conrefs/react"/>, which is an open source <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_javascript"/> library that enables developers
+to build human-centered user interfaces.</li>
+<li>GraphQL, which is an open source data query language that enables developers to query and
+configure complex data queries that aggregate information from different database entities.</li>
+<li>Apollo Client, which is an open source library that enables GraphQL developers to manage
+information state. Apollo Client provides the infrastructure for caching data.</li>
+</ul></p>
+<p>For more information, see <xref href="https://merative.github.io/spm-ui-addon-devenv" format="html"
+scope="external"/>.</p>
+<p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="data-testid">
+<title>Enhanced <codeph>data-testid</codeph> attribute format for user interface test
+automation</title>
+<p>The <codeph>data-testid</codeph> attribute was introduced in 8.0.0 to improve the user interface
+(UI) automated testing experience. The attribute has been enhanced with the introduction of a new
+format that concatenates the label to the UIM component prefix. The improvement helps you to target
+specific UI components in a UI automation test framework.</p>
+<p>The Date and Date Time components, which previously used the <codeph>data-test-id</codeph>
+attribute, now use the new <codeph>data-testid</codeph> attribute format. The dropdown component was
+updated to use the <codeph>data-testid</codeph> attribute.</p>
+<p>The following UIM components and add-ons now use the new format <codeph>data-testid</codeph>
+attribute in the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> 8.0.1 user
+interface:</p>
+<ul>
+<li>Cluster</li>
+<li>Checkbox</li>
+<li>Text input</li>
+<li>Text area</li>
+<li>Dropdown</li>
+<li>DatePicker</li>
+<li>DateTime</li>
+<li>TimePicker</li>
+<li>Multiselect Checkbox</li>
+<li>Modal buttons, such as <uicontrol>Next</uicontrol>, <uicontrol>Cancel</uicontrol>,
+<uicontrol>Back</uicontrol>, or <uicontrol>Submit</uicontrol>.</li>
+<li>Search popup</li>
+<li>Log in and log out buttons, which are custom additions of the attribute only to support
+automation.</li>
+</ul>
+<p>For more information, see <xref href="../WebClientReference/c_WEBREF-ui-test-automation.dita"
+scope="peer">UI test automation</xref>.</p>
+<p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new list</xref></p>
+</section>
+<section id="newAPI"><title>Introducing new customization point for product delivery case approval
+processing</title><p>A new customization point is now available to support compliant customization
+of the function that sets the case header effective date during product delivery case
+approval.</p><p>For more information, see <xref
+href="../InsideEligibilityAndEntitlementUsingCER/c_INSEECER_CustomizabilityProductDeliveryEffectiveDate.dita"
+scope="peer">Product delivery effective date hook</xref> and <cite>WorkItem:273624</cite> in the
+<xref href="https://www.ibm.com/support/pages/node/6516652" format="html" scope="external">8.0.1
+Release Notes</xref>.</p><xref href="#spm_801_whatsnew/sectionlist" format="dita">Back to what's new
+list</xref></section>
+</conbody>
+</concept>
+<?tm 1527675457574 3 JavaScript||IBM ?>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="d1e67" xml:lang="en-us">
+<title>Building the Application.ear File</title>
+<conbody>
+<p>The following target should be executed from the root directory
+of the project to create the <filepath>.ear</filepath> file for WebLogic
+Server:</p>
+<p><cmdname>build weblogicEAR</cmdname></p>
+<p>This target will create a ready to install <filepath>.ear</filepath> file, <filepath>&lt;SERVER_MODEL_NAME>.ear,</filepath> located
+in <filepath>&lt;SERVER_DIR>/build/ear/WLS</filepath>.<note>SERVER_MODEL_NAME
+and SERVER_DIR are environment variables which specify the name of
+the model in the project and the root directory of the project respectively.</note><?Pub Caret -2?></p>
+<p>Before executing this target, a fully built IBM Cúram Social Program
+Management application must be available. For details on how to build
+an <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application, please refer to
+the <cite>Cúram Server Developer's Guide</cite>.</p>
+<note type="note">The EAR file cannot be built for H2 database. For
+more information on H2 database consult the <cite>Cúram Third-Party
+Tools Installation Guide for Windows</cite>.</note>
+</conbody>
+</concept>
+<?Pub *0000001331?>

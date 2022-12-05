@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d0e17" xml:lang="en-us">
+<title>Deploying on <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"
+/></title><?Pub Caret 17?>
+<titlealts>
+<searchtitle>Cúram Deployment Guide for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/></searchtitle>
+</titlealts>
+<shortdesc><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/WEBSPHAPS_shortdesc"></keyword></shortdesc>
+<conbody>
+<p>This guide shows you how to build <keyword conref="../common_files/conrefs.dita#conrefs/prodname"
+/> for deployment on the base version of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>. The guide also details the
+support provided for configuring and deploying on <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>.</p>
+<note>For information on using the application with the Network Deployment edition of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> consult <xref
+href="c_WEBSPHAPS_Configuration3ManualWebsphereApplicationServerCon2.dita"/>.</note>
+<p>It is a prerequisite that the reader have knowledge of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> development environment. In other words,
+that they know how to develop and build a server application and web client. The guide also presumes
+that WebSphere Application Server is installed. For details on this installation consult the
+<cite>Cúram Third Party Tools Installation Guide</cite>. Refer to the installation guide that is
+relevant to the platform, i.e. <tm tmtype="reg" trademark="Microsoft">Microsoft</tm> Windows or
+UNIX.</p>
+</conbody>
+</concept>
+<?Pub *0000000650?>

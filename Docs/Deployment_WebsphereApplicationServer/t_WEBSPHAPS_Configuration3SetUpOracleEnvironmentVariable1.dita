@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_ora_short"/>
+environment variable</title>
+<titlealts>
+<searchtitle>Configure the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_ora_short"
+/> environment variable</searchtitle>
+</titlealts>
+<shortdesc>Use the <uicontrol>Environment</uicontrol> menu to select and configure the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_ora_short"/> environment variable.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Environment</uicontrol><uicontrol>WebSphere
+variables</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the ORACLE_JDBC_DRIVER_PATH link from the list of environment variables. This will
+open the configuration screen for this variable.</cmd></step>
+<step><cmd>Set the <uicontrol>Value</uicontrol> field to point to the directory containing the Type
+4 driver. This is the <filepath>drivers</filepath> directory of the SDEJ installation, e.g.
+<filepath>D:\Curam\CuramSDEJ\drivers</filepath>.</cmd></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the changes.</cmd></step>
+</steps>
+</taskbody>
+</task>

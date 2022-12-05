@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ZoomContextPanel" xml:lang="en-us">
+<title>Context Panel</title>
+<shortdesc>Use context panel toggle button to collapse the context
+panel to more easily access the navigation bar tabs.</shortdesc><?Pub Caret -1?>
+<taskbody>
+<context>  <p>To facilitate users with low vision, the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application is designed to correctly
+resize when the browser zoom setting is increased to 200%. However, in some cases there is not
+enough available space to display all navigation items on the screen at one time. When viewing the
+application in smaller resolutions with a browser zoom level of 200%, the content in the context
+panel can push the navigation bar tabs off the screen. As an accessible alternative users can
+perform the following actions:</p> </context>
+<steps>
+<step><cmd>Navigate to the context panel toggle button.</cmd></step>
+<step><cmd>Select the context panel toggle button. This will cause
+the context panel to collapse and allow the user to easily access
+the navigation bar tabs.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001235?>

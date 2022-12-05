@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring users</title>
+<shortdesc>As detailed in <xref href="c_WEBSPHZOS_Configuration6SecurityConfiguration1.dita"/>, the
+configured <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> user
+registry is used for authentication of administrative users and the database user.</shortdesc><taskbody><context>
+<p>Add the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+administrative users and the database user to the user registry. Take the following steps:</p></context>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Users and Groups</uicontrol>
+<uicontrol>Manage Users</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Create</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Complete the details for the administrative user and select
+<uicontrol>Create</uicontrol>.</cmd>
+</step>
+<step><cmd>Repeat the steps for the database user.</cmd></step></steps>
+<result> If <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+administrative security was enabled when you created the profile that the administrative user might
+already be defined in the registry.</result></taskbody></task>

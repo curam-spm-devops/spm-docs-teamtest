@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e889">
+<title>Security hardening measures</title>
+<shortdesc>Set the security <uicontrol>Requires SSL</uicontrol> option and set a custom property to
+limit LTPA cookies to SSL only.</shortdesc><conbody>
+<p>When users log in to the application, their usernames and passwords are sent to the server, and
+if successfully authenticated, the server responds with a unique LTPA token. This token is used in
+all subsequent requests to recognize the user and then serves privileged content. When the user logs
+out, this token doesn’t become invalid. There is no way to invalidate the LTPA token, which has been
+confirmed by IBM. IBM's recommendation is to use two security hardening measures:</p>
+<ol>
+<li>Setting the security Requires SSL option;</li>
+<li>Setting a custom property to limit LTPA cookies to SSL only.</li></ol>
+<p>The default configuration scripts make these changes and the steps are documented <xref
+href="t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.dita"/>.</p>
+<p>For more information, see:</p>
+<ul>
+<li><xref scope="external" format="html"  href="http://www.ibm.com/developerworks/websphere/techjournal/1004_botzum/1004_botzum.html?ca=drs#step19" >http://www.ibm.com/developerworks/websphere/techjournal/1004_botzum/1004_botzum.html?ca=drs#step19</xref></li>
+<li><xref scope="external" format="html"  href="http://www.ibm.com/developerworks/websphere/techjournal/1004_botzum/1004_botzum.html?ca=drs#step29" >http://www.ibm.com/developerworks/websphere/techjournal/1004_botzum/1004_botzum.html?ca=drs#step29</xref></li></ul></conbody></concept>

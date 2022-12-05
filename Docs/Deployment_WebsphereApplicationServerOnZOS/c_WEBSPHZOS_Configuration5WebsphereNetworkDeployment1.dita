@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e3115">
+<title>Network deployment</title>
+<shortdesc><keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> Network
+Deployment offers advanced deployment services, including clustering, edge services and high
+availability for distributed configurations.</shortdesc><conbody>
+<p>Customizing network deployment is outside the scope this IBM Knowledge Center. For more
+information, see the <xref
+href="https://www.ibm.com/support/knowledgecenter/en/SS7K4U/mapfiles/product_welcome_waszos.html"
+format="html" scope="external">WebSphere Application Server for z/OS</xref> IBM product
+documentation.</p>
+</conbody></concept>

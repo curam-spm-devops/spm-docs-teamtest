@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e545">
+<title>Security configuration for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/></title>
+<shortdesc>The default authentication mechanism in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/> is by authentication providers,
+and application security is implemented by using a custom authentication provider. </shortdesc><conbody>
+<p>For more information about the default configuration, see <xref
+href="../Security/c_SECHAND_Authentication1DefaultConfigurationForWeblogicServ1.dita" scope="peer"
+>Default Configuration for WebLogic Server</xref>.</p>
+<p>The application and <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/>
+support the use of alternative authentication mechanisms, such as an LDAP directory server or a
+single sign-on solution. <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/>
+provides authentication providers that can be configured to work with LDAP directory servers and for
+single sign-on solutions, the third-party vendor often produces a custom authentication provider to
+work with <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/>. Where an
+alternative provider is to be used for authentication, the Cúram authentication provider should
+verify only that users are valid for authorization purposes.</p>
+<p>To configure the Cúram provider for identity-only authentication, you must set the
+<codeph>curam.security.check.identity.only</codeph> property to <codeph>true</codeph> in the
+<filepath>AppServer.properties</filepath> file before you run the <cmdname>configure</cmdname>
+target. You can configure additional authentication providers manually only after the
+<codeph>configure</codeph> target is run. For more information, see <xref
+href="../Security/c_SECHAND_Authentication1IdentityOnlyAuthentication1.dita" scope="peer">Identity
+Only Authentication</xref>.</p>
+<p>An optional property that enables logging for the Cúram authentication provider is available. Set
+the <codeph>curam.security.login.trace</codeph> to <codeph>true</codeph> to add tracing information
+to the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_short"/> log file during
+the authentication process. You must set the property in the
+<filepath>AppServer.properties</filepath> file before you run the <cmdname>configure</cmdname>
+target.</p></conbody></concept>

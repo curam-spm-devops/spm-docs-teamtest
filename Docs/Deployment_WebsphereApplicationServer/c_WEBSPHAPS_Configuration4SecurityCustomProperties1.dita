@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e753">
+<title>Security custom properties</title>
+<shortdesc>Security custom properties determine the behavior of a single sign-on LTPA Token2
+login.</shortdesc><conbody>
+<ul>
+<li><option>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</option>
+<p>This property determines the behavior of a single sign-on LTPA Token2 login.</p>
+<p>When this property value is set to <tt>true</tt>, the token contains a custom cache key, and the custom Subject cannot be found, the token is used to log in directly as the custom information needs to be gathered again. A challenge occurs so that the user to login again. When this property value is set to <tt>false</tt> and the custom Subject is not found, the LTPA Token2 is used to login and gather all of the registry attributes. However, the token might not obtain any of the special attributes that downstream applications might expect.</p>
+<p>By default the configuration script sets a WebSphere Application Server property, com.ibm.ws.security.webChallengeIfCustomSubjectNotFound, to <tt>false</tt> to ensure that web sessions can seamlessly transfer between two servers in a cluster (for example, in a fail over scenario) without being asked for security credentials. This setting allows the security token used by WebSphere Application Server to be validated correctly, without user input.</p>
+<p>If this behavior is not required it is possible to change this property to true, see <xref href="c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita"/> for more information on setting <i>Security custom properties</i>. If the property is set to <tt>true</tt>, when a web session switches from one server in the cluster to another, perhaps due to the original server failing, the user will be asked for security information before being able to proceed.</p></li></ul></conbody></concept>

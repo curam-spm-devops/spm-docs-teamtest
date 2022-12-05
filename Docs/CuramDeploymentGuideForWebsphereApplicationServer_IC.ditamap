@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Cúram Deployment Guide for WebSphere Application Server" xml:lang="en-us"><topicmeta><critdates><created date="2013-10-31"/><revised modified="2015-03-26"/></critdates><?Pub Caret -1?></topicmeta>
+<topicref href="Deployment_WebsphereApplicationServer/ctr_CuramDeploymentGuideForWebsphereApplicationServer.dita" navtitle="Cúram Deployment Guide for WebSphere Application Server">
+<topicref  navtitle="Building EAR Files" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2BuildingEarFiles1.dita">
+<topicref navtitle="The Enterprise Application"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2EnterpriseApplication1.dita"/>
+<topicref  navtitle="The Web Services Application" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2WebServicesApplication1.dita">
+<topicref  navtitle="Building the Web Services EAR File" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2BuildingWebServicesEarFile1.dita"/>
+<topicref  navtitle="Contents of Web Services EAR File" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2ContentsWebServicesEarFile1.dita"/>
+<topicref  navtitle="Web Service WSDL" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2WebServiceWsdl1.dita"/>
+</topicref>
+<topicref  navtitle="Multiple EAR files" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2MultipleEarFiles1.dita"/>
+<topicref  navtitle="Alternative Targets" href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Building2AlternativeTargets1.dita"/>
+</topicref>
+<topicref navtitle="WebSphere Application Server Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4WebsphereApplicationServerConfigura1.dita">
+<topicref href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_configwebsvrplugin.dita"/>
+</topicref>
+<topicref navtitle="Security Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4SecurityConfiguration1.dita">
+<topicref navtitle="Special Configuration Steps When Using Identity Only and LDAP"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4SpecialConfigurationStepsWhenUsingI1.dita"/>
+<topicref navtitle="WebSphere Application Server User Registry"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4WebsphereApplicationServerUserRegis1.dita"/>
+<topicref navtitle="Logging the Authentication Process"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4LoggingAuthenticationProcess1.dita"/>
+<topicref navtitle="Establishing an Alternate Exclude Username Delimiter"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4EstablishingAlternateExcludeUsernam1.dita"/>
+<topicref navtitle="WebSphere Application Server Caching Behavior"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4WebsphereApplicationServerCachingBe1.dita"/>
+<topicref navtitle="Security custom properties"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4SecurityCustomProperties1.dita"/>
+<topicref navtitle="Security hardening measures"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4SecurityHardeningMeasures1.dita"/>
+<topicref navtitle="Cúram Cryptography"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4SecurityCryptography.dita"/>
+</topicref>
+<topicref navtitle="Starting and Stopping WebSphere Servers"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration4StartingStoppingWebsphereServers1.dita"/>
+<topicref navtitle="Deployment"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Deployment2Deployment2.dita"/>
+<topicref navtitle="Pre-compiling JSPs"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Deployment2PrecompilingJsps1.dita"/>
+<topicref navtitle="Testing Deployment"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Deployment2TestingDeployment1.dita"/>
+<topicref navtitle="Manual WebSphere Application Server Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ManualWebsphereApplicationServerCon2.dita">
+<topicref navtitle="The Administrative Console"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3AdministrativeConsole1.dita"/>
+<topicref navtitle="Scripting Support"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ScriptingSupport1.dita"/>
+<topicref navtitle="Creating the Data Source Login Alias"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3CreatingDataSourceLoginAlias1.dita"/>
+<topicref navtitle="Configure DB2 Data Sources"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ConfigureDbDataSources1.dita">
+<topicref navtitle="Set up DB2 Environment Variable"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpDbEnvironmentVariable1.dita"/>
+<topicref navtitle="Set up the Database Driver Provider"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpDatabaseDriverProvider1.dita"/>
+<topicref navtitle="Set up the Database Driver DataSource"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpDatabaseDriverDatasource1.dita"
+/>
+</topicref>
+<topicref navtitle="Configure an Oracle Data Source"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ConfigureOracleDataSource1.dita">
+<topicref navtitle="Set up Oracle Environment Variable"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpOracleEnvironmentVariable1.dita"/>
+<topicref navtitle="Setup the XA Database Driver"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupXaDatabaseDriver1.dita"/>
+<topicref navtitle="Setup the Non-XA Database Driver"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupNonxaDatabaseDriver1.dita"/>
+<topicref navtitle="Set up the XA Database Driver DataSources"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpXaDatabaseDriverDatasources1.dita"/>
+<topicref navtitle="Set up the Non-XA Database Driver DataSource"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpNonxaDatabaseDriverDatasource1.dita"
+/>
+</topicref>
+<topicref navtitle="Save the Master Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/>
+<topicref navtitle="Configure Administration Security"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureAdministrationSecurity1.dita"/>
+<topicref navtitle="Configure Transport Layer Security"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureTransportLayerSecurity1.dita"/>
+<topicref navtitle="Restart the Application Server"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3RestartApplicationServer1.dita"/>
+<topicref navtitle="Configure Users"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureUsers1.dita"/>
+<topicref navtitle="Set up the System JAAS Login Module"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita">
+<topicref navtitle="Add the Login Module"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3AddLoginModule1.dita"/>
+<topicref navtitle="Reorder the Login Module"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ReorderLoginModule1.dita"/>
+<topicref navtitle="Disable Cross Cluster Authentication"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3DisableCrossClusterAuthentication1.dita"/>
+</topicref>
+<topicref navtitle="Server Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ServerConfiguration1.dita">
+<topicref navtitle="Configure your JNDI lookup port"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureYourJndiLookupPort1.dita"/>
+<topicref navtitle="Configure your ORB Pass By Reference"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureYourOrbPassByReference1.dita"/>
+<topicref navtitle="Configure your Java Virtual Machine"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureYourJavaVirtualMachine1.dita"/>
+<topicref navtitle="Configure your Timer Service"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureYourTimerService1.dita"/>
+<topicref navtitle="Set up the Port Access"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpPortAccess1.dita"/>
+<topicref navtitle="Configure Session Security Integration"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3ConfigureSessionSecurityIntegration1.dita"
+/>
+</topicref>
+<topicref navtitle="Setup the Service Integration Bus"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupServiceIntegrationBus1.dita"/>
+<topicref navtitle="JMS Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3JmsConfiguration1.dita">
+<topicref navtitle="Setup the JMS Connection Factories"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupJmsConnectionFactories1.dita"/>
+<topicref navtitle="Setup the Required Queues"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupRequiredQueues1.dita"/>
+<topicref navtitle="Setup the Required Topics"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupRequiredTopics1.dita"/>
+<topicref navtitle="Setup the Required Queue Activation Specifications"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupRequiredQueueActivationSpecifi1.dita"/>
+<topicref navtitle="Setup the Required Topic Activation Specifications"
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetupRequiredTopicActivationSpecifi1.dita"
+/>
+</topicref>
+<topicref navtitle="Configure Historical Log Files"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ConfigureHistoricalLogFiles1.dita"/>
+<topicref navtitle="Post Configuration"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3PostConfiguration1.dita"/>
+</topicref>
+<topicref navtitle="Manual Application Deployment"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ManualApplicationDeployment1.dita"/>
+<topicref navtitle="WebSphere Network Deployment"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3WebsphereNetworkDeployment1.dita">
+<topicref navtitle="Creating the Profiles"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3CreatingProfiles1.dita"/>
+<topicref navtitle="Federating a Node"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3FederatingNode1.dita"/>
+<topicref navtitle="Configuration of Node"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3ConfigurationNode1.dita"/>
+<topicref navtitle="Deploying on the Node"
+href="Deployment_WebsphereApplicationServer/c_WEBSPHAPS_Configuration3DeployingOnNode1.dita"/>
+</topicref>
+</topicref>
+<reltable>
+<relheader>
+<relcolspec type="task"/>
+<relcolspec type="task"/>
+</relheader>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3SetUpDatabaseDriverDatasource1.dita"
+navtitle="Set up the database driver data source"/>
+</relcell>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServer/t_WEBSPHAPS_Configuration3CreatingDataSourceLoginAlias1.dita"
+navtitle="Creating the Data Source Login Alias" linking="targetonly"/>
+</relcell>
+</relrow>
+</reltable>
+</map>

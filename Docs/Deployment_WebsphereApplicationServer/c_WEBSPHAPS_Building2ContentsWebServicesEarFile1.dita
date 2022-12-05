@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e363">
+<title>Contents of web services EAR file</title>
+<titlealts>
+<searchtitle>Contents of web services EAR file</searchtitle>
+</titlealts>
+<shortdesc>The web services EAR file contains a <filepath>META-INF</filepath> directory and a web
+service <filepath>WAR</filepath> file.</shortdesc>
+<conbody>
+<p>The EAR file that is produced has the following structure and contents:</p>
+<ul>
+<li><filepath>META-INF</filepath> directory <ul>
+<li><filepath>application.xml</filepath>
+<p>This file details the core module for the web services application, which is the
+<filepath>webservices.war</filepath> file.</p></li>
+<li><filepath>ibm-application-bnd.xmi</filepath>
+<p>A generated WAS specific extension file.</p></li>
+<li><filepath>ibm-application-ext.xmi</filepath>
+<p>A generated WAS specific extension file.</p></li>
+<li><filepath>was.policy</filepath>
+<p>WAS security policy file that grants the application the Java
+permission<option>java.security.AllPermission</option>.</p></li>
+<li><filepath>MANIFEST.MF</filepath>
+<p>The manifest file which details the contents of the EAR file.</p></li>
+</ul></li>
+<li> Web service <filepath>WAR</filepath> file <p>This file contains support JAR files in the
+<filepath>WEB-INF/lib</filepath> directory, including:</p>
+<ul>
+<li><filepath>coreinf.jar</filepath>
+<p>This JAR file contains the conversion methods which are used to support the serialization of the
+complex types used in the interface.</p></li>
+<li><filepath>axis.jar</filepath>
+<p>This JAR file contains the Axis web services engine.</p></li>
+<li><filepath>appwebservices.jar</filepath>
+<p>This JAR file contains the wrapper classes which enable the Axis web services to connect to the
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> server application session bean(s)
+and the classes for the complex types which are used in the interface to the web services.</p></li>
+<li><filepath>server-config.wsdd</filepath>
+<p>This. <filepath>wsdd</filepath> file is located in the <filepath>WEB-INF</filepath> directory and
+contains the web service engine configuration which maps <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> BPOs to web services.</p></li>
+</ul></li>
+</ul>
+</conbody>
+</concept>

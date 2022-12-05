@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1358">
+<title>Configuring for a type 4 JDBC universal driver (XA)</title>
+<shortdesc>Configure for a type 4 JDBC universal driver (XA) by setting up the <keyword
+conref="../common_files/conrefs.dita#conrefs/db2zos"/> environment variable, the database driver
+provider, and the database driver data source.</shortdesc><conbody>
+<section>
+<title>Set up <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> environment
+variable</title>
+<ol>
+<li>Browse to <menucascade>
+<uicontrol>Environment</uicontrol>
+<uicontrol>WebSphere variables</uicontrol>
+</menucascade>. The appropriate scope where the data source is defined is selected.</li>
+<li>Select the <uicontrol>DB2UNIVERSAL_JDBC_DRIVER_PATH</uicontrol> link from the list of
+environment variables.</li>
+<li>Set the <uicontrol>Value</uicontrol> field to point to the directory that contains the Type 4
+drivers. This directory is normally the SDEJ <filepath>drivers</filepath> installation directory,
+for example: <filepath>/CuramSDEJ/drivers</filepath>.</li>
+<li>Press <uicontrol>OK</uicontrol> to confirm the changes.</li></ol></section>
+<section>
+<title>Set up the database driver provider</title>
+<ol>
+<li>Browse to <menucascade>
+<uicontrol>Resources</uicontrol>
+<uicontrol>JDBC</uicontrol>
+<uicontrol>JDBC providers</uicontrol>
+</menucascade>. The appropriate scope where the data source is to be defined is selected.</li>
+<li>Press <uicontrol>New</uicontrol> to add a driver. </li>
+<li>Select <uicontrol>DB2</uicontrol> from the list of <uicontrol>database types</uicontrol>
+supplied.</li>
+<li>Select <uicontrol>DB2 Universal JDBC Driver Provider</uicontrol> from the list of
+<uicontrol>Provider type</uicontrol> supplied.</li>
+<li>Select <uicontrol>XA data source</uicontrol> from the list of <uicontrol>Implementation
+types</uicontrol> supplied.</li>
+<li>Press <uicontrol>Next</uicontrol> to continue.</li>
+<li>Review the properties on the configuration screen that opens. Change the class path line
+<filepath>${DB2UNIVERSAL_JDBC_DRIVER_PATH}/db2jcc_license_cisuz.jar</filepath> to point at the
+license that is provided for <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/>
+connectivity and click <uicontrol>Apply</uicontrol>.</li>
+<li>Press  <menucascade>
+<uicontrol>Next</uicontrol>
+<uicontrol>Finish</uicontrol>
+</menucascade> to confirm the changes.</li></ol></section>
+<section>
+<title>Set up the database driver data source</title>
+<p>Repeat the following steps for each of the application data sources, substituting
+<option>curamdb</option>, <option>curamsibdb</option> , and <option>curamtimerdb</option> for
+<varname>&lt;DatasourceName&gt;</varname> (without the angle brackets):</p>
+<ol>
+<li>Select the <option>DB2 Universal JDBC Driver Provider (XA)</option> now displayed on the list of
+<uicontrol>JDBC Providers</uicontrol>.</li>
+<li>Select the <uicontrol>Data sources</uicontrol> link under <uicontrol>Additional Properties</uicontrol>;</li>
+<li>Press <uicontrol>New</uicontrol> to add a data source;</li>
+<li>Set the fields as follows: <p><uicontrol>Data source name</uicontrol>:
+<varname>&lt;DatasourceName&gt;</varname></p>
+<p><uicontrol>JNDI name</uicontrol>: <varname>jdbc/&lt;DatasourceName&gt;</varname></p>
+<p>Click <uicontrol>Next</uicontrol>;</p>
+</li>
+<li>Set the fields as follows: <ul>
+<li><uicontrol>Driver type</uicontrol>: 4</li>
+<li><uicontrol>Database name</uicontrol>: The name of the database </li>
+<li><uicontrol>Server name</uicontrol>: The name of the database server </li>
+<li><uicontrol>Port number</uicontrol>: The database server port </li>
+</ul><p>Leave all other fields unchanged unless a specific change is required and click
+<uicontrol>Next</uicontrol>.</p></li>
+
+<li>Set the fields as follows: <ul>
+<li>Set <uicontrol>Component-managed authentication alias</uicontrol> to: <varname>&lt;valid for
+database&gt;</varname></li>
+<li>Set <uicontrol>Mapping-configuration alias</uicontrol> to: DefaultPrinicipalMapping </li>
+<li>Set  <uicontrol>Container-managed authentication alias</uicontrol> to: <varname>&lt;valid for
+database&gt;</varname></li>
+</ul><p>Where the <varname>&lt;valid for database&gt;</varname> alias is the one that you set up in
+<xref href="t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.dita"/>.</p>
+<p>Leave all other fields unchanged unless a specific change is required and click
+<uicontrol>Next</uicontrol>.</p>
+</li>
+
+<li>Select <uicontrol>Finish</uicontrol> to confirm the changes and continue.</li>
+<li>Select the newly created <varname>DatasourceName</varname> data source from the displayed
+list.</li>
+<li>Select the <uicontrol>Custom Properties</uicontrol> link under <uicontrol>Additional
+Properties</uicontrol>.</li>
+<li>Select the <option>fullyMaterializeLobData</option> entry.</li>
+<li>Set the <option>value</option> to be <tt>false</tt>.</li>
+<li>Click  <uicontrol>OK</uicontrol> to confirm the changes.</li></ol></section>
+<section>
+<title>Save the master configuration</title>
+<p>Click the <uicontrol>Save</uicontrol> link in the <uicontrol>Message(s)</uicontrol> box to save
+the master configuration. This box is displayed only after configuration changes are made.</p>
+</section></conbody></concept>

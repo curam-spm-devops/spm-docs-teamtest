@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="t_ACCESSIBILITYChapter2ReaderTabs" xml:lang="en-us">
+<title>Tabs</title>
+<shortdesc> Navigate and interact with tabs and their content in the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application by using a screen reader and
+keyboard.</shortdesc><?Pub Caret 101?>
+<taskbody>
+<context>  <p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application is divided
+into a hierarchical structure with tab navigation at each level; application sections, application
+tabs, content area navigation bar tabs and in page navigation tabs. Accessibility controls are
+integrated into these tab navigation elements to help keyboard and screen readers. </p>
+<p>Use the following steps to navigate and interact with these tabs and their content by using a
+screen reader, a keyboard, or a combination of both:</p> </context>
+<steps>
+<step>
+<cmd>Give focus to the selected tab in the tab bar by using the Tab key. Only the selected tab can
+be given focus by using the Tab key.</cmd>
+</step>
+<step><cmd>Use the Up and Down arrow keys to navigate through each tab in the tab bar.</cmd></step>
+<step>
+<cmd>When a tab receives focus, you can press the Tab key to access the content in the selected
+tab.</cmd>
+</step>
+<step>
+<cmd>To close a tab, give focus to the relevant tab and press the Delete key. On <keyword
+conref="../common_files/conrefs.dita#conrefs/os_win_long"/>, you can also press Ctrl+W.</cmd>
+<info>Pressing Shift+F10 with focus on the tab title, or right-clicking the tab title, opens a
+context menu with the option to close the tab if available. Not all tabs can be closed as the delete
+function can be disabled.</info>
+</step>
+<step>
+<cmd>To expand an action menu, press Shift+Enter.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001768?>

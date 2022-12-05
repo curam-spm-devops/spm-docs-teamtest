@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e7638">
+<title>Bootstrap.properties</title>
+<shortdesc>The following properties relate to the <filepath>Bootstrap.properties</filepath>
+file.</shortdesc>
+<conbody>
+<section id="section_smq_xbs_crb">
+<title/>
+<p>Select a properties category.</p>
+<p>
+<ul>
+<li><xref href="#d1e7638/section_gml_2tc_crb" format="dita">Database</xref></li>
+<li><xref href="#d1e7638/section_ftn_ftc_crb" format="dita">Environment</xref></li>
+<li><xref href="#d1e7638/section_pkr_mtc_crb" format="dita">Test</xref></li>
+<li><xref href="#d1e7638/section_i24_ptc_crb" format="dita">Custom</xref></li>
+</ul>
+</p>
+</section>
+<section id="section_gml_2tc_crb">
+<title>Database</title>
+<p>These settings configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> for
+database communication.</p>
+<table id="d1e7644"><title>Database settings</title><tgroup cols="3">
+<colspec colnum="1" colwidth="35*"/>
+<colspec colnum="2" colwidth="20*"/>
+<colspec colnum="3" colwidth="45*"/>
+<thead>
+<row>
+<entry>
+<p>Property Name</p>
+</entry>
+<entry>
+<p>Type</p>
+</entry>
+<entry>
+<p>Meaning</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.type</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The property that specifies the database type. Valid values are: DB2, ORA, or ZOS</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.password</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The encrypted password that corresponds to the user name specified above. The database password
+is never stored in plaintext in the various Curam property files.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.username</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>A valid database username.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.cachesize</codeblock>
+</p>
+</entry>
+<entry>
+<p>INT32</p>
+</entry>
+<entry>
+<p>The size of the prepared statement cache used by batch programs when run against Oracle (the
+prepared statement cache is based around implicit caching).</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.<?linebreak pdf?>connectioncache.enabled</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Turn on connection caching for Oracle outside of an Application Server.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.<?linebreak pdf?>connectioncache.minlimit</codeblock>
+</p>
+</entry>
+<entry>
+<p>INT32</p>
+</entry>
+<entry>
+<p>Set Min Limit for the Cache. This sets the minimum number of PooledConnections that the cache
+maintains. This guarantees that the cache will not shrink below this minimum limit.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.<?linebreak pdf?>connectioncache.maxlimit</codeblock>
+</p>
+</entry>
+<entry>
+<p>INT32</p>
+</entry>
+<entry>
+<p>Set Max Limit for the Cache. This sets the maximum number of PooledConnections the cache can
+hold. There is no default MaxLimit assumed meaning connections in the cache could reach as many as
+the database allows.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.<?linebreak pdf?>connectioncache.initiallimit</codeblock>
+</p>
+</entry>
+<entry>
+<p>INT32</p>
+</entry>
+<entry>
+<p>Set the Initial Limit. This sets the size of the connection cache when the cache is initially
+created or reinitialized. When this property is set to a value greater than 0, then that number of
+connections are pre-created and are ready for use.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.<?linebreak pdf?>connectioncache.name</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The name used to identify the cache uniquely.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.zos.32ktablespace</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Property that specifies the name of the table space used for 32k storage on DB2 z/OS.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.zos.enable<?linebreak pdf?>foreignkeys</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Controls whether foreign keys are generated for a z/OS database when running the Data Manager.
+Note on usage - If Foreign Keys are used against a z/OS database, the tables are put in a
+CHECK_PENDING state, causing failures when the tables are accessed. The state can only be changed
+through direct
+<?oxy_comment_start author="sean.obrien" timestamp="20151208T171727+0000" comment="This acronym needs to be expanded. Like &quot;Database Administrator&quot; but maybe &quot;Database Action.&quot;"?>DBA<?oxy_comment_end?>
+intervention on the target platform (hence it cannot be scripted into the Data Manager which can run
+on remote clients). In normal usage the Data Manager invokes
+<?oxy_comment_start author="sean.obrien" timestamp="20151208T171822+0000" comment="This acronym needs to be expanded. Likely &quot;Line of Business.&quot;"?>LOB<?oxy_comment_end?>
+Manager after applying the foreign keys. This means the LOB Manager should be re-run after the this
+CHECK_PENDING state has been resolved.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.disableforeignkeys</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Controls whether foreign keys are generated in SQL statements. By default this property is false,
+which means foreign key generation is enabled. However, for z/OS foreign keys will not be generated
+if <codeblock>curam.db.zos.enableforeignkey</codeblock>s is set to false.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.disableInvalid<?linebreak pdf?>LobFileError</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>This property controls the reporting of invalid LOB file paths in DMX files. The default value is
+FALSE. By default a build exception will be thrown, when set to TRUE a warning will be reported.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.zos.encoding</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Property which specifies whether the database being used on z/OS requires processing for EBCDIC,
+ASCII, or UNICODE encoding. This should be set to EBCDIC, ASCII, or UNICODE depending on the
+appropriate database encoding in use. EBCDIC is the default value.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.zos.dbname</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The name of the database on z/OS.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.database.shortnames</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>It is recommended strongly that this property be set to false. The functionality for this
+property is planned for removal in a future version of Curam. If you have utilized this property in
+previous versions of Curam, contact Curam Support for more information.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.oracle.servicename</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The Oracle database service name. Setting this will create database connection using Oracle
+service name.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.name</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The database name. This setting will be overridden if property
+<codeblock>curam.db.oracle.servicename</codeblock>is set for Oracle database.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.servername</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The database server name.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.serverport</codeblock>
+</p>
+</entry>
+<entry>
+<p>INT32</p>
+</entry>
+<entry>
+<p>Suggested: 1521 (Oracle)/ 50000 (<keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_long"/>). The database server TCP/IP
+port.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.enable<?linebreak pdf?>.bindings.generation</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Suggested: false. Causes a bindings file to be generated for the Java Database Connectivity
+(JDBC) data source when a database connection is made outside of the application server, e.g. by the
+Batch Launcher. Has no effect if property
+<codeblock>curam.db.disable.bindings.generation</codeblock> is set. It is intended to be used to
+produce a starter bindings file which can then be customized.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.disable<?linebreak pdf?>.bindings.generation</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Suggested: false. Prevents re-generation of the JDBC data source bindings file and instead causes
+the data source to be looked up from a customized bindings file when a database connection is made
+outside of the application server, for instance by the Batch Launcher.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.dmx.locale</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Default: en. Property that specifies the locale that will be used when inserting DMX data onto
+the database. The locale should be specified in the format: <codeblock>language_country</codeblock>,
+for example <codeblock>en_US</codeblock>.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.multibyte.expansion</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Enables the multi-byte expansion feature for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> for <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/>. Default value is true.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db.multibyte<?linebreak pdf?>.default.factor</codeblock>
+</p>
+<?Pub Caret 19?>
+</entry>
+<entry>
+<p>FLOAT</p>
+</entry>
+<entry>
+<p>Specifies the default expansion factor for multi-byte string fields if the multi-byte expansion
+feature is enabled. The value must be a float between the values of 1 and 4. Default value is 4.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db2.ssl</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Default: false. Indicates that Secure Sockets Layer (SSL) is to be used for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> database communications.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db2.ssl.truststore.location</codeblock>
+</p>
+</entry>
+<entry>STRING</entry>
+<entry>Default: none. Specifies the SSL trust store location to be used for secure <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> database communications. </entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db2.ssl.truststore.password</codeblock>
+</p>
+</entry>
+<entry>STRING</entry>
+<entry>Default: none. Specifies the SSL trust store password to be used for secure <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> database communications.</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.db2.purescale</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Default: false. Indicates that the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> pureScale
+property,<codeblock> enableSysplexWLB</codeblock>, is set for the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> DataSource and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> configuration.</p>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
+<p><xref href="#d1e7638/section_smq_xbs_crb" format="dita">Back to properties category
+list</xref></p>
+</section>
+<section id="section_ftn_ftc_crb">
+<title>Environment</title>
+<p>These settings configure the environment for your SPM application.</p>
+<table id="d1e7837"><title>Environment settings</title><tgroup cols="3">
+<colspec colnum="1" colwidth="35*"/>
+<colspec colnum="2" colwidth="20*"/>
+<colspec colnum="3" colwidth="45*"/>
+<thead>
+<row>
+<entry>
+<p>Property Name</p>
+</entry>
+<entry>
+<p>Type</p>
+</entry>
+<entry>
+<p>Meaning</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.as.vendor</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Suggested: Should be set to BEA or IBM to reflect the Application Server being used. If running
+outside an application server, this should be empty. This defines the Application Server in which
+Curam will be deployed. This is setup automatically when the EAR file is built using the build
+targets.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.<?linebreak pdf?>tnameserv.port</codeblock>
+</p>
+</entry>
+<entry>
+<p>INT32</p>
+</entry>
+<entry>
+<p>Suggested: 1221. Port on which the <codeph>tnameserv</codeph> is running.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.<?linebreak pdf?>bindings.location</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Suggested: C:/Temp. Name of the file system location containing data sources.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.<?linebreak pdf?>default.dateformat</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Default: yyyy MM dd. The date format. Can be set to one of: "d M Ayyubid," "M d Ayyubid," "yyyy M
+d," "dd MM Ayyubid," "MM dd Ayyubid," "yyyy MM dd," "d MMM Ayyubid," "MMM d Ayyubid," "yyyy MMM d,"
+"d MMM Ayyubid," "MMMM d Ayyubid," "yyyy MMMM d," "dd MMM Ayyubid," "MMM dd Ayyubid," or "yyyy MMM
+dd."</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.<?linebreak pdf?>default.dateseparator</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The date separator. Can be set to one of: ".", ",", "/", "-".</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.default.timeformat</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>Valid time formats are <codeph>hh mm ss a</codeph>, <codeph>hh mm a</codeph>, <codeph>HH
+mm</codeph>, and <codeph>HH mm ss</codeph>. Default is <codeph>HH mm ss</codeph></entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.default.timeseparator</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>Valid time separator formats are <codeph>:</codeph> and <codeph>.</codeph>. Default is
+<codeph>:</codeph></entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.disable.<?linebreak pdf?>dynamic.properties</codeblock>
+</p>
+<?Pub Caret 15?>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>This indicates if dynamic properties should be enabled or disabled. This is used by command line
+tools that require access to properties but cannot access the database.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.deprecation.reporting</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>This indicates if deprecation reporting should be enabled or disabled. This is used by all tools
+(both online and offline) that report deprecation warnings to the user (for example, rules and
+workflow validation).</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.entity.struct.deprecation</codeblock>
+</p>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Indicates if generated entity standard structs should be deprecated if an entity is deprecated.
+This is used by generators which generate standard entity structs.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.environment.<?linebreak pdf?>roundingprecision.enable</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>Indicates if when rounding money types in Curam, the HALF_UP algorithm will be used. This means
+that all Money will be rounded up. If set to true, the HALF_UP algorithm will be used. If not set, a
+default of true is used.</p>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
+<p><xref href="#d1e7638/section_smq_xbs_crb" format="dita">Back to properties category
+list</xref></p>
+</section>
+<section id="section_pkr_mtc_crb">
+<title>Test</title>
+<p>These settings configure elements of SPM that are useful for unit testing. <note type="important"
+>Do not use these settings in a deployed application as they can degrade performance or cause
+failures.</note></p>
+<table id="d1e7918"><title>Test settings</title><tgroup cols="3">
+<colspec colnum="1" colwidth="35*"/>
+<colspec colnum="2" colwidth="20*"/>
+<colspec colnum="3" colwidth="45*"/>
+<thead>
+<row>
+<entry>
+<p>Property Name</p>
+</entry>
+<entry>
+<p>Type</p>
+</entry>
+<entry>
+<p>Meaning</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>
+<codeblock>curam.test.<?linebreak pdf?>override.date</codeblock>
+</p>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>This property allows the date and time to be set to a known value for testing. In order to
+override the date and time the property should be in the format YYYYMMDDThhmmss. The 'T' character
+is the separator between the date and the time. It is valid only to specify the date. If the time
+portion of the property is not set explicitly the time will be default automatically to midnight
+(00:00:00). For example, the string value '20070101T175930' represents 17:59:30 on Jan. 1, 2007. The
+string value '20070101' represents 00:00:00 on Jan. 1, 2007.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>
+<codeblock>curam.test.<?linebreak pdf?>treatreadmultimaxaserror</codeblock>
+</p>
+<?Pub Caret 12?>
+</entry>
+<entry>
+<p>BOOLEAN</p>
+</entry>
+<entry>
+<p>Default: false. Specifies that a run time error should be thrown in addition to a log message
+when the result size of Readmulti operation exceeds the maximum. This does not apply when the Treat
+readmulti-max as InformationalException option is enabled</p>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
+<p><xref href="#d1e7638/section_smq_xbs_crb" format="dita">Back to properties category
+list</xref></p>
+</section>
+<section id="section_i24_ptc_crb">
+<title>Custom</title>
+<p>These settings allow a developer to replace elements of the SPM infrastructure with their own
+customized handlers.</p>
+<table id="d1e7950"><title>Custom settings</title><tgroup cols="3">
+<colspec colnum="1" colwidth="35*"/>
+<colspec colnum="2" colwidth="20*"/>
+<colspec colnum="3" colwidth="45*"/>
+<thead>
+<row>
+<entry>
+<p>Property Name</p>
+</entry>
+<entry>
+<p>Type</p>
+</entry>
+<entry>
+<p>Meaning</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>
+<codeblock>curam.custom.<?linebreak pdf?>workflow.webservicebpo</codeblock>
+</p>
+<?Pub Caret 14?>
+</entry>
+<entry>
+<p>STRING</p>
+</entry>
+<entry>
+<p>The name of the application
+B<?oxy_comment_start author="sean.obrien" timestamp="20151208T212916+0000" comment="Acronym expanded. Need to verify that this expansion nis correct."?>usiness
+process Objecs (BPO)<?oxy_comment_end?> that workflow process enactment web services go through.</p>
+</entry>
+</row>
+</tbody>
+</tgroup></table>
+<p><xref href="#d1e7638/section_smq_xbs_crb" format="dita">Back to properties category
+list</xref></p>
+</section>
+</conbody>
+</concept>

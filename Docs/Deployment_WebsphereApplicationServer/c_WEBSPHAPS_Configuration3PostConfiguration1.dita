@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2713">
+<title>Post configuration tasks</title>
+<titlealts>
+<searchtitle>Post configuration tasks</searchtitle>
+</titlealts>
+<shortdesc>Create database tables required for the Service Integration Bus and create the database
+tables required for the Timer Service.</shortdesc>
+<conbody>
+<section id="section_et3_yzj_dhb">
+<title>Service Integration Bus database tables</title>
+<p>Manually create database tables required for the Service Integration Bus (SIB). <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> provides the SIB DDL Generator to
+generate the SQL for creating these tables.</p>
+<p>Run the generator by executing the following command (example for Windows):</p>
+<codeblock>
+  %WAS_HOME%\bin\sibDDLGenerator.bat
+    -system <varname>system</varname>
+    -platform <varname>platform</varname>
+    -schema <varname>username</varname>
+    -database <varname>database_name</varname>
+    -user <varname>username</varname>
+    -statementend ; 
+    -create</codeblock>
+<p>Where</p>
+<ul id="ul_lfr_b1k_dhb">
+<li><varname>system</varname> is the database that is to be used, e.g. <tt>oracle</tt> or
+<tt>db2</tt>;</li>
+<li><varname>platform</varname> is the operating system, such as <tt>windows</tt>, <tt>unix</tt> or
+<tt>zos</tt>;</li>
+<li><varname>username</varname> is the username required for accessing the database, as specified in
+the <filepath>Bootstrap.properties</filepath> property <tt>curam.db.username</tt>;</li>
+<li><varname>database_name</varname> is the name of the database to be used, as specified in the
+<filepath>Bootstrap.properties</filepath> property <tt>curam.db.name</tt>.</li>
+</ul>
+<p>For example:</p>
+<codeblock>c:/Websphere/AppServer/bin/sibDDLGenerator.bat
+            -system db2 -platform windows
+            -schema db2admin -database curam -user db2admin
+            -statementend ; -create</codeblock>
+<p>This command outputs some SQL statements which you run on the target database.</p>
+</section>
+<section id="section_b14_yzj_dhb">
+<title>Timer service database tables</title>
+<p>Manually create the database tables required for the Timer Service. <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> provides the DDL for these tables
+in it's <filepath> WAS_HOME /Scheduler </filepath> directory.</p>
+<p>The DDL files you run are the <varname>createTablespaceXXX.ddl</varname> and
+<varname>createSchemaXXX.ddl</varname> in that order, where <varname>XXX</varname> is your target
+database product name.</p>
+<p>Each DDL file contains instructions appropriate for running against your target database.</p>
+</section>
+<section>
+<title>Completion</title>
+<p>The application server is now configured and ready to install an <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application on it. Log out of the
+Administration Console and restart the server using the targets described in <xref
+href="c_WEBSPHAPS_Configuration4StartingStoppingWebsphereServers1.dita"/>.</p>
+</section>
+</conbody>
+</concept>

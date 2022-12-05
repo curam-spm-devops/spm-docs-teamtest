@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Manual Deployment</title><taskbody><context>
+<p>It is possible to manually deploy an <filepath>.ear</filepath> file using the Administration Console. For this to succeed, the relevant server must be started. In the Administration Console, complete the following steps:</p></context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Deployments</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click <uicontrol>Install</uicontrol>.</cmd></step>
+<step><cmd>Navigate to the location of the <filepath>.ear</filepath> file.</cmd>
+<info><p>The default location for the server <filepath>.ear</filepath> is:</p>
+<p><filepath>%SERVER_DIR%/build/ear/WLS/Curam.ear</filepath></p></info></step>
+<step><cmd>Select the <filepath>.ear</filepath> file from the list and click the <uicontrol>Next</uicontrol> button.</cmd></step>
+<step><cmd>Accept defaults and click the <uicontrol>Next</uicontrol> button.</cmd></step>
+<step><cmd>Accept the defaults and click the <uicontrol>Finish</uicontrol> button.</cmd></step>
+<step><cmd>Select the application just deployed in the <uicontrol>Deployments</uicontrol> list and click <menucascade><uicontrol>Start</uicontrol><uicontrol>Servicing all requests</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Click the <uicontrol>Yes</uicontrol> button;</cmd></step>
+<step><cmd>Finally, test the application deployment.</cmd>
+<info><p>For example, point a Web browser at the URL for the deployed application e.g. <filepath>https://localhost:7002/Curam</filepath>.</p></info></step></steps></taskbody></task>

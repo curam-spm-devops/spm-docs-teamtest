@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_case_management" xml:lang="en-us">
+<title>Integrated Case Management</title>
+<shortdesc>Integrated case management facilitates the triage and acceptance
+of participants into programs. It also facilitates the ongoing maintenance
+of both participant's eligibility for the program, and the supporting
+evidence for each application.</shortdesc>
+<prolog><metadata></metadata></prolog>
+<conbody>
+<p> Integrated case management consists of a number of core social industry components.</p>
+<section id="section_yxq_lkm_wfb">
+<title>Intake</title>
+<p>Intake refers to the collection of data about one or more individuals and their circumstances to
+achieve a particular goal. It consists of multiple phases of data collection, such as triage, or
+screening.</p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Intake has two main aims:<ul
+id="ul_kdh_pkm_wfb">
+<li>To enable workers in an organization to comprehensively and easily complete the intake
+process.</li>
+<li>To facilitate agencies in providing a collaborative, <term>No Wrong Door</term> approach to the
+intake process for clients in need of benefits or services</li>
+</ul>This approach reduces the number of contacts a client must make to access benefits or services
+across multiple agencies.</p>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> Intake supports the
+following intake processes:<ul id="ul_ldh_pkm_wfb">
+<li>Triage</li>
+<li>Screening</li>
+<li>Application</li>
+<li>Referrals</li>
+</ul></p>
+</section>
+<section id="section_tv4_pkm_wfb" otherprops="onprem">
+<title>Eligibility and Entitlement</title>
+<p>Eligibility and entitlement management is a complex process that includes evidence capture,
+entitlement calculation, and change in circumstance processing, including over and underpayment
+management.</p>
+<p>Eligibility and Entitlement support consists of the following default features:</p>
+<ul id="ul_pjk_5km_wfb">
+<li>Business user tools for rapid implementation of legislation and policy</li>
+<li>One time evidence capture and reuse</li>
+<li>Cross-program eligibility </li>
+<li>Assistance unit determination</li>
+<li>Default under and overpayment calculations</li>
+<li>Auto-generation of overpayment cases</li>
+<li>Nominee management</li>
+<li>Creation of financial schedules</li>
+</ul>
+<p>Food Assistance is an example of a program where a client can check to see if they are eligible
+to receive a benefit. Household, Resources, Income, and Expenses are the four categories of evidence
+that are collected from clients. The evidence supports the Eligibility and Entitlement process,
+which checks for eligibility across the programs.</p>
+</section>
+<section id="section_uhr_pkm_wfb" otherprops="onprem">
+<title>Evidence management</title>
+<p><keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/> evidence is data that is
+collected in respect of a participant or case. Evidence management supports the evidence lifecycle
+(Design, Collection, Verification, Activation, Correction, Sharing), while reusing evidence over
+multiple programs. Evidence management is a key part of the overall Eligibility and Entitlement
+process. Eligibility is continually reassessed due to changes in circumstance, rules, or rates that
+occur over time.</p>
+<p>Evidence management provides the following features:</p>
+<ul id="ul_mzz_wkm_wfb">
+<li>Business user tools for rapid translation of legislation and policy to evidence structure and
+verification requirements.</li>
+<li>Prebuilt evidence correction security, history, and audits.</li>
+<li>Prebuilt workflows monitor verification validity and initiate reverification process.</li>
+<li>Prebuilt evidence management tools for improved case worker productivity.</li>
+<li>Consistent user experience across evidence lifecycle such as intake, verification, activation,
+correction, and sharing across programs.</li>
+<li>Evidence visualization focuses user attention on pending tasks such as verification,
+activation.</li>
+<li>Workspace and workflows for managing shared evidence to incorporate program-specific
+reviews.</li>
+</ul>
+</section>
+<section id="section_hd5_pkm_wfb">
+<title>Participant management</title>
+<p>The business of a social enterprise organization involves many participant individuals and
+bodies. Participant types play a role in the delivery or receipt of benefits and services.</p>
+<p>A set of information is stored for each participant type. This set includes common information
+that is stored for all participant types and extra information that is stored only for some
+participant types. For example, address information is stored for all participant types whereas
+deduction information is only stored for persons. </p>
+<p>Each participant's information is stored in a central location. This approach allows the
+participant's information to be easily accessed and maintained by users. Participant information can
+also be reused as necessary throughout the application.</p>
+</section>
+</conbody>
+</concept>
+<?Pub *0000000749?>

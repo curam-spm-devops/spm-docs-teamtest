@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d0e17" xml:lang="en-us">
+<title>Deploying on Oracle WebLogic Server</title><?Pub Caret 34?>
+<titlealts>
+<searchtitle>Cúram Deployment Guide for WebLogic Server</searchtitle>
+</titlealts>
+<shortdesc><keyword
+conref="../common_files/guide_short_descs.dita#shortdescriptionsforguides/WEBLOGS_shortdesc"></keyword></shortdesc>
+<conbody>
+<p>It is assumed that <keyword conref="../common_files/conrefs.dita#conrefs/prodname_wlg_long"/> is
+installed, see <xref href="../install_DevelopmentEnvironment/t_install_wls_install.dita"
+scope="peer">Installing and configuring Oracle WebLogic Server</xref>.</p>
+</conbody>
+</concept>
+<?Pub *0000000625?>

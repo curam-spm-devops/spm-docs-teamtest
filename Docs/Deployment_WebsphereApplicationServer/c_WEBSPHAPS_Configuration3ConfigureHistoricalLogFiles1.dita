@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2683">
+<title>Configure historical log files</title>
+<titlealts>
+<searchtitle>Configure historical log files</searchtitle>
+</titlealts>
+<shortdesc>Configure the maximum number of historical log files maintained by a server. </shortdesc>
+<conbody>
+<ol>
+<li>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade></li>
+<li>Select the relevant server from the list of servers</li>
+<li>Select <uicontrol>Logging and Tracing</uicontrol> from the
+<uicontrol>Troubleshooting</uicontrol> section</li>
+<li>Select <uicontrol>JVM Logs</uicontrol> from the <uicontrol>General Properties</uicontrol>
+list</li>
+<li>Change the <uicontrol>Maximum Number of Historical Log Files</uicontrol> field to 30 for both
+the <filepath>System.out</filepath> and <filepath>System.err</filepath> files</li>
+<li>Select <uicontrol>OK</uicontrol> to apply the changes</li>
+<li>Save the changes to the master configuration.</li>
+</ol>
+</conbody>
+</concept>

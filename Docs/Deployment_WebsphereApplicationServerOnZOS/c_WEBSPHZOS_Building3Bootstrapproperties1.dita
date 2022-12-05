@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e431">
+<title>Bootstrap properties</title>
+<shortdesc>The <filepath>Bootstrap.properties</filepath> file contains the machine-specific
+configuration properties to connect to the database. </shortdesc><conbody>
+<p><note><filepath>Bootstrap.properties</filepath> must be stored in ASCII format. EBCDIC format is
+not readable by the Ant tool.</note>Pay specific attention to the following elements:</p>
+<p>
+<table id="d1e438"><title><keyword conref="../common_files/conrefs.dita#conrefs/zos"/> for
+Db2-specific database properties</title><tgroup cols="2">
+<colspec colnum="1" colwidth="1*"/>
+<colspec colnum="2" colwidth="3.43*"/>
+<thead>
+<row>
+<entry>Property</entry>
+<entry>Notes</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>curam.db.type</entry>
+<entry>Value must be set to <q>zos</q>.</entry>
+</row>
+<row>
+<entry>curam.db.zos.enableforeignkeys</entry>
+<entry>The default value is "false". If set to "true", the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_long"/> tables are put into CHECK_PENDING
+state and must be reset through direct DBA intervention.</entry>
+</row>
+<row>
+<entry>curam.db.zos.encoding</entry>
+<entry> Specify the value EBCDIC, ASCII, or UNICODE, that corresponds to the encoding of the
+database. EBCDIC is the default value.</entry>
+</row>
+<row>
+<entry>curam.db.zos.dbname</entry>
+<entry>Specify the <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> database name
+from the CREATE DATABASE SQL statement.</entry>
+</row>
+<row>
+<entry>curam.db.zos.32ktablespace</entry>
+<entry>Specify a table space name that is created in the database that is defined to the 32 K buffer
+pool.</entry>
+</row>
+<row>
+<entry>curam.db.username</entry>
+<entry>Specify the z/OS user name that connects to the <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> database.</entry>
+</row>
+<row>
+<entry>curam.db.password</entry>
+<entry> Specify the encrypted password for the user specified by curam.db.username. Generate the
+encrypted value by starting the Ant encrypt target; for example:
+<codeblock>cd $SERVER_DIR; ./build.sh encrypt -Dpassword=&lt;The password for curam.db.username></codeblock></entry>
+</row>
+<row>
+<entry>curam.db.name</entry>
+<entry>Specify the <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> location
+name.</entry>
+</row>
+<row>
+<entry>curam.db.servername</entry>
+<entry>Specify the <keyword conref="../common_files/conrefs.dita#conrefs/zos"/> hostname or IP
+address of the <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> server.</entry>
+</row>
+<row>
+<entry>curam.db.serverport</entry>
+<entry> Specify the <keyword conref="../common_files/conrefs.dita#conrefs/db2zos"/> port.</entry>
+</row>
+</tbody>
+</tgroup></table>
+</p>
+</conbody></concept>

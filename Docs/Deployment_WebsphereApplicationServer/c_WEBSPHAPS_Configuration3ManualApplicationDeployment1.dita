@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e2778" xml:lang="en-us">
+<title>Application deployment</title>
+<titlealts>
+<searchtitle>Application deployment</searchtitle>
+</titlealts>
+<shortdesc>Use the Administration Console to install an enterprise application in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/></shortdesc>
+<conbody>
+<p>Install an application, EJB component, or web module using the Administrative Console.</p>
+<note type="note">Once the install has been started, the <uicontrol>Cancel</uicontrol> button must
+be used to exit if the installation of the application is aborted. It is not sufficient to simply
+move to another Administrative Console page without first clicking <uicontrol>Cancel</uicontrol> on
+an application installation page.</note>
+<ol>
+<li>Navigate to <menucascade><uicontrol>Applications</uicontrol>
+<uicontrol>New Application</uicontrol></menucascade>;</li>
+<li>Select <uicontrol>New Enterprise Application</uicontrol>;</li>
+<li>Click the appropriate radio button and specify the full path name of the source application file
+or EAR file, optionally via the <uicontrol>Browse</uicontrol> button, in the <wintitle>Path to the
+new application</wintitle> panel and click <uicontrol>Next</uicontrol>; <p>The default location for
+the application EAR files is:</p>
+<p><filepath>%SERVER_DIR%/build/ear/WAS/Curam.ear</filepath></p></li>
+<li>Select the <uicontrol>Fast Path - Prompt only when additional information is
+required</uicontrol> radio button in the <wintitle>How do you want to install the
+application?</wintitle> panel and click <uicontrol>Next</uicontrol>;</li>
+<li>Leave the defaults as they are for step 1, <i>Select installation options</i> and click
+<uicontrol>Next</uicontrol>;</li>
+<li>In step 2, <uicontrol>Map modules to servers</uicontrol>, for every module listed, select a
+target server or a cluster from the <uicontrol>Clusters and Servers</uicontrol> list. To do this,
+tick the check box beside the particular module(s) and then select the server or cluster and click
+<uicontrol>Apply</uicontrol>.</li>
+<li>For the following step(s) click <uicontrol>Next</uicontrol> and then
+<uicontrol>Finish</uicontrol> to complete the installation. This step may take a few minutes and
+should finish with the message <i>Application Curam installed successfully</i>.</li>
+<li>Save the changes to the Master Configuration. (See <xref
+href="c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/> for more details.)</li>
+<li>Navigate to <menucascade><uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol><uicontrol>WebSphere enterprise
+applications</uicontrol></menucascade> and select the newly installed application.</li>
+<li>Select the <uicontrol>Class loading and update detection</uicontrol> option from the
+<uicontrol>Detail Properties</uicontrol> section.</li>
+<li>Set the <uicontrol>Class loader order</uicontrol> to be <uicontrol>Classes loaded with local
+class loader first (parent last)</uicontrol>.</li>
+<li>Set the <uicontrol>WAR class loader policy</uicontrol> to be <uicontrol>Single class loader for
+application</uicontrol>.</li>
+<li>Click <uicontrol>OK</uicontrol>.</li>
+<li>Navigate to <uicontrol>Users and Groups -&gt; Manage Users</uicontrol>. Click
+<uicontrol>Create...</uicontrol> and enter a User ID, Password, First Name and Last Name. Then click
+on <uicontrol>Create</uicontrol>. <p>See <xref href="c_WEBSPHAPS_Deployment2Deployment2.dita"/> for
+information regarding the credentials expected here by the application and changing them.</p></li>
+<li>Return back to the enterprise application (<menucascade><uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol><uicontrol>WebSphere enterprise
+applications</uicontrol></menucascade>, select the newly installed application) and select the
+<uicontrol>Security role to user/group mapping</uicontrol> option from the <uicontrol>Detail
+Properties</uicontrol> section and map the mdbuser role to a username and password as per these
+steps: <note type="note">The username you use to map to the mdbuser role must already be defined in
+your user registry.</note>
+<ol>
+<li>Check <uicontrol>Select</uicontrol> for the mdbuser role and click <uicontrol>Map
+Users...</uicontrol>;</li>
+<li>Enter the appropriate username in the <uicontrol>Search String</uicontrol> field and click
+<uicontrol>Search</uicontrol>;</li>
+<li>Select the ID from the <uicontrol>Available:</uicontrol> list and click
+<uicontrol>&gt;&gt;</uicontrol> to add it to the <uicontrol>Selected:</uicontrol> list and click
+<uicontrol>OK</uicontrol>.</li>
+<li>Click <uicontrol>OK</uicontrol>.</li>
+</ol></li>
+<li>Having mapped the mdbuser role you can now update the user RunAs role by selecting the
+<uicontrol>User RunAs roles</uicontrol> option from the <uicontrol>Detail Properties</uicontrol>
+section.</li>
+<li>Enter an appropriate username and password in the <uicontrol>username</uicontrol> and
+<uicontrol>password</uicontrol> fields, respectively. Check <uicontrol>Select</uicontrol> for the
+mdbuser role and click <uicontrol>Apply</uicontrol>.</li>
+<li>Click <uicontrol>OK</uicontrol>.</li>
+<li>Save the changes to the master configuration.</li>
+<li>After deployment it is necessary to start the application before it can be used. Navigate to
+<menucascade><uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol><uicontrol>WebSphere enterprise
+applications</uicontrol></menucascade>, tick the check box for the newly installed application, and
+click the <uicontrol>Start</uicontrol> button. This step may take a few minutes and should finish
+with the application status changing to indicate it has been started.</li>
+<li>Finally, test the application deployment. For example, point a Web browser at the URL for the
+deployed application e.g. <filepath>https://localhost:9044/Curam</filepath>.</li>
+<?Pub Caret 149?>
+</ol>
+</conbody>
+</concept>
+<?Pub *0000006023?>

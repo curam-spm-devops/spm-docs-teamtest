@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1016">
+<title>Manual <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>
+configuration</title>
+<shortdesc>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> can be
+configured manually if required, but this is not recommended. This section is for information
+purposes only.</shortdesc><conbody>
+<p>Any settings entered under the <uicontrol>Resources</uicontrol> section of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> Administrative Console can be
+configured at multiple levels that control the JNDI scope. These include cell, node, or server. Upon
+selecting a <uicontrol>Resource</uicontrol>, the top of the main browser window shows this scope and
+allows the various resources in the current scope to be viewed. The scope, and in turn the location
+of any resources set, should be based upon planned use, that is, if working in a cluster it may not
+be necessary to set the same settings on each server, so the scope may be set to cell or node.</p></conbody></concept>

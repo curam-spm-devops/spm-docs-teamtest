@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="accessibilitystatement" xml:lang="en-us">
+<title>Accessibility</title>
+<shortdesc>Accessibility features help users with physical disabilities,
+such as restricted mobility or limited vision, to use software products
+successfully. </shortdesc>
+<prolog><metadata>
+<keywords><indexterm>accessibility</indexterm></keywords>
+</metadata></prolog>
+<conbody>
+<p>The accessibility features in the product enable users to:</p>
+<ul>
+<li>Use assistive technologies, such as screen reader software and
+digital speech synthesizers, to hear what is displayed on the screen.
+Consult the product documentation of the assistive technology for
+details on using the technology with this product.</li>
+<li>Perform tasks with the software using only the keyboard. </li>
+</ul>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> and accessibility</title>
+<p><tm tmtype="reg" trademark="IBM">IBM</tm> is committed to producing accessible products.</p>
+<p>For more information about the commitment that <tm tmtype="reg" trademark="IBM">IBM</tm> has to
+accessibility, see the <tm tmtype="reg" trademark="IBM">IBM</tm> Human Ability and Accessibility
+Center. The <tm tmtype="reg" trademark="IBM">IBM</tm> Human Ability and Accessibility Center is at
+the following web address:</p>
+<p><xref format="html" href="http://www.ibm.com/able" scope="external"/> (opens in a new browser
+window or tab)</p>
+</section>
+</conbody><?Pub Caret -1?>
+</concept>
+<?Pub *0000001035?>

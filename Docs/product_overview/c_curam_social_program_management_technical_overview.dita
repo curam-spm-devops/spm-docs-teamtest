@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_curam_social_program_management_technical_overview"
+xml:lang="en-us">
+<title>Technical overview</title><?Pub Caret -2?>
+<shortdesc> A high-level overview of the solution architecture of <keyword
+   conref="../common_files/conrefs.dita#conrefs/prodname"/> from a development and deployment
+  perspective.</shortdesc>
+<prolog><metadata></metadata></prolog>
+<conbody></conbody>
+</concept>
+<?Pub *0000000612?>

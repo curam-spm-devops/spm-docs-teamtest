@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2012">
+<title>Reordering the login module</title>
+<shortdesc>Use the administration console to reorder the login module. </shortdesc><conbody>
+<ol>
+<li>Browse to <menucascade>
+<uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol>
+</menucascade>.</li>
+<li>Expand <uicontrol>Java Authentication and Authorization Service</uicontrol> under the
+<uicontrol>Authentication</uicontrol> heading and select <uicontrol>System logins</uicontrol>.</li>
+<li>Select the relevant alias from the list. The login module must be reordered for the DEFAULT,
+WEB_INBOUND and RMI_INBOUND aliases.</li>
+<li>Select the <uicontrol>JAAS login modules</uicontrol> link under the <uicontrol>Additional
+Properties</uicontrol> heading.</li>
+<li>Select <uicontrol>Set Order</uicontrol>.</li>
+<li>Select <uicontrol>curam.util.security.CuramLoginModule</uicontrol> and select <uicontrol>Move
+Up</uicontrol>. Repeat this step until the CuramLoginModule entry is the top entry in the list.</li>
+<li>Select <uicontrol>OK</uicontrol> to confirm the modifications to the order.</li></ol></conbody></concept>

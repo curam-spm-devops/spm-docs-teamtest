@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1182">
+<title>Populating the database</title>
+<shortdesc>Before you access <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>, you
+must populate the database with default data.</shortdesc><conbody>
+<p>Use the Ant <cmdname>database</cmdname> and <cmdname>prepare.application.data</cmdname> targets
+to  populate the database:<codeblock>./build.sh database prepare.application.data</codeblock></p>
+</conbody></concept>

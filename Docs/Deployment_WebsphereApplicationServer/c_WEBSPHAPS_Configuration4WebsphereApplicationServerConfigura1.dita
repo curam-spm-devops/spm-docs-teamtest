@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e553" xml:lang="en-us">
+<title>Configuring <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"
+/></title>
+<titlealts>
+<searchtitle>Configuring <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"
+/></searchtitle>
+</titlealts>
+<shortdesc>Configuring <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/>
+involves setting up a profile, data source, a number of servers and configuring the JMS and security
+settings. Execute the <cmdname>configure</cmdname> target provided by the SDEJ to perform these
+tasks.</shortdesc>
+<conbody>
+<p>Configuring <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> is
+similar on all platforms and the <keyword
+conref="../common_files/conrefs.dita#conrefs/compname_sdej"/> provides a number of Ant targets to
+aid the configuration and management of the installation. </p>
+<p>The configuration target provided by the SDEJ is a simple default configuration and might not be
+suitable for a production environment.</p>
+<note type="note">The <cmdname>configure</cmdname> target overwrites the <i>default</i> profile
+created by <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> unless
+<varname>-Dkeep.profile=true</varname> is passed to the target.</note>
+<p>The profile created by the <cmdname>configure</cmdname> target takes the following defaults
+unless specifically overridden when calling the target.</p>
+<ul>
+<li><option>profile.name=AppSvr01</option></li>
+<li><option>cell.name=${node.name}Cell</option></li>
+</ul>
+<p>Execute the command <cmdname>build configure</cmdname> from the
+<filepath>&lt;SERVER_DIR></filepath> directory to invoke automatic configuration. The files
+<filepath>AppServer.properties</filepath> and <filepath>Bootstrap.properties</filepath> must be in
+the <filepath>&lt;SERVER_DIR>/project/properties</filepath> directory. You can override this default
+location for the properties file by specifying <cmdname>-Dprop.file.location=&lt;new
+location></cmdname> when executing the <cmdname>configure</cmdname> target. See the <cite>Cúram
+Server Developer's Guide</cite> for more information on the setup of a
+<filepath>Bootstrap.properties</filepath>. <xref
+href="c_WEBSPHAPS_Configuration4WebsphereApplicationServerConfigura1.dita"/> shows example contents
+of the <filepath>AppServer.properties</filepath> file.</p>
+<codeblock>## APPLICATION SERVER PROPERTIES
+
+# Property to indicate WebSphere is installed.
+as.vendor=IBM
+
+# The username and encrypted password for admin server.
+security.username=&lt;e.g. websphere>
+security.password=&lt;encrypted password>
+
+# The name of the WebSphere Node
+node.name=MyNode
+
+# The name of the server on which the application will be hosted.
+curam.server.name=CuramServer
+curam.server.port=2809
+
+#####################################################
+## THE FOLLOWING PROPERTIES ARE FOR WebSphere ONLY ##
+#####################################################
+# The alias that should be used for the database authorization
+curam.db.auth.alias=databaseAlias
+
+# HTTP Port for the server on which the client
+# will be accessed
+curam.client.httpport=9044
+
+# HTTP Port for the server on which the Web services
+# will be accessed
+curam.webservices.httpport=9082
+
+# Property to set JVM initial and maximum heap size.
+curam.server.jvm.heap.size=1024</codeblock>
+<p>By default the <cmdname>configure</cmdname> target establishes a Type 4 Universal Driver (XA)
+data source. However, you may configure a Type 2 Universal Driver (XA) data source by setting the
+curam.db.type2.required property in the <filepath>AppServer.properties</filepath> file.</p>
+<p>Also by default, the <cmdname>configure</cmdname> target sets the JVM initial and maximum heap
+size to "1024" MB. However, you can override the default JVM initial and maximum heap size by
+setting the curam.server.jvm.heap.size property in the <filepath>AppServer.properties</filepath>
+file.</p>
+<note type="note">
+<ol>
+<li>The setting of the Java heap as described in the <xref
+href="c_WEBSPHAPS_Configuration4WebsphereApplicationServerConfigura1.dita"/> example and set by the
+configuration scripts is for illustrative purposes. Based on the size of your customized
+application, deployment strategy, etc. these settings may be too low or too high. The optimum value
+should be determined by monitoring the memory performance of your server.</li>
+<li>Memory issues have been noticed with the WebSphere Application Server wrapped database drivers
+during the retrieval of large CLOBs and BLOBs (3MB+) from the database. These issues may be
+worked-around by increasing the Max Heap Size JVM parameter as appropriate on the deployed
+server.</li>
+<li>The <cmdname>configure</cmdname> target cannot be run when H2 database is in use. For more
+information on H2 database consult the <cite>Cúram Third-Party Tools Installation Guide for
+Windows</cite>.</li>
+<?Pub Caret -1?>
+</ol>
+</note>
+</conbody>
+</concept>
+<?Pub *0000004333?>

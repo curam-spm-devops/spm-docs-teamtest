@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2010, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map
+xml:lang="en-us">
+<title>What&apos;s New in <keyword conref="common_files/conrefs.dita#conrefs/prodname"/></title>
+<topicref href="whats_new/Whats_new_single_topic.dita" navtitle="What's new">
+<topicref href="whats_new/spm_800_whatsnew.dita" navtitle="What's new in 8.0.0"/>
+<topicref href="whats_new/spm_801_whatsnew.dita" navtitle="What's new in 8.0.1" otherprops="8.0.1"/>
+<topicref href="whats_new/spm_802_whatsnew.dita" navtitle="What's new in 8.0.2" otherprops="8.0.2"/>
+<topicref href="whats_new/spm_803_whatsnew.dita" navtitle="What's new in 8.0.3" otherprops="8.0.3"/>
+<topicref href="getting_started/c_release_notes.dita"/>
+<!--<topicref href="product_overview/c_documentation_addendum.dita"/>-->
+</topicref>
+</map>
+<?Pub *0000000539?>

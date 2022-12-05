@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure 64-bit support</title><taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Select the relevant server from the list;</cmd></step>
+<step><cmd>Check the <uicontrol>Run in 64 bit JVM mode</uicontrol> check-box;</cmd></step>
+<step><cmd>Click <uicontrol>Apply</uicontrol> or <uicontrol>OK</uicontrol> to apply changes;</cmd></step>
+<step><cmd>Save the changes made to the master configuration using the <uicontrol>Save</uicontrol> option as before.</cmd></step></steps>
+<result>
+<note type="note">You may also need to review and adjust your JVM heap sizes based on your application size, throughput, performance goals, and other factors.</note></result></taskbody></task>

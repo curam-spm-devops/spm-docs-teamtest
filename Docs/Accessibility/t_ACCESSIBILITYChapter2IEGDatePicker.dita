@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter2IEGDatePicker" xml:lang="en-us">
+<title>IEG date picker in the classic <keyword
+conref="../common_files/conrefs.dita#conrefs/UA_component_short"/> application</title>
+<shortdesc>You can use specific keyboard commands to navigate and make selections on the IEG date
+picker in the classic <keyword conref="../common_files/conrefs.dita#conrefs/UA_component_long"/>
+application.</shortdesc>
+<?Pub Caret 97?>
+<taskbody>
+<context>
+<p>A date picker form field displays a calendar widget to a user so that the user can select a
+specific date. To select the specific date in the date picker widget by using a keyboard or a screen
+reader, or a combination, users must use specific keyboard commands.</p>
+</context>
+<steps>
+<step>
+<cmd>Use the Tab key to give focus to the date picker form field.</cmd>
+</step>
+<step><cmd>Press the Down Arrow key to open the date picker.</cmd></step>
+<step>
+<cmd>Press the Left Arrow, Right Arrow, Up Arrow, and Down Arrow keys to navigate between date
+cells.</cmd>
+</step>
+<step>
+<cmd>Press Page Down to navigate to the same day in the next month.</cmd>
+</step>
+<step>
+<cmd>Press Page Up to navigate to the same day in the previous month.</cmd>
+</step>
+<step>
+<cmd>Press Alt+Page Down to navigate to the same day in the next year.</cmd>
+</step>
+<step>
+<cmd>Press Alt+Page Up to navigate to the same day in the previous year.</cmd>
+</step>
+<step>
+<cmd>Press Home to navigate to the first day in the month.</cmd>
+</step>
+<step>
+<cmd>Press End to navigate to the last day in the month.</cmd>
+</step>
+<step>
+<cmd>Press Enter, Space bar to select the date.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001516?>

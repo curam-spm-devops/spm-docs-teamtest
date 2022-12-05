@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_onp_xrv_yx" xml:lang="en-us">
+<title>Single select lists</title>
+<shortdesc>Use specific keyboard commands to navigate single select lists by keyboard, screen
+reader, or a combination of both. </shortdesc>
+<taskbody>
+<steps>
+<step>
+<cmd>Navigate the single select list with a screen reader:</cmd>
+<substeps>
+<substep>
+<cmd>Navigate to <uicontrol>Single Select List</uicontrol> in any <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application. Lists of radio buttons are
+displayed.</cmd>
+</substep>
+<substep>
+<cmd>Use the Tab key to give focus to the radio button.</cmd>
+</substep>
+<substep>
+<cmd>Press the Enter key to select the radio button. When users press Enter to make a selection,
+JAWS also enters the FORMS MODE.</cmd>
+</substep>
+<substep>
+<cmd>Use the Up Arrow and Down Arrow keys to navigate through the items in the <uicontrol>Single
+Select List</uicontrol> and to change the selection.</cmd>
+</substep>
+</substeps>
+</step>
+<step>
+<cmd>Navigate the single select list without using a screen reader:</cmd>
+<substeps>
+<substep>
+<cmd>Navigate to <uicontrol>Single Select List</uicontrol> in any <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> application. Lists of radio buttons
+are displayed.</cmd>
+</substep>
+<substep>
+<cmd>Use the Tab key to give focus to the radio button.</cmd>
+</substep>
+<substep>
+<cmd>Press the Space bar to select the radio button.</cmd>
+</substep>
+<substep>
+<cmd>Use the Up Arrow and Down Arrow keys to navigate through the items in the <uicontrol>Single
+Select List</uicontrol> and to change the selection.</cmd>
+</substep>
+</substeps>
+</step>
+</steps>
+</taskbody>
+</task>

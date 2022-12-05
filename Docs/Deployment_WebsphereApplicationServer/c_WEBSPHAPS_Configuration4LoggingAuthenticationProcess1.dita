@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e855">
+<title>Logging the authentication process</title>
+<titlealts>
+<searchtitle>Logging the authentication process</searchtitle>
+</titlealts>
+<shortdesc>Trace entries of the <varname>CuramLoginModule</varname> authentication process can be
+generated in <filepath>SystemOut.log</filepath> and these can be helpful for debugging. </shortdesc>
+<conbody>
+<p> To generate trace log entries add the following to <filepath>AppServer.properties</filepath>
+before running the Ant <cmdname>configure</cmdname> target:
+<codeblock>curam.security.login.trace=true. </codeblock></p>
+<p>For a previously configured server, see the steps in <xref
+href="c_WEBSPHAPS_Configuration3SetUpSystemJaasLoginModule1.dita">Set up the System JAAS Login
+Module</xref> to set the <varname>CuramLoginModule login_trace</varname> property.</p>
+</conbody>
+</concept>

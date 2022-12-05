@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Disable cross-cluster authentication</title>
+<titlealts>
+<searchtitle>Disable cross-cluster authentication</searchtitle>
+</titlealts>
+<shortdesc>Disable cross-cluster authentication.</shortdesc>
+<taskbody>
+<context>
+<p>This property <varname>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</varname>
+determines the behavior of a single sign-on LTPA Token2 login. The property is set to false to
+ensure that web sessions can seamlessly transfer between two servers in a cluster (for example, in a
+failover scenario) without being asked for security credentials.</p>
+</context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Security</uicontrol><uicontrol>Global
+security</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select <uicontrol>Custom properties</uicontrol> and select the
+<uicontrol>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</uicontrol> property from the
+list of available properties.</cmd></step>
+<step><cmd>Under <uicontrol>General Properties</uicontrol>, change the value of the
+<uicontrol>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</uicontrol> property to
+<i>false</i></cmd></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the addition.</cmd></step>
+<step><cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/>.</cmd></step>
+</steps>
+</taskbody>
+</task>

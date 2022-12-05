@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Cúram Deployment Guide for WebLogic Server" xml:lang="en-us"><topicmeta><critdates><created date="2013-10-31"/><revised modified="2015-03-26"/></critdates><?Pub Caret -1?></topicmeta>
+<topicref href="Deployment_WeblogicServer/ctr_CuramDeploymentGuideForWeblogicServer.dita" navtitle="Cúram Deployment Guide for WebLogic Server">
+<topicref  navtitle="Building .ear Files" href="Deployment_WeblogicServer/c_WEBLOGS_Building1BuildingEarFiles1.dita">
+<topicref  navtitle="The Enterprise Application" href="Deployment_WeblogicServer/c_WEBLOGS_Building1EnterpriseApplication1.dita">
+<topicref  navtitle="Building the Application .ear File" href="Deployment_WeblogicServer/c_WEBLOGS_Building1BuildingApplicationEarFile1.dita"/>
+<topicref  navtitle="Under the Hood" href="Deployment_WeblogicServer/c_WEBLOGS_Building1UnderHood1.dita"/>
+<topicref  navtitle="Contents of Application .ear File" href="Deployment_WeblogicServer/c_WEBLOGS_Building1ContentsApplicationEarFile1.dita"/>
+</topicref>
+<topicref  navtitle="The Web Services Application" href="Deployment_WeblogicServer/c_WEBLOGS_Building1WebServicesApplication1.dita">
+<topicref  navtitle="Building the Web Services .ear File" href="Deployment_WeblogicServer/c_WEBLOGS_Building1BuildingWebServicesEarFile1.dita"/>
+<topicref  navtitle="Under the Hood" href="Deployment_WeblogicServer/c_WEBLOGS_Building1UnderHood2.dita"/>
+<topicref  navtitle="Contents of Web Services .ear File" href="Deployment_WeblogicServer/c_WEBLOGS_Building1ContentsWebServicesEarFile1.dita"/>
+<topicref  navtitle="Web Service WSDL" href="Deployment_WeblogicServer/c_WEBLOGS_Building1WebServiceWsdl1.dita"/>
+</topicref>
+<topicref  navtitle="Multiple EAR files" href="Deployment_WeblogicServer/c_WEBLOGS_Building1MultipleEarFiles1.dita"/>
+</topicref>
+<topicref  navtitle="Application Server Configuration" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2ApplicationServerConfiguration1.dita">
+<topicref navtitle="WebLogic Server Configuration"
+href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2WeblogicServerConfiguration1.dita">
+<topicref href="Deployment_WeblogicServer/t_WEBLOGS_configweblogicplugin.dita"
+navtitle="Configuring a web server plug-in in"/>
+</topicref>
+<topicref  navtitle="Security Configuration" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2SecurityConfiguration1.dita"/>
+<topicref  navtitle="Time Zone Configuration" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2TimeZoneConfiguration1.dita"/>
+<topicref  navtitle="Starting and Stopping WebLogic Servers" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2StartingStoppingWeblogicServers1.dita">
+<topicref  navtitle="Start a WebLogic Server" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2StartWeblogicServer1.dita"/>
+<topicref  navtitle="Stop a WebLogic Server" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2StopWeblogicServer1.dita"/>
+<topicref  navtitle="Restart a WebLogic Server" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2RestartWeblogicServer1.dita"/>
+<topicref  navtitle="Server Logging" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration2ServerLogging1.dita"/>
+</topicref>
+</topicref>
+<topicref  navtitle="Deployment" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1Deployment1.dita">
+<topicref  navtitle="Deployment" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1Deployment2.dita">
+<topicref  navtitle="Deploy an Application" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1DeployApplication1.dita"/>
+<topicref  navtitle="Change SYSTEM Username" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1ChangeSystemUsername1.dita"/>
+<topicref  navtitle="Undeploy an Application" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1UndeployApplication1.dita"/>
+</topicref>
+<topicref  navtitle="Pre-compiling JSPs" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1PrecompilingJsps1.dita"/>
+<topicref  navtitle="Testing Deployment" href="Deployment_WeblogicServer/c_WEBLOGS_Deployment1TestingDeployment1.dita"/>
+</topicref>
+<topicref  navtitle="Manual WebLogic Server Configuration" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration1ManualWeblogicServerConfiguration1.dita">
+<topicref  navtitle="Creating a WebLogic Server Domain" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration1CreatingWeblogicServerDomain1.dita">
+<topicref  navtitle="Domain Configuration" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1DomainConfiguration1.dita"/>
+</topicref>
+<topicref  navtitle="Java Virtual Machine Configuration" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration1JavaVirtualMachineConfiguration1.dita"/>
+<topicref  navtitle="Set up Database Driver" href="Deployment_WeblogicServer/c_WEBLOGS_Configuration1SetUpDatabaseDriver1.dita"/>
+<topicref  navtitle="Starting the WebLogic Administration Service" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1StartingWeblogicAdministrationServi1.dita"/>
+<topicref  navtitle="Database Configuration" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1DatabaseConfiguration1.dita"/>
+<topicref  navtitle="Setup Security" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1SetupSecurity1.dita"/>
+<topicref  navtitle="Setup Transport Layer Security" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1SetupTransportLayerSecurity1.dita"/>
+
+
+<topicref  navtitle="Setup JMS" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1SetupJms1.dita"/>
+<topicref  navtitle="Queue Setup" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1QueueSetup1.dita"/>
+<topicref  navtitle="Queue Connection Factory Setup" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1QueueConnectionFactorySetup1.dita"/>
+<topicref  navtitle="Topic Setup" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1TopicSetup1.dita"/>
+<topicref  navtitle="Topic Connection Factory Setup" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1TopicConnectionFactorySetup1.dita"/>
+<topicref  navtitle="Manual Deployment" href="Deployment_WeblogicServer/t_WEBLOGS_Configuration1ManualDeployment1.dita"/>
+</topicref>
+</topicref>
+</map>

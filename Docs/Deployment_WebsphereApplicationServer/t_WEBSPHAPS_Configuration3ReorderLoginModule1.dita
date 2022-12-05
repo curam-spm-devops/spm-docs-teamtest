@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Reorder the login module</title>
+<titlealts>
+<searchtitle>Reorder the login module</searchtitle>
+</titlealts>
+<shortdesc>Reorder the login module for the <varname>DEFAULT</varname>,
+<varname>WEB_INBOUND</varname>, and <varname>RMI_INBOUND </varname>aliases.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Security</uicontrol><uicontrol>Global
+security</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Expand <uicontrol>Java Authentication and Authorization Service</uicontrol> in the
+<uicontrol>Authentication</uicontrol> section and select <uicontrol>System
+logins</uicontrol>.</cmd></step>
+<step><cmd>Select the relevant Alias from the list. Reorder the login module for the
+<varname>DEFAULT</varname>, <varname>WEB_INBOUND</varname>, and <varname>RMI_INBOUND</varname>
+aliases as follows:</cmd><substeps>
+<substep><cmd>Select <uicontrol>Set Order</uicontrol>.</cmd></substep>
+<substep><cmd>Select <uicontrol>curam.util.security.CuramLoginModule</uicontrol> and select
+<uicontrol>Move Up</uicontrol>. Repeat this until the <tt>CuramLoginModule</tt> entry is the top
+entry in the list</cmd></substep>
+</substeps></step>
+<step><cmd>Select <uicontrol>OK</uicontrol> to confirm the modifications to the order.</cmd></step>
+</steps>
+</taskbody>
+</task>

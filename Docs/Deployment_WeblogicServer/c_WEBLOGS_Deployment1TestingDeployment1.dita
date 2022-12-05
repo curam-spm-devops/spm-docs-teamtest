@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e764" xml:lang="en-us">
+<title>Testing Deployment</title>
+<conbody>
+<p>When the application is installed on a configured WebLogic Server
+installation the application should be started and tested.</p>
+<note>The installation of a web services application may also be required.</note>
+<p>To do this, ensure the relevant server is started (there is no
+need to restart the server after an application is deployed), and
+open the following page in a web browser:</p><?Pub Caret 124?>
+<pre>https://&lt;some.machine.com>:&lt;port>/&lt;context-root></pre>
+<p>where,</p>
+<p><varname>&lt;some.machine.com></varname> identifies the the host
+name or IP address where your WebLogic Server system is running, <varname>&lt;port></varname> identifies
+the SSL port of the server the application is deployed on and <varname>&lt;context-root></varname> identifies
+the Context Root of the WAR module (see <xref
+href="c_WEBLOGS_Building1MultipleEarFiles1.dita"></xref>, for details).
+The SSL port is one number up from the curam.server.port specified
+in the <filepath>AppServer.properties</filepath> file.</p>
+<p>Before the page can be opened, the browser will be directed to
+the login page. Log-in with a valid application username and password
+and the browser will be redirected to the requested page.</p>
+<note type="note">The usage of EAR file name <filepath>Curam.ear</filepath> for
+option<option>-Dear.file</option> and usage of application server
+name <tt>Curam</tt> for option<option>-Dapplication.name</option> in
+the examples of this chapter are for illustrative purposes. Based
+on your customized application and deployment strategy these values
+may change.</note>
+</conbody>
+</concept>
+<?Pub *0000001908?>

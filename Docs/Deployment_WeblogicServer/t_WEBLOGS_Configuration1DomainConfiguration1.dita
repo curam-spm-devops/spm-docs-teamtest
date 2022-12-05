@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Domain Configuration</title><taskbody><context>
+<p>When the domain configuration wizard opens, follow the steps below, exactly as outlined, to
+                configure the domain:</p></context>
+<steps>
+<step><cmd>Select <uicontrol>Create a new WebLogic Domain</uicontrol> and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Select <uicontrol>Generate a domain configured automatically to support the following products</uicontrol>. Ensure the <uicontrol>WebLogic Server</uicontrol> checkbox is selected and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Set the <uicontrol>Domain name</uicontrol>.</cmd>
+<info><p>The <uicontrol>Domain name</uicontrol> (and all server names) can be called anything so long as the <filepath>AppServer.properties</filepath> file is updated correctly. Leave <uicontrol>Domain location</uicontrol> as default and click <uicontrol>Next</uicontrol>;</p></info></step>
+<step><cmd>Configure an Administrative Username and Password. Note that the password must be at least eight alphanumeric characters with at least one number or a special character; for example: <q>weblogic</q> (username) and <q>weblogic1</q> (password). Confirm the password and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Choose the <uicontrol>Startup mode</uicontrol> and <uicontrol>Java SDK</uicontrol> as necessary and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Choose nothing in the <uicontrol>Select Optional Configuration</uicontrol> screen and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Review the Configuration settings and click <uicontrol>Create</uicontrol> to construct the domain.</cmd></step>
+<step><cmd>The Configuration Wizard is now complete. Click <uicontrol>Done</uicontrol> to end the Configuration Wizard and exit the installer.</cmd>
+<info><p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application requires a <tt>MaxPermSize</tt> of at least<option>256m</option> to run. This must be configured as a parameter to the newly created domain. Edit the file relevant to your platform (located at<option>&lt;WebLogic Install directory&gt;/&lt;domain_repository&gt;/&lt;DomainName&gt;/bin/</option>), either:</p></info><substeps>
+<substep><cmd><filepath>setDomainEnv.cmd</filepath> - Windows</cmd></substep>
+<substep><cmd><filepath>setDomainEnv.sh</filepath> - UNIX</cmd></substep></substeps><info><p>and where it passes <tt>MaxPermSize</tt>, set this to<option>256m</option>.</p>
+<note type="note">The setting of<option>256m</option> is for illustrative purposes. The optimum value should be determined by monitoring the memory utilized for your server.</note></info></step></steps></taskbody></task>

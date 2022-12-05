@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Setup Security</title><taskbody><context>
+<p>Copy the <filepath>CuramMBean.jar</filepath> from the <filepath>&lt;SDEJ&gt;/lib</filepath> directory to the <filepath>&lt;WebLogic Server Install directory&gt;/wlserver/server/lib/mbeantypes</filepath> directory.</p>
+<p>This also requires to copy the <filepath>CryptoConfig.jar</filepath> to the jre used by this WebLogic Server Installation, within the <filepath>java/jre/lib/ext</filepath> directory .This is same for any other WebLogic Server Installation Setup.</p>
+<p>Restart the AdminServer and start the Administration Console as described in the previous section.</p></context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Security Realms</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click on <uicontrol>myrealm</uicontrol> in the <uicontrol>Realms</uicontrol> list;</cmd></step>
+<step><cmd>Click on <uicontrol>Providers</uicontrol> tab;</cmd></step>
+<step><cmd>Click on <uicontrol>Authentication</uicontrol> tab;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button;</cmd></step>
+<step><cmd>Enter the following fields:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>myrealmCuramAuthenticator</q></p>
+<p><uicontrol>Type</uicontrol> : <q>CuramAuthenticator</q></p></info></step>
+<step><cmd>Click the <uicontrol>OK</uicontrol> button;</cmd></step>
+<step><cmd>In the list of <uicontrol>Authentication Providers</uicontrol>, click the <uicontrol>DefaultAuthenticator</uicontrol> checkbox;</cmd></step>
+<step><cmd>Click the <uicontrol>Delete</uicontrol> button;</cmd></step>
+<step><cmd>Click on <uicontrol>myrealmCuramAuthenticator</uicontrol> in the <uicontrol>Authentication Providers</uicontrol> list;</cmd></step>
+<step><cmd>Ensure the <uicontrol>Control Flag</uicontrol> value is set to <q>REQUIRED</q>.</cmd>
+<info><p>If not change the value to <q>REQUIRED</q>;</p></info></step>
+<step><cmd>Click the <uicontrol>Save</uicontrol> button;</cmd></step>
+<step><cmd>Select the <uicontrol>Provider Specific</uicontrol> tab. This tab contains settings for configuring Cúram security in WebLogic Server. The defaults should not be changed unless you wish to modify the security configuration. <xref href="#d1e1/d1e1214"/> explains the details of the various options.</cmd>
+<info><p>You must enter the digested password for the Admin Password value.  Generate this password by running the supplied Ant digest target; e.g., <tt>ant digest -Dpassword=weblogic1</tt>.</p>
+<p>If any changes are made click the <uicontrol>Save</uicontrol> button;</p></info></step>
+<step><cmd>Click the <uicontrol>Save</uicontrol> button; ensure that there are no errors.</cmd>
+<info><table id="d1e1214">
+<title>Provider Specific Options</title><tgroup cols="2"><colspec colnum="1" colwidth="37*"/><colspec colnum="2" colwidth="63*"/><thead>
+<row>
+<entry>
+<p>Field</p></entry>
+<entry>
+<p>Description</p></entry>
+</row></thead><tbody>
+<row>
+<entry>
+<p>Check Identity Only</p></entry>
+<entry>
+<p>Optional. If this box is checked the authentication provider will not perform the usual authentication verifications. Instead it will simply ensure that the user exists on the database table. This option is intended where LDAP support is required or an alternative authentication mechanism is to be used.</p></entry>
+</row>
+<row>
+<entry>
+<p>Admin Username</p></entry>
+<entry>
+<p>Required. This is the username of the WebLogic Server administration user. This user is excluded from Cúram authentication.</p></entry>
+</row>
+<row>
+<entry>
+<p>Admin Password</p></entry>
+<entry>
+<p>Required. This is the encrypted password of the WebLogic Server administration user. Generate the encrypted password by running the supplied Ant digest target; e.g., <tt>ant digest -Dpassword=weblogic1</tt></p></entry>
+</row>
+<row>
+<entry>
+<p>Port</p></entry>
+<entry>
+<p>Required. This is the port of the machine on which the Cúram application will run. The default is 7003. In a clustered environment this should be set to a ',' separated list of ports to support multiple servers.</p></entry>
+</row>
+<row>
+<entry>
+<p>Login Trace</p></entry>
+<entry>
+<p>Optional. This box should be checked to debug the authentication process. If selected the invocation of the Cúram authentication provider will result in tracing information being added to the WebLogic Server log file.</p></entry>
+</row>
+<row>
+<entry>
+<p>Run As User</p></entry>
+<entry>
+<p>Required. See section <xref href="c_WEBLOGS_Deployment1ChangeSystemUsername1.dita"/> for a description of this property. The default is SYSTEM.</p></entry>
+</row>
+<row>
+<entry>
+<p>Hostname</p></entry>
+<entry>
+<p>Required. This is the hostname of the machine on which the Cúram application will run. The default is <tt>localhost</tt>. In a clustered environment this should be set to a ',' separated list of host names to support multiple servers.</p></entry>
+</row></tbody></tgroup>
+</table>
+<note type="note">While configuring the Cúram Authenticator Provider in a clustered environment, the ordering of <tt>hostname</tt> and <tt>port</tt> attributes is important. There is a one to one mapping between the servers and ports specified. For example:<fig>
+<pre>Port=7001,7003,7005
+Hostname=host1,host2,host3</pre></fig>
+<p>Here <tt>host1</tt> is running the WebLogic Server on port <tt>7001</tt> and <tt>host3</tt> <tt>7005</tt> is running the WebLogic Server on port</p></note>
+<p>You must enable SSL support. To do this:</p></info><substeps>
+<substep><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Environment</uicontrol><uicontrol>Servers</uicontrol></menucascade>;</cmd></substep>
+<substep><cmd>Select the AdminServer from the list of servers.</cmd></substep>
+<substep><cmd>From the <uicontrol>General</uicontrol> tab click the <uicontrol>SSL Listen Port Enabled</uicontrol> checkbox;</cmd></substep>
+<substep><cmd>Click the <uicontrol>Save</uicontrol> button;</cmd></substep>
+<substep><cmd>Restart your server to take changes.</cmd></substep></substeps></step></steps></taskbody></task>

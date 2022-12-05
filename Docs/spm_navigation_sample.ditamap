@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<map xml:lang="en-us">
+<title><keyword conref="common_files/conrefs.dita#conrefs/prodname"/></title>
+<topicref format="dita" href="spm_welcome.dita" navtitle="Merative Social Program Management"
+toc="yes" type="topic"/>
+<topicref href="spm_transition.dita" navtitle="Documentation updates from July 1 2022"/>
+<!--Product overview and getting started-->
+<mapref href="spm_prod_overview_toc.ditamap" navtitle="Product Overview" scope="peer" toc="yes">
+  <topicmeta>
+   <shortdesc><keyword conref="common_files/conrefs.dita#conrefs/prodname"/> supports the end-to-end
+    social program service delivery process. Using <keyword
+     conref="common_files/conrefs.dita#conrefs/prodname"/>, organizations can collaborate around
+    citizen's needs. This collaboration makes governmental services more effective in achieving
+    their social goals, and it also makes access to services easier for citizens.</shortdesc>
+  </topicmeta>
+ </mapref>
+ <!--<navref mapref="spm_prod_overview_toc.ditamap"/>-->
+<topicref href="glossary/glossary.dita" format="dita" navtitle="Glossary" toc="yes"/>
+<!--Business Analysts-->
+<topicref format="ditamap" href="deploying_nav_sample.ditamap" navtitle="Deploying"/>
+<mapref href="GraphQL/summary_graphql.md"
+    navtitle="Creating and customizing GraphQL APIs and queries" otherprops="8010flag"
+    format="markdown"/>
+<topicref href="GraphQL/creating/overview.html" format="html" toc="no" otherprops="8010flag"
+    scope="peer" navtitle="GraphQL">
+    <topicmeta>
+      <shortdesc>GraphQL is a query language for APIs.</shortdesc>
+    </topicmeta>
+  </topicref>
+
+</map>
+<?Pub *0000005108?>

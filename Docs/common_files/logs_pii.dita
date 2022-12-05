@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="logs_pii" xml:lang="en-us">
+<title>Log files and personal identifiable information (PII)</title>
+<titlealts>
+<navtitle>Log files and PII</navtitle>
+<searchtitle><keyword conref="conrefs.dita#conrefs/prodname"/> log files and personal identifiable
+information (PII)</searchtitle>
+</titlealts>
+<shortdesc>Local data protection laws require organizations to ensure that personal data is
+processed securely. The client is responsible for implementing appropriate measures to ensure the
+secure processing of personal data. </shortdesc>
+<conbody>
+<p>Clients are responsible for knowing where personal identifiable information (PII) is stored, and
+securing files that contain PII. Clients must either customize <keyword
+conref="conrefs.dita#conrefs/prodname_short"/> so that no PII is stored on the application log
+files, or secure log files that do contain PII. Clients must remove any PII from application log
+files that they share either with IBM, or with any other third party, for customer support
+purposes.</p>
+<p>Clients are responsible for ensuring their own compliance with various laws and regulations.
+Clients are solely responsible for obtaining the advice of competent legal counsel as to the
+identification and interpretation of any relevant laws and regulations that may affect the clients'
+business, and any actions the clients may need to take to comply with such laws and regulations.</p>
+</conbody>
+</concept>

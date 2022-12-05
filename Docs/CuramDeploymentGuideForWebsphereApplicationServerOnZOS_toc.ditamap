@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us">
+<title>Cúram Deployment Guide for WebSphere Application Server on z/OS</title>
+<topicref format="ditamap" href="CuramDeploymentGuideForWebsphereApplicationServerOnZOS_IC.ditamap" navtitle="Cúram Deployment Guide for WebSphere Application Server on z/OS"/>
+<reltable>
+<relheader>
+<relcolspec/>
+<relcolspec/>
+</relheader>
+<relrow>
+<relcell>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityConfiguration1.dita"
+/>
+</relcell>
+<relcell>
+<topicref href="Security/ctr_CuramSecurityHandbook.dita" scope="peer"
+navtitle="Configuring security"/>
+</relcell>
+</relrow>
+</reltable>
+</map>

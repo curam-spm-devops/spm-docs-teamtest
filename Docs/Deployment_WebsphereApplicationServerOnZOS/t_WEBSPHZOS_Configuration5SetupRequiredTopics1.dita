@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring the required topics</title><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Resources</uicontrol>
+<uicontrol>JMS</uicontrol>
+<uicontrol>JMS providers</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Default messaging provider</uicontrol> link.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Topics</uicontrol> link in the <uicontrol>Additional
+Properties</uicontrol> box.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following fields:</cmd>
+<info>
+<ul>
+<li><uicontrol>Name</uicontrol>: CuramCacheInvalidationTopic </li>
+<li><uicontrol>JNDI Name</uicontrol>: jms/CuramCacheInvalidationTopic </li>
+<li><uicontrol>Description</uicontrol>: Cache Invalidation Topic </li>
+<li><uicontrol>Bus name</uicontrol>: CuramBus </li>
+<li><uicontrol>Topic space</uicontrol>: Default.Topic.Space </li>
+<li><uicontrol>JMS Delivery Mode</uicontrol>: Nonpersistent </li>
+</ul>
+<p>Leave all other fields default and select <uicontrol>OK</uicontrol> to apply the changes.</p>
+</info>
+</step>
+<step>
+<cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</cmd>
+</step></steps></taskbody></task>

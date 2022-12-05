@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="d1e288" xml:lang="en-us">
+<title>The Web Services Application</title>
+<conbody>
+<p>Support is available for the automatic generation of WSDL (Web
+Service Definition Language) defined Web Services. Application developers
+can thus combine the power of the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+model with the accessibility of web services to produce truly reusable
+software components.</p><?Pub Caret 92?>
+</conbody>
+</concept>
+<?Pub *0000000618?>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e288">
+<title>Apache Ant</title>
+<shortdesc>Install Apache Ant and perform postinstallation tasks.</shortdesc><conbody>
+<p>Apache Ant is a <tm trademark="Java" tmtype="tm">Java</tm> build tool. Apache Ant is similar to
+the <varname>make</varname> tool.</p>
+<section id="section_c5h_hyn_s3b">
+<title>Installation</title>
+<ol id="ol_qyx_k14_s3b">
+<li>Obtain a <keyword conref="../common_files/conrefs.dita#conrefs/prodname_short"/>-supported
+version of Ant from the Apache site. For more information, see <xref
+href="https://www-01.ibm.com/support/docview.wss?uid=swg27036661" format="html" scope="external"
+><keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Supported
+Prerequisites</xref></li>
+<li>Extract the .zip file to the target file system; for
+example:<codeblock>cd /usr/local
+jar -xf apache-ant-&lt;version&gt;-bin.zip</codeblock>Where
+<codeph>&lt;version&gt;</codeph> represents the relevant Ant version.</li>
+</ol>
+</section>
+<section id="section_zg1_syn_s3b">
+<title>Postinstallation</title>
+<ol id="ol_etm_q14_s3b">
+<li>Ensure the Ant script in <filepath>apache-ant-&lt;version&gt;/bin</filepath> is in EBCDIC format;
+for
+example:<codeblock>iconv -t IBM-1047 -f ISO8859-1 apache-ant-&lt;version&gt;/bin/ant \
+&gt; /tmp/ant
+mv /tmp/ant apache-ant-&lt;version&gt;/bin</codeblock>Where
+<codeph>&lt;version&gt;</codeph> represents the relevant Ant version.</li>
+<li>Make the Ant script executable; for
+example:<codeblock> chmod a+x apache-ant-&lt;version&gt;/bin/ant</codeblock>Where
+<codeph>&lt;version&gt;</codeph> represents the relevant Ant version.</li>
+</ol>
+</section>
+<section id="section_apn_hb4_s3b">
+<title>For any shell that uses <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> Ant
+targets</title>
+<ol id="ul_pmv_bzn_s3b">
+<li>Environment variable <varname>ANT_HOME</varname> must be defined and must point to the Ant
+installation folder, for
+example:<codeblock>export ANT_HOME=/usr/local/apache-ant-&lt;version&gt;</codeblock>Where
+<codeph>&lt;version&gt;</codeph> represents the relevant Ant version.</li>
+<li>Add Ant to the PATH; for example:<codeblock>export PATH=$ANT_HOME/bin:$PATH</codeblock></li>
+<li>Define environment variable, ANT_OPTS as
+follows:<codeblock>export ANT_OPTS='-Xmx1400m -Dcmp.maxmemory=1400m'</codeblock></li>
+<li>Test Ant by running the following command:<codeblock>ant -version</codeblock>You should see
+output that shows the Ant version and compilation date.</li>
+</ol>
+</section>
+</conbody></concept><?tm 1568813782625 2 Java||IBM ?>

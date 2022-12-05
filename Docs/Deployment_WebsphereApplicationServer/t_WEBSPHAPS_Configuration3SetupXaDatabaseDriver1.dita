@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the XA database driver</title>
+<titlealts>
+<searchtitle>Configure the XA database driver</searchtitle>
+</titlealts>
+<shortdesc>Add an XA database driver and ensure that the configuration properties are
+correct.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Select
+<menucascade><uicontrol>Resources</uicontrol><uicontrol>JDBC</uicontrol><uicontrol>JDBC
+providers</uicontrol></menucascade>. </cmd></step>
+<step><cmd>Ensure that the appropriate scope for where to define the data source is
+selected.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to add a driver. A configuration screen is
+displayed.</cmd></step>
+<step><cmd>Select <uicontrol>Oracle</uicontrol> from the <uicontrol>Database type</uicontrol>
+drop-down list.</cmd></step>
+<step><cmd>Select <uicontrol>Oracle JDBC Driver</uicontrol> from the <uicontrol>Provider
+type</uicontrol> drop-down list. </cmd></step>
+<step><cmd>Select <uicontrol>XA data source</uicontrol> from the <uicontrol>Implementation
+type</uicontrol> drop-down list.</cmd></step>
+<step><cmd>Set the <uicontrol>Name</uicontrol> field to <uicontrol>Oracle JDBC Driver
+(XA)</uicontrol>, where the field is not automatically completed.</cmd></step>
+<step><cmd>Select <uicontrol>Next</uicontrol> to continue.</cmd></step>
+<step><cmd>Review the <uicontrol>Class path</uicontrol> and ensure that the
+<parmname>ORACLE_JDBC_DRIVER_PATH</parmname> environment variable is correct. </cmd></step>
+<step><cmd>Select <uicontrol>Next</uicontrol> to continue. A configuration screen is
+displayed.</cmd></step>
+<step><cmd>Review the configuration properties. Typically, changing the properties is not
+required.</cmd></step>
+<step><cmd>Select <uicontrol>Finish</uicontrol> to confirm the changes.</cmd></step>
+</steps>
+</taskbody>
+</task>

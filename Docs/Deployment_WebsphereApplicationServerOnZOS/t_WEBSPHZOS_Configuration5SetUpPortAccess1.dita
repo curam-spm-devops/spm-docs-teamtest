@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Set up the port access</title><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Servers</uicontrol>
+<uicontrol>Server Types</uicontrol>
+<uicontrol>WebSphere application servers</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the appropriate server from the list.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Ports</uicontrol> link in the <uicontrol>Communications</uicontrol>
+box.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Details</uicontrol> box.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following fields for the Client TCP/IP
+port:</cmd>
+<info><ul>
+<li><uicontrol>User-defined Port Name</uicontrol>: CuramClientEndPoint </li>
+<li><uicontrol>Host</uicontrol>: * </li>
+<li><uicontrol>Port</uicontrol>: <varname>&lt;client port&gt;</varname></li>
+</ul>Set <varname>&lt;client port&gt;</varname> to match the value of the property
+curam.client.httpport in your <filepath>AppServer.properties</filepath> file. </info>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to apply the changes.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following fields for the WebServices TCP/IP
+port:</cmd>
+<info><ul>
+<li><uicontrol>User-defined Port Name</uicontrol>: CuramWebServicesEndPoint </li>
+<li><uicontrol>Host</uicontrol>: * </li>
+<li><uicontrol>Port</uicontrol>: <varname>&lt;webservices port&gt;</varname></li>
+</ul>Set the <varname>&lt;webservices port&gt;</varname> to match the value of the property
+curam.webservices.httpport in your <filepath>AppServer.properties</filepath> file.</info>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to apply the changes.</cmd>
+</step>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Servers</uicontrol>
+<uicontrol>Server Types</uicontrol>
+<uicontrol>WebSphere application Servers</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the relevant server from the list.</cmd>
+</step>
+<step>
+<cmd>Expand the <uicontrol>Web Container Settings</uicontrol> branch in the <uicontrol>Container
+Settings</uicontrol> section.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Web container transport chains</uicontrol> link.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol>  and set the following fields for the Client transport
+chain:</cmd>
+<info>
+<ul>
+<li><uicontrol>Name</uicontrol>: <tt>CuramClientChain</tt>
+</li>
+<li><uicontrol>Transport Chain Template</uicontrol>: <tt>WebContainer-Secure</tt></li>
+<li> Select <uicontrol>Next</uicontrol></li>
+<li><uicontrol>Use Existing Port</uicontrol>: <tt>CuramClientEndPoint</tt>
+</li>
+<li> Select <uicontrol>Finish</uicontrol></li>
+</ul>
+</info>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol>  and set the following fields for the WebServices transport
+chain:</cmd>
+<info>
+<ul>
+<li><uicontrol>Name</uicontrol>: <tt>CuramWebServicesChain</tt>
+</li>
+<li><uicontrol>Transport Chain Template</uicontrol>: <tt>WebContainer</tt></li>
+<li>Select <uicontrol>Next</uicontrol>
+</li>
+<li><uicontrol>Use Existing Port</uicontrol>: <tt>CuramWebServicesEndPoint</tt>
+</li>
+<li>Select <menucascade>
+<uicontrol>Next</uicontrol>
+<uicontrol>Finish</uicontrol>
+</menucascade>. </li>
+</ul>
+</info>
+</step>
+<step>
+<cmd>Select the newly created <uicontrol>CuramClientChain</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>HTTP Inbound Channel</uicontrol> link.</cmd>
+</step>
+<step>
+<cmd>Ensure that the <uicontrol>Use persistent keep-alive connections</uicontrol> check-box is
+checked.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to confirm the addition.</cmd>
+</step>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Environment</uicontrol>
+<uicontrol>Virtual hosts</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and add a <tt>Virtual Host</tt> by setting
+<uicontrol>Name</uicontrol> = <varname>client_host</varname>. Repeat this step by using the
+replacing <varname>client_host</varname> with <varname>webservices_host</varname>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>client_host</uicontrol> link from the list of virtual hosts.</cmd>
+</step>
+<step id="step_clienthost">
+<cmd>Select the <uicontrol>Host Aliases</uicontrol> link in the <uicontrol>Additional
+Properties</uicontrol> box.</cmd>
+<info> </info>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> to add an <tt>Alias</tt> by setting the following
+fields:</cmd>
+<info>
+<ul>
+<li><uicontrol>Host Name</uicontrol> = *</li>
+<li><uicontrol>Port</uicontrol> = <varname>&lt;client port&gt;</varname></li>
+</ul>
+</info>
+</step>
+<step>
+<cmd>Set the <varname>&lt;client port&gt;</varname> to match the value of the property
+curam.client.httpport in your <filepath>AppServer.properties</filepath> file. Repeat this step for
+the other Virtual Host and port used (for example, webservices_host)</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol> to confirm the addition.</cmd>
+</step>
+<step>
+<cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</cmd>
+</step></steps></taskbody></task>

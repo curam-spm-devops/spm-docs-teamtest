@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e651" xml:lang="en-us">
+<title>Configuring <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"
+/></title>
+<shortdesc>Use the Ant <cmdname>configure</cmdname> target to configure <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>
+</shortdesc>
+<conbody>
+<p>The configuration of <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"
+/> involves setting up a data source, a number of servers and configuring the JMS and security
+settings. Perform all these tasks by running the Ant <cmdname>configure</cmdname> target. </p>
+<p>Run the Ant <cmdname>configure</cmdname> target from the <filepath>$SERVER_DIR</filepath>
+directory as follows:<codeblock>./build.sh configure</codeblock>This target requires that the
+<filepath>AppServer.properties</filepath> and <filepath>Bootstrap.properties</filepath> files are in
+the <filepath>$SERVER_DIR/project/properties</filepath> directory. For more information, see <xref
+href="c_WEBSPHZOS_Building3PropertyFiles1.dita"/>.</p>
+<?Pub Caret 424?>
+<section id="section_nvn_1ck_t3b">
+<title>Configuring the JVM Size</title>
+<p>By default the Ant configure target sets the application server JVM initial and maximum heap
+size. However, you can override the default JVM initial and maximum heap size by setting the
+<varname>curam.server.jvm.heap.size</varname> property in the
+<filepath>AppServer.properties</filepath> file before you run the target.</p>
+<p>The provided heap size default is a starting point. Based on the size of your customized
+application, deployment strategy, etc. this size might be too low or too high. Determine the optimum
+value by monitoring the JVM memory performance of your server.</p>
+</section>
+<section id="section_ok5_5bk_t3b">
+<title>Configuring a Db2 type 2 Driver</title>
+<p>By default the Ant <cmdname>configure</cmdname> target establishes a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> Universal type 4 Driver (XA) data
+source. However, configure a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> Universal type 2 Driver (RRS)
+data source by setting the curam.db.type2.required property in
+<filepath>AppServer.properties</filepath>. When using this property, you must have the DB2DIR
+environment variable set to your <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> installation path.</p>
+<p>There are a number of ways to configure <keyword
+conref="../common_files/conrefs.dita#conrefs/db2zos"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> to support a Type 2 driver.
+Review the <xref format="html"
+href="http://www.ibm.com/support/knowledgecenter/SS7K4U_7.0.0/com.ibm.websphere.zseries.doc/info/zseries/ae/welcome_zseries.html"
+scope="external">WebSphere Application Server, Version 7.0 product documentation</xref>, including
+the article "Db2 Universal JDBC Driver Support", and related information.</p>
+<p>It is possible to configure a Type 2 Universal Driver by passing an optional property
+curam.db.zos.jcc.propfile, specifying the fully qualified name of a <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_short"/> for <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> jcc property file that is set in the servant JVM
+db2.jcc.propertiesFile property, which may contain various settings such as the subsystem ID.</p>
+</section>
+</conbody>
+</concept>
+<?Pub *0000005290?>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="d1e297" xml:lang="en-us">
+<title>Building the Web Services.ear File</title>
+<conbody>
+<p>The following target should be executed from the root directory
+of the project to create the <filepath>.ear</filepath> file for web
+services:</p>
+<p><cmdname>build weblogicWebservices -Dprp.webipaddress="address"
+-Dprp.contextproviderurl="url" -Dprp.contextfactoryname="factory"</cmdname></p>
+<p>Where:</p>
+<ul>
+<li>address is the IP address on which the server hosting the web
+services is listening. The default is <filepath>http://localhost:7001</filepath>;</li>
+<li>url is the URL of the JNDI context provider. This is the address of the server that hosts the
+     <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> components being made
+    accessible through web services. The default is <filepath>t3://localhost:7001</filepath>;
+     <note>The default value for the JNDI context provider uses a WebLogic Server -specific
+     protocol, t3, for accessing the JNDI tree.</note></li><?Pub Caret -1?>
+<li>factory is the JNDI context factory name. The default for this
+is <codeph>weblogic.jndi.WLInitialContextFactory</codeph> and should
+rarely need to be changed.</li>
+</ul>
+<p>This target will create a ready to install <filepath>.ear</filepath> file, <filepath>&lt;SERVER_MODEL_NAME>WebServices.ear</filepath> located
+in <filepath>&lt;SERVER_DIR>/build/ear/WLS</filepath>.</p>
+<note type="note">Before executing this target, a fully built <keyword
+    conref="../common_files/conrefs.dita#conrefs/prodname"/> application, ready for deployment, must
+   exist.</note>
+</conbody>
+</concept>
+<?Pub *0000001704?>

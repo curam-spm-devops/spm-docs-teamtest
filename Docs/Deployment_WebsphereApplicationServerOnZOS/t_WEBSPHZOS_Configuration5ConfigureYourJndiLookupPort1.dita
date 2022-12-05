@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the JNDI lookup port</title><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Servers</uicontrol>
+<uicontrol>Server Types</uicontrol>
+<uicontrol>WebSphere application servers</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the relevant server from the list.</cmd>
+</step>
+<step>
+<cmd>Expand <uicontrol>Ports</uicontrol> in the <uicontrol>Communications</uicontrol> box and select
+<uicontrol>Details</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>BOOTSTRAP_ADDRESS</uicontrol> entry and set the
+<uicontrol>Port</uicontrol> to match the value of the property curam.server.port in your
+<filepath>AppServer.properties</filepath> file.</cmd>
+</step>
+<step>
+<cmd>Click <uicontrol>OK</uicontrol> to apply changes.</cmd>
+</step>
+<step>
+<cmd><uicontrol>Save</uicontrol> the changes that are made to the master configuration.</cmd>
+</step></steps></taskbody></task>

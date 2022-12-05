@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderCalendar" xml:lang="en-us">
+<title>The Calendar</title>
+<shortdesc>View calender events using the accessible Calendar List
+View.</shortdesc><?Pub Caret 51?>
+<taskbody>
+<context>  <p>The Calendar gives users the options to display events
+using a monthly, weekly or daily view. These views are inaccessible
+for screen readers. As an accessible alternative users can view calender
+events using the Calendar List View. This list view can be accessed
+by performing the following steps:</p> </context>
+<steps>
+<step><cmd>Select the "Calendar" Application Section. By default the
+"Calendar View" Application Tab will be displayed.</cmd></step>
+<step><cmd>Select the "List View" Application Tab.</cmd></step>
+<step><cmd>In this view all calendar events are displayed in an accessible
+table.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001036?>

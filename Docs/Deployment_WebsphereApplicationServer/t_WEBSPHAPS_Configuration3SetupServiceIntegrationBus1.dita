@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the Service Integration Bus</title>
+<titlealts>
+<searchtitle>Configure the Service Integration Bus</searchtitle>
+</titlealts>
+<shortdesc>Configure the Service Integration Bus</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Service
+integration</uicontrol><uicontrol>Buses</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> and in <uicontrol>Step 1</uicontrol> set the following
+field:</cmd>
+<info>
+<p><uicontrol>Name</uicontrol>: CuramBus</p>
+<p>Leave everything else as the default and select <uicontrol>Next</uicontrol>.</p>
+</info></step>
+<step><cmd>Entering the <uicontrol>Configure bus security</uicontrol> Wizard, Step 1.1, select
+<uicontrol>Next</uicontrol>.</cmd>
+<substeps>
+<substep><cmd>In <uicontrol>Step 1.2</uicontrol> of the <uicontrol>Configure bus
+security</uicontrol> Wizard take the default setting and select
+<uicontrol>Next</uicontrol>.</cmd></substep>
+<substep><cmd>In <uicontrol>Step 1.3</uicontrol> of the <uicontrol>Configure bus
+security</uicontrol> Wizard take the default setting, as appropriate, and select
+<uicontrol>Next</uicontrol>.</cmd></substep>
+<substep><cmd>In <uicontrol>Step 1.4</uicontrol> of the <uicontrol>Configure bus
+security</uicontrol> Wizard review your settings and select
+<uicontrol>Next</uicontrol>.</cmd></substep>
+</substeps></step>
+<step><cmd>In Step 2, select <uicontrol>Finish</uicontrol> to apply the changes.</cmd></step>
+<step><cmd>Select the <uicontrol>CuramBus</uicontrol> now displayed on the list of Buses. This opens
+the configuration screen.</cmd></step>
+<step><cmd>Select <uicontrol>Bus members</uicontrol> in the <uicontrol>Topology</uicontrol>
+section.</cmd></step>
+<step><cmd>Select <uicontrol>Add</uicontrol> to open the <uicontrol>Add a New Bus Member</uicontrol>
+wizard.</cmd></step>
+<step><cmd>Select the server to add to the Bus and select <uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>Data store</uicontrol> and select
+<uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Select the option to <uicontrol>use existing data source</uicontrol> and set the options
+as follows:</cmd>
+<info>
+<ul>
+<li><uicontrol>Data source JNDI name</uicontrol> = jdbc/curamsibdb</li>
+<li><uicontrol>Schema name</uicontrol> = <varname>username</varname>, where
+<varname>username</varname> is the database username.</li>
+<li>Deselect the <uicontrol>Create tables</uicontrol> option.</li>
+<li>Leave everything else as the default and select <uicontrol>Next</uicontrol>.</li>
+</ul>
+</info></step>
+<step><cmd>Take the default tuning parameters as appropriate and select
+<uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>Finish</uicontrol> to complete and exit the Wizard.</cmd></step>
+<step><cmd>Navigate to <menucascade><uicontrol>Service
+integration</uicontrol><uicontrol>Buses</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the <uicontrol>CuramBus</uicontrol> now displayed on the list of Buses. This will
+open the configuration screen.</cmd></step>
+<step><cmd>Select <uicontrol>Security</uicontrol> in the <uicontrol>Additional
+Properties</uicontrol> section.</cmd></step>
+<step><cmd>Select <uicontrol>Users and groups in the bus connector role</uicontrol> in the
+<uicontrol>Authorization Policy</uicontrol> section.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to open the <uicontrol>SIB Security Resource
+Wizard</uicontrol>.</cmd></step>
+<step><cmd>Select the <uicontrol>The built in special groups</uicontrol> radio button and select
+<uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Select the <uicontrol>Server</uicontrol> and <uicontrol>AllAuthenticated</uicontrol>
+check boxes and select <uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>Finish</uicontrol> to complete and exit the Wizard.</cmd></step>
+<step><cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/>.</cmd></step>
+</steps>
+</taskbody>
+</task>

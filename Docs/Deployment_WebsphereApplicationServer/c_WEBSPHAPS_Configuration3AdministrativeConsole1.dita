@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1027">
+<title>The administrative console</title>
+<titlealts>
+<searchtitle>The administrative console</searchtitle>
+</titlealts>
+<shortdesc>Configure the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/>
+by using the Administrative Console. To run the administrative console, start the default server,
+e.g.<option>server1</option>,  because theconsole is installed as a web application on this
+server.</shortdesc>
+<conbody>
+<p>To start <option>server1</option>, use the <filepath>startServer.bat</filepath>, located in the
+<filepath>profiles/AppSvr01/bin</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> as follows:</p>
+<p><cmdname>&lt;WEBSPHERE INSTALL DIR&gt;/profiles/AppSvr01/bin/startServer server1</cmdname></p>
+<p>Point a web browser at the following URL:</p>
+<pre>http://localhost:9060/ibm/console"/&gt;</pre>
+<p>Alternatively, start the Administrative Console from
+<menucascade><uicontrol>Start</uicontrol><uicontrol>Programs</uicontrol><uicontrol>IBM
+WebSphere</uicontrol><uicontrol>Application Server
+V8.5</uicontrol><uicontrol>Profiles</uicontrol><uicontrol>AppSvr01</uicontrol><uicontrol>Administrative
+console</uicontrol></menucascade>. The <uicontrol>Start the server</uicontrol> and <uicontrol>Stop
+the server</uicontrol> commands can also be used from this menu to start and stop the servers.</p>
+<p>The first time the Administration Console is opened, a username is requested to log in. This
+username can be anything. The Administration Console is divided into two sections. The left hand
+side contains a tree hierarchy for navigating the console and the right hand side displays the
+information related to the current node selected in the tree. When instructed to<option>Navigate
+to</option>, the tree hierarchy should be traversed to the relevant node.</p>
+</conbody>
+</concept>

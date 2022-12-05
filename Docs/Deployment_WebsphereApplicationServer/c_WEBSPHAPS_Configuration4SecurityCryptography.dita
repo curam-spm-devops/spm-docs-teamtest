@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e771">
+<title>Cryptography</title>
+<titlealts>
+<searchtitle>Cryptography</searchtitle>
+</titlealts>
+<shortdesc>Use cryptography to encrypt passwords.</shortdesc>
+<conbody>
+<p>Cúram cryptography relates to functionality for managing passwords and is covered in detail in
+the <cite>Cúram Security Handbook</cite> and you should consult it in consideration that: </p>
+<ul>
+<li>For production environments it is strongly recommended that you modify the default
+settings.</li>
+<li>For development and test environments you need to consider where the defaults provide acceptable
+protection in your environment.</li>
+</ul>
+</conbody>
+</concept>

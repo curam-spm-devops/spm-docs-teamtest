@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Queue Connection Factory Setup</title><taskbody><context>
+<p>To configure the XA Queue Connection Factory, complete the following steps:</p></context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Services</uicontrol><uicontrol>Messaging</uicontrol><uicontrol>JMS Modules</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click on <uicontrol>op-jms</uicontrol> in <uicontrol>JMS Modules</uicontrol> list;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button inside the <uicontrol>Configuration</uicontrol> tab;</cmd></step>
+<step><cmd>Select <uicontrol>Type</uicontrol> <q>Connection Factory</q> and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Set the following fields:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>CuramQueueConnectionFactory</q></p>
+<p><uicontrol>JNDIName</uicontrol> : <q>jms/CuramQueueConnectionFactory</q>;</p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button;</cmd></step>
+<step><cmd>Click the <uicontrol>Finish</uicontrol> button;</cmd></step>
+<step><cmd>Click the <q>CuramQueueConnectionFactory</q> just configured;</cmd></step>
+<step><cmd>Select the <uicontrol>Configuration</uicontrol> tab and then the <uicontrol>Transactions</uicontrol> sub-tab. Ensure that <uicontrol>XAConnection Factory Enabled</uicontrol> is selected. Click the <uicontrol>Save</uicontrol> button.</cmd>
+<info><p>To configure the non-XA Queue Connection Factory, complete the following steps:</p></info></step>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Services</uicontrol><uicontrol>Messaging</uicontrol><uicontrol>JMS Modules</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click on <uicontrol>op-jms</uicontrol> in <uicontrol>JMS Modules</uicontrol> list;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button inside the <uicontrol>Configuration</uicontrol> tab;</cmd></step>
+<step><cmd>Select <uicontrol>Type</uicontrol> <q>Connection Factory</q> and click <uicontrol>Next</uicontrol>;</cmd></step>
+<step><cmd>Set the following fields:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>CuramQueueConnectionFactoryNonXA</q></p>
+<p><uicontrol>JNDI Name</uicontrol> : <q>jms/CuramQueueConnectionFactoryNonXA</q>;</p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button;</cmd></step>
+<step><cmd>Click the <uicontrol>Advanced Targeting</uicontrol> button;</cmd></step>
+<step><cmd>If the <uicontrol>SubDeployments</uicontrol> drop-down list is empty click on <uicontrol>Create a New SubDeployment</uicontrol> and enter <uicontrol>SubDeployment Name</uicontrol> : <q>CuramJMSServer</q>.</cmd></step>
+<step><cmd>Click the <uicontrol>OK</uicontrol> button;</cmd></step>
+<step><cmd>Set <uicontrol>SubDeployment</uicontrol> : <q>CuramJMSServer</q></cmd></step>
+<step><cmd>Select <q>CuramJMSServer</q> as the target JMS Server;</cmd></step>
+<step><cmd>Click the <uicontrol>Finish</uicontrol> button;</cmd></step>
+<step><cmd>Click the <q>CuramQueueConnectionFactoryNonXA</q> just configured;</cmd></step>
+<step><cmd>Select the <uicontrol>Configuration</uicontrol> tab and then the <uicontrol>Transactions</uicontrol> sub-tab. Ensure that <uicontrol>XAConnection Factory Enabled</uicontrol> is not selected. Click the <uicontrol>Save</uicontrol> button.</cmd></step></steps></taskbody></task>

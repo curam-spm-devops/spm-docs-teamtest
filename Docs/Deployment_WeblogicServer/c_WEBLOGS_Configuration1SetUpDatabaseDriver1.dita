@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e954">
+<title>Set up Database Driver</title><conbody>
+<p>The version of the <tm tmtype="reg" trademark="Oracle">Oracle</tm> Database  driver file, <filepath>ojdbc6.jar</filepath>, used by WebLogic Server is not the same as that shipped with the application product, under the <filepath>drivers</filepath> directory of the SDEJ installation.</p>
+<p>Follow the step below to set up WebLogic Server to use Oracle <uicontrol>Database Driver</uicontrol> shipped with the application product:</p>
+<ul>
+<li>Replace the <filepath>ojdbc6.jar</filepath> file in <filepath>WLS_HOME\lib</filepath> folder with one shipped with the application product, under the <filepath>drivers</filepath> directory of the SDEJ installation, e.g. <filepath>D:\Curam\SDEJ\drivers</filepath>;
+<p>where, the WLS_HOME variable points to the <filepath>/server</filepath> directory of the WebLogic Server installation, for example: <filepath>d:\WLS\weblogic\server</filepath> or <filepath>/opt/wls/weblogic/server</filepath>.</p>
+<note type="note">The copies of Oracle Thin drivers installed with WebLogic Server and other supporting files are installed in <filepath>WLS_HOME\ext\jdbc\</filepath> directory. There is a subdirectory in this folder for each DBMS. If you need to revert to the version of the driver installed with WebLogic Server at any point, then you can copy the file from <filepath>WLS_HOME\ext\jdbc\oracle\11g\</filepath> to <filepath>WLS_HOME\lib</filepath> folder.</note></li></ul></conbody></concept>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="example3_byrelease" xml:lang="en-us">
+<title>What's new in <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/></title>
+<titlealts>
+<navtitle>What&apos;s new</navtitle>
+<searchtitle>What's new in <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+<keyword conref="../common_files/conrefs.dita#conrefs/current_version"/></searchtitle>
+</titlealts>
+<?Pub Caret 471?>
+<shortdesc> Read about the new features and modules, and updates to existing modules, in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/>.</shortdesc>
+<prolog>
+<metadata>
+<keywords>
+<indexterm>new features<indexterm>overview</indexterm></indexterm>
+</keywords>
+</metadata>
+</prolog>
+<conbody>
+<p otherprops="version_8.0.2.0">The <keyword conref="../common_files/conrefs.dita#conrefs/prodname"
+/> 8.0.2 IBM documentation edition contains documentation for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.0, 8.0.1, and 8.0.2. Features and
+updates that are included for 8.0.1 and 8.0.2 are flagged, as shown in the following examples:<ul>
+<li>If an entire topic applies only from 8.0.2, an <ph otherprops="8020flag">icon</ph> icon is
+displayed at the top of the topic. The icon is also displayed next to the topic where it is
+displayed within the list of child topic links at the end of the parent topic.</li>
+<li>If part of a topic applies from 8.0.2, an <ph otherprops="8020flag">icon</ph> icon is displayed
+at the start of content that applies only from 8.0.2. <p otherprops="8020flag" rev="8020">The
+content is also highlighted in light blue, to indicate where the 8.0.2 content starts and ends, as
+shown here.</p></li>
+</ul></p>
+<p otherprops="version_8.0.1.0">The <keyword conref="../common_files/conrefs.dita#conrefs/prodname"
+/> 8.0.1 IBM documentation edition contains documentation for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> 8.0.0 and 8.0.1. Features and updates that
+are included for 8.0.1 are flagged:<ul id="ul_ryz_vg3_f2b">
+<li>If an entire topic applies only from 8.0.1, an <ph otherprops="8010flag">icon</ph> icon is
+displayed at the top of the topic. The icon is also displayed next to the topic where it is
+displayed within the list of child topic links at the end of the parent topic.</li>
+<li>If part of a topic applies from 8.0.1, an <ph otherprops="8010flag">icon</ph> icon is displayed
+at the start of content that applies only from 8.0.1. <p otherprops="8010flag" rev="8010">The
+content is also highlighted in light blue, to indicate where the 8.0.1 content starts and ends, as
+shown here.</p></li>
+</ul></p>
+</conbody>
+</concept>
+<?Pub *0000003095?>

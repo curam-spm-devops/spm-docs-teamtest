@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring the Service Integration Bus</title>
+<shortdesc>Configure the Service Integration Bus (SIB). A SIB supports applications with
+message-based and service-oriented architectures. </shortdesc><taskbody>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Service integration</uicontrol>
+<uicontrol>Buses</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> and set the following field <uicontrol>Name</uicontrol>:
+CuramBus</cmd>
+</step>
+<step>
+<cmd>Leave all other fields as default and select <uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Entering the <uicontrol>Configure bus security</uicontrol> wizard, Step 1.1, select
+<uicontrol>Next</uicontrol></cmd>
+<info>
+<ol>
+<li>In <uicontrol>Step 1.2</uicontrol> of the <uicontrol>Configure bus security</uicontrol> wizard,
+take the default setting and select <uicontrol>Next</uicontrol>. </li>
+<li>In <uicontrol>Step 1.3</uicontrol> of the <uicontrol>Configure bus security</uicontrol> wizard,
+take the default setting, and select <uicontrol>Next</uicontrol>.</li>
+<li>In <uicontrol>Step 1.4</uicontrol> of the <uicontrol>Configure bus security</uicontrol> wizard,
+review your settings and select <uicontrol>Next</uicontrol>. </li>
+</ol>
+</info>
+</step>
+<step>
+<cmd>In Step 2 select <uicontrol>Finish</uicontrol> to apply the changes.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>CuramBus</uicontrol> now displayed on the list of Buses.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Bus members</uicontrol> in the <uicontrol>Topology</uicontrol> list.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Add</uicontrol> to open the <uicontrol>Add a New Bus Member</uicontrol>
+wizard.</cmd>
+</step>
+<step>
+<cmd>Select the server to add to the Bus and select <uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Data store</uicontrol> and select <uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step><cmd>Select the option to <uicontrol>use existing data source</uicontrol> and set the options as follows:</cmd>
+<info>
+<ul>
+<li><uicontrol>Data source JNDI name</uicontrol> = jdbc/curamsibdb </li>
+<li><uicontrol>Schema name</uicontrol> = <varname>username</varname>, where
+<varname>username</varname> is the database user name.</li>
+<li>Deselect the <uicontrol>Create tables</uicontrol> option. </li>
+<li>Leave all other options as the default and select <uicontrol>Next</uicontrol>.</li>
+</ul>
+</info></step>
+<step>
+<cmd>Accept the default tuning parameters and select <uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Finish</uicontrol> to complete and exit the wizard.</cmd>
+</step>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Service integration</uicontrol>
+<uicontrol>Buses</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>CuramBus</uicontrol> now displayed on the list of Buses. </cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Security</uicontrol> in the <uicontrol>AdditionaThis will open the
+configuration screen.l Properties</uicontrol> section.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Users and groups in the bus connector role</uicontrol> in the
+<uicontrol>Authorization Policy</uicontrol> section.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New</uicontrol> to open the <uicontrol>SIB Security Resource
+Wizard</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>The built in special groups</uicontrol>, and select
+<uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Server</uicontrol> and <uicontrol>AllAuthenticated</uicontrol> check
+boxes and select <uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Finish</uicontrol> to complete and exit the wizard.</cmd>
+</step>
+<step>
+<cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</cmd>
+</step></steps></taskbody></task>

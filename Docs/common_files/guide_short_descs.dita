@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002--><!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub Inc?><reference id="shortdescriptionsforguides" xml:lang="en-us">
+<title>Short descriptions for guides</title>
+<!--NOTE TO WRITERS: This file contains frequently used short description conref text for Cúram solution products. Please do not edit your local copy of this file. If you want to add a conref to the master version of this file, contact the ID team. -->
+<!--NOTE TO TRANSLATION CENTERS: Do NOT translate the text within the comment or draft-comment tags. Do not translate the text within elements for which the translate attribute is set to no (translate="no"). -->
+<!--NOTE TO TRANSLATION CENTERS: Do NOT translate trademarked terms (such as "Cúram") within phrases that are otherwise marked translate="yes". -->
+<shortdesc id="shortdesc" translate="no">Use the keywords in this file as content references for
+guides titles and their short descriptions.</shortdesc>
+<!--To optimize PDF retrievability, add prolog and indexing tags that help crystalize why users should be looking up this topic (purpose, task, and what they will learn)-->
+<!--<prolog><metadata><keywords><indexterm></indexterm></keywords></metadata></prolog>-->
+<refbody>
+<section>
+<title translate="no">Overview and getting started</title>
+<p><keyword id="PROD_OVERVIEW_title">Product Overview</keyword></p>
+<p><keyword conref="conrefs.dita#conrefs/prodname"/><keyword id="PROD_OVERVIEW_shortdesc"> supports
+the end-to-end social program service delivery process.</keyword>
+</p>
+<p></p>
+<p><keyword id="GET_STARTED_title">Getting Started</keyword></p>
+<p><keyword id="GET_STARTED_shortdesc">Get started with <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Program Management tasks and features. Review the high-level tasks, and follow the links that are provided for more detailed information.</keyword></p>
+</section>
+<section><title translate="no">Installation and Operation</title><p><keyword id="DEINSTALL_title"
+>Development Environment Installation Guide</keyword></p><ph id="DEINSTALL_shortdesc">You can
+install a light or a full <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+development environment to develop <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_short"/> applications. Development is
+supported only on <keyword conref="../common_files/conrefs.dita#conrefs/os_win_long"/>, and you can
+build on both <keyword conref="../common_files/conrefs.dita#conrefs/os_win_long"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/os_lin_short"/>.</ph><p><keyword id="DECMINSTALL"
+>Installing the Cúram Development Environment</keyword></p><p><keyword id="DECMINSTALL_shortdesc"
+>Describes how to install a Cúram Care Management Development Environment for application
+development. The basic Cúram Care Management Development Environment consists of the Cúram
+Application Development Environment (ADE), a <tm trademark="Java" tmtype="tm">Java</tm> IDE, and <tm
+trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="Rational" tmtype="reg">Rational</tm> Software Architect
+Designer.</keyword></p><p><keyword id="INSTALLANAL">Installing the
+Analytics</keyword></p><p><keyword id="INSTALLANAL_shortdesc">Describes how to install the Analytics
+components of <tm trademark="IBM" tmtype="reg">IBM</tm> Care Management.</keyword></p><p><keyword
+id="INSTALLFOUNDATION">Installing the Foundation</keyword></p><p><keyword
+id="INSTALLFOUNDATION_shortdesc">Describes how to install the Foundation components of <tm
+trademark="IBM" tmtype="reg">IBM</tm> Care Management.</keyword></p><p><keyword id="INSTALLPLAN"
+>Planning the installation</keyword></p><p><keyword id="INSTALLPLAN_shortdesc">Use this information
+to plan the <tm trademark="IBM" tmtype="reg">IBM</tm> Care Management
+installation.</keyword></p><p><keyword id="WEBLOGS_title">Deploying on Oracle WebLogic
+Server</keyword></p><p><keyword id="WEBLOGS_shortdesc">To deploy <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Social Program Management on Oracle WebLogic Server, you must configure the server and
+deploy the application EAR files.</keyword></p><p><keyword id="WEBSPHAPS_title">Deploying on <tm
+trademark="WebSphere" tmtype="reg">WebSphere</tm> Application Server</keyword></p><p><keyword
+id="WEBSPHAPS_shortdesc">To deploy <tm trademark="IBM" tmtype="reg">IBM</tm> Social Program
+Management on <tm trademark="WebSphere" tmtype="reg">WebSphere</tm> Application Server, you must
+configure the server and deploy the application EAR files.</keyword></p><p><keyword id="WLP_title"
+>Deploying on <tm trademark="WebSphere" tmtype="reg">WebSphere Liberty Profile</tm> Application
+Server</keyword></p><p><keyword id="WLP_shortdesc">To deploy <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Cúram applications on <tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="WebSphere" tmtype="reg">WebSphere Liberty Profile</tm> EAR files must be built, the
+server configured, and then the EAR files installed.</keyword></p><p><keyword id="WEBSPHZOS_title"
+>Deploying on <tm trademark="WebSphere" tmtype="reg">WebSphere</tm> Application Server on <tm
+trademark="z/OS" tmtype="reg">z/OS</tm></keyword></p><p><keyword id="WEBSPHZOS_shortdesc">To deploy
+<tm trademark="IBM" tmtype="reg">IBM</tm> Social Program Management on <tm trademark="IBM"
+tmtype="reg">IBM</tm> WebSphere Application Server for <tm trademark="z/OS" tmtype="reg">z/OS</tm>,
+you must first build the application EAR files on a supported build platform. On <tm trademark="IBM"
+tmtype="reg">IBM</tm>
+<tm trademark="z/OS" tmtype="reg">z/OS</tm>, install and configure any needed software, and deploy
+the application EAR files.</keyword>
+</p><p><keyword id="WEBSPORT_title">Cúram Portlet Deployment Guide For <tm trademark="WebSphere"
+tmtype="reg">WebSphere</tm> Portal Server</keyword></p><p><keyword id="WEBSPORT_shortdesc">Cúram
+portlets show information about a Cúram application. There is a 1:1 mapping between the content of
+certain Cúram pods and Cúram portlets. A number of steps are required to deploy Cúram Portlets. A
+portlet WAR file is required. The content of the Cúram portlets must be configured before
+deployment.</keyword></p><p><draft-comment author="poraghal">Removed in 8.0</draft-comment><keyword
+id="UNIXINSTALL_title">Cúram Third-Party Tools Installation Guide for <tm trademark="UNIX"
+tmtype="reg">UNIX</tm></keyword></p><p><keyword id="UNIXINSTALL_shortdesc">You must install and
+configure software from third parties to use <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social
+Program Management. Installation and postinstallation instructions are provided for the various
+supported third-party products for a <tm trademark="UNIX" tmtype="reg">UNIX</tm>
+installation.</keyword></p><p><draft-comment author="poraghal">Removed in
+8.0</draft-comment><keyword id="WININSTALL_title">Cúram Third-Party Tools Installation Guide for <tm
+trademark="Windows" tmtype="tm">Windows</tm></keyword></p><p><keyword id="WININSTALL_shortdesc">You
+must install and configure software from third parties to use <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Cúram Social Program Management. Installation and postinstallation instructions are
+provided for the various supported third-party products for a <tm trademark="Windows" tmtype="tm"
+>Windows</tm> installation.</keyword></p><p/><p><keyword id="Trouble_title"
+>Troubleshooting</keyword></p><p><keyword id="Trouble_shortdesc">Use this troubleshooting reference
+information to help you solve specific problems you may encounter during or after the installation
+of <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram components.</keyword></p></section>
+<section>
+<title>Configuration</title>
+<p><keyword id="CMCONFIG_title">Configuring Care Management</keyword></p>
+<p><keyword id="CMCONFIG_shortdesc">Complete the following tasks to configure Care Management to
+suit your custom requirements.</keyword></p>
+<p><keyword id="ADCONFIG_title">Cúram Advisor Configuration Guide</keyword></p>
+<p><keyword id="ADCONFIG_shortdesc">Use this information to configure the advisor. Advisor rule sets
+contain rule classes rule items and rule attributes. You can configure the advice context (which
+defines the context in which advice is shown). The rule object converter converts evidence data into
+rule objects.</keyword></p>
+<p><keyword id="CALCON_title">Cúram Calendaring Configuration Guide</keyword></p>
+<p><keyword id="CALCON_shortdesc">Configure calendar meetings minutes and activities with
+application properties. A number of calendar events are available that allow for extra
+customizations to be developed.</keyword></p>
+<p><keyword id="CCVCONFIG_title">Cúram Citizen Context Viewer Configuration Guide</keyword></p>
+<p><keyword id="CCVCONFIG_shortdesc">You can configure the Citizen Context Viewer as part of system
+administration. Most configuration settings are dynamic application properties. Integration with
+other parts of Cúram can also be configured, including case settings, and user
+authorization.</keyword></p>
+<p><keyword id="CCICONFIG_title">Cúram Common Intake Configuration Guide</keyword></p>
+<p><keyword id="CCICONFIG_shortdesc">Configure the intake process with an intake process definition
+XML document. Intake processes can be assigned to user roles. Programs and services can be defined
+for an intake. A triage definition can be created.</keyword></p>
+<p><keyword id="DYNAM_title">Cúram Dynamic Evidence Configuration Guide</keyword></p>
+<p><keyword id="DYNAM_shortdesc">You define and maintain dynamic evidence types by using the Dynamic
+Evidence Editor in the Cúram administration application. You can follow the simple example to create
+a dynamic evidence type, and then read further to familiarize yourself with more advanced dynamic
+evidence features.</keyword></p>
+<p><keyword id="FAMCON_title">Cúram Family Services Suite Configuration Guide</keyword></p>
+<p><keyword id="FAMCON_shortdesc">Cúram Family Services Suite has a range of configurable parameters
+that allow administrators to manage functions such as age parameters, search parameters, or
+notifications.</keyword></p>
+<p><keyword id="ICMCONFIG_title">Cúram Integrated Case Management Configuration Guide</keyword></p>
+<p><keyword id="ICMCONFIG_shortdesc">Agencies can configure case types and products, services, and
+referral services. The rules and evidence types that are needed to determine client eligibility and
+entitlement, ongoing case management options, and security are also configurable.</keyword></p>
+<p><keyword id="JMXADMIN_title">Cúram JMX Configuration Guide</keyword></p>
+<p><keyword id="JMXADMIN_shortdesc">JMX is the system that provides operational data from a running
+application. Configure <tm trademark="Java" tmtype="tm">Java</tm> Management Extensions (JMX)
+options to allow operational data from a running application to be collected. This includes
+invocation targets such as URLs, business methods, and SQL statements. These configuration options
+are managed by an administrator in the runtime administration application. There is no software
+development required to make these configuration changes.</keyword></p>
+<p><keyword id="OMCONFIG_title">Cúram Outcome Management Configuration Guide</keyword></p>
+<p><keyword id="OMCONFIG_shortdesc">Use this information to configure assessments and outcome plans.
+The assessment definition is an administrative template for individual assessments. Outcome planning
+can be configured to address and manage the needs that are identified during
+assessment.</keyword></p>
+<p><keyword id="PODCONFIG_title">Cúram Personalized Pod Page Configuration Guide</keyword></p>
+<p><keyword id="PODCONFIG_shortdesc">Use this information to configure personal pod pages. Personal
+pages contain multiple pods. Various registered pods can be configured to for a page. Pre-defined
+pods are available for the different user roles.</keyword></p>
+<p><keyword id="PCRCONFIG_title">Cúram Priority Complexity Risk Configuration Guide</keyword></p>
+<p><keyword id="PCRCONFIG_shortdesc">You can configure priority complexity risk processing. Ratings
+can be triggered to be calculated automatically or entered manually by a case worker. Ratings are
+calculated from rule sets, which are recorded by administrators for each priority complexity risk
+configuration.</keyword></p>
+<p><keyword id="CPMCONFIG_title">Cúram Provider Management Configuration Guide</keyword></p>
+<p><keyword id="CPMCONFIG_shortdesc">You can configure provider trainings and
+certifications. Provider service offerings can be configured including information on service
+offerings, registration, financial settings, and attendance tracking. There are a number of Cúram
+Provider Management batch processes and application properties that can be configured.</keyword></p>
+<p></p>
+<p><keyword id="UACONFIG_title">Universal Access Configuration Guide</keyword></p>
+<p><keyword id="UACONFIG_shortdesc">Various configuration options are available for <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal Access. These are listed below.</keyword></p>
+<p><keyword id="INTAKECON_title">Intake Configuration Guide</keyword></p>
+<p><keyword id="INTAKECON_shortdesc">Use this information to configure Cúram
+Intake application triage and screening intake processes. Each of these processes can be used for
+capturing data about a client when they apply to an organization for benefits and
+services.</keyword></p>
+<p></p>
+<p><keyword id="SECCONFIG_title">Cúram Social Enterprise Collaboration Configuration
+Guide</keyword></p>
+<p><keyword id="SECCONFIG_shortdesc">You can configure the information that is displayed in
+multidisciplinary team portals. The tools that are available in the multidisciplinary team portals
+can be configured. Tools are provided to report incidents, record transactions, and post
+discussions.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram</title>
+<p><keyword id="AppExpUse_title">Using <tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram</keyword></p>
+<p><keyword id="AppExpUse_shortdesc">Use <tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram to explore the metadata associated with Cúram application pages and database tables, along with information about related artifact types like tabs, domain definitions, code tables, message files, application properties, and workflows.</keyword></p>
+<p><keyword id="AppExp"><tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram</keyword></p>
+<p><keyword id="AppExp_shortdesc"><tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram can help you perform a fit-gap business analysis of the Cúram product, or a change impact technical analysis. You can also explore Cúram data and functions and the relations and interactions between them.</keyword></p>
+<p><keyword id="AppExpInstall_title">Installing <tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram</keyword></p>
+<p><keyword id="AppExpInstall_shortdesc">Describes how to install <tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram. Information is provided on how configure a Cúram development environment and install the <tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram documentation generator, and how to deploy <tm trademark="IBM" tmtype="reg">IBM</tm> Application Explorer for Cúram locally and on a server.</keyword></p>
+</section>
+<section>
+<title>Business Analysts</title>
+<p><keyword id="CM_BA_title">Analyzing Care Management</keyword></p>
+<p><keyword id="CM_BA_shortdesc">Use the following high-level business process documentation to help
+you to understand the default Care Management functionality during a business or technical
+analysis.</keyword></p>
+<p><keyword id="SPM_BA_title">Business Analysis for Social Program Management</keyword></p>
+<p><keyword id="SPM_BA_shortdesc">Use the following high-level business process documentation to
+help you to understand the default  functionality during a business or technical
+analysis.</keyword></p>
+<p><keyword id="BI_title">Business Intelligence and Analytics Guide</keyword></p>
+<p><keyword id="BI_shortdesc">Business Intelligence and Analytics allow agencies to measure and
+monitor performance to detect gaps in processes, and to analyze issues as they occur. Business
+Intelligence and Analytics consists of a data warehouse that is a generalization and consolidation
+of transactional data, embedded analytics, ad hoc reporting, and interactive dashboards and
+reports.</keyword></p>
+<p><keyword id="SBI_title">Business Intelligence and Analytics for Cúram Child Services
+Guide</keyword></p>
+<p><keyword id="SBI_shortdesc">Business Intelligence and Analytics for Cúram Child Services consists
+of three main parts. It includes a domain-specific reporting schema that models child welfare
+business processes. It also contains an Extract, Transform, and Load (ETL) infrastructure for
+staging, manipulation, and final presentation of the data, and business processes that define the
+data that is used in the solution.</keyword></p>
+<p><keyword id="CCV_title">Cúram Citizen Context Viewer Overview </keyword></p>
+<p><keyword id="CCV_shortdesc">The Citizen Context Viewer summarizes a wide-range of client
+information in a single view.</keyword></p>
+<p><keyword id="UA_title">Cúram Universal Access Guide </keyword></p>
+<p><keyword id="UA_shortdesc">A business overview of the online facilities that are provided by the optional <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal Access (UA) application module. Use this information to map existing features and capability to your business requirements during a business analysis.</keyword></p>
+<p><keyword id="COMIN_title">Cúram Common Intake Guide </keyword></p>
+<p><keyword id="COMIN_shortdesc">Cúram Common Intake matches a client's needs to programs and
+community services. It helps agencies address client needs with a configurable intake process for
+needs-based programs such as cash assistance or unemployment benefit, and protection-based programs
+such as child welfare. </keyword></p>
+<p><keyword id="ADDRESS_title">Cúram Address Guide </keyword></p>
+<p><keyword id="ADDRESS_shortdesc">An address can be stored for a participant. It
+is used during participant registration and communications, as a component of payments and invoices,
+and when you enter contacts for participants. Address information can also be used to search for
+participants in the Cúram application.</keyword></p>
+<p><keyword id="APPEALS_title">Cúram Appeals Guide </keyword></p>
+<p><keyword id="APPEALS_shortdesc">A business overview of the appeal and legal action processing that is provided by the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Appeals application module. Use this information to map existing features and capability to your business requirements during a business analysis.</keyword></p>
+<p><keyword id="CAL_title">Cúram Calendaring Guide </keyword></p>
+<p><keyword id="CAL_shortdesc">User calendars are used to maintain user meetings
+and activities. Integrated case calendars track activities and events across cases and clients.
+Product delivery case calendars track activities and events that are recorded during the product
+delivery case lifecycle. Administration calendars track the organization's activities, holidays, and
+financial services.</keyword></p>
+<p><keyword id="AUDIT_title">Cúram Case Audits Guide </keyword></p>
+<p><keyword id="AUDIT_shortdesc">Case audits are used to monitor the delivery of
+benefits and services to the clients. There are two types of case audit: quantitative and
+qualitative. Quantitative case audits are used to measure compliancy with statutes and policy.
+Qualitative case audits measure and assess case outcomes.</keyword>
+</p>
+<p><keyword id="CCS_title">Cúram Child Services Business Guide</keyword></p>
+<p><keyword id="CCS_shortdesc">Cúram Child Services provides case management tools that support
+agencies that work to safeguard children, promote well-being and support child permanency. Cúram
+Child Services facilitates intake, ongoing case management, child abuse investigations, removal of
+children from unsafe situations, and the adoption of children.</keyword></p>
+<p><keyword id="COMM_title">Cúram Communications overview</keyword></p>
+<p><keyword id="COMM_shortdesc">Communications are exchanges of information between the organization
+and participants. These incoming and outgoing exchanges can be in different formats, such as phone
+calls, emails, or letters.  Four categories of communications are supported, recorded, email, pro
+forma, and Microsoft Word. Communications can be free-form or based on templates.</keyword></p>
+<p><keyword id="DA_title">Cúram Decision Assist Guide</keyword></p>
+<p><keyword id="DA_shortdesc">Cúram Decision Assist allows agencies to dynamically configure and run
+assessments. Cúram Decision Assist provides an alternative to the traditionally complex assessment
+model, and maintains transparency and consistency to support agencies' decision-making
+requirements.</keyword></p>
+<p><keyword id="DED_title">Cúram Deductions Guide </keyword></p>
+<p><keyword id="DED_shortdesc">Cúram deductions are a means of budgeting or clearing an existing
+debt from a benefit payment. Applied and unapplied deductions are used to clear debts owed to the
+organization. Third-party deductions are used to make payments to other participants.</keyword></p>
+<p><keyword id="EVGEN_title">Cúram Evidence Generator Business Guide </keyword></p>
+<p><keyword id="EVGEN_shortdesc">The evidence generator produces code and screens for a working
+evidence entity by using build scripts and XSLT style sheets. The evidence generator reduces the
+repetitive work that is required to build custom evidence entities, and ensures the conformity of
+evidence entities.</keyword></p>
+<p><keyword id="FINAD_title">Cúram Financial Adapter Technical Overview Guide </keyword></p>
+<p><keyword id="FINAD_shortdesc">The financial adapter integrates Cúram financials with financial
+processes in an external ERP financial system. Configuration of Cúram and the ERP system is required
+to provide the delivery structures that allow related data to be shared across the two
+systems.</keyword></p>
+<p><keyword id="FIN_title">Cúram Financials Guide </keyword></p>
+<p><keyword id="FIN_shortdesc">Cúram financials are used to process payments and liabilities for
+persons and employers. A nominee is required for financials to be generated. Payments can be
+captured, invalidated, canceled, or reissued. Liabilities can be reversed and written off.
+</keyword></p>
+<p><keyword id="ICM_title">Cúram Integrated Case Management Guide </keyword></p>
+<p><keyword id="ICM_shortdesc">A business overview of Cúram Integrated Case Management and where it
+fits into the Needs to Delivery approach. The needs to delivery process consists of meeting needs
+through the delivery of programs in the form of benefits and through service deliveries and
+referrals.</keyword></p>
+<p><keyword id="INVESTIGATION_title">Cúram Investigations Guide </keyword></p>
+<p><keyword id="INVESTIGATION_shortdesc">An investigation is an inquiry into the circumstances of an
+allegation. Investigations can be created for integrated case or product deliveries. Investigation
+ownership can be transferred. Investigations can be owned by users, organization groups, or assigned
+to work queues.</keyword></p>
+<p><keyword id="ISSUE_title">Cúram Issue Management Guide</keyword></p>
+<p><keyword id="ISSUE_shortdesc">An issue can be raised about evidence that is provided by a client.
+A snapshot of the evidence at the time the issue was created is kept. Issues can be resolved with
+workflows. Issue resolutions can be appealed.</keyword></p>
+<p><keyword id="LOC_title">Cúram Location Administration Guide</keyword></p>
+<p><keyword id="LOC_shortdesc">Locations are the work places of the organization's users. Location
+structures can be maintained by administrators. A location hierarchy of parent-child relationship
+between locations can be kept. There can be only one active location structure at any
+time.</keyword></p>
+<p><keyword id="MDT_title">Cúram Multidisciplinary Team Portal Guide</keyword></p>
+<p><keyword id="MDT_shortdesc">The multidisciplinary team portal is a collaborative tool that allows
+stakeholders to coordinate with team members to achieve beneficial outcomes for clients and cases.
+Users can view and schedule meetings, manage assigned tasks, and view member contact information,
+and more.</keyword></p>
+<p><keyword id="NOM_title">Cúram Nominees Guide</keyword></p>
+<p><keyword id="NOM_shortdesc">A nominee is required for case payments and bills. The default
+nominee for a case is the primary participant. Nominees can also be other participants. A nominee
+delivery pattern, delivery method, and delivery frequency can be set.</keyword></p>
+<p><keyword id="ORG_title">Cúram Organization Administration Guide</keyword></p>
+<p><keyword id="ORG_shortdesc">The organization structure is a representation of the organization's
+users and functional areas. It partitions administration functionality that is related to an
+organization's hierarchy structure across many lines. Organization users, structures, reporting
+hierarchies and financial services can be administratively maintained. </keyword></p>
+<p><keyword id="PARTSUP_title">Cúram Participant Guide (Superseded)</keyword></p>
+<p><keyword id="PARTSUP_shortdesc">Participants are the individuals and bodies that the organization
+interacts with. The 10 participant types that are modeled in Cúram are persons, prospect persons,
+employers, prospect employers, product providers, service suppliers, utilities, information
+providers (includes educational institutes), representatives, and external parties.</keyword></p>
+<p><keyword id="CPM_title">Cúram Provider Management Guide</keyword></p>
+<p><keyword id="CPM_shortdesc">Providers are third-party organizations that provide services to
+clients. Facilities, staff, services, licenses, accreditations, and certifications can be maintained
+for providers. Information relating to the delivery of services to clients can also be
+managed.</keyword></p>
+<p><keyword id="SER_title">Cúram Service Planning Guide</keyword></p>
+<p><keyword id="SER_shortdesc">Services plans are roadmaps for individuals that detail benefits or
+services that an organization delivers to meet their needs. Service plan goals are divided into
+manageable steps that allow the client to achieve the overall plan goal.</keyword></p>
+<p><keyword id="SUP_title">Cúram Supervisor Workspace Guide</keyword></p>
+<p><keyword id="SUP_shortdesc">The Cúram Supervisor Workspace helps supervisors monitor and manage
+the workloads of the users, organization units, and work queues that they supervise. Case and tasks
+can be assigned to users within the system by supervisors.</keyword></p>
+<p><keyword id="SYSCONFIG_title">Cúram System Configuration Guide</keyword></p>
+<p><keyword id="SYSCONFIG_shortdesc">Configure the functions of the application. For example,
+configure the following: application properties, case audit selection queries, communication
+templates, batch processes, security settings, business intelligence reports, target systems,
+content management interoperability services.</keyword></p>
+<p><keyword id="TEMPEV_title">Cúram Temporal Evidence Guide</keyword></p>
+<p><keyword id="TEMPEV_shortdesc">Participant information can be captured and maintained as temporal
+evidence. The evidence dashboard is used for evidence maintenance tasks. New evidence can be
+activated. Existing evidence can be updated. Active evidence can be canceled, pending
+removal.</keyword></p>
+<p><keyword id="CTM_title">Cúram Configuration Transport Manager guide</keyword></p>
+<p><keyword id="CTM_shortdesc">The Configuration Transport Manager enables administrators to migrate
+application data and configurations between systems as business objects. Use this information to
+understand what data can be transferred and how to set up a data transfer. A business object type is
+a logical grouping of administrative data that defines and governs a particular set of
+functions.</keyword></p>
+<p><keyword id="VER_title">Cúram Verification Guide</keyword></p>
+<p><keyword id="VER_shortdesc">The verification engine interprets evidence that is based on
+verification rules. Client information can be verified by documents such as birth certificates or
+bank statements. Caseworkers can manage client evidence verifications in the participant manager.
+Verification can be administratively configured. </keyword></p>
+<p><keyword id="WORKFLOW_title">Cúram Workflow Overview Guide</keyword></p>
+<p><keyword id="WORKFLOW_shortdesc">Cúram Workflow supports the automation of business processes and
+the routing of work among individuals and departments. The main components of the system are
+workflow process definitions, the workflow engine, inbox and task management tools, and the process
+definition tool.</keyword></p>
+<p><keyword id="BROKER_title">Cúram Evidence Broker overview</keyword></p>
+<p><keyword id="BROKER_shortdesc">An introduction to evidence sharing and the Cúram Evidence Broker
+and an overview of using the Cúram Evidence Broker to share evidence.</keyword></p>
+<p><keyword id="FUND_title">Cúram Funded Program Management Guide</keyword></p>
+<p><keyword id="FUND_shortdesc">Funded Program Management is used to manage funds that can be
+obligated to clients in need of assistance. It is integrated with Cúram Provider Management. Funds
+can be used to pay providers directly for their services.</keyword></p>
+<p><keyword id="OUTCOME_title">Cúram Outcome Management Guide</keyword></p>
+<p><keyword id="OUTCOME_shortdesc">Outcome Management provides client-centric service delivery that
+focuses on the results a client is trying to achieve rather than focusing only on the services
+available. It allows agencies to use the expertise of individuals and organizations to best help
+clients.</keyword></p>
+<p><keyword id="SEC_title">Cúram Social Enterprise Collaboration Guide</keyword></p>
+<p><keyword id="SEC_shortdesc">Cúram Social Enterprise Collaboration is a set of tools that allows
+agencies and other interested parties to collaborate to identify the root cause of family problems
+and achieve positive outcomes.</keyword></p>
+<p><keyword id="EV_title">Curam Evidence Guide</keyword></p>
+<p><keyword id="EV_shortdesc">A business overview of the main features of the Cúram evidence
+framework, how you can manage evidence with the evidence framework, and the business flow of
+evidence through the application.</keyword></p>
+<p><keyword id="PART_title">Cúram Participant Guide</keyword></p>
+<p><keyword id="PART_shortdesc">Participants are the individuals and bodies that the organization
+interacts with. The 10 Cúram participant types are persons, prospect persons, employers, prospect
+employers, product providers, service suppliers, utilities, information providers (includes
+educational institutes), representatives, and external parties.</keyword></p>
+<p><keyword id="INTAKE_title">Intake Guide</keyword></p>
+<p><keyword id="INTAKE_shortdesc">Cúram Intake supports the following intake
+processes: triage, screening, applications, and referrals. An intake can be for multiple programs at
+the same time. This reduces the amount of contact a client must make to apply for benefits or
+services.</keyword></p>
+<p></p>
+<p><keyword id="ACC_title">Curam Accessibility User Guide</keyword></p>
+<p><keyword id="ACC_shortdesc">The <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Program
+Management application is accessible and adheres to Web Content Accessibility Guidelines (WCAG) 2.1
+(Level A &amp; AA), US Revised Section 508, and EN 301 549 V3.1.1 standards. Accessibility features
+are provided to aid users with disabilities to navigate the application.</keyword></p>
+<p><keyword id="ba_is_med_assit_title" translate="no">Cúram Income Support for Medical Assistance
+Program Guide</keyword></p>
+<p><keyword id="ba_is_med_assit_shortdesc" translate="no">Cúram Income Support for Medical
+Assistance enables social program organizations to improve the efficiency and effectiveness of
+eligibility and entitlement services for medical assistance. Business tools and processes are
+provided for the effective management of traditional medical assistance programs, plus Affordable
+Care Act and MAGI-based Medicaid programs.</keyword></p>
+<p><keyword id="INCSPRT_title" translate="no">Cúram Income Support Business Guide</keyword></p>
+<p><keyword id="INCSPRT_shortdesc" translate="no">Cúram Income Support provides complete intake,
+eligibility determination and benefit calculation for social programs. Information is provided on an
+overview of Income Support, key business flows, program background information, and configuring
+Income Support.</keyword></p>
+<p><keyword id="ba_is_med_spenddown_title" translate="no">Cúram Income Support for Medical
+Assistance Spend Down Guide</keyword></p>
+<p><keyword id="ba_is_med_spenddown_shortdesc" translate="no">Spend Down is a medical assistance
+term that is used for persons whose income is above the threshold for the state's designated
+medically needy criteria, but are below this threshold when medical expenses are factored in.
+Eligibility is determined for Spend Down by evaluating evidence that is recorded in the system
+against a predefined set of rules that are specific to Spend Down.</keyword></p>
+<p><keyword id="ba_is_med_LTC_title" translate="no">Cúram Income Support for Medical Assistance Long
+Term Care Guide</keyword></p>
+<p><keyword id="ba_is_med_LTC_shortdesc" translate="no">Cúram Long Term Care Medical Assistance
+consists of three medical assistance coverage types that provide coverage for individuals who
+require institutional care over an extended period. Long-term care refers to the medical, social,
+personal care, and supportive services that are needed by people who lose some capacity for
+self-care because of old age or a chronic condition.</keyword></p>
+<p><keyword id="ba_is_CHIP_title" translate="no">Cúram Income Support for Medical Assistance
+Children's Health Insurance Program Guide</keyword></p>
+<p><keyword id="ba_is_CHIP_shortdesc" translate="no">The Children's Health Insurance Program is part
+of Cúram Medical Assistance. It is designed for families who earn too much money to qualify for
+medical assistance, but cannot afford to buy private insurance for their children. Captured evidence
+is assessed against a set of business rules to determine whether an individual is eligible for
+assistance.</keyword></p>
+<p><keyword id="ba_bia_is_med_title" translate="no">Business Intelligence and Analytics for Cúram
+Income Support and Cúram Income Support for Medical Assistance Business Guide</keyword></p>
+<p><keyword id="ba_bia_is_med_shortdesc" translate="no">An overview of the Business Intelligence and
+Analytics available in Cúram Income Support and Cúram Income Support for Medical Assistance. Cúram
+Business Intelligence and Analytics consists of three parts: reports, dashboards, and key
+performance indicators.</keyword></p>
+<p><keyword id="ISCASH_title" translate="no">Cúram Income Support Cash Assistance Program
+Guide</keyword></p>
+<p><keyword id="ISCASH_shortdesc" translate="no">Cúram Income Support Cash Assistance provides
+eligibility determination for households that are based on financial and non-financial factors.
+Captured evidence is assessed against a set of business rules to determine whether the household is
+eligible for cash assistance.</keyword></p>
+<p><keyword id="ISFOOD_title" translate="no">Cúram Income Support Food Assistance Program
+Guide</keyword></p>
+<p><keyword id="ISFOOD_shortdesc" translate="no">Cúram Income Support Food Assistance provides
+eligibility determination for households that are based on financial and non-financial factors.
+Captured evidence is assessed against a set of business rules to determine whether the household is
+eligible for food assistance.</keyword></p>
+<p><keyword id="REWORK_title" translate="no">Cúram Income Support for Return to Work Outcome
+Management Guide</keyword></p>
+<p><keyword id="REWORK_shortdesc" translate="no">Cúram for Return to Work Outcome Management has a
+client-centric approach to service delivery and case management. It focuses on the results the
+client and household are trying to achieve. It provides a comprehensive approach towards reaching
+positive outcomes for clients that are referred to an employment or outcomes agency.</keyword></p>
+</section>
+<section>
+<title>Security</title>
+<p><keyword id="SECHAND_title">Cúram Security Guide</keyword></p>
+<p><keyword id="SECHAND_shortdesc">Ensure that you secure your  <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Cúram Social Program Management applications. Authentication and authorization are two key
+components of application security. The Social Program Management web client is configured to
+support form-based authentication. You can configure different authentication modes with the JAAS
+login module. Functional elements in Social Program Management are secured by security identifiers.
+This data is linked to a user and can be configured.</keyword></p>
+</section>
+<section>
+<title>Batch Processes</title>
+<p><keyword id="batch_shortdesc">A description of the <tm trademark="IBM" tmtype="reg">IBM</tm>
+Cúram Social Program Management  batch processes organized by category.</keyword></p>
+</section>
+<section><title>Customization</title><p><keyword id="CMCUST_title">Customizing Care
+Management</keyword></p><p><keyword id="CMCUST_shortdesc">Complete the following tasks to customize
+Care Management to suit your custom requirements.</keyword></p><p><keyword id="AUTHIEG_title"
+>Authoring Scripts using Intelligent Evidence Gathering</keyword></p><p><keyword
+id="AUTHIEG_shortdesc">Use this information to develop Intelligent Evidence Gathering scripts.
+Intelligent Evidence Gathering scripts have a defined structure and a set of supported operations
+for IEG expressions. The presentation of pages in a script is configurable. Scripts can be migrated
+between systems.</keyword></p><p><keyword id="CACHE_title">Cúram Cache</keyword></p><p><keyword
+id="CACHE_shortdesc">Use this information to configure the Cúram cache. Cúram cache is a generic
+caching service for short and long lived caches. The service is available in both the client and
+server containers of an application server environment and in a standard stand-alone <tm
+trademark="Java" tmtype="tm">Java</tm> process.</keyword></p><p><keyword id="COMPDEV_title"
+>Development Compliancy Guide</keyword></p><p><keyword id="COMPDEV_shortdesc">When you develop IBM
+Curam Social Program Management applications, you must comply with certain guidelines to ensure that
+you can easily upgrade to future versions without affecting your custom functionality. Complying
+with these guidelines is essential to ensure that <tm trademark="IBM" tmtype="reg">IBM</tm> Support
+can better support your custom implementation.</keyword></p><p><keyword id="CERREF_title">Cúram <tm
+trademark="Express" tmtype="reg">Express</tm> Rules Reference Manual</keyword></p><p><keyword
+id="CERREF_shortdesc">Cúram <tm trademark="Express" tmtype="reg">Express</tm> Rules are used to
+perform business calculations. A development environment for authoring and testing Cúram express
+rule sets is available. Rules can be executed at run time. The CER editor is a tool for business and
+technical users to view create and manage CER rule sets. </keyword></p><p><keyword id="GSSDEV_title"
+otherprops="deprecated">(deprecated) Cúram Generic Search Server</keyword></p><p><keyword
+id="GSSDEV_shortdesc">Use this information to develop performant and scalable searches in the Cúram
+application with the Cúram Generic Search Server. Searches can be implemented with Cúram Generic
+Search Server and database searches. Database and Generic Search Server searches can be enabled on a
+per-search basis with application properties. </keyword></p><p><keyword id="COPSGUIDE_title">Cúram
+Operations Guide</keyword></p><p><keyword id="COPSGUIDE_shortdesc">Use this information to complete
+operational administration tasks for a Cúram runtime production or production-like
+system.</keyword></p><p><keyword id="SOLARCH_title">Cúram Solution
+Architecture</keyword></p><p><keyword id="SOLARCH_shortdesc">Use this information get an overview of
+the solution architecture of <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Program
+Management from a business, development, and deployment perspective. <tm trademark="IBM"
+tmtype="reg">IBM</tm> Cúram Social Program Management includes an environment for organizations to
+develop their own social enterprise management applications or to augment the solution that is
+provided by <tm trademark="IBM" tmtype="reg">IBM</tm>.</keyword></p><p/><p><keyword
+id="WORKREF_title">Cúram Workflow Reference Guide</keyword></p><p><keyword id="WORKREF_shortdesc"
+>The Cúram Workflow Management system is used to define processes to achieve certain business goals.
+A process definition is the central component that describes the business process. Process
+definition metadata is the top-level concept in a process definition. It contains information to
+identify and describe the process definition. In-depth descriptions of the workflow metadata can be
+entered. The effects of that metadata at run time can be set.</keyword></p><p><keyword
+id="OMEE_title">Getting Started With Cúram Outcome Management Entry Edition</keyword></p><p><keyword
+id="OMEE_shortdesc">Outcome Management Entry Edition is a highly flexible version of Outcome
+Management. It is geared towards organizations that do not need a full case management
+solution.</keyword></p><p><keyword id="UAEE_title">Getting Started With <tm trademark="IBM"
+tmtype="reg">IBM</tm> Cúram Universal Access Entry Edition</keyword></p><p><keyword
+id="UAEE_shortdesc">Universal Access Entry Edition is a fully configurable citizen-facing
+application that enables agencies to provide an intuitive web self-service solution. It is geared
+towards organizations that do not need a full case management solution.</keyword></p><p><keyword
+id="PRODCOOK_title">How to Build a Product</keyword></p><p><keyword id="PRODCOOK_shortdesc">Use this
+information to build a simple product. A set of examples cover different aspects of product design.
+These examples show how the various components of the product are used in eligibility and
+entitlement processing.</keyword></p><p><keyword id="DATAMAP_title"><tm trademark="IBM" tmtype="reg"
+>IBM</tm> Cúram Data Mapping Editor Guide</keyword></p><p><keyword id="DATAMAP_shortdesc">Data
+mapping is the process by which data from the Cúram datastore is mapped into Cúram evidence
+entities. Data is mapped by the data mapping engine by using mappings that are configured in the
+data mapping editor. Mappings are created for a program on an intake application.
+</keyword></p>Guide deprecated in 6.0.5.3<p><keyword id="INSTALL_title"><tm trademark="IBM"
+tmtype="reg">IBM</tm> Cúram Social Program Management Installation
+Guide</keyword></p><p/><p><keyword id="INSTALL_shortdesc">The <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Cúram runtime installation for <tm trademark="WebSphere" tmtype="reg">WebSphere</tm> or
+Oracle WebLogic Application Servers on the <tm trademark="Microsoft" tmtype="tm">Microsoft</tm>
+<tm trademark="Windows" tmtype="tm">Windows</tm> platform allows you to deploy the application suite
+without having to perform the build process. It is not for use in a production environment. A full
+development environment for Cúram can also be installed.</keyword></p><p><keyword
+id="CERPROPNON_title">Propagating Non Cúram Data For Cúram <tm trademark="Express" tmtype="reg"
+>Express</tm> Rules</keyword></p><p><keyword id="CERPROPNON_shortdesc">Use this information to learn
+how to run the batch program to store initial CER rule objects for rate data that is loaded into the
+system outside of application APIs. When rate table data is published via the application APIs, the
+system creates, updates, or removes stored CER rule objects as appropriate. The exact data that is
+written is configured via the CER rule object propagators.</keyword></p><p><keyword
+id="USEDATA_title">Using the Data Mapping Engine</keyword></p><p><keyword id="USEDATA_shortdesc">Use
+this information to map citizen data that is captured during intake and screening to evidence and
+non-evidence entities, and generated PDF application forms. Mapping data to case evidence allows
+that data to be used to determine eligibility as part of Cúram case processing. Mapping data to PDF
+application forms speeds up the process of completing these forms for manual
+submission.</keyword></p><p><keyword id="WORKCER_title">Working with Cúram <tm trademark="Express"
+tmtype="reg">Express</tm> Rules</keyword></p><p><keyword id="WORKCER_shortdesc">Use this information
+to learn how to create rule sets with the CER Rules Editor and add business and technical logic to
+Cúram <tm trademark="Express" tmtype="reg">Express</tm> rule sets. The CER Rules Editor is a part of
+the application that facilitates setting up and maintaining rules and the results that are
+associated with those conditions.</keyword></p><p><keyword id="WORKIEG_title">Working with
+Intelligent Evidence Gathering (IEG)</keyword></p><p><keyword id="WORKIEG_shortdesc">Use this
+information to learn how to define and maintain IEG scripts and the associated data store schemas
+for use in internal or external applications. </keyword></p></section>
+<section>
+<title>Developers</title>
+<p><keyword id="SAMPLES_title">Samples</keyword></p>
+<p><keyword id="SAMPLES_shortdesc">You can use the following development samples to help you with
+your development tasks.</keyword></p>
+<p><keyword id="SAMP_ACL_title">Cúram accelerators</keyword></p>
+<p><keyword id="SAMP_ACL_shortdesc">A Cúram accelerator is a set of predefined configuration files
+that provide a sample end-to-end application when installed on <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Cúram Social Program Management. Each accelerator is designed as an enablement tool to
+help business analysts and developers to understand the technologies and configurations that are
+required to build a use case of a particular type.</keyword></p>
+<p><keyword id="SAMP_ACL_ASC_title">Adult Social Care accelerator pack</keyword></p>
+<p><keyword id="SAMP_ACL_ASC_shortdesc">The Adult Social Care accelerator includes a simple social
+benefit program that delivers a defined monetary benefit to clients who are deemed eligible for the
+Adult Social Care program. It represents a typical path through a Cúram social program application
+to help you to understand the technologies and configurations that are required for this use
+case.</keyword></p>
+<p><keyword id="EVUP_title">Cúram Evidence Upgrade Guide</keyword></p>
+<p><keyword id="EVUP_shortdesc">Information is provided on how to upgrade Cúram evidence from older
+versions.</keyword></p>
+<p><keyword id="INSASSENG_title">Inside Cúram Eligibility and Entitlement Using Cúram
+Rules</keyword></p>
+<p><keyword id="INSASSENG_shortdesc">Provides details on how the Cúram Eligibility and Entitlement
+Engine functions when you use Cúram Rules. This does not include Cúram <tm trademark="Express"
+tmtype="reg">Express</tm> Rules eligibility and entitlement processing.</keyword></p>
+<p><keyword id="CINDEV_title">Cúram Intake Developer's Guide</keyword></p>
+<p><keyword id="CINDEV_shortdesc">An intake process definition XML document is required for Cúram
+Intake. Triage and screening definitions are configured in the intake process definition XML
+document. There are three configuration options for the application case that drive the check
+eligibility process: eligibility check rule set, eligibility check strategy, and the results page. A
+PCR rule set is required for PCR processing. Application authorization rules sets must also be
+configured.</keyword></p>
+<p/>
+<p><keyword id="EVDEV_title">Cúram Evidence Developers Guide</keyword></p>
+<p><keyword id="EVDEV_shortdesc">Custom evidence solutions can be developed with Cúram Evidence. All
+of the evidence server-side infrastructure artifacts are available in the
+curam.core.sl.infrastructure.impl package. The evidence metadata entity contains metadata about each
+evidence type. This entity must be populated before evidence maintenance can proceed. Evidence
+maintenance functions are available in the administration application.</keyword></p>
+<p><keyword id="APPEALDEV_title">Appeals Developer Guide</keyword></p>
+<p><keyword id="APPEALDEV_shortdesc">Use this information to extend the default features of <tm
+trademark="IBM" tmtype="reg">IBM</tm> Cúram Appeals. By default, Appeals is configured for case
+types of product delivery, issue, and integrated case. Appeals can be extended to handle extra case
+types. Case objects can be configured to be appealed, rather than the parent case
+itself.</keyword></p>
+<?Pub Caret 110?>
+<p><keyword id="CPIDEV_title">Case Participant Index Developer Guide</keyword></p>
+<p><keyword id="CPIDEV_shortdesc">Use this information to customize the case participant index. The
+case participant index supports central access to client information from multiple systems. Case
+participant index APIs can be used to store and retrieve client data. Client data can be loaded in
+the case participant index repository via a batch job or via a web service.</keyword></p>
+<p><keyword id="CCVDEV_title">Cúram Citizen Context Viewer Developer Guide</keyword></p>
+<p><keyword id="CCVDEV_shortdesc">Use this information to learn how to create custom UIM pages that
+launch the Citizen Context Viewer. Injection points for customizing the Citizen Context Viewer
+exist. Custom loaders and case handlers can be written. Node types and custom right-click menu
+options for the Citizen Context Viewer elements can be added.</keyword></p>
+<p><keyword id="CMSSERV_title">Cúram Content Management Interoperability Services Integration
+Guide</keyword></p>
+<p><keyword id="CMSSERV_shortdesc">Register a target system so that you can use a content management
+system (CMS) as a repository for documents. When you integrate with a CMS, attachments, <tm
+trademark="Microsoft" tmtype="tm">Microsoft</tm> Word communications, and pro forma communications
+documents are stored and retrieved from the CMS.</keyword></p>
+<p><keyword id="DATASCH_title">Creating Datastore Schemas</keyword></p>
+<p><keyword id="DATASCH_shortdesc">Use this information to create Datastore schemas. The datastore
+stores data that is collected from citizens during intake. A datastore schema defines the entities
+across which intake data is shredded, the fields or attributes of those entities, and any
+relationships between entity definitions.</keyword></p>
+<p><keyword id="CTMDEV_title">Business Object Module Development Guide</keyword></p>
+<p><keyword id="CTMDEV_shortdesc">Use this information to learn how to transport business objects
+between systems. A business object type is a logical grouping of administrative data that defines
+and governs a particular set of functions. A business object module is a piece of code responsible
+for performing the bespoke processing that is required to transport instances a particular business
+object type.</keyword></p>
+<p><keyword id="BATCHPER_title">Cúram Batch Performance Mechanisms</keyword></p>
+<p><keyword id="BATCHPER_shortdesc">Use this information to learn how to improve performance and
+scalability of batch streaming and the caching of batch process data. Batch streaming allows for
+concurrent execution of multiple instances of batch processes. Cúram batch processes use transaction
+level data caching. This can greatly reduce the volume of database transactions that are required
+for batch process execution.</keyword></p>
+<p><keyword id="BATCHPRO_title">Cúram Batch Processing Guide</keyword></p>
+<p><keyword id="BATCHPRO_shortdesc">Use this information to learn how to specify, write, manage,
+configure, and run batch processes. The batch processing framework allows an external task scheduler
+to execute process class operations without user intervention. Users can request that certain batch
+processes be ran on their behalf. When started by a task scheduler, the batch launcher processes
+these requests and start the relevant batch processes with the parameters specified by the
+user.</keyword></p>
+<p><keyword id="BATCHDEV_title">Cúram Batch Streaming Developers Guide</keyword></p>
+<p><keyword id="BATCHDEV_shortdesc">Use this information to design and develop streamed batch
+programs. Processing load is divided into streams of independent processing, for processing on
+separate computers as required. A chunker process identifies the processing units and clusters them
+into chunks of a predefined size. The stream processes then process one chunk at a
+time.</keyword></p>
+<p><keyword id="BIACT_title">Business Intelligence Actuate Deployment Guide</keyword></p>
+<p><keyword id="BIACT_shortdesc">Use this information to deploy Cúram Business Intelligence and
+Analytics content by using Actuate. Business Intelligence and Reporting Tools Designer Professional
+is an Eclipse open source component, developed by the Actuate Corporation, which provides a
+development and execution environment for business intelligence content.</keyword></p>
+<p><keyword id="BIBIRT_title">Business Intelligence BIRT Developer Guide</keyword></p>
+<p><keyword id="BIBIRT_shortdesc">Use this information to learn how the application reporting tools
+are used. Business Intelligence and Reporting Tools is an open source component, which provides a
+development and execution environment for reporting. It is primarily a tool for the development and
+execution of charting and tabular data with the aim of providing decision support information for
+front line staff, line managers, and senior managers in the organization.</keyword></p>
+<p><keyword id="BICOG_title">Business Intelligence <tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="Cognos" tmtype="reg">Cognos</tm> Deployment Guide</keyword></p>
+<p><keyword id="BICOG_shortdesc">You can deploy  Business Intelligence and Analytics content by
+using <tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="Cognos" tmtype="reg">Cognos</tm>. The default <tm trademark="Cognos" tmtype="reg"
+>Cognos</tm> content database is recommended. A detailed path through the installation process for
+<tm trademark="IBM" tmtype="reg">IBM</tm>
+<tm trademark="Cognos" tmtype="reg">Cognos</tm> for use with Business Intelligence and Analytics is
+provided.</keyword></p>
+<p><keyword id="BIREPORT_title">Business Intelligence Reporting Developer Guide</keyword></p>
+<p><keyword id="BIREPORT_shortdesc">Use this information to learn how to develop Business
+Intelligence and Analytics Reporting. An overview of the architecture, design, development, and
+deployment of Business Intelligence and Analytics Reporting is provided.</keyword></p>
+<p><keyword id="BICOM_title">Business Intelligence Development Compliancy Guide</keyword></p>
+<p><keyword id="BICOM_shortdesc">When you develop Cúram Business Intelligence applications, you must
+comply with certain guidelines to ensure that you can easily upgrade to future versions without
+affecting your custom functions. Complying with these guidelines is also essential to ensure that
+<tm trademark="IBM" tmtype="reg">IBM</tm> Support can better support your custom
+implementation.</keyword></p>
+<p><keyword id="AUDDEV_title">Cúram Case Audits Developers Guide</keyword></p>
+<p><keyword id="AUDDEV_shortdesc">Learn how to record new algorithms for producing random samples of
+cases for audit. Dynamic selection queries can be used to generate a list of cases for audit. There
+are a number of options available for selection queries. Case data from external sources can be used
+to generate a list of cases for audit.</keyword></p>
+<p><keyword id="EVBROKDEV_title">Cúram Evidence Broker Developers Guide</keyword></p>
+<p><keyword id="EVBROKDEV_shortdesc">Use this information to learn about the Evidence Broker and how
+it is implemented. The Evidence Broker enables flexible sharing of evidence between programs and
+systems to ensure that the most up-to-date evidence changes are available. Before evidence sharing
+can occur, it is necessary to define the evidence types available for sharing and to configure how
+this sharing occurs.</keyword></p>
+<p><keyword id="EGENMOD_title">Cúram Evidence Generator Modeling Guide</keyword></p>
+<p><keyword id="EGENMOD_shortdesc">Use this information to learn about entity modeling that is
+required to use the Cúram evidence generator. The evidence generator relies on the existence of
+certain attributes, structs, and aggregations within the generated code. Various modeling strategies
+are required for the different metadata patterns available in the generator.</keyword></p>
+<p><keyword id="EGENSPEC_title">Cúram Evidence Generator Specification</keyword></p>
+<p><keyword id="EGENSPEC_shortdesc">Use the Cúram Evidence Generator to rapidly develop server-side
+code and client side screens for evidence. Various design patterns can be applied during
+development. Certain types of metadata are required for each evidence type. Metadata controls the
+generated evidence output.</keyword></p>
+<p><keyword id="IMT_title">Cúram Incremental Modernization and Transformation (IMT) Web Services
+Cookbook</keyword></p>
+<p><keyword id="IMT_shortdesc">The required input and response parameters for Cúram web service are
+described. Examples of the expected XML messages that are sent and received from Cúram web services
+are provided. The following web services are available as part of Cúram: register person, claim
+intake, evidence maintenance, verification, determination, and triage.</keyword></p>
+<p><keyword id="ERPOP_title">Cúram Integrated ERP Operations Guide</keyword></p>
+<p><keyword id="ERPOP_shortdesc">Use this information to configure a Cúram-ERP financial
+environment. Common configuration data must be synchronized between the Cúram and ERP systems. The
+Cúram financial adapter and the Cúram master data adapter are configured through application
+properties.</keyword></p>
+<p><keyword id="JMXDEV_title">Cúram JMX Developer Guide</keyword></p>
+<p><keyword id="JMXDEV_shortdesc">Use the Cúram <tm trademark="Java" tmtype="tm">Java</tm>
+Management Extensions infrastructure to simplify the instrumentation of code and the collection of
+application operational data by using the JMX standard. Cúram JMX facilitates the creation of custom
+MBeans and their registration in the correct MBean server corresponding to the runtime
+environment.</keyword></p>
+<p><keyword id="MILEDEV_title">Cúram Milestone Developer Guide</keyword></p>
+<p><keyword id="MILEDEV_shortdesc">Use this information to design milestone functionality, a key
+component of Cúram integrated cases. Case milestones are used to track the completion of significant
+events or tasks during the life cycle of a case, for example, to track the submission, approval, and
+activation of a case. Milestone processing can be customized to suit agency needs.</keyword></p>
+<p><keyword id="MODHOW_title">Working with the Cúram Model in <tm trademark="Rational" tmtype="reg"
+>Rational</tm> Software Architect Designer</keyword></p>
+<p><keyword id="MODHOW_shortdesc">Use <tm trademark="Rational" tmtype="reg">Rational</tm> Software
+Architect Designer to modify the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram UML model. <tm
+trademark="Rational" tmtype="reg">Rational</tm> Software Architect Designer supports domain-specific
+languages and Eclipse extensibility, which enables the use of a powerful and intuitive user
+interface.</keyword></p>
+<p><keyword id="PERPROSEVDEV_title">Curam Person and Prospect Person Evidence Developers
+Guide</keyword></p>
+<p><keyword id="PERPROSEVDEV_shortdesc">Use this information to design a person/prospect person
+evidence solution. This work involves a consideration of the data, its structure, evidence
+constraints, and the flow of the data around the system. Some of the information that is stored
+about persons and prospect persons is held as evidence, which can be shared between cases on the
+system.</keyword></p>
+<p><keyword id="PODDEV_title">Cúram - Pod Developers Guide</keyword></p>
+<p><keyword id="PODDEV_shortdesc">Use this information to develop Cúram pods. Pods are presented
+through a standard UIM Page. The UIM includes the PodContainer.vim that contains the predefined API
+for interacting with the pod. The PodContainer interface allows the client to interact with the
+server. A PodLoader is required for each pod.</keyword></p>
+<p><keyword id="CPMDEV_title">Cúram Provider Management Developers Guide</keyword></p>
+<p><keyword id="CPMDEV_shortdesc">Cúram Provider Management can be customized and configured to meet
+the requirements of the organization. Customization options include strategy patterns, events,
+workflows, and rule sets. CPM provides a number of service layer interfaces that are designed for
+customization. A number of application properties are available that allow administrators to
+configure Cúram Provider Management.</keyword></p>
+<p><keyword id="CPMsecure_shortdesc">Enable the secure URLs feature to prevent users from modifying
+page request URLs in the Provider Management self-service application. If you have customized pages,
+update them before you enable the secure URLs feature so that they continue to work with the feature
+enabled.</keyword></p>
+<p><keyword id="REG_title">Cúram Regionalization Guide</keyword></p>
+<p><keyword id="REG_shortdesc">You can modify the regional settings of a Cúram application. You can
+alter locale defaults which reflect their region's currency, date and time standards, address
+formats, and other non-linguistic aspects of a locale.</keyword></p>
+<p><keyword id="SERDEV_title">Cúram Server Developer's Guide</keyword></p>
+<p><keyword id="SERDEV_shortdesc">Use this information to learn about the server development
+environment, which enables the development of high-quality, low-cost client/server applications
+through model driven code generation. This generation facilitates client/server development by
+taking a UML model and producing generated <tm trademark="Java" tmtype="tm">Java</tm> code; a data
+definition language which describing the database entities in the model, and support for remote
+invocation.</keyword></p>
+<p><keyword id="WLPDEV_shortdesc">To successfully develop on WebSphere Liberty you must carry out
+tasks like downloading source code from GitHub and migrating custom code to WebSphere
+Liberty.</keyword></p>
+<p><keyword id="SERMOD_title">Cúram Modeling Reference Guide</keyword></p>
+<p><keyword id="SERMOD_shortdesc">The Cúram generator uses the UML meta-model to automatically
+generate all the required stubs, skeletons, classes, and communications that are required to
+interact with a database and remote clients. This approach allows the developer to concentrate on
+providing the application business logic.</keyword></p>
+<p><keyword id="VIEWDEV_title">Cúram Summary View Developer Guide</keyword></p>
+<p><keyword id="VIEWDEV_shortdesc">Use the summary view framework to create and maintain summary
+views and configure the information to be presented for each view. Summary views provide case
+workers with a simple summary of the outcome of a program eligibility decision. The views provide an
+overview of the main eligibility factors for which a household's eligibility is checked during the
+eligibility determination process for various programs.</keyword></p>
+<p><keyword id="TEMEVCOOK_title">Cúram Evidence Generator Cookbook</keyword></p>
+<p><keyword id="TEMEVCOOK_shortdesc">Use the evidence generator as part of the standard Cúram build
+targets to dynamically create evidence entities that are based on certain criteria that are set for
+the evidence types. The evidence generator caters for all of the high level, repeatable evidence
+patterns across a number of large evidence-based solutions. </keyword></p>
+<p><keyword id="WAITDEV_title">Cúram Wait List Developer Guide</keyword></p>
+<p><keyword id="WAITDEV_shortdesc"> Use this information to develop Cúram wait lists through
+extension points and customizable interfaces that define the default behavior. A wait list is a list
+of clients who are awaiting the availability of a specified resource. Cúram wait lists provide a
+lightweight, generic implementation that can be used to meet a wide range of
+requirements.</keyword></p>
+<p><keyword id="WBPMCOOK_title">Cúram WBPM Integration Cookbook</keyword></p>
+<p><keyword id="WBPMCOOK_shortdesc">Use this information learn how to connect <tm
+trademark="WebSphere" tmtype="reg">WebSphere</tm> Business Process Management to a Cúram inbound web
+service by using an existing Cúram web service as an example. Instructions on how to start a <tm
+trademark="WebSphere" tmtype="reg">WebSphere</tm> Business Process Management web service with a
+Cúram outbound web service are also provided.</keyword></p>
+<p><keyword id="WEBCREF_title">Web Client Reference Manual</keyword></p>
+<p><keyword id="WEBCREF_shortdesc">Use this information to learn how to develop a standard Social
+                    Program Management web client. The standard web client has an HTML user
+                    interface that is generated by a middle-tier web application. It conforms to the
+                        <tm trademark="Java" tmtype="tm">Java</tm> EE architecture and is driven by
+                    JavaServer pages and servlet technology. This HTML user interface uses standard
+                    browser and Web 2.0 technologies, including <tm trademark="JavaScript"
+                        tmtype="tm">JavaScript</tm> and cascading style sheets.</keyword></p>
+<p><keyword id="WEBSERV_title">Cúram Web Services Guide</keyword></p>
+<p><keyword id="WEBSERV_shortdesc">Use this information to develop and secure Cúram web services.
+You can make business logic available as web services.</keyword></p>
+<p><keyword id="WIDGET_title">Cúram Custom Widget Development Guide</keyword></p>
+<p><keyword id="WIDGET_shortdesc">Use this information to develop custom widgets for UIM pages. A
+comprehensive set of widgets are provided, which are configured against the application's domain
+definitions by default. These configurations can be changed as required.</keyword></p>
+<p><keyword id="XMLINF_title">Cúram XML Infrastructure Guide</keyword></p>
+<p><keyword id="XMLINF_shortdesc">Learn how to develop applications that use XML with the <tm
+trademark="IBM" tmtype="reg">IBM</tm> Cúram Server Development Environment. The XML Server can be
+used to convert XML data into various formatted document types and then manipulate these documents
+for printing, e-mailing, and so on.</keyword></p>
+<p><keyword id="PLANITEMS_title">Customizing Plan Items</keyword></p>
+<p><keyword id="PLANITEMS_shortdesc">Use this information to customize, develop, and implement plan
+items. Plan items are the fundamental building blocks of a service plan. They are the benefits,
+services, and activities that are added to a plan to achieve the plan goal.</keyword></p>
+<p><keyword id="TEMPEVSOL_title">Designing Cúram Evidence Solutions</keyword></p>
+<p><keyword id="TEMPEVSOL_shortdesc">Use this information to design an evidence solution with the
+Cúram evidence framework. A custom evidence solution can be created with the Cúram evidence
+framework. Evidence is captured as part of case processing and is normally used by rules to return a
+decision about a customer's eligibility and entitlement.</keyword></p>
+<p><keyword id="EVENTADAPT_title">Event Adaptor Guide</keyword></p>
+<p><keyword id="EVENTADAPT_shortdesc">Use this information to learn how to develop code to use the
+event adaptor. The Cúram event adaptor can be used to publish events to the Intelligent Operations
+Center over web services through the <tm trademark="WebSphere" tmtype="reg">WebSphere</tm> Message
+Broker. Administrators can enable and disable individual event adapter event types.</keyword></p>
+<p><keyword id="INSIDEDA_title">Inside Cúram Decision Assist</keyword></p>
+<p><keyword id="INSIDEDA_shortdesc">Use this information to develop custom classes and widgets for
+Cúram Decision Assist. Determination-based assessments support the capture of answers to
+questionnaires from relevant parties, the consolidation of those answers if necessary, and the
+passing of the answers through decision matrices to reach outcomes and aid decisions
+making.</keyword></p>
+<p><keyword id="INSEECER_title">Inside Cúram Eligibility and Entitlement Using Cúram <tm
+trademark="Express" tmtype="reg">Express</tm> Rules</keyword></p>
+<p><keyword id="INSEECER_shortdesc">Use this information to learn how to set up and use Cúram <tm
+trademark="Express" tmtype="reg">Express</tm> Rules to return eligibility and entitlement results
+for cases. Detailed examples of eligibility and entitlement results are provided as well as
+descriptions of the processing that returns these results; and instructions on how to use this
+processing.</keyword></p>
+<p><keyword id="INSFUND_title">Funded Program Management Developer Guide</keyword></p>
+<p><keyword id="INSFUND_shortdesc">Use this information to customize Cúram Funded Program
+Management. Service layer interfaces that are designed for customization are available. A new custom
+implementation can be provided for any of these interfaces. Events that allow custom logic to be
+added to Funded Program Management processing are available.</keyword></p>
+<p><keyword id="PERSCOOK_title">Persistence Cookbook</keyword></p>
+<p><keyword id="PERSCOOK_shortdesc">Use this information to learn how to use and develop
+service-layer APIs, and how to customize software that uses the persistence infrastructure. The
+persistence infrastructure uses façade-layer logic to translate data that is received from a user
+interface screen into a format suitable for passing into a service-layer API call. It also
+translates the data that is returned from a service-layer API call into a format suitable for
+returning to a user interface screen.</keyword></p>
+<p><keyword id="UACUSTOM_title">Cúram Universal Access Customization Guide</keyword></p>
+<p><keyword id="UACUSTOM_shortdesc">Use this information to customize the <tm trademark="IBM"
+tmtype="reg">IBM</tm> Cúram Universal Access application module. Universal Access consists of the
+CitizenWorkspace, CitizenWorkspaceAdmin, and WorkspaceServices components. The major customizable
+features are triage, screening, intake, security, the citizen account, and life
+events.</keyword></p>
+<p><keyword id="CE_custom">Use this information to customize the <tm trademark="IBM" tmtype="reg"
+>IBM</tm> Universal Access Responsive Web Application. Typical customizable features are security
+and the citizen account.</keyword></p>
+<p><keyword id="CECUSTOM_title">Cúram Universal Access Customization Guide</keyword></p>
+<p><keyword id="CECUSTOM_shortdesc">Use this information to customize the <tm trademark="IBM"
+tmtype="reg">IBM</tm> Cúram Universal Access application module. The major customizable features are
+triage, screening, intake, security, the citizen account, and life events.</keyword></p>
+<p><keyword id="WORKUI_title">Working with the Cúram User Interface</keyword></p>
+<p><keyword id="WORKUI_shortdesc">Use this information to develop user interface elements with the
+Cúram Client Development Environment for <tm trademark="Java" tmtype="tm">Java</tm>. User interface
+elements that can be created with the Cúram Client Development Environment for <tm trademark="Java"
+tmtype="tm">Java</tm> include shortcut panels, tabs, modal dialogs, tab navigation, and
+lists.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Verification Engine</title>
+<p><keyword id="VER_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Verification Engine</keyword></p>
+<p><keyword id="VER_component_shortdesc">The Verification Engine streamlines the process of
+verifying evidence that is used in determining eligibility and entitlement as part of program
+delivery. It provides the functions that are needed for efficient management of verifications where
+policy or legislation mandates that evidence is verified as a prerequisite for
+eligibility.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Evidence Broker</title>
+<p><keyword id="BROKER_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Evidence Broker</keyword></p>
+<p><keyword id="BROKER_component_shortdesc">The Evidence Broker mediates the sharing of evidence
+across cases, acting as both a receiver and a broadcaster of evidence. It enables source evidence on
+a source case to be shared with target evidence on a target case. The Evidence Broker enables social
+program organizations to decide the types of evidence that can be shared, and the parameters for
+sharing this information. </keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider Management</title>
+<p><keyword id="CPM_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Provider Management</keyword></p>
+<p><keyword id="CPM_component_shortdesc">Cúram Provider Management helps organizations manage
+providers holistically, resulting in improved service delivery, enhanced efficiency, and sustainable
+outcomes for citizens. Cúram Provider Management provides a common repository of information,
+reusable business services, and enhanced accessibility for case workers and external
+providers.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Child Welfare</title>
+<p><keyword id="CCW_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Child Welfare</keyword></p>
+<p><keyword id="CCW_component_shortdesc">Cúram Child Welfare provides a full case lifecycle solution
+for child welfare organizations. This integrated, cost-effective case management software supports
+key business requirements, helping to improve organizational effectiveness through family-centric,
+outcome-focused business processes. </keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal Access</title>
+<p><keyword id="UA_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal Access</keyword></p>
+<p><keyword id="UA_component_shortdesc">Universal Access connects citizens to programs, streamlines
+applications for those programs, and reduces administrative work, allowing case workers to spend
+more time interacting with citizens. Universal Access provides a configurable citizen-facing
+application that enables agencies to offer a web self-service solution to their citizens. Use this
+information to customize the classic citizen application to provide your own custom citizen-facing
+web application. Alternatively, you can choose to use the Universal Access responsive citizen
+application, which uses modern technologies and the Social Program Management Design System to
+provide an enhanced user experience.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal Access</title>
+<p><keyword id="CE_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Universal Access</keyword></p>
+<p><keyword id="CE_component_shortdesc">Universal Access is a configurable online citizen-facing
+application that enables agencies to offer a web self-service solution to their citizens. Universal
+Access provides citizens with access to programs and services by allowing them to complete key tasks
+on the web without the assistance of a care worker. Universal Access enables governments to provide
+citizens with a single point of access to all social programs and services for which they are
+eligible, it connects citizens to programs, streamlines applications for those programs, and reduces
+administrative work. </keyword></p>
+</section>
+<section>
+<title><keyword conref="../common_files/conrefs.dita#conrefs/DS_long"/></title>
+<p><keyword id="WDS_component_title"/><keyword conref="../common_files/conrefs.dita#conrefs/DS_long"
+/></p>
+<p><keyword id="WDS_component_shortdesc">You can use the design system to develop your own custom
+web applications in addition to the standard <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social
+Program Management web client. The design system provides the foundational packages for building
+accessible and responsive web applications. It consists of a React UI component library, React
+development resources, and a style guide for creating web applications.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Outcome Management</title>
+<p><keyword id="OM_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Outcome Management</keyword></p>
+<p><keyword id="OM_component_shortdesc">Outcome Management software provides social program
+organizations with a framework and automated tools to create and manage outcome plans for citizens
+and their families. Outcome Management is designed to help organizations assess needs, establish
+goals, plan for goal attainment, and track progress. It supports collaboration and coordination of
+all resources and delivers a complete understanding of client needs and barriers to success.
+</keyword></p>
+</section>
+<section>
+<title id="IBMCuramAppeals"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Appeals</title>
+<p><keyword id="APPEALS_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Appeals</keyword></p>
+<p><keyword id="APPEALS_component_shortdesc"> Appeals is an automated solution that provides
+comprehensive support for the appeals and fair hearings process. Appeals automate the intake,
+hearings, and decision processes and manages participants in the appeals process. Appeals supports
+multi-level appeals in which multiple issues for one appellant and respondent can be viewed at a
+single appeals hearing.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Enterprise Collaboration</title>
+<p><keyword id="SEC_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Enterprise Collaboration</keyword></p>
+<p><keyword id="SEC_component_shortdesc">Cúram Social Enterprise Collaboration is a common platform
+and set of tools for multi-disciplinary collaboration in social program organizations.
+Multi-disciplinary teams are involved in supporting the needs of clients and families, including
+other agencies, local providers, and interested community partners. Cúram Social Enterprise
+Collaboration enables these stakeholders to reach beyond their organizational boundaries to
+collaborate in support of their clients' needs.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Business Intelligence and Analytics</title>
+<p><keyword id="BI_component_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Business Intelligence and Analytics</keyword></p>
+<p><keyword id="BI_component_shortdesc">Business Intelligence and Analytics is a decision support
+solution that helps social program organizations analyze the effectiveness of their programs and
+gain insight into the efficiency of their operations. It is scalable from the program to enterprise
+level. It consists of embedded analytics, domain-specific dashboards, extensive Extract, Transform,
+Load (ETL) functions, and tool-independent, pre-defined, domain-specific data marts.</keyword></p>
+</section>
+<section>
+<title translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Income Support</title>
+<p><keyword id="IS_component_title" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Income Support</keyword></p>
+<p><keyword id="IS_component_shortdesc" translate="no">Cúram Income Support provides full
+eligibility determination and benefit calculation for social programs that provide food, cash, and
+medical assistance to families in need. Cúram Income Support is a commercial integrated service
+delivery solution that equips organizations with a powerful set of business tools and processes
+designed specifically for the effective management of income support programs.</keyword></p>
+</section>
+<section>
+<title translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Income Support for Medical Assistance</title>
+<p><keyword id="ISMA_component_title" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Income Support for Medical Assistance</keyword></p>
+<p><keyword id="ISMA_component_shortdesc" translate="no">Cúram Income Support for Medical Assistance
+enables social program organizations to improve the efficiency and effectiveness of managing
+eligibility and entitlement services for medical assistance. Cúram Income Support for Medical
+Assistance equips organizations with a powerful set of business tools and processes designed
+specifically for the effective management of traditional medical assistance, Affordable Care Act
+(ACA), and Modified Adjusted Gross Income (MAGI)-based Medicaid and Children's Health Insurance
+Program (CHIP) programs.</keyword></p>
+</section>
+<section>
+<title translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Health Care Reform</title>
+<p><keyword id="HCR_component_title" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Health Care Reform</keyword></p>
+<p><keyword id="HCR_component_shortdesc" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Health Care Reform is an eligibility and case management solution that helps US states to address the Affordable Care Act (ACA) requirements for expanded coverage and access to a range of health care plans for their citizens. <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Health Care Reform (HCR) provides packaged subject-matter expertise such as evidence, rules, and workflow that are specific to the health care reform initiative. </keyword></p>
+<p><keyword id="HCR_title" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Health Care Reform Business Guide</keyword></p>
+<p><keyword id="HCR_shortdesc" translate="no">A business overview of how the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Health Care Reform (HCR) supports the Affordable Care Act (ACA) legislation requirements. You can refer to key business flow diagrams and descriptions to understand the main solution business flows, functions, and features, and to identify important configuration and customization options to focus on during a fit gap analysis.</keyword></p>
+<p><keyword id="dev_hcr_title" translate="no"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Health Care Reform Developer Guide</keyword></p>
+<p><keyword id="dev_hcr_shortdesc" translate="no">You can modify the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Health Care Reform (HCR) to meet different legislative and project requirements. Use this detailed technical information to configure, customize, or extend the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Health Care Reform.</keyword></p>
+</section>
+<section>
+<title><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Archiving</title>
+<p><keyword id="ARCV_title"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Archiving</keyword></p>
+<p><keyword id="ARCV_shortdesc"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Social Program Management provides the ability to archive historical data in its original business context, as well as to query and restore the data. <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Archiving works with the <tm trademark="IBM" tmtype="reg">IBM</tm> <tm trademark="InfoSphere" tmtype="reg">InfoSphere</tm> <tm trademark="Optim" tmtype="tm">Optim</tm> archiving tool to provide a set of Cúram templates for the archival of business and technical objects including tables and relationships, and selection criteria to identify all records that should be moved into an archiving environment.</keyword></p>
+</section>
+<section>
+<title>Identity Intelligence</title>
+<p><keyword id="II_title">Identity Intelligence</keyword></p>
+<p><keyword id="II_shortdesc"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Identity Intelligence empowers caseworkers to prevent fraud, waste, and abuse in social programs, by providing them with new information that helps them when making eligibility decisions on application cases. <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Identity Intelligence highlights when applicants are duplicates of people already on the system and perhaps already receiving benefits under similar, but slightly different guises. Intentional fraud and unintentional error can be reduced from the outset with the assistance of these identity checking tools.</keyword></p>
+</section>
+<section>
+<title>Platform</title>
+<p><keyword conref="conrefs.dita#conrefs/platform">c</keyword></p>
+<p><keyword id="PLATFORM_component_shortdesc">The Social Program Management Platform is a business
+and technology solution that delivers prebuilt health and social program components, business
+processes, tool sets, and interfaces on top of a dynamically configurable architecture. Social
+Program Management Platform helps health and social program organizations to provide optimal
+outcomes for citizens, satisfy increasing demand, and lower costs for organizations.</keyword></p>
+</section>
+<section>
+<title>Eligibility Viewer</title>
+<p><keyword id="ELIGVIEW_component_shortdescr">The Eligibility viewer (EV) is an enhancement to
+caseworker functionality that gives caseworkers a holistic view of eligibility for a person or for
+an integrated case. The information can be presented in two tabs, one on the person view, and one on
+the integrated case view.</keyword></p>
+</section>
+<section>
+<title>Data Extractor</title>
+<p><ph id="dataext_shortdescr">The <keyword
+conref="../common_files/conrefs.dita#conrefs/dataextractor"/> makes determinations data available in
+a format that can be used in a data warehouse with analytic tools. The <keyword
+conref="../common_files/conrefs.dita#conrefs/dataextractor"/> can be used to extract complex
+determination BLOB data into a format that is more easily queried.</ph></p>
+</section>
+<section>
+<title>Patient Care</title>
+<p><keyword id="PAT_CARE_component_title">Patient Care</keyword></p>
+<p><keyword id="PAT_CARE_shortdesc"><tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Patient Care enables care teams to manage outcomes for patients, taking into account both medical and social factors that influence their health and well-being.</keyword></p>
+<p><keyword id="PAT_CARE_SLN_OVR_title">Patient Care Overview</keyword></p>
+<p><keyword id="PAT_CARE_SLN_OVR_shortdesc">An overview of how <tm trademark="IBM" tmtype="reg">IBM</tm> Patient Care addresses each of the supported care team requirements for managing patient outcomes.</keyword></p>
+<p><keyword id="PAT_CARE_CFG_title">Patient Care Configuration Guide</keyword></p>
+<p><keyword id="PAT_CARE_CFG_shortdesc">Use this information to set up and configure Patient Care
+for your environment.</keyword></p>
+<p><keyword id="PAT_CARE_CUST_title">Patient Care Customization Guide</keyword></p>
+<p><keyword id="PAT_CARE_CUST_shortdesc">Use this information to customize or extend the default
+Patient Care implementation to meet specific custom requirements.</keyword></p>
+</section>
+<section>
+<title>Cúram Solution for Care Management</title>
+<p><keyword id="CARE_MGMT_component_title">Cúram Solution for Care Management</keyword></p>
+<p><keyword id="CARE_MGMT_shortdesc">The <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Care Management enables care teams to manage outcomes for patients, taking into account both medical and social factors that influence their health and well-being.</keyword></p>
+<p><keyword id="CARE_MGMT_SLN_OVR_title">Care Management Overview</keyword></p>
+<p><keyword id="CARE_MGMT_SLN_OVR_shortdesc">An overview of how the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Care Management addresses each of the supported care team requirements for managing patient outcomes.</keyword></p>
+<p><keyword id="CARE_MGMT_SLN_CFG_title">Care Management Configuration Guide</keyword></p>
+<p><keyword id="CARE_MGMT_SLN_CFG_shortdesc">Use this information to set up and configure the <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Care Management for your environment.</keyword></p>
+<p><keyword id="CARE_MGMT_SLN_CUST_title">Care Management Customization Guide</keyword></p>
+<p><keyword id="CARE_MGMT_SLN_CUST_shortdesc">Use this information to customize or extend the default <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Solution for Care Management implementation to meet specific custom requirements.</keyword></p>
+</section>
+<section>
+<title>Configuring Care Management</title>
+<p><keyword id="ConfigCarePlans_title">Configuring Care Plans</keyword></p>
+<p><keyword id="ConfigCarePlans_shortdesc">Complete the following tasks to configure care plans for
+your system users. Care plans are implemented by using the Cúram outcome plan
+functionality.</keyword></p>
+<p><keyword id="ConfigMDT_titles">Configuring multidisciplinary teams</keyword></p>
+<p><keyword id="ConfigMDT_shortdesc">Complete the following tasks to configure multidisciplinary
+care teams.</keyword></p>
+<p><keyword id="ConfigAssessments_title">Configuring assessments</keyword></p>
+<p><keyword id="ConfigAssessments_shortdesc">An overview of the assessment settings that you can use
+to configure assessments.</keyword></p>
+<p><keyword id="ConfigClinicalDataModel_title">Configuring the clinical data model</keyword></p>
+<p><keyword id="CnfigClinicalDataModel_shortdesc">Care Management clinical data is implemented in
+dynamic evidence. To configure or extend the default clinical data dynamic evidence entities, you
+use the standard dynamic evidence infrastructure.</keyword></p>
+<p><keyword id="ConfigPatient360_title">Configuring the Patient Home page</keyword></p>
+<p><keyword id="ConfigPatient360_shortdesc">Complete the following tasks to configure the Patient
+Home page for your custom requirements.</keyword></p>
+<p><keyword id="ConfigIncomingReferrals_shortdesc">You must configure an intake process to accept
+incoming patient referrals.</keyword></p>
+<p><keyword id="ConfigOMAssessments_shortdesc">An overview of the assessment settings that you can
+use to configure assessments.</keyword></p>
+</section>
+<section>
+<title>Customization</title>
+<!--<p><keyword id="Customize360_title">Customizing the Patient Home page</keyword></p>-->
+<p><keyword id="Customize360_shortdesc">The Patient Home page contains a number of pods that display
+a default view of clinical information. To change the clinical data that is displayed by default,
+use the standard pod infrastructure to create new custom pods.</keyword></p>
+<p><keyword id="CustomizeClinicalTerminology_shortdesc">For clinical code data that is entered
+through Cúram screens, you must customize the default clinical code screen to callout to a clinical
+terminology lookup service. Complete the following steps to create a clinical terminology lookup
+service implementation.</keyword></p>
+<p><keyword id="INSTALLIIB_shortdesc">Describes how to install the <tm trademark="IBM" tmtype="reg">IBM</tm> Integration Bus components.</keyword></p>
+</section>
+<section>
+<title>Integrating</title>
+<p><keyword id="IntegratingEES_shortdesc">Use the following information to help you to create a
+custom solution for integrating Cúram evidence with data in external systems.</keyword></p>
+<!--<p><keyword id="Customize_implement_int_clinicaldata_title">Implementing the integration of clinical data from external systems</keyword></p>-->
+<p><keyword id="Customize_implement_int_clinicaldata_short_desc">You can use the following design
+guidance and examples to help you to create an implementation for integrating clinical data from
+external systems with Cúram evidence. Use Cúram APIs to insert clinical data that is retrieved from
+external systems. For processing the retrieval of the clinical data, you can create a deferred
+process, and integrate that deferred process with the case lifecycle.</keyword></p>
+<p><keyword id="implement_integration_ees_shortdesc">You can use the following design guidance and
+examples to help you to create an implementation for integrating data from external systems with
+Cúram evidence. </keyword></p>
+</section>
+<section>
+<!--WebSphere Application Server Liberty-->
+<lines><ph id="wlpdep_shdescr">Because you can now deploy and run <keyword conref="conrefs.dita#conrefs/prodname"/> on <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/>, you can benefit by deploying <keyword conref="conrefs.dita#conrefs/prodname_short"/> on stand-alone <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/> instances for the purposes of testing and development. For a successful deployment on <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/>, you must install the required software, configure <keyword conref="../common_files/conrefs.dita#conrefs/prodname_lib_short"/> for security and deployment, build your application EAR (Enterprise ARchive) files, and then install your application EAR files.</ph></lines>
+</section>
+<section>
+<!--Containerization architecture-->
+<lines><ph id="contarch_shdescr"><keyword conref="conrefs.dita#conrefs/prodname"/> was enhanced in version 7.0.10.0 to enable it for deployment into cloud native hosting platforms. While previously <keyword conref="conrefs.dita#conrefs/prodname_short"/> could be cloud-hosted in an IaaS cloud delivery model, it was not possible to leverage the benefits of flexibility, elasticity, efficiency, and the strategic value offered by cloud native architecture.</ph>
+</lines>
+</section>
+<section>
+<title>Default</title>
+<p><keyword id="Default_component_title">Default title - update this to refer to the correct title
+for your component</keyword></p>
+<p><keyword id="Default_shortdesc">Default short description. Update this to refer to a short
+description of your content.</keyword></p>
+</section>
+<section>
+<title>Evidence</title>
+<p>
+<lines><keyword id="Evidgetstart_shdescr">Evidence is a central component of social programs and services. Use the common developer and administrator questions and the corresponding answers to help you get started.</keyword></lines>
+<lines><keyword id="Evidkbf_shdescr">The key business flow (KBF) for evidence provides a context for individual aspects of the evidence process.</keyword></lines>
+<lines><keyword id="Evidunder_shdescr">Evidence is information that the client provides about the client's personal and family circumstances. Organizations can use business rules that are based on legislation with the information that is provided by the client to determine the client's eligibility and entitlement.</keyword></lines>
+<lines><keyword id="Eviddes_shdescr">Before you design your evidence, analyze the structural and characteristic requirements for evidence that are required by your organization. Consider whether to use static or dynamic evidence, and the evidence types that your organization requires.</keyword></lines>
+<lines><keyword id="Eviddev_shdescr">You can develop static evidence manually, that is, hand-crafted, or you can use the Evidence Generator to create evidence entities.</keyword></lines>
+<lines><keyword id="Evidconfig_shdescr">You can configure evidence types and then associate the evidence types with application cases, integrated cases, product delivery cases, persons and prospect persons, and outcome plans.</keyword></lines>
+<lines><keyword id="Evidshare_shdescr">The  evidence broker mediates the sharing of evidence between cases in an agency. According to an agency's needs, administrators can create sharing configurations based on case and evidence types. Flexible sharing configuration options enable administrators to configure exactly what evidence information is shared between cases. Administrators can also configure whether caseworkers need to manually review evidence that is shared to particular cases. Another objective of the evidence broker is to enable caseworkers to spend less time on administering evidence and to focus on resolving genuine conflicts that occur during evidence sharing. </keyword></lines>
+<lines><keyword id="Evidreview_shdescr">Depending on the information that caseworkers require, caseworkers can use different evidence views. For example, to identify high-level or specific details. The evidence views are not determined by whether the evidence is designed as static or dynamic or whether the data is in a hierarchy.</keyword></lines>
+</p>
+</section>
+<section>
+<title>Watson Assistant Chatbot</title>
+<p><ph id="chatbot_shortdescr">Use <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_watson_assistant_long"/> to build your own
+live virtual assistant into <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>. A
+sample caseworker assistant helps caseworkers to find information about client verifications and
+caseworker procedures to deliver an engaging and simplified experience to caseworkers for specific
+tasks.</ph></p>
+</section>
+</refbody>
+</reference><?Pub *0000074656?><?tm 1525256019461 161 z/OS||Windows||WebSphere||UNIX||Rational||Optim||Microsoft||JavaScript||Java||InfoSphere||IBM||Express||Cognos ?>

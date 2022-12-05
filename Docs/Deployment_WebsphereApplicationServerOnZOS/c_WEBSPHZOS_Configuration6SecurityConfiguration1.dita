@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e720">
+<title>Configuring security</title>
+<shortdesc>Configure security settings for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> within <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/></shortdesc><conbody>
+<p>The default security configuration of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> involves a JAAS Login Module for Cúram
+users and the default <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>
+file-based user registry for the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> and <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_db2_long"/> users. For more information, see
+the Default Configuration for <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> section in <xref
+href="../Security/ctr_CuramSecurityHandbook.html" format="html"
+scope="peer">Configuring security</xref>.</p>
+<p>Alternative security configurations are available that can be used with <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>, such as an LDAP directory
+server or a single sign-on solution. The following sections describe these configurations.</p></conbody></concept>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderIEGDatastoreModify" xml:lang="en-us">
+<title>Modifying Existing Data Store Schemas</title>
+<shortdesc>A user with disabilities can modify an existing data store schema in the administration
+application.</shortdesc>
+<taskbody>
+<context>Use the following procedure to modify an existing data store schema in the administration
+application.</context>
+<steps>
+<step>
+<cmd>In the administration application, select the <uicontrol>Administration Workspace </uicontrol>
+Application Section.</cmd>
+</step>
+<step>
+<cmd>In the Section Shortcuts Panel, select the <uicontrol>Intelligent Evidence
+Gathering</uicontrol> category.</cmd>
+</step>
+<step>
+<cmd>Click the <uicontrol>Datastore schema</uicontrol> link.</cmd>
+</step>
+<step>
+<cmd>In the search form that is displayed in a new page, search for the appropriate data store
+schema, and select the corresponding list action button. Select the <uicontrol>Download</uicontrol>
+option, which you can use to save an offline copy of the selected data store schema.</cmd>
+</step>
+<step>
+<cmd>Modify the downloaded data store schema script in an XML Editor.</cmd>
+</step>
+<step>
+<cmd>Import the schema by selecting the <uicontrol>Import</uicontrol> page action.</cmd>
+</step>
+<step>
+<cmd>In the form that is displayed in a modal dialog, enter the name and ID of the original data
+store schema into the appropriate field.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Overwrite</uicontrol> option.</cmd>
+</step>
+<step>
+<cmd>Click the schema <uicontrol>browse</uicontrol> button.</cmd>
+</step>
+<step>
+<cmd>In the Windows Explorer dialog that opens, select the modified offline data store schema and
+click <uicontrol>Save</uicontrol>. The XML in the data store schema is validated. If no validation
+errors occur, the data store schema overwrites the pre-existing data store schema in the online
+application.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

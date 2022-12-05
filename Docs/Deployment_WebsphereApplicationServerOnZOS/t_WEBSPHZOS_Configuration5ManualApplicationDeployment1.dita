@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Manual application deployment</title>
+<shortdesc>Use the administration console to install an enterprise application in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/>.</shortdesc><taskbody><context>
+<p>Install an application, EJB component, or web module by using the administrative console.</p>
+<note type="note">When the installation starts, use <uicontrol>Cancel</uicontrol> to exit if the
+installation fails. It is not enough to move to another administrative console page without first
+selecting <uicontrol>Cancel</uicontrol> on an application installation page.</note></context>
+<steps>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Applications</uicontrol>
+<uicontrol>New Application</uicontrol>
+</menucascade>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>New Enterprise Application</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select the appropriate button and specify the full path name of the source application file or
+EAR file by using <uicontrol>Browse</uicontrol> in the <uicontrol>Path to the new
+application</uicontrol> pane</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Next</uicontrol>.</cmd>
+<info>
+<p>The default location for the application EAR files is:
+<filepath>$SERVER_DIR/ear/WAS/</filepath></p>
+</info>
+</step>
+<step>
+<cmd>Select <uicontrol>Fast Path - Prompt only when additional information is required</uicontrol>
+in the <uicontrol>How do you want to install the application?</uicontrol> pane and select
+<uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Leave the defaults as they are for step 1, <uicontrol>Select installation options</uicontrol>
+and select <uicontrol>Next</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>In step 2, <uicontrol>Map modules to servers</uicontrol>, for every module that is listed,
+select a target server or a cluster from the <uicontrol>Clusters and Servers</uicontrol> list. Tick
+the check box beside one or more modules and then select the server or cluster and click
+<uicontrol>Apply</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>For the following steps, click <uicontrol>Next</uicontrol> and on the Summary pane click
+<uicontrol>Finish</uicontrol> to complete the installation. This step might take a few minutes and
+finishes with the message <i>Application Curam installed successfully</i>.</cmd>
+</step>
+<step>
+<cmd>Save the changes to the Master Configuration. (See <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/> for more details.)</cmd>
+</step>
+<step>
+<cmd>Browse to <menucascade>
+<uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol>
+<uicontrol>WebSphere enterprise applications</uicontrol>
+</menucascade> and select the newly installed application.</cmd>
+</step>
+<step><cmd>Select the <uicontrol>Class loading and update detection</uicontrol> option from the <uicontrol>Detail Properties</uicontrol> section.</cmd></step>
+<step><cmd>Set the <uicontrol>Class loader order</uicontrol> to be <uicontrol>Classes loaded with local class loader first (parent last)</uicontrol>.</cmd></step>
+<step><cmd>Set the <uicontrol>WAR class loader policy</uicontrol> to be <uicontrol>Single class loader for application</uicontrol>.</cmd></step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Browse to <uicontrol>Users and Groups -&gt; Manage Users</uicontrol>. Select
+<uicontrol>Create...</uicontrol> and enter a user ID, password, first name, and last name. </cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>Create</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Return to the enterprise application. Select<menucascade>
+<uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol>
+<uicontrol>WebSphere enterprise applications</uicontrol>
+</menucascade>, select the newly installed application, and select the <uicontrol>Security role to
+user/group mapping</uicontrol> option from the <uicontrol>Detail Properties</uicontrol> section and
+map the mdbuser role to a user name and password as follows:</cmd>
+<info>
+<note type="note">
+<p>The user name that you use to map to the mdbuser role must already be defined in your user
+registry.</p>
+</note>
+</info>
+<substeps>
+<substep>
+<cmd>Check <uicontrol>Select</uicontrol> for the mdbuser role and select <uicontrol>Map
+Users...</uicontrol>.</cmd>
+</substep>
+<substep>
+<cmd>Enter an appropriate user name in the <uicontrol>Search String</uicontrol> field and select
+<uicontrol>Search</uicontrol>.</cmd>
+</substep>
+<substep>
+<cmd>Select the ID from the <uicontrol>Available:</uicontrol> list and select
+<uicontrol>&gt;&gt;</uicontrol> to add it to the <uicontrol>Selected:</uicontrol> list and select
+<uicontrol>OK</uicontrol>.</cmd>
+</substep>
+<substep>
+<cmd>Select <uicontrol>OK</uicontrol>.</cmd>
+</substep>
+</substeps>
+</step>
+<step>
+<cmd>You can now update the user RunAs role by selecting the <uicontrol>User RunAs roles</uicontrol>
+option from the <uicontrol>Detail Properties</uicontrol> section.</cmd>
+</step>
+<step>
+<cmd>Enter the appropriate user name and password in the <uicontrol>username</uicontrol> and
+<uicontrol>password</uicontrol> fields. Check <uicontrol>Select</uicontrol> for the mdbuser role and
+select <uicontrol>Apply</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Select <uicontrol>OK</uicontrol>.</cmd>
+</step>
+<step><cmd>Save the changes to the master configuration.</cmd></step>
+<step>
+<cmd>When deployment is finished, you must start the application. Browse to <menucascade>
+<uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol>
+<uicontrol>WebSphere enterprise applications</uicontrol>
+</menucascade>, </cmd>
+</step>
+<step>
+<cmd>Select the check box for the newly installed application, and select
+<uicontrol>Start</uicontrol>. This step might take a few minutes and finishes when the application
+status changes to indicate that it is started.</cmd>
+</step>
+<step>
+<cmd>Test the application deployment. For example, point a web browser at the URL for the deployed
+application, for example:</cmd>
+<info><pre>https://&lt;Your WebSphere host&gt;:&lt;CuramClientEndPoint&gt;/Curam</pre>
+<p>Where <varname>&lt;Your WebSphere host&gt;</varname> identifies the hostname or IP address where
+your <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/></p> system is
+running and <varname>&lt;CuramClientEndPoint&gt;</varname> identifies the port that is assigned (as
+in <xref href="t_WEBSPHZOS_Configuration5SetUpPortAccess1.dita"/>).</info>
+</step></steps></taskbody></task>

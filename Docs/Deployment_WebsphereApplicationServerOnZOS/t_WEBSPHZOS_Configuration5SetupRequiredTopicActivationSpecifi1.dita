@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configuring the topic activation specifications</title>
+<shortdesc>Add a new Activation Specification. </shortdesc><taskbody>
+<steps>
+<step>
+<cmd>Set the following fields:</cmd>
+<info>
+<ul>
+<li><uicontrol>Name</uicontrol>: CuramCacheInvalidationTopic </li>
+<li><uicontrol>JNDI name</uicontrol>: eis/CuramCacheInvalidationTopicAS </li>
+<li><uicontrol>Destination Type</uicontrol>: Topic </li>
+<li><uicontrol>Destination JNDI name</uicontrol>: jms/CuramCacheInvalidationTopic </li>
+<li><uicontrol>Bus Name</uicontrol>: CuramBus </li>
+<li><uicontrol>Authentication Alias</uicontrol>: Same as for the <tt>jdbc/curamdb</tt> data source
+(e.g. <varname>&lt;SERVERNAME&gt;</varname>/dbadmin) </li>
+</ul>
+</info>
+</step>
+<step>
+<cmd>Leave all other fields as default and select <uicontrol>OK</uicontrol> to apply the
+changes.</cmd>
+</step>
+<step>
+<cmd>Save the changes to the master configuration as described in <xref
+href="c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.dita"/>.</cmd>
+</step></steps></taskbody></task>

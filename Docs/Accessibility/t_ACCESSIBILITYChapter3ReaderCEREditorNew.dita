@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="t_ACCESSIBILITYChapter3ReaderCEREditorNew" xml:lang="en-us">
+<title>Creating a New Rule Set</title>
+<taskbody>
+<context>The following sections outlines how a user with disabilities can create a new rule set in
+the administration application.</context>
+<steps>
+<step>
+<cmd>In the administration application, select the <uicontrol>Administration Workspace</uicontrol>
+<wintitle>Application Section</wintitle>.</cmd>
+</step>
+<step>
+<cmd>In the <wintitle>Shortcuts Panel</wintitle>, select the <uicontrol>Rules and
+Evidence</uicontrol> category.</cmd>
+</step>
+<step>
+<cmd>Within this category, select the <uicontrol>Cúram Express Rule Sets</uicontrol> link. This
+opens a page containing a list and an option to create a new rule set. </cmd>
+</step>
+<step>
+<cmd>To create a new rule set, select the <uicontrol>New</uicontrol> page action and enter the rule
+set name, the display name and category. Note that the rule set name is the technical identifier 
+used later to download the rule set.</cmd>
+</step>
+<step>
+<cmd>To edit this newly created rule set, open the command prompt and navigate to the
+<filepath>&lt;application install directory&gt;/EJBServer</filepath> folder.</cmd>
+</step>
+<step>
+<cmd>Enter <uicontrol>build creole.extractrulesdata -Dcreolerulesetname=&lt;your rule set name&gt;
+-Dinedit=true</uicontrol> into the command prompt. This extracts the rule set to the
+<filepath>&lt;application install directory&gt;/EJBServer/dataextractor/blob</filepath>
+folder.</cmd>
+</step>
+<step>
+<cmd>The developer copies this rule set to their custom component and places it into a
+<filepath>Creole Rule Sets</filepath> folder. Using the preferred XML editor, the developer can
+define the rules according to the guidelines outlined in the Cúram Express Rules Reference
+Manual.</cmd>
+</step>
+<step>
+<cmd>Once complete the developer can validate and upload the rule set by using the command line
+targets <uicontrol>build creole.validate.rulesets</uicontrol> and <uicontrol>build
+creole.upload.rulesets</uicontrol> respectively.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

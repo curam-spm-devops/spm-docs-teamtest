@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Add users to the user registry</title>
+<titlealts>
+<searchtitle>Add users to the user registry</searchtitle>
+</titlealts>
+<shortdesc>Add the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/>
+administrative users and the database user must be manually added to the user registry.</shortdesc>
+<taskbody>
+<context>
+<p>As detailed in <xref href="c_WEBSPHAPS_Configuration4SecurityConfiguration1.dita"/>, the
+configured <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> user registry
+is used for authentication of administrative users and the database user. The WebSphere
+administrative users and the database user must be manually added to the user registry as
+follows.</p>
+</context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Users and Groups</uicontrol><uicontrol>Manage
+Users</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select <uicontrol>Create</uicontrol>.</cmd></step>
+<step><cmd>Fill in the details for the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> administrative user and select
+<uicontrol>Create</uicontrol>.</cmd></step>
+<step><cmd>Repeat the steps for the database user.</cmd></step>
+</steps>
+<result>
+<p>If <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> administrative
+security was enabled when creating the profile the administrative user may already be defined in the
+registry.</p>
+</result>
+</taskbody>
+</task>

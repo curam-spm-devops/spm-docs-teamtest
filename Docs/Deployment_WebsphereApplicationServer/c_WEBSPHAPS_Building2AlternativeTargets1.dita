@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="d1e507" xml:lang="en-us">
+<title>Alternative targets</title>
+<titlealts>
+<searchtitle>Alternative targets</searchtitle>
+</titlealts>
+<shortdesc>The <cmdname>websphereEAR</cmdname> target builds an <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application <filepath>.ear</filepath> file
+that contains both the web client and the application. You can also build an application
+<filepath>.ear</filepath> file that contains only the web application or only the server
+application.</shortdesc>
+<conbody>
+<p>You might need these configurations where the web client and server application need to be
+installed on separate servers. For example, to support secure access to the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application for external users a new web
+client application can be developed. This web application can be deployed on its own and use an
+existing server application. For more information about External Access Security, see <xref
+href="../ServerDeveloper/ctr_CuramServerDeveloperGuide.dita"/>.</p>
+<?Pub Caret -1?>
+<p>To build an <filepath>ear</filepath> file that contains only the web client application, enter
+the following command:</p>
+<codeblock>build websphereEAR -Dclient.only=true</codeblock>
+<p>To build an <filepath>.ear</filepath> file that contains only the server application, enter the
+following command:</p>
+<codeblock>build websphereEAR -Dserver.only=true</codeblock>
+</conbody>
+</concept>
+<?Pub *0000001476?>

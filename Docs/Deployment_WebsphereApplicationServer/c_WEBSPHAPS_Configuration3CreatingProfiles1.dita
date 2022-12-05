@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2917">
+<title>Creating profiles</title>
+<titlealts>
+<searchtitle>Creating profiles</searchtitle>
+</titlealts>
+<shortdesc>Create at least two profiles, one to act as the deployment manager for the node and the
+others as the federated servers.</shortdesc>
+<conbody>
+<p>After you install WebSphere Network Deployment,  create at least two profiles. One profile acts
+as the deployment manager for the node, the others act as the federated servers.</p>
+<p>Crest the profiles by using the Profile Creation Wizard, which you start the
+<filepath>pct&lt;hardware platform&gt;</filepath> file from the
+<filepath>bin/ProfileCreator</filepath> directory of the WebSphere Application Server
+installation.</p>
+<p>The first choice when using this wizard is to either create:</p>
+<ol>
+<li>A deployment manager profile;</li>
+<li>An Application Server profile.</li>
+</ol>
+<p>The second is the choice to enable administrative security. Enable administrative security on
+profile creation. These settings can be changed later.</p>
+</conbody>
+</concept>

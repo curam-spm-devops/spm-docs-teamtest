@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Setup JMS</title><taskbody><context>
+<p>The Cúram application uses persistent messages. A JMS file store must be created for storing persistent messages. To create a directory on the file system where the JMS file store will be kept (e.g. <filepath>&lt;WebLogic Server Install directory&gt;/user_projects/domains/&lt;DomainName&gt;/jms_file_store</filepath>), complete the following steps using the Administration Console:</p></context>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Services</uicontrol><uicontrol>Persistent Stores</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click <menucascade><uicontrol>New</uicontrol><uicontrol>Create FileStore</uicontrol></menucascade> and set the following properties:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>CuramJMSFileStore</q></p>
+<p><uicontrol>Target</uicontrol> : <q>AdminServer</q></p>
+<p><uicontrol>Directory</uicontrol> : &lt;directory created above&gt;;</p></info></step>
+<step><cmd>Click the <uicontrol>OK</uicontrol> button;</cmd></step>
+<step><cmd>Navigate to <menucascade><uicontrol>&lt;DomainName&gt;</uicontrol><uicontrol>Services</uicontrol><uicontrol>Messaging</uicontrol><uicontrol>JMS Servers</uicontrol></menucascade>;</cmd></step>
+<step><cmd>Click the <uicontrol>New</uicontrol> button to configure a new JMSServer and set the following properties:</cmd>
+<info><p><uicontrol>Name</uicontrol> : <q>CuramJMSServer</q></p>
+<p><uicontrol>Persistent Store</uicontrol> : <q>CuramJMSFileStore</q></p></info></step>
+<step><cmd>Click the <uicontrol>Next</uicontrol> button and select the AdminServer as the target server;</cmd></step>
+<step><cmd>Click the <uicontrol>Finish</uicontrol> button to complete;</cmd></step></steps></taskbody></task>

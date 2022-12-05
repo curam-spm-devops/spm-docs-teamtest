@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2973">
+<title>Configuring a node</title>
+<titlealts>
+<searchtitle>Configuring a node</searchtitle>
+</titlealts>
+<shortdesc>Configure the server before deploying an application on the registered node by using the
+Deployment Manager Administration Console. The configuration is then synchronized with the node's
+federated servers.</shortdesc>
+<conbody>
+<p>The Node Agent, which enables communication between the Deployment Manager and its federated
+servers, is required to be started. This must be done via the <filepath>startNode.bat</filepath> or
+<filepath>startNode.sh</filepath> command in the <filepath>profiles/&lt;federated profile
+name&gt;/bin</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> installation.</p>
+<p>After the Node Agent is started, all control is handed over to the Deployment Manager for this
+Node's servers. To start or stop a server in the Deployment Manager Administration Console:</p>
+<ol>
+<li>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade>;</li>
+<li>Check the server to be started or stopped from the list and click the
+<uicontrol>Start</uicontrol> or <uicontrol>Stop</uicontrol> button as required.</li>
+</ol>
+<p>Now configure the federated servers, all configuration is done through the Deployment Manager
+Administrative Console. <xref
+href="c_WEBSPHAPS_Configuration3ManualWebsphereApplicationServerCon2.dita"/> describes the manual
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> configuration for a
+basic installation, and should be followed with the differences identified below. When saving the
+master configuration ensure you manually force synchronization via the Administrative Console:</p>
+<ol>
+<li>Navigate to <menucascade><uicontrol>System Administration</uicontrol><uicontrol>Save Changes to
+Master Repository</uicontrol></menucascade>;</li>
+<li>Check the <uicontrol>Synchronize changes with Nodes</uicontrol> check box;</li>
+<li>Select the <uicontrol>Save</uicontrol> button. The synchronization may take some time;</li>
+<li>Select the system or <keyword conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>
+logs for synchronization completion. These messages might vary by <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> release, but you are looking for
+something like:<fig>
+<pre>ADMS0208I: The configuration synchronization complete for cell.</pre>
+</fig>
+<p>Once synchronization is complete, review the server status and various logs to ensure
+success;</p></li>
+</ol>
+<p><xref href="t_WEBSPHAPS_Configuration3ConfigureAdministrationSecurity1.dita"/> details the
+security setup required during manual configuration. This setup requires the
+<filepath>Registry.jar</filepath> to be copied to a directory within the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> installation. The
+<filepath>Registry.jar</filepath> should be copied from <filepath>CuramSDEJ/lib</filepath> to the
+<filepath>lib</filepath> directory of the Deployment Manager installation and any federated
+installations.</p>
+<p><xref href="t_WEBSPHAPS_Configuration3ConfigureAdministrationSecurity1.dita"/> this security
+setup also requires the <filepath>CryptoConfig.jar</filepath> to be copied to the
+<filepath>java/jre/lib/ext</filepath> directory within the WebSphere Application Server
+installation. The <filepath>CryptoConfig.jar</filepath> should be copied to the same directory
+structure for any other WebSphere Application Server installations in the environment.</p>
+<note type="note">Before building the <filepath>Curam.ear</filepath> for deployment note the
+<i>BOOTSTRAP_ADDRESS</i> of the server that these are installed onto. The <i>BOOTSTRAP_ADDRESS</i>
+is located in the same list of ports as the <i>SOAP_CONNECTOR_ADDRESS</i> described previously.
+<p>By default the <i>BOOTSTRAP_ADDRESS</i> expected by the application is 2809. To solve this issue
+either change this address or alternatively change the relevant property in your
+<filepath>AppServer.properties</filepath> file.</p>
+<p>The property that should be changed is the curam.server.port value in the
+<filepath>AppServer.properties</filepath> file. Changing this affects the port value in the
+<filepath>web.xml</filepath> file when building an EAR file. For more information on the
+<filepath>web.xml</filepath> file consult the <cite>Cúram Web Client Reference
+Manual</cite>.</p></note>
+</conbody>
+</concept>

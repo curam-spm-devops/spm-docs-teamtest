@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="d1e1867" xml:lang="en-us">
+<title>Adding the login module</title>
+<shortdesc>Use the administration console to add the login module.</shortdesc>
+<conbody>
+<ol>
+<li>Browse to <menucascade>
+<uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol>
+</menucascade>.</li>
+<li>Expand <uicontrol>Java Authentication and Authorization Service</uicontrol> entry under the
+<uicontrol>Authentication</uicontrol> heading and select <uicontrol>System logins</uicontrol>.</li>
+<li>Select the relevant alias from the list. Configure the login module for the DEFAULT, WEB_INBOUND
+and RMI_INBOUND aliases as follows:<ol>
+<li>Select <uicontrol>New</uicontrol> to configure a new Login Module.</li>
+<li>Set the <uicontrol>Module class name</uicontrol> field to be
+<tt>curam.util.security.CuramLoginModule</tt>.</li>
+<li>Select the <uicontrol>Use login module proxy</uicontrol> option.</li>
+<li>Select REQUIRED in the <uicontrol>Authentication strategy</uicontrol> field.</li>
+<li>Click <uicontrol>OK</uicontrol> to confirm the addition of the new login module.</li>
+</ol></li>
+<li>Select the newly added <tt>curam.util.security.CuramLoginModule</tt> from the list.</li>
+<li>Select the <uicontrol>Custom properties</uicontrol> link under the <uicontrol>Additional
+Properties</uicontrol> heading.</li>
+<li>Select <uicontrol>New</uicontrol> to add the required properties that are listed in table 1.
+<table id="d1e1908" scale="70">
+<title>CuramLoginModule Custom Properties</title>
+<tgroup cols="3">
+<colspec colnum="1" colwidth="1*"/>
+<colspec colnum="2" colwidth="1.1*"/>
+<colspec colnum="3" colwidth="2.74*"/>
+<thead>
+<row>
+<entry>
+<p>Name</p>
+</entry>
+<entry>
+<p>Example Value</p>
+</entry>
+<entry>
+<p>Description</p>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<p>exclude_usernames</p>
+</entry>
+<entry>
+<p>websphere, db2admin</p>
+</entry>
+<entry>
+<p>Required. A list of user names to be excluded from authentication. This list must include the
+<keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> administration user
+(as specified in <xref href="t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.dita"/>) and
+the database user (as specified in <xref
+href="t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.dita"/>). The default delimiter is a
+comma, but might be overridden by exclude_usernames_delimiter. Any users who are listed here must be
+defined in the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> user
+registry. </p>
+</entry>
+</row>
+<row>
+<entry>
+<p>exclude_usernames_delimiter</p>
+</entry>
+<entry>
+<p>|</p>
+</entry>
+<entry>
+<p><i>Optional</i>. A delimiter for the list of user names provided in exclude_usernames. A
+delimiter other than the default comma can be useful when user names contain embedded commas as with
+LDAP users.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>login_trace</p>
+</entry>
+<entry>
+<p>true</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property must be set to <tt>true</tt> to debug the authentication process.
+If set to <tt>true</tt> the invocation of the login module results in tracing information that is
+added to the <filepath>SystemOut.log</filepath> file.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>module_name</p>
+</entry>
+<entry>
+<p>DEFAULT, WEB_INBOUND or RMI_INBOUND</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property must be set to one of DEFAULT, WEB_INBOUND or RMI_INBOUND
+depending on the configuration the login module is being defined for. It is used only when
+login_trace is set to <tt>true</tt> for tracing purposes.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>check_identity_only</p>
+</entry>
+<entry>
+<p>true</p>
+</entry>
+<entry>
+<p><i>Optional</i>. If this property is set to <tt>true</tt> the login module does not perform the
+usual authentication verifications. Instead, it ensures that the user exists on the database table.
+In this case, the configured <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> user registry will not be
+by-passed and will be queried after the login module. This option is intended where LDAP support is
+required or an alternative authentication mechanism is to be used.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>user_registry_enabled</p>
+</entry>
+<entry>
+<p>true</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property is used to override the behavior of by-passing the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> user registry. If this
+property is set to true the user registry is queried during the authentication process. If this
+property is set to false, the user registry is not queried.</p>
+<note type="note">If you are specifying identity only and you are using LDAP, you might need to take
+more configuration steps. For more information, see <xref
+href="t_WEBSPHZOS_Configuration6SpecialConfigurationStepsWhenUsingI1.dita"/>.</note>
+</entry>
+</row>
+<row>
+<entry>
+<p>user_registry_enabled_types</p>
+</entry>
+<entry>
+<p>EXTERNAL</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property is used to specify a comma-delimited list of external user types
+that is processed against the user registry (for example, LDAP). For more information, see <xref
+href="c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.dita"/> for information on the
+processing of the user registry.</p>
+</entry>
+</row>
+<row>
+<entry>
+<p>user_registry_disabled_types</p>
+</entry>
+<entry>
+<p>EXTGEN,EXTAUTO</p>
+</entry>
+<entry>
+<p><i>Optional</i>. This property specifies a comma-delimited list of external user types that is
+not processed against the user registry (for example, LDAP). See <xref
+href="c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.dita"/> for more
+information.</p>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table><?Pub Caret 0?></li>
+<li>Select <uicontrol>OK</uicontrol> to confirm the addition of the new login module.</li>
+</ol>
+</conbody>
+</concept>
+<?Pub *0000006119?>

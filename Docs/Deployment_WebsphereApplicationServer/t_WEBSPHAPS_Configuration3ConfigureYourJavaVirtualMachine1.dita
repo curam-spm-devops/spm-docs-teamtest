@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the Java Virtual Machine</title>
+<titlealts>
+<searchtitle>Configure the Java Virtual Machine</searchtitle>
+</titlealts>
+<shortdesc>Configure the Java Virtual Machine (JVM).</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Navigate to <menucascade><uicontrol>Servers</uicontrol><uicontrol>Server
+Types</uicontrol><uicontrol>WebSphere application servers</uicontrol></menucascade>.</cmd></step>
+<step><cmd>Select the appropriate server from the list.</cmd></step>
+<step><cmd>In the <uicontrol>Server Infrastructure</uicontrol> section expand <uicontrol>Java and
+Process Management</uicontrol>.</cmd></step>
+<step><cmd>Select the <uicontrol>Process definition</uicontrol> link.</cmd></step>
+<step><cmd>In the <uicontrol>Additional Properties</uicontrol> section Select the <uicontrol>Java
+Virtual Machine</uicontrol> link.</cmd></step>
+<step><cmd>Set the fields as follows:</cmd>
+<info>
+<p><uicontrol>Initial heap size</uicontrol>: <option>1024</option></p>
+<p><uicontrol>Maximum heap size</uicontrol>: <option>1024</option></p>
+<p>Select <uicontrol>Apply</uicontrol> to set the values.</p>
+</info></step>
+<step><cmd>In the <uicontrol>Additional Properties</uicontrol> section, select the <uicontrol>Custom
+Properties</uicontrol> link.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> and set the properties as follows:</cmd><info>
+<ul>
+<li><uicontrol>Name</uicontrol>:
+<tt>com.ibm.websphere.security.util.authCacheCustomKeySupport</tt></li>
+<li><uicontrol>Value</uicontrol>: <tt>false</tt></li>
+<li>Select <uicontrol>OK</uicontrol> to add the property</li>
+</ul>
+</info>
+</step>
+<step><cmd><i>This step is only required on non-Windows platforms.</i></cmd>
+<info>
+<p>Select <uicontrol>New</uicontrol> and set the properties as follows:</p>
+<p><uicontrol>Name</uicontrol> : <tt>java.awt.headless</tt></p>
+<p><uicontrol>Value</uicontrol> : <tt>true</tt></p>
+<p>Select <uicontrol>OK</uicontrol> to add the property</p>
+</info></step>
+<step><cmd><uicontrol>Save</uicontrol> the changes made to the master configuration.</cmd></step>
+</steps>
+</taskbody>
+</task>

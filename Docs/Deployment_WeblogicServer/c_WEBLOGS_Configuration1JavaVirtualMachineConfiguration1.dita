@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e896">
+<title>Java Virtual Machine Configuration</title><conbody>
+<p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> application requires additional parameters to be passed to the JVM running the Application Server. Set the following system environment variables:</p>
+<ul>
+<li>USER_MEM_ARGS : This should be set to a value relevant to your application e.g.<option>-Xmx712m</option>.  This environment variable is set by the <filepath>app_runtimewls.xml</filepath> script using these properties, which can be defaulted as follows or set in the <filepath>AppServer.properties</filepath> properties file:
+<table id="d1e906">
+<title>Memory Arguments</title><tgroup cols="3"><colspec colnum="1" colwidth="35*"/><colspec colnum="2" colwidth="40*"/><colspec colnum="3" colwidth="25*"/><thead>
+<row>
+<entry>
+<p>Property Name</p></entry>
+<entry>
+<p>Default Value</p></entry>
+<entry>
+<p>Description</p></entry>
+</row></thead><tbody>
+<row>
+<entry>
+<p>curam.server.jvm.heap.size</p></entry>
+<entry>
+<p><tt>1024</tt></p></entry>
+<entry>
+<p>Specifies the JVM heap initial and maximum sizes.</p></entry>
+</row>
+<row>
+<entry>
+<p>curam.server.jvm.permgen.size</p></entry>
+<entry>
+<p><tt>-XX:PermSize=128m -XX:MaxPermSize=256m</tt></p></entry>
+<entry>Specifies the initial and maximum PermGen sizes.</entry>
+</row></tbody></tgroup>
+</table>
+<p>If you override the USER_MEM_ARGS environment variable directly you must also provide values for the JVM PermGen space as shown in <xref href="#d1e896/d1e906"/>.</p></li>
+<li>WLS_REDIRECT_LOG : Output file e.g.<option>&lt;WebLogic Server Install directory&gt;/&lt;domain_repository&gt;/&lt;DomainName&gt;/logs/&lt;server.name&gt;_Redirect.log</option></li>
+<li>JAVA_OPTIONS : This environment variable is used for two purposes.
+<ol>
+<li>This environment variable should be used to set the headless mode. The headless mode property is only required for UNIX and it should have a value of<option>-Djava.awt.headless=true</option></li>
+<li>This can be used to pass additional parameters to the WebLogic Server JVM when starting the Application Server.</li></ol></li></ul></conbody></concept>

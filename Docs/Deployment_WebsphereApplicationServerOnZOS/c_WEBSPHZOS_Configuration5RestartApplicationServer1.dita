@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1784">
+<title>Restarting the application server</title>
+<shortdesc>Restart the <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/>
+address spaces so that the security changes take effect and required users are added. </shortdesc><conbody>
+<p>The <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_long"/> address spaces
+must be restarted for the security changes to take effect and to add required users. The address
+spaces can be stopped by using the appropriate <filepath>stopServer.sh</filepath> script in the
+<filepath>profiles/default/bin</filepath> directory of the application server installation or by
+using the <keyword conref="../common_files/conrefs.dita#conrefs/zos"/> operator
+<cmdname>STOP</cmdname> command appropriate for your installation.</p>
+<p>Before you restart the application server, you must make the registry and cryptography JAR files
+available to <keyword conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/>. The
+registry JAR file contains classes necessary for the security configuration and the cryptography JAR
+file contains necessary configuration settings and data for password security.</p>
+<p><filepath>Registry.jar</filepath> is located in the <filepath>lib</filepath> directory of the
+SDEJ installation. Copy this file into the <filepath>lib</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> installation. </p>
+<p>Generate the <filepath>CryptoConfig.jar</filepath> file by running the Ant
+<cmdname>configtest</cmdname> target as follows,
+<codeblock>build configtest -Dcrypto.ext.dir=filedir</codeblock>Copy the
+<filepath>CryptoConfig.jar</filepath> from the generated location into the <tm tmtype="reg"
+trademark="Java">Java</tm>
+<filepath>jre/lib/ext</filepath> directory. If you want to customize the Cúram cryptographic
+configuration, see the <cite>Cúram Security Handbook</cite> for more information. </p>
+<p> For sites with a read-only <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> installation file system see
+the procedure <xref href="c_WEBSPHZOS_Configuration6AltJarLocations.dita"/>. </p>
+<p>Start the application server by using the <filepath>startServer.sh</filepath> script in the
+<filepath>profiles/default/bin</filepath> directory of the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_waszos_short"/> installation or the <keyword
+conref="../common_files/conrefs.dita#conrefs/zos"/> operator <cmdname>START</cmdname> command
+appropriate for your installation and open the administrative console to continue with the
+configuration steps.</p>
+<p>Since the security configuration is complete and the scripting changes are made, you can now use
+the SDEJ scripts to restart the application server. See <xref
+href="c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.dita"/>, for more details on
+restarting the server.</p>
+<p>The Administrative Console should now be opened to continue with the configuration. Now that
+global security is enabled, log in to the console with the user name <varname>websphere</varname>
+and password <varname>websphere</varname> that you configured previously.</p>
+</conbody></concept>

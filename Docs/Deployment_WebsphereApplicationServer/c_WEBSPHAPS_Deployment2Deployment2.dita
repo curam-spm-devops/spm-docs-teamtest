@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e864">
+<title>Deploying an application</title>
+<shortdesc>After packaging the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+application and web services application in EAR files, you need to deploy them to the application
+server.</shortdesc><conbody>
+<note>The configuration scripts provided in <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_long"/> only support a simple
+configuration targeted at a single server in the Express or Base editions of <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>.</note>
+<section>
+<title>SDEJ targets</title>
+<p>SDEJ provides targets for installing and un-installing applications on <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/>. As with the
+<cmdname>startserver</cmdname> / <cmdname>stopserver</cmdname> targets, the
+<cmdname>installapp</cmdname> / <cmdname>uninstallapp</cmdname> targets require that the
+<filepath>AppServer.properties</filepath> file is configured correctly (see <xref
+href="c_WEBSPHAPS_Configuration4WebsphereApplicationServerConfigura1.dita"/>). </p>
+</section>
+<section><title>Install an application</title><p>You do not have to restart the server after
+installation, the install target automatically starts the application.</p><p>The Ant target to
+install an application (in the form of an EAR file) is <cmdname>installapp</cmdname> and requires
+the following options:</p><ul>
+<li><option>-Dserver.name</option> The name of the server to install the application on.</li>
+<li><option>-Dear.file</option> The fully qualified name of the EAR file to install.</li>
+<li><option>-Dapplication.name</option> The name of the application.</li>
+</ul>An example command is as follows: <cmdname>build installapp -Dserver.name=CuramServer
+-Dear.file=$SERVER_DIR/build/ear/Curam.ear -Dapplication.name=Curam</cmdname><note type="note">You
+must deploy the EAR file containing the server module before installing any other (client-only) EAR
+files.</note><p>You can use the optional Ant property <codeph>wsadmin.extra.args</codeph>to pass
+additional arguments to wsadmin. The following example sets new <tm tmtype="reg" trademark="Java"
+>Java</tm> heap sizes and passes the option to append wsadmin tracing:
+<cmdname>-Dwsadmin.extra.args="-javaoption -Xms1024m -javaoption -Xmx1024m -appendtrace
+true"</cmdname></p><p>Do not use this property to set arguments already passed using the Ant
+scripts. Also, you can observe these scripts when running Ant by specifying its verbose option:
+<codeph>-v</codeph>. </p></section>
+<section>
+<title>Change SYSTEM Username</title>
+<p>You must change the username for JMS invocation while deploying the application by setting the
+following properties in <filepath>AppServer.properties</filepath> file before deployment:</p>
+<ul>
+<li><option>curam.security.credentials.async.username</option>  The username that JMS invocations
+runs under.</li>
+<li><option>curam.security.credentials.async.password</option> The encrypted password associated
+with the username. The password must be encrypted using the Ant <cmdname>encrypt</cmdname> target.
+See the <cite>Cúram Server Developers Guide</cite> for more information.</li>
+</ul>
+<p>You can also  change the username when the application has been deployed by using the <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname_was_short"/> administrative console. Navigate
+to <menucascade>
+<uicontrol>Applications</uicontrol>
+<uicontrol>Application Types</uicontrol>
+<uicontrol>WebSphere enterprise applications</uicontrol>
+</menucascade> and select the <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/>
+application. Select the <uicontrol>User RunAs roles</uicontrol> link. Check the <tt>everyone</tt>
+role, enter a new username, unencrypted password and click <uicontrol>Apply</uicontrol>. Save the
+changes as detailed in <xref href="c_WEBSPHAPS_Configuration3SaveMasterConfiguration1.dita"/>.</p>
+<note>The new username must be in the Users database table and this user must have a role of
+'SUPERROLE'.</note>
+<p>The SYSTEM user is the user under which JMS messages are executed.</p>
+</section>
+<section><title>Uninstall an Application</title><p>Use the Ant target <cmdname>uninstall</cmdname>
+to uninstall an application. <cmdname>uninstall</cmdname> requires the following options:</p><ul>
+<li><option>-Dserver.name</option> The name of the server the application is installed on.</li>
+<li><option>-Dapplication.name</option> The name of the application to uninstall.</li>
+</ul>An example command is as follows: <cmdname>build uninstallapp -Dserver.name=CuramServer
+-Dapplication.name=Curam</cmdname></section></conbody></concept>

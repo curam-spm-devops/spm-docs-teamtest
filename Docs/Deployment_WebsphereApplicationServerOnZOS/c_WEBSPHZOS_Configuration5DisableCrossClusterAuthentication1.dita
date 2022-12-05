@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e2041">
+<title>Disabling cross-cluster authentication</title>
+<shortdesc>The <varname>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</varname> property
+determines the behavior of a single sign-on LTPA Token2 login.</shortdesc><conbody>
+<p> The property <varname>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</varname> is set
+to <tt>false</tt> to ensure that web sessions can seamlessly transfer between two servers in a
+cluster without being asked for security credentials.</p>
+<ol>
+<li>Browse to <menucascade>
+<uicontrol>Security</uicontrol>
+<uicontrol>Global security</uicontrol>
+</menucascade>.</li>
+<li>Select <uicontrol>Custom properties</uicontrol> under the <uicontrol>Authentication</uicontrol>
+heading and select <uicontrol>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</uicontrol>
+property from the list of available properties.</li>
+<li>Under General Properties, change the value of the
+<uicontrol>com.ibm.ws.security.webChallengeIfCustomSubjectNotFound</uicontrol> property to
+<i>false</i>.</li>
+<li>Select <uicontrol>OK</uicontrol> to confirm the addition.</li></ol>
+<section>
+<title>Save the master configuration</title>
+<p>Click the <uicontrol>Save</uicontrol> link in the <uicontrol>Message(s)</uicontrol> box to save
+the master configuration. This box is displayed only after configuration changes are made.</p>
+</section></conbody></concept>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en-us" id="d1e1">
+<title>Configure the XA database driver data sources</title>
+<titlealts>
+<searchtitle>Configure the XA database driver data sources</searchtitle>
+</titlealts>
+<shortdesc>Add a data source and configure the properties.</shortdesc>
+<taskbody>
+<context>
+<p>The following steps should be repeated twice, substituting
+<varname>&lt;DatasourceName&gt;</varname> (without the angle brackets) with the
+<option>curamdb</option> and then<option>curamsibdb</option>.</p>
+</context>
+<steps>
+<step><cmd>Select the <uicontrol>DB2 Using IBM JCC Driver(XA)</uicontrol> displayed on the list of
+existing providers. This opens the configuration screen again.</cmd></step>
+<step><cmd>Select the <uicontrol>Data sources</uicontrol> link under <uicontrol>Additional
+Properties</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>New</uicontrol> to add a new data source.</cmd></step>
+<step><cmd>Set the fields as follows:</cmd>
+<info>
+<ul>
+<li><uicontrol>Data source name</uicontrol> : <varname>&lt;DatasourceName&gt;</varname></li>
+<li><uicontrol>JNDI Name</uicontrol> : <varname>jdbc/&lt;DatasourceName&gt;</varname></li>
+</ul>
+</info></step>
+<step><cmd>Select <uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Set the <uicontrol>URL</uicontrol> Value field to:</cmd>
+<info>
+<p><filepath>jdbc:oracle:thin:@//serverName:port/databaseServiceName</filepath>, to connect to
+database using Oracle service name.</p>
+<p>or</p>
+<p><filepath>jdbc:oracle:thin:@serverName:port:databaseName</filepath>, to connect to database using
+Oracle SID name.</p>
+<p>Where:<ul>
+<li><varname>serverName</varname> is the name of the server hosting the database.</li>
+<li><varname>port</varname> is the port number the database is listening on.</li>
+<li><varname>databaseName</varname> is the SID of the database.</li>
+<li><varname>databaseServiceName</varname> is the service name of the database.</li>
+</ul></p>
+</info></step>
+<step><cmd>Set the <uicontrol>Data store helper class name</uicontrol> to be <tt>Oracle 11g data
+store helper</tt>.</cmd></step>
+<step><cmd>Leave all other fields untouched unless a specific change is required and select
+<uicontrol>Next</uicontrol>. </cmd><info>
+<note>Oracle recommends using the <uicontrol>URL</uicontrol> format
+<filepath>jdbc:oracle:thin:/@//serverName:port/databaseServiceName</filepath> to connect to Oracle
+database using service name. But this <uicontrol>URL</uicontrol> format(extra '/' before the '@' in
+the <uicontrol>URL</uicontrol>) is not supported by the WebSphere Application Server admin console.
+So, the Oracle service name <uicontrol>URL</uicontrol> described above (without extra '/' before the
+'@' in the URL) should be used while configuring Oracle data source from admin console, to connect
+to Oracle database using service name.</note>
+</info></step>
+<step><cmd>Set the <uicontrol>Authentication alias for XA recovery</uicontrol> to:
+<varname>&lt;valid for database&gt;</varname></cmd><info>
+<p>where the <varname>&lt;valid for database&gt;</varname> alias used is the one set up in <xref
+href="t_WEBSPHAPS_Configuration3CreatingDataSourceLoginAlias1.dita"/>.</p>
+<p>Leave all other fields unchanged unless a specific change is required and select
+<uicontrol>Next</uicontrol>.</p>
+</info></step>
+<step><cmd>Set the <uicontrol>Component-managed authentication alias</uicontrol> drop down value to:
+<varname>&lt;valid for database&gt;</varname>.</cmd></step>
+<step><cmd>Select <uicontrol>Finish</uicontrol> to confirm the changes and continue.</cmd></step>
+</steps>
+</taskbody>
+</task>

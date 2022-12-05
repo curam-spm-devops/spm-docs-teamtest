@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="ctnpm_ins_tcr_int_trademarks" xml:lang="en-us">
+<title>Trademarks</title><?Pub Caret -2?>
+<conbody>
+<!--Note to writers: Go to the following IBM Trademarks Web page to ensure that you have the latest trademark statements and to ensure that you are following the latest marking and attribution rules for trademarks: 
+http://w3-3.ibm.com/legal/ipl/iplsite.nsf/pages/wtts-trademarks+home
+Your trademark attribution statement should look something like the example below. After the list of IBM trademarks are attribution statements for Lotus, followed by attribution statements for three of the special non-IBM companies (Intel, Microsoft, and Sun). It is unlikely that an information unit would contain trademarks from so many different companies, but the attribution statements are included as examples. Include the following attribution statements if these products are mentioned in your document. Additionally, if the specific trademarks of UNIX, SET and the SET logo are within your document, you must provide attribution exactly as written below. No other trademarks of Open Group or SET Secure Electronic Transaction LLC are to be given attribution.-->
+<!--From the taskbar at the top of your IDD file, run the trademark tool: IBMIDDOC > Trademarks > Identify Trademarks in Whole document the mark all IBM trademarks and other List IBM trademarks alphabetically. For complete instructions, see the Trademarking information topic at http://utic.raleigh.ibm.com/help/index.jsp and http://www.ibm.com/legal/copytrade.shtml.
+-->
+<!--List IBM trademarks alphabetically. The IBM trademarks in the following list are only a representative sample found in a typical Tivoli book.-->
+<p><tm tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm>, the <tm
+tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> logo, and <tm
+tmclass="IGNORE" tmtype="reg" trademark="ibm.com">ibm.com</tm> are
+trademarks or registered trademarks of International Business Machines
+Corp., registered in many jurisdictions worldwide. Other product and
+service names might be trademarks of <tm tmclass="IGNORE" tmtype="reg"
+trademark="IBM">IBM</tm> or other companies. A current list of <tm
+tmclass="IGNORE" tmtype="reg" trademark="IBM">IBM</tm> trademarks
+is available on the Web at “ Copyright and trademark information ”
+at <xref format="html" href="http://www.ibm.com/legal/copytrade.shtml"
+scope="external"></xref>.</p>
+<p><tm tmclass="IGNORE" tmtype="tm" trademark="Adobe">Adobe</tm>,
+the <tm tmclass="IGNORE" tmtype="tm" trademark="Adobe">Adobe</tm> logo, <tm
+tmclass="IGNORE" tmtype="tm" trademark="PostScript">PostScript</tm>,
+and the <tm tmclass="IGNORE" tmtype="tm" trademark="PostScript">PostScript</tm> logo
+are either registered trademarks or trademarks of <tm tmclass="IGNORE"
+tmtype="tm" trademark="Adobe">Adobe</tm> Systems Incorporated in the
+United States, and/or other countries.</p>
+<p><tm tmtype="tm" trademark="Java">Java</tm> and all Java-based trademarks
+and logos are trademarks or registered trademarks of Oracle and/or
+its affiliates. </p>
+<p> The registered trademark <tm tmclass="IGNORE" tmtype="reg" trademark="Linux">Linux</tm> is
+used pursuant to a sublicense from the Linux Foundation, the exclusive licensee of Linus Torvalds,
+owner of the mark on a world­wide basis.</p>
+<p><tm tmtype="tm" trademark="Microsoft">Microsoft</tm>, <tm tmtype="tm"
+trademark="Windows">Windows</tm>, <tm tmtype="tm" trademark="Windows NT">Windows
+NT</tm>, and the <tm tmtype="tm" trademark="Windows">Windows</tm> logo
+are trademarks of <tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Corporation
+in the United States, other countries, or both.</p>
+<p><tm tmclass="IGNORE" tmtype="tm" trademark="UNIX">UNIX</tm> is
+a registered trademark of The Open Group in the United States and
+other countries. </p>
+<p>Other names may be trademarks of their respective owners. Other
+company, product, and service names may be trademarks or service marks
+of others.</p>
+<!--<table frame="none">
+<tgroup cols="2"><colspec colname="col1" colsep="0" colwidth="32*"/>
+<colspec colname="col2" colwidth="166*"/>
+<tbody>
+<row>
+<entry colname="col1"><image href="../shared/Java.gif"><alt>Java compatible
+logo</alt></image></entry>
+<entry colname="col2"><tm tmclass="IGNORE" tmtype="tm" trademark="Java">Java</tm> and
+all Java-based trademarks and logos are trademarks or registered trademarks
+of Oracle and/or its affiliates.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>-->
+<!--After listing the IBM trademarks in the previous paragraph, include the following non-IBM company trademarks if mentioned in your book:-->
+<!--Note to writers: IF and ONLY IF your product is Java-certified, you must ensure that this Notices.ide file contains the following Java logo in addition to the Java trademark statement. If your product mentions Java, but is not Java-certified, use only the Java trademark statement without the logo (the java.gif and java.eps files are also included at the Tivoli ID Home page > Working with style sheets):-->
+</conbody>
+<?tm 1401957731 19?>
+</concept>
+<?Pub *0000005204?>

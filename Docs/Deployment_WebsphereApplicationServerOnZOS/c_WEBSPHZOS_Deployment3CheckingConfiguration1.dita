@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e1054">
+<title>Checking the configuration</title>
+<shortdesc>Check that your property files are configured correctly.</shortdesc><conbody>
+<p>Check the property files and configuration by running the Ant <cmdname>configtest</cmdname>
+target from the folder where you extracted the release.zip file that is described in <xref
+href="c_WEBSPHZOS_instCur_onZOS.dita#d1e515"/>. Run the following commands:</p>
+<codeblock>SetEnvironment.sh
+./build.sh configtest</codeblock>
+<p>Review the output for any errors or warnings and resolve them.</p></conbody></concept>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en-us" id="d1e453">
+<title>Multiple EAR files</title>
+<titlealts>
+<searchtitle>Multiple EAR files</searchtitle>
+</titlealts>
+<shortdesc>Building an Application EAR also takes an optional file to allow you to split the client
+components into different WAR and EAR files and also to allow control of some of the EAR
+configuration and included modules. </shortdesc>
+<conbody>
+<p>The optional file is named <filepath>deployment_packaging.xml</filepath> and should be placed in
+your <filepath>SERVER_DIR/project/config</filepath> directory.</p>
+<p>The format of the <filepath>deployment_packaging.xml</filepath> file is as follows: </p>
+<codeblock>&lt;deployment-config&gt;
+  &lt;ear name="Curam"
+      requireServer="true"&gt;
+    &lt;components&gt;custom,sample,SamplePublicAccess,core&lt;/components&gt;
+    &lt;context-root&gt;/Curam&lt;/context-root&gt;
+  &lt;/ear&gt;
+  &lt;ear name="CuramExternal"&gt;
+    &lt;components&gt;SamplePublicAccessExternal&lt;/components&gt;
+    &lt;context-root&gt;/CuramExternal&lt;/context-root&gt;
+    &lt;custom-web-xml&gt;${client.dir}/custom_web_xml&lt;/custom-web-xml&gt;
+  &lt;/ear&gt;
+&lt;/deployment-config&gt;</codeblock>
+<p>Each file can have multiple <tt>ear</tt> elements and results in an EAR file being produced in
+the <filepath>SERVER_DIR/build/ear/WAS</filepath> directory. The options for each element are:</p>
+<ul>
+<li><option>name</option>
+<p>This option controls the name of the EAR created from the process.</p></li>
+<li><option>requireServer</option>
+<p>This optional attribute controls whether the server module is included in the EAR file. Valid
+entries are <tt>true</tt> or <tt>false</tt>. The default value is <tt>false</tt>. If deploying
+multiple EAR files to one application server, this attribute must be set to <tt>true</tt> for only
+one EAR file as only one <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/> server
+module should be deployed per cluster. If <tt>requireServer</tt> is set to <tt>true</tt> for
+multiple EAR files, then the other EAR files must be deployed in another cluster to avoid
+conflicts.</p></li>
+<li><option>components</option>
+<p>This option controls which of the client components get placed into the EAR file. It also
+controls the component order for the rebuild of the client that will need to take place. Usually the
+core directory doesn't form part of the component order but on this occasion it is important to add
+this to qualify whether it should be included in a particular WAR file. Entries here should follow
+the typical order of components defined in the <cite>Cúram Server Developer's Guide</cite> and
+should be comma separated.</p></li>
+<li><option>context-root</option>
+<p>This option forms the Context Root of the WAR module in the <filepath>application.xml</filepath>
+deployment descriptor. Entries here should begin with a forward-slash.</p></li>
+<li><option>custom-web-xml</option>
+<p>This optional element controls whether a custom <filepath>web.xml</filepath> file should
+overwrite the standard version in the WAR file. Entries here should be an Apache Ant path to the
+directory containing the <filepath>web.xml</filepath> file.</p>
+<p>You can use references to environment variables as part of this path. For example,
+<tt>${client.dir}</tt> can be used to point to the web client directory and <tt>${SERVER_DIR}</tt>
+can be used to point to the server directory.</p></li>
+<li><option>requireSearchServer</option>
+<p>See <cite>Cúram Generic Search Server</cite> for more information.</p></li>
+</ul>
+<p>For each web client (WAR file) a separate web client component is required to contain its
+customizations. In the case of multiple web clients, your CLIENT_COMPONENT_ORDER environment
+variable will include all your custom components; but, separate &lt;ear&gt; elements will be
+required, one for each custom web component (and other components as needed).</p>
+<p>As with the standard target, a fully built <keyword
+conref="../common_files/conrefs.dita#conrefs/prodname"/> application must be available. For details
+on how to build an application, see the <cite>Cúram Server Developer's Guide</cite>.</p>
+</conbody>
+</concept>

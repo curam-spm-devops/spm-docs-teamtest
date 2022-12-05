@@ -1,0 +1,20 @@
+name: CI
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build HTML5 using DITA-OT commands
+        uses: dita-ot/dita-ot-action@master
+        with:
+#         install : |
+#         dita install file:/github/workspace/Docs/dita-ot-doc.css
+         build: |
+           dita -i file:/github/workspace/Docs/spm_navigation_sample.ditamap -o SPM_HTML5  -f html5 --filter=file:/github/workspace/Docs/cur_spm_test.ditaval:file:/github/workspace/Docs/cur_spm802.ditaval:file:/github/workspace/Docs/cur_base_spm800.ditaval --nav-toc=full --args.copycss=yes
+
