@@ -14,7 +14,7 @@ jobs:
         uses: dita-ot/dita-ot-action@master
         with:
 #         install : |
-#         dita install file:/github/workspace/Docs/dita-ot-doc.css
+#         dita /Docs/dita-ot-doc.css
          build: |
-           dita -i file:/github/workspace/Docs/spm_navigation_sample.ditamap -o SPM_HTML5  -f html5 --filter=file:/github/workspace/Docs/cur_spm_test.ditaval:file:/github/workspace/Docs/cur_spm802.ditaval:file:/github/workspace/Docs/cur_base_spm800.ditaval --nav-toc=full --args.copycss=yes
+           dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5  -f html5 --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=full --args.copycss=yes
 
