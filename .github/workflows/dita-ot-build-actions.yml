@@ -11,7 +11,7 @@ jobs:
       contents: write
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Build HTML5 using DITA-OT commands
         uses: dita-ot/dita-ot-action@master
         with:
