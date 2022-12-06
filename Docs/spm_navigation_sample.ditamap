@@ -22,15 +22,7 @@ toc="yes" type="topic"/>
 <topicref href="glossary/glossary.dita" format="dita" navtitle="Glossary" toc="yes"/>
 <!--Business Analysts-->
 <topicref format="ditamap" href="deploying_nav_sample.ditamap" navtitle="Deploying"/>
-<mapref href="GraphQL/summary_graphql.md"
-    navtitle="Creating and customizing GraphQL APIs and queries" otherprops="8010flag"
-    format="markdown"/>
-<topicref href="GraphQL/creating/overview.html" format="html" toc="no" otherprops="8010flag"
-    scope="peer" navtitle="GraphQL">
-    <topicmeta>
-      <shortdesc>GraphQL is a query language for APIs.</shortdesc>
-    </topicmeta>
-  </topicref>
+  <!--<mapref href="GraphQL/summary_graphql.md" navtitle="Creating and customizing GraphQL APIs and queries" otherprops="8010flag" format="markdown"/><topicref href="GraphQL/creating/overview.html" format="html" toc="no" otherprops="8010flag" scope="peer" navtitle="GraphQL"><topicmeta><shortdesc>GraphQL is a query language for APIs.</shortdesc></topicmeta></topicref>-->
 
 </map>
 <?Pub *0000005108?>
