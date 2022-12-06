@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002--><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?Pub Sty _display FontColor="red"?><?Pub Inc?><topic id="kc_welcome" outputclass="kc_welcome" xml:lang="en-us">
+    <!--For use with IDWB 4.4.4 and later. Leave the outputclass attributes as-is. The IDWB process automatically formats the product/version welcome page properly. The CSS and any graphics are automatically copied to the output folder.-->
+    <title outputclass="kc_welcome_header"><keyword conref="common_files/conrefs.dita#conrefs/prodname" />
+<keyword conref="common_files/conrefs.dita#conrefs/version" /></title>
+    <!--In the heading title, replace the product name and version number with the one appropriate for this product set. Use V with no period for Version. Leave the word "documentation" in place.-->
+    <!--Replace the example text that follows with your own description. -->
+    <shortdesc outputclass="kc_welcome_header">This documentation applies to <keyword
+conref="common_files/conrefs.dita#conrefs/version"/>.</shortdesc>
+    <!--In the four sections, provide a URL for each item. You can add more links, but try to keep the number small. This is an entry point, not a table of contents.-->
+    <prolog>
+        <copyright>
+<copyryear year="2012"/>
+<copyryear year="2021"/>
+<copyrholder>IBM</copyrholder>
+</copyright>
+        <?Pub Caret -2?>
+    </prolog>
+    <related-links>
+        <linklist outputclass="kc_welcome_box">
+            <title outputclass="kc_welcome_category_head">Getting started</title>
+<link format="html" href="product_overview/spm_prodname_intro.html"
+scope="peer" type="concept">
+<linktext>Product overview</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/PROD_OVERVIEW_shortdesc"
+/></desc>
+</link>
+        <link href="whats_new/spm_800_whatsnew.dita"
+otherprops="version_8.0" format="html" scope="peer">
+<linktext>What's new</linktext>
+<desc>Review a summary of <keyword conref="common_files/conrefs.dita#conrefs/prodname"/>
+updates.</desc></link>
+<link format="html" href="https://www.ibm.com/support/pages/node/6213197" scope="external">
+<linktext>Deep dive videos</linktext>
+<desc>View deep dive videos for product features in the <keyword
+conref="common_files/conrefs.dita#conrefs/prodname"/> Video Library.</desc>
+</link>
+<link href="http://www-01.ibm.com/support/docview.wss?uid=swg27037963" scope="external" format="html">
+<linktext>Release notes</linktext>
+<desc>Detailed release notes describe what is new and changed for each release. The defects that are
+fixed in each release are listed.</desc>
+</link>
+<link href="https://www.ibm.com/support/pages/ibm-c%C3%BAram-social-program-management-supported-prerequisites" scope="external" format="html">
+<linktext>Prerequisites</linktext>
+<desc>Supported prerequisites for <keyword conref="common_files/conrefs.dita#conrefs/prodname" />.</desc>
+</link>
+<link format="html" href="https://www.ibm.com/support/pages/node/1283740" scope="external">
+<linktext>Product download document </linktext>
+<desc>The download document describes how to download and assemble <keyword
+conref="common_files/conrefs.dita#conrefs/prodname"/> V7.0.10 components, and lists the part number
+for each module and installer.</desc>
+</link>
+<link format="html" href="common/t_ctr_install.dita" scope="peer">
+<linktext>Installing the product</linktext>
+</link>
+<link format="html" href="getting_started/t_getting_started_with_upgrade.html" scope="peer">
+<linktext>Upgrade helper</linktext>
+<desc>The <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram Upgrade Helper Pack is your guide to upgrading a custom <keyword conref="common_files/conrefs.dita#conrefs/prodname" /> application.</desc>
+</link>
+            <link format="html"
+href="getting_started/t_ctr_getting_started.html" scope="peer">
+<linktext>Getting started</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/GET_STARTED_shortdesc"
+/></desc>
+</link>
+        </linklist>
+<linklist outputclass="kc_welcome_box">
+<title outputclass="kc_welcome_category_head">New features</title>
+<link format="html" href="whats_new/spm_800_whatsnew.html" scope="peer"
+><linktext>User interface improvements</linktext><desc>The user interface in the caseworker
+application has been refreshed.</desc>
+</link>
+<link format="html" href="IntegratedCaseManagement/c_ICM_case_overview_tab.html" scope="peer"
+><linktext>The case overview</linktext><desc>See entitlement and payment information for active and suspended benefits on cases.</desc>
+</link>
+<link href="https://www.ibm.com/support/pages/node/6217336" format="html" scope="external"
+><linktext>File changes report</linktext><desc>New customized file changes report reduces analysis
+and execution for upgrades.</desc></link>
+<link format="html" href="MSDK/msdk_domain_apis.html" scope="peer"
+><linktext>Domain APIs</linktext><desc>Domain application programming interfaces (APIs) are designed
+to support the rise in interoperability prompted by digital transformation initiatives across
+different industries.</desc>
+</link>
+<link format="dita" scope="local" href="common/ctr_cloud.dita">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/prodname" /> on <keyword conref="common_files/conrefs.dita#conrefs/kubernetes" /></linktext>
+<desc>You can build <keyword conref="common_files/conrefs.dita#conrefs/prodname" /> as a
+containerized application on <keyword conref="common_files/conrefs.dita#conrefs/kubernetes_service" />.</desc>
+</link>
+<link format="html" href="SPMWDS/ctr_SPMWDSPlatform.html" scope="peer">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/DS_long" /></linktext><desc>The <keyword conref="common_files/conrefs.dita#conrefs/DS_short" /> provides foundational packages for building
+accessible and responsive web applications.</desc>
+</link>
+<link format="html"
+href="CitizenEngagement/ctr_CitizenEngagementApplication.html"
+scope="peer">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/UARWA_long"/></linktext>
+<desc>
+<keyword conref="common_files/conrefs.dita#conrefs/CE_component_long"/> with the <keyword
+conref="common_files/conrefs.dita#conrefs/UARWA_long"/> combines <tm trademark="IBM" tmtype="reg"
+>IBM</tm>'s design expertise with extensive and regular user research to deliver a user experience
+that is built to the highest standards.</desc>
+</link>
+<link format="html" href="Participant/c_smartnavigator.html" scope="peer">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/smartnav_long" /></linktext>
+<desc>Use Smart Navigator to quickly navigate to predefined persons, pages, or tabs.</desc>
+</link>
+<link format="html" href="AdvancedEvidenceSharing/c_AES_intro.html" scope="peer">
+<linktext>Enhanced evidence broker</linktext>
+<desc>A redesigned evidence broker provides enhanced sharing of evidence across cases by simplifying
+the transfer of evidence data.</desc>
+</link>
+<link format="html"
+href="install_DevelopmentEnvironment/install_editor_applications.html"
+scope="peer">
+<linktext>Assets to address <keyword conref="common_files/conrefs.dita#conrefs/adobe"/> Flash end of
+life</linktext>
+<desc>You can now remove all Flash dependencies for charts, widgets, and editors for all <keyword
+conref="common_files/conrefs.dita#conrefs/prodname"/> 7.0 versions.</desc>
+</link>
+</linklist>
+        <linklist outputclass="kc_welcome_box">
+            <title outputclass="kc_welcome_category_head">Common tasks</title>
+            <link format="dita"
+href="DevelopmentCompliancy/ctr_CuramDevelopmentCompliancyGuide.dita"
+scope="peer" type="concept">
+<linktext>Complying with development guidelines</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/COMPDEV_shortdesc"/></desc>
+</link>
+            <link
+href="ServerDeveloper/ctr_CuramServerDeveloperGuide.dita" scope="peer">
+<linktext>Developing server applications</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/SERDEV_shortdesc"/></desc>
+</link>
+            <link
+href="ServerModelling/ctr_CuramServerModellingGuide.dita" scope="peer">
+<linktext>Modeling server applications</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/SERMOD_shortdesc"/></desc>
+</link>
+            <link href="ModelingHowTo/ctr_CuramModelingHowTo.dita"
+scope="peer">
+<linktext>Working with the Cúram model in Rational Software Architect Designer</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/MODHOW_shortdesc"/></desc>
+</link>
+            <link format="dita"
+href="WebClientReference/ctr_CuramWebClientReferenceManual.dita"
+scope="peer" type="task">
+<linktext>Developing client applications</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/WEBCREF_shortdesc"/></desc>
+</link>
+            <link href="common/ctr_deploying.dita" scope="local">
+<linktext>Deploying <keyword conref="common_files/conrefs.dita#conrefs/prodname_short"/> to an
+operating environment</linktext>
+</link>
+            <link format="dita"
+href="SystemAdministration/ctr_CuramSystemAdministrationGuide.dita"
+scope="peer">
+<linktext>Configuring the application</linktext>
+<desc><keyword
+conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/SYSCONFIG_shortdesc"/></desc>
+</link>
+        </linklist>
+        <linklist outputclass="kc_welcome_box">
+            <title outputclass="kc_welcome_category_head">Troubleshooting and support</title>
+            <link format="dita" href="Troubleshooting/ctr_Troubleshooting.dita" scope="peer" type="task">
+<linktext>Troubleshooting</linktext>
+<desc>Use this troubleshooting reference information to help you solve specific problems that you might encounter during or after the installation of <tm trademark="IBM" tmtype="reg">IBM</tm> Cúram components.</desc>
+</link>
+<link format="html" href="https://truvenhealth.force.com/WHClientCommunity" scope="external">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/whcc"/></linktext>
+<desc>Connect with other users, learn about new product features, and attend presentations from
+peers to obtain maximum value from the products you use every day.</desc></link>
+<link format="html" href="https://www.ibm.com/watson-health/support" scope="external">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/whsupport"/></linktext>
+<desc>Resources for users of <tm trademark="Watson Health" tmtype="tm">Watson Health</tm>
+offerings</desc></link>
+<link format="html" href="https://www.ibm.com/support/pages/node/521153" scope="external">
+<linktext>Collecting data for <keyword conref="common_files/conrefs.dita#conrefs/prodname" />
+issues</linktext>
+<desc>Information to collect to assist <tm trademark="IBM" tmtype="reg">IBM</tm> Support with troubleshooting issues in <keyword conref="common_files/conrefs.dita#conrefs/prodname" />.</desc>
+</link>
+<link
+href="https://www.ibm.com/mysupport/s/topic/0TO500000002CuYGAU/curam-social-program-management?language=en_US&amp;productId=01t50000004XO7o"
+scope="external" format="html">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/prodname"/> Support </linktext>
+<desc><keyword conref="common_files/conrefs.dita#conrefs/prodname_short"/> support
+page</desc></link>
+<link href="https://www.ibm.com/mysupport/s/" scope="external" format="html">
+<linktext>My Support</linktext>
+<desc>All the support links you need in one page.</desc></link>
+<link
+href="https://www.ibm.com/support/pages/ibmsearch?tc=SS8S5A&amp;dc=D600+DC300+DB600+DB520+DD200+DB560+DA470+DA420&amp;sortby=desc&amp;hpp=20"
+scope="external" format="html">
+<linktext>Flashes, alerts, and bulletins</linktext>
+<desc>Flashes, alerts, and bulletins for <keyword
+conref="common_files/conrefs.dita#conrefs/prodname_short"/></desc></link>
+<link
+href="https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=Smarter+Cities&amp;product=ibm/Other+software/Curam+Social+Program+Management&amp;release=All&amp;platform=All&amp;function=all"
+scope="external" format="html">
+<linktext>Fixes and updates</linktext><desc>Download fixes and updates for <keyword
+conref="common_files/conrefs.dita#conrefs/prodname_short"/> from Fix Central</desc></link>
+<link
+href="https://www.ibm.com/support/pages/ibmsearch?tc=SS8S5A&amp;dc=DB550&amp;sortby=desc&amp;hpp=20"
+scope="external" format="html">
+<linktext>APARs</linktext><desc>APARs for <keyword
+conref="common_files/conrefs.dita#conrefs/prodname_short"/></desc></link>
+</linklist>
+        <linklist outputclass="kc_welcome_box">
+            <title outputclass="kc_welcome_category_head">More information</title>
+            <link format="html" href="http://www-01.ibm.com/support/docview.wss?uid=swg22010542"
+scope="external">
+<linktext><keyword conref="common_files/conrefs.dita#conrefs/cagt"/></linktext>
+<desc>The <keyword conref="common_files/conrefs.dita#conrefs/cagt"/> is available for download from
+Fix Central for <keyword conref="common_files/conrefs.dita#conrefs/prodname"/> v7.0.1.0 onwards.
+CADT enables <keyword conref="common_files/conrefs.dita#conrefs/prodname"/> customers to generate
+Cúram Analysis Documentation for a custom application that is based on Cúram v7.0.1.0 or later. To
+locate the tool on Fix Central, select your version and search for all associated fixes.</desc>
+</link>
+            <link format="html" href="https://www.ibm.com/certify/" scope="external">
+<linktext>IBM professional certification programs</linktext>
+</link>
+            <link format="html" href="https://www.ibm.com/services/learning/ites.wss/zz-en?pageType=page&amp;c=a0011023" scope="external">
+<linktext>IBM training</linktext>
+<desc><tm trademark="IBM" tmtype="reg">IBM</tm> Skills Gateway</desc>
+</link>
+            <!--<link href="x.dita">
+{-COMMENT-}Articles{-ECOMMENT-}
+</link><link href="x.dita">
+{-COMMENT-}Whitepapers{-ECOMMENT-}
+</link>-->
+            <link format="html" href="http://www.redbooks.ibm.com/redbooks.nsf/searchsite?SearchView&amp;query=Curam" scope="external">
+<linktext>Search IBM Redbooks</linktext>
+<!--Redbooks-->
+</link>
+            <!--<link href="x.dita">
+{-COMMENT-}Podcasts{-ECOMMENT-}
+</link>-->
+        </linklist>
+    </related-links>
+    
+</topic><?Pub *0000008418?><?tm 1599146038715 11 Watson Health||IBM ?>

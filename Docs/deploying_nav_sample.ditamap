@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map  xml:lang="en-us">
+<title>Deploying</title>
+
+<topicref href="common/ctr_deploying.dita" navtitle="Deploying">
+<topicref
+href="Deployment_WeblogicServer/ctr_CuramDeploymentGuideForWeblogicServer.dita"
+navtitle="Cúram Deployment Guide for WebLogic Server" scope="peer" toc="no">
+<topicmeta>
+<shortdesc>
+<keyword conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/WEBLOGS_shortdesc"/>
+</shortdesc>
+</topicmeta>
+</topicref>
+<topicref
+href="Deployment_WebsphereApplicationServer/ctr_CuramDeploymentGuideForWebsphereApplicationServer.dita"
+navtitle="Cúram Deployment Guide for WebSphere Application Server" scope="peer" toc="no">
+<topicmeta>
+<shortdesc>
+<keyword conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/WEBSPHAPS_shortdesc"/>
+</shortdesc>
+</topicmeta>
+</topicref>
+<topicref
+href="Deployment_WebsphereApplicationServerOnZOS/ctr_CuramDeploymentGuideForWebsphereApplicationServerOnZOS.dita"
+navtitle="Cúram Deployment Guide for WebSphere Application Server on z/OS" scope="peer" toc="no">
+<topicmeta>
+<shortdesc>
+<keyword conref="common_files/guide_short_descs.dita#shortdescriptionsforguides/WEBSPHZOS_shortdesc"/>
+</shortdesc>
+</topicmeta>
+</topicref>
+ <mapref href="CuramDeploymentGuideForWeblogicServer_toc.ditamap" scope="peer" toc="yes"/>
+<mapref
+ href="CuramDeploymentGuideForWebsphereApplicationServer_toc.ditamap" scope="peer" toc="yes"/>
+<mapref
+ href="CuramDeploymentGuideForWebsphereApplicationServerOnZOS_toc.ditamap" scope="peer" toc="yes"/>
+</topicref>
+<reltable>
+<relheader>
+<relcolspec/>
+<relcolspec/>
+</relheader>
+<relrow>
+<relcell>
+<topicref href="common/ctr_deploying.dita"/>
+</relcell>
+<relcell>
+<topicref href="common/t_ctr_install.dita" scope="peer" format="html"
+navtitle="Installing a development environment"/>
+</relcell>
+</relrow>
+</reltable>
+</map>
+<?Pub *0000003608?>
