@@ -8,15 +8,16 @@
 toc="yes" type="topic"/>
 <topicref href="spm_transition.dita" navtitle="Documentation updates from July 1 2022"/>
 <!--Product overview and getting started-->
-<mapref href="spm_prod_overview_toc.ditamap" navtitle="Product Overview" scope="peer" toc="yes">
-  <topicmeta>
-   <shortdesc><keyword conref="common_files/conrefs.dita#conrefs/prodname"/> supports the end-to-end
-    social program service delivery process. Using <keyword
-     conref="common_files/conrefs.dita#conrefs/prodname"/>, organizations can collaborate around
-    citizen's needs. This collaboration makes governmental services more effective in achieving
-    their social goals, and it also makes access to services easier for citizens.</shortdesc>
-  </topicmeta>
- </mapref>
+<mapref href="spm_prod_overview_toc.ditamap" navtitle="Product Overview" toc="yes">
+    <topicmeta>
+      <shortdesc><keyword conref="common_files/conrefs.dita#conrefs/prodname"/> supports the
+        end-to-end social program service delivery process. Using <keyword
+          conref="common_files/conrefs.dita#conrefs/prodname"/>, organizations can collaborate
+        around citizen's needs. This collaboration makes governmental services more effective in
+        achieving their social goals, and it also makes access to services easier for
+        citizens.</shortdesc>
+    </topicmeta>
+  </mapref>
  <!--<navref mapref="spm_prod_overview_toc.ditamap"/>-->
 <topicref href="glossary/glossary.dita" format="dita" navtitle="Glossary" toc="yes"/>
 <!--Business Analysts-->
