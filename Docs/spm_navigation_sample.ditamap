@@ -3,7 +3,7 @@
  "map.dtd">
 <?Pub Sty _display FontColor="red"?>
 <map xml:lang="en-us">
-<title><!--<keyword conref="common_files/conrefs.dita#conrefs/prodname"/>-->Merative Social Program Management</title>
+<title><keyword conref="common_files/conrefs.dita#conrefs/prodname"/></title>
 <topicref format="dita" href="spm_welcome.dita" navtitle="Merative Social Program Management"
 toc="yes" type="topic"/>
 <topicref href="spm_transition.dita" navtitle="Documentation updates from July 1 2022"/>
