@@ -24,7 +24,7 @@ jobs:
             # Install plugins
             dita install fox.jason.extend.css
             dita install org.doctales.xmltask
-            dita install fox.jason.prismjs
+            dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
          build: |
            dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5 --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=full --args.cssroot=spm-docs-teamtest/Docs --args.css=dita-ot-doc.css --args.copycss=yes
             # Install plugins
