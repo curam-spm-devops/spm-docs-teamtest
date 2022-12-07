@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
  "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<?Pub Inc?>
 <concept id="example3_byrelease" xml:lang="en-us">
 <title>What's new in <keyword conref="../common_files/conrefs.dita#conrefs/prodname"/></title>
 <titlealts>

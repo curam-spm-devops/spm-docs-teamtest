@@ -15,15 +15,25 @@ jobs:
       - name: Build HTML5 using DITA-OT commands
         uses: dita-ot/dita-ot-action@master
         with:
-#         install : |
-#           dita install Docs/dita-ot-doc.css
+         install : |
+            # Run some arbitrary installation commands
+            apt-get update -q
+            apt-get install -qy --no-install-recommends nodejs
+            nodejs -v
+
+            # Install plugins
+            dita install fox.jason.extend.css
+            dita install org.doctales.xmltask
+            dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
          build: |
-           dita -i Docs/spm_navigation_sample.ditamap -o out -f html5 --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=full --args.cssroot=spm-docs-teamtest/Docs --args.css=dita-ot-doc.css --args.copycss=yes
+           dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5 --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=full --args.cssroot=spm-docs-teamtest/Docs --args.css=dita-ot-doc.css --args.copycss=yes
+            # Install plugins
+
       - name: Deploy to Github packages
         # only deploy when pushing to main
         if: ${{(github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.ref_name == 'main'}}
         run: |
-          cd out
+          cd SPM_HTML5
           git config --global init.defaultBranch main
           pwd
           set -v
