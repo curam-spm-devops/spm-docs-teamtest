@@ -2,8 +2,6 @@
 <!--Arbortext, Inc., 1988-2011, v.4002-->
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
  "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<?Pub Inc?>
 <concept id="d1e869" xml:lang="en-us">
 <title>Development architecture</title>
 <shortdesc>The <keyword conref="../common_files/conrefs.dita#conrefs/compname_devenv"/> is composed
@@ -75,7 +73,7 @@ information of the datatypes that are associated with fields.</p>
 overall page hierarchy. Widget types are determined automatically by connections.</p>
 <p>An example of the User Interface Metadata (UIM) code for the <filepath>firstname</filepath> field
 is as follows:</p>
-<codeblock>          &lt;FIELD LABEL="Field.Label.FirstName">
+<codeblock outputclass="language-xml">          &lt;FIELD LABEL="Field.Label.FirstName">
           &lt;CONNECT>
           &lt;SOURCE NAME="Interface1" PROPERTY="firstForename"/>
           &lt;/CONNECT>
@@ -88,7 +86,6 @@ allows for easy localization of client applications. The SOURCE element describe
 contents comes from when the page is displayed. The NAME attribute of the SOURCE element specifies a
 specific back-end interface that is defined in the application model. The PROPERTY attribute
 specifies a particular datum that is returned by the back-end interface.</p>
-<?Pub Caret -2?>
 <p>The exact location of the field on the screen is not specified. There is no information about the
 field's datatype or the associated HTML control. All of this information is provided automatically
 at application build time. The simplicity of UIM pages makes them easy to copy and paste from
@@ -96,4 +93,3 @@ templates, which contributes to a high level of developer productivity.</p>
 </section>
 </conbody>
 </concept>
-<?Pub *0000000940?>
