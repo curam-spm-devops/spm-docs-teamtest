@@ -1,0 +1,154 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="description" content="Use the administration console to add the login module."><title>Adding the login module</title><link rel="stylesheet" type="text/css" href="../commonltr.css"><link rel="stylesheet" type="text/css" href="../dita-ot-doc.css"></head><body id="d1e1867"><nav class="toc" role="navigation"><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/ctr_CuramDeploymentGuideForWebsphereApplicationServerOnZOS.html">Deploying on IBM  WebSphere Application Server for z/OS</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ThirdpartyTools1.html">Third-party tools</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Db2_for_ZOS.html">IBM  Db2 for z/OS</a><ul><li><a href="../install_DevelopmentEnvironment/c_install_Installing2RemoteDbForZosConnectivity1.html">Remote IBM  Db2 for z/OS connectivity</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1WebsphereApplicationServerForZos1.html">IBM  WebSphere Application Server for z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ApacheAnt1.html">Apache Ant</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1JreJavaEe1.html">Java SE and Java EE</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3BuildingEarFiles1.html">Building EAR files</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_instCur_onZOS.html">Installing IBM Cúram Social Program Management on IBM  z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3PropertyFiles1.html">Property files</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Bootstrapproperties1.html">Bootstrap properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Appserverproperties1.html">AppServer properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CheckingConfiguration1.html">Checking the configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6AltJarLocations.html">Alternative crypto JAR file locations</a></li></ul></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6ApplicationServerConfiguration1.html">Application server configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.html">Configuring IBM  WebSphere Application Server for z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityConfiguration1.html">Configuring security</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration6SpecialConfigurationStepsWhenUsingI1.html">Configuring identity only and LDAP</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.html">User registry</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6LoggingAuthenticationProcess1.html">Logging the authentication process</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6EstablishingAlternateExcludeUsernam1.html">Establishing an alternate exclude user name delimiter</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerCachingBe1.html">Application server caching behavior</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCustomProperties1.html">Security custom properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityHardeningMeasures1.html">Security hardening measures</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCryptography.html">Cúram cryptography</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.html">Starting and stopping WebSphere Application Server for z/OS</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment1.html">Deployment</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3PrecompilingJsps1.html">Precompiling JSPs</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment2.html">Deploying an application</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3InstallApplication1.html">Install an application</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3UninstallApplication1.html">Uninstall an application</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CreatingDatabase1.html">Populating the database</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3TestingDeployment1.html">Testing the deployment by logging in to the application</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ManualWebsphereApplicationServerCon1.html">Manual application server configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AdministrativeConsole1.html">The administrative console</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ScriptingSupport1.html">Scripting support</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.html">Creating the data source login alias</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigureDbForZosDataSources1.html">Configure IBM  Db2 for IBM  z/OS data sources</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv1.html">Configuring for a type 4 JDBC universal driver (XA)</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv2.html">Configuring for a type 2 JDBC universal driver (RRS)</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.html">Configuring administration security</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5RestartApplicationServer1.html">Restarting the application server</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5TestDbForZosConnection1.html">Testing the IBM  Db2 for z/OS connections</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureUsers1.html">Configuring users</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SetUpSystemJaasLoginModule1.html">Setting up the system JAAS login module</a><ul><li class="active"><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AddLoginModule1.html">Adding the login module</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ReorderLoginModule1.html">Reordering the login module</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.html">Disabling cross-cluster authentication</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ServerConfiguration1.html">Configuring the server</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureBitSupport1.html">Configure 64-bit support</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJndiLookupPort1.html">Configure the JNDI lookup port</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourClassloaderSettings1.html">Configure ClassLoader settings</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourOrbPassByReference1.html">Configure ORB to pass by reference</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJavaVirtualMachine1.html">Configure the Java virtual machine</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureTimerService1.html">Configuring the timer service</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetUpPortAccess1.html">Set up the port access</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureSessionSecurityIntegration1.html">Configuring session security integration</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupServiceIntegrationBus1.html">Configuring the Service Integration Bus</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5JmsConfiguration1.html">Configuring JMS</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupJmsConnectionFactories1.html">Configuring the JMS connection factories</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueues1.html">Configuring the required queues</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopics1.html">Configuring the required topics</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueueActivationSpecifi1.html">Configuring the queue activation specifications</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopicActivationSpecifi1.html">Configuring the topic activation specifications</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5PostConfiguration1.html">Post configuration tasks</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ManualApplicationDeployment1.html">Manual application deployment</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5WebsphereNetworkDeployment1.html">Network deployment</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SynchronizingChanges1.html">Synchronizing changes</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigurationNode1.html">Configuring </a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DeployingOnNode1.html">Deploying on the node</a></li></ul></li></ul></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">Adding the login module</h1>
+
+<div class="body conbody"><p class="shortdesc">Use the administration console to add the login module.</p>
+<ol class="ol">
+<li class="li">Browse to <span class="ph menucascade"><span class="ph uicontrol">Security</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Global security</span></span>.</li>
+<li class="li">Expand <span class="ph uicontrol">Java Authentication and Authorization Service</span> entry under the
+<span class="ph uicontrol">Authentication</span> heading and select <span class="ph uicontrol">System logins</span>.</li>
+<li class="li">Select the relevant alias from the list. Configure the login module for the DEFAULT, WEB_INBOUND
+and RMI_INBOUND aliases as follows:<ol class="ol" type="a">
+<li class="li">Select <span class="ph uicontrol">New</span> to configure a new Login Module.</li>
+<li class="li">Set the <span class="ph uicontrol">Module class name</span> field to be
+<span class="ph tt" style="font-family: monospace">curam.util.security.CuramLoginModule</span>.</li>
+<li class="li">Select the <span class="ph uicontrol">Use login module proxy</span> option.</li>
+<li class="li">Select REQUIRED in the <span class="ph uicontrol">Authentication strategy</span> field.</li>
+<li class="li">Click <span class="ph uicontrol">OK</span> to confirm the addition of the new login module.</li>
+</ol></li>
+<li class="li">Select the newly added <span class="ph tt" style="font-family: monospace">curam.util.security.CuramLoginModule</span> from the list.</li>
+<li class="li">Select the <span class="ph uicontrol">Custom properties</span> link under the <span class="ph uicontrol">Additional
+Properties</span> heading.</li>
+<li class="li">Select <span class="ph uicontrol">New</span> to add the required properties that are listed in table 1.
+<table class="table scale-70" id="d1e1867__d1e1908"><caption><span class="table--title-label">Table 1. </span><span class="title">CuramLoginModule Custom Properties</span></caption><colgroup><col style="width:20.66115702479339%"><col style="width:22.72727272727273%"><col style="width:56.6115702479339%"></colgroup><thead class="thead">
+<tr class="row">
+<th class="entry" id="d1e1867__d1e1908__entry__1">
+<p class="p">Name</p>
+</th>
+<th class="entry" id="d1e1867__d1e1908__entry__2">
+<p class="p">Example Value</p>
+</th>
+<th class="entry" id="d1e1867__d1e1908__entry__3">
+<p class="p">Description</p>
+</th>
+</tr>
+</thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">exclude_usernames</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">websphere, db2admin</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p">Required. A list of user names to be excluded from authentication. This list must include the
+<span class="keyword">IBM®
+WebSphere® Application Server for z/OS®</span> administration user
+(as specified in <a class="xref" href="t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.html" title="Configure administration security by using the user registry.">Configuring administration security</a>) and
+the database user (as specified in <a class="xref" href="t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.html" title="Use the administrator console to create the data source login alias.">Creating the data source login alias</a>). The default delimiter is a
+comma, but might be overridden by exclude_usernames_delimiter. Any users who are listed here must be
+defined in the <span class="keyword">WebSphere Application Server for z/OS</span> user
+registry. </p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">exclude_usernames_delimiter</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">|</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. A delimiter for the list of user names provided in exclude_usernames. A
+delimiter other than the default comma can be useful when user names contain embedded commas as with
+LDAP users.</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">login_trace</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">true</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. This property must be set to <span class="ph tt" style="font-family: monospace">true</span> to debug the authentication process.
+If set to <span class="ph tt" style="font-family: monospace">true</span> the invocation of the login module results in tracing information that is
+added to the <span class="ph filepath">SystemOut.log</span> file.</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">module_name</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">DEFAULT, WEB_INBOUND or RMI_INBOUND</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. This property must be set to one of DEFAULT, WEB_INBOUND or RMI_INBOUND
+depending on the configuration the login module is being defined for. It is used only when
+login_trace is set to <span class="ph tt" style="font-family: monospace">true</span> for tracing purposes.</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">check_identity_only</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">true</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. If this property is set to <span class="ph tt" style="font-family: monospace">true</span> the login module does not perform the
+usual authentication verifications. Instead, it ensures that the user exists on the database table.
+In this case, the configured <span class="keyword">WebSphere Application Server for z/OS</span> user registry will not be
+by-passed and will be queried after the login module. This option is intended where LDAP support is
+required or an alternative authentication mechanism is to be used.</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">user_registry_enabled</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">true</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. This property is used to override the behavior of by-passing the <span class="keyword">WebSphere Application Server for z/OS</span> user registry. If this
+property is set to true the user registry is queried during the authentication process. If this
+property is set to false, the user registry is not queried.</p>
+<div class="note note note_note"><span class="note__title">Note:</span> If you are specifying identity only and you are using LDAP, you might need to take
+more configuration steps. For more information, see <a class="xref" href="t_WEBSPHZOS_Configuration6SpecialConfigurationStepsWhenUsingI1.html" title="Configure IBM WebSphere Application Server for z/OS with the Ant configure target to use identity only and LDAP">Configuring identity only and LDAP</a>.</div>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">user_registry_enabled_types</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">EXTERNAL</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. This property is used to specify a comma-delimited list of external user types
+that is processed against the user registry (for example, LDAP). For more information, see <a class="xref" href="c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.html" title="By default, the configured IBM WebSphere Application Server for z/OS user registry is not queried as part of authentication. When the CuramLoginModule login module is configured for identity only, the WebSphere Application Server for z/OS user registry is queried.">User registry</a> for information on the
+processing of the user registry.</p>
+</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e1867__d1e1908__entry__1">
+<p class="p">user_registry_disabled_types</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__2">
+<p class="p">EXTGEN,EXTAUTO</p>
+</td>
+<td class="entry" headers="d1e1867__d1e1908__entry__3">
+<p class="p"><em class="ph i">Optional</em>. This property specifies a comma-delimited list of external user types that is
+not processed against the user registry (for example, LDAP). See <a class="xref" href="c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.html" title="By default, the configured IBM WebSphere Application Server for z/OS user registry is not queried as part of authentication. When the CuramLoginModule login module is configured for identity only, the WebSphere Application Server for z/OS user registry is queried.">User registry</a> for more
+information.</p>
+</td>
+</tr>
+</tbody></table></li>
+<li class="li">Select <span class="ph uicontrol">OK</span> to confirm the addition of the new login module.</li>
+</ol>
+</div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SetUpSystemJaasLoginModule1.html" title="Application security uses a JAAS (Java Authentication and Authorization Service) login module for authentication. This login module must be configured for the DEFAULT, WEB_INBOUND and RMI_INBOUND configurations.">Setting up the system JAAS login module</a></div></div></nav></article></main></body></html>

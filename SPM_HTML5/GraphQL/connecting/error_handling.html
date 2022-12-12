@@ -1,0 +1,95 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><title>Error handling in GraphQL</title><link rel="stylesheet" type="text/css" href="../../commonltr.css"><link rel="stylesheet" type="text/css" href="../../dita-ot-doc.css"></head><body id="error-handling-in-graphql"><nav class="toc" role="navigation"><ul><li><a href="../../spm_welcome.html">IBM Cúram Social Program Management  8.0.0, 8.0.1, and 8.0.2</a></li><li><a href="../../spm_transition.html">Documentation updates from July 1 2022</a></li><li><a href="../../spm_prod_overview_toc.html">Product Overview</a></li><li><a href="../../glossary/glossary.html">Glossary</a></li><li><a href="../../common/ctr_deploying.html">Deploying Social Program Management</a><ul></ul></li><li><a href="../../GraphQL/summary_graphql.html">GraphQL</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Error handling in GraphQL</h1><div class="body"><p class="p">Where an error occurs in GraphQL while a query is being processed, the response is still a <code class="ph codeph">200 OK</code> response because many queries might be combined into one.</p><p class="p">As a result, some queries might pass while some fail. Therefore, a single error response code cannot be used to reflect passing and failing. Instead, GraphQL adds an <code class="ph codeph">errors</code> object, in addition to the <code class="ph codeph">data</code>  object, to the response body.</p></div><article class="topic nested1" aria-labelledby="ariaid-title2" id="example"><h2 class="title topictitle2" id="ariaid-title2">Example</h2><div class="body"><p class="p">In the example that follows, only one query was included in the request. Since no data was returned, the 'data' attribute is set to 'null'. If multiple queries were combined and only one failed, then the 'data' object contains the responses of the successful
+query while the 'errors' object contains the information of an unsuccessful query.</p><p class="p">The underlying graphql libraries assign the values for the <code class="ph codeph">message</code>, <code class="ph codeph">locations</code>, and <code class="ph codeph">path</code> attributes and the <code class="ph codeph">classification</code> attribute inside the <code class="ph codeph">extensions</code> object.</p><p class="p">The <code class="ph codeph">path</code> attribute contains the name of the query that was called and that is causing the error. The name of the query is useful where multiple queries were combined into one so that the query that caused the error can be identified.</p><p class="p">The <code class="ph codeph">message</code> attribute contains information that might be helpful for debugging. Do not display the information on a user interface.</p><p class="p">The GraphQL server in the REST application adds information that is specific to the error to the <code class="ph codeph">extensions</code> object.</p><pre class="pre codeblock"><code>{
+  "errors": [
+    {
+      "message": "Variable 'case_id' has an invalid value. Unable to parse variable value as a Long",
+      "locations": [
+        {
+          "line": 1,
+          "column": 26
+        }
+      ],
+      "path": "/readCase",
+      "extensions": {
+        "classification": "ValidationError"
+      }
+    }
+  ],
+  "data": {
+    "readCase": null
+  }
+}</code></pre></div></article><article class="topic nested1" aria-labelledby="ariaid-title3" id="structure-of-the-error-response"><h2 class="title topictitle2" id="ariaid-title3">Structure of the error response</h2><div class="body"><p class="p">The error response differentiates between client and internal errors.</p></div><article class="topic nested2" aria-labelledby="ariaid-title4" id="client-errors"><h3 class="title topictitle3" id="ariaid-title4">Client errors</h3><div class="body"><p class="p">Client errors contain localized messages to display on a user interface to the user. A list of error messages might be contained in the response.</p><p class="p">The following list outlines one of the two places where the errors originate in the background:</p><ul class="ul"><li class="li"><p class="p">As an <code class="ph codeph">AppException</code> that is produced from the underlying facade method in the EJBServer.</p></li><li class="li"><p class="p">As a <code class="ph codeph">ConversionException</code> when it validates user input parameters against the domain definition for the corresponding input struct that is being sent to a facade method.</p></li></ul><p class="p">Errors that originate as <code class="ph codeph">AppExceptions</code> contain a unique <code class="ph codeph">string identifier</code>. Errors that originate as <code class="ph codeph">ConversionExceptions</code> contain a unique <code class="ph codeph">code identifier</code>.</p><p class="p">The following code outlines the structure of the 'extensions' object:</p><pre class="pre codeblock"><code>"extensions": {
+  "code":&lt;top-level code of -130002 or -150601&gt;
+  "client_error": true
+  "error_messages": [
+    { 
+      "message": &lt;localized message, suitable for displaying to end user&gt;
+        "code": &lt;unique code, if originating as a ConversionException when validating user input params against domain definitions&gt;,
+        "message_id": &lt;unique string id, if originating as an AppException&gt;
+      }
+  ]
+}</code></pre><p class="p">The following example outlines a full error response body for a client error:</p><pre class="pre codeblock"><code>{
+  "errors": [
+    {
+      "message": "Exception while fetching data (/readIntegratedCase) : ERROR: The application server reported one or more exceptions",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "readIntegratedCase"
+      ],
+      "extensions": {
+        "code": -130002,
+        "client_error": true,
+        "error_messages": [
+          {
+            "message": "You do not have maintenance rights for this case. Please contact your security administrator.",
+            "message_id": "ERR_CASESECURITY_CHECK_RIGHTS"
+          }
+        ],
+        "classification": "DataFetchingException"
+      }
+    }
+  ],
+  "data": {
+    "readIntegratedCase": null
+  }
+}</code></pre><p class="p">For client errors, the cause of the error and the stack trace is logged only where tracing is set to a level of <code class="ph codeph">trace_on</code> or higher in the <code class="ph codeph">curam.trace</code> system property.</p></div></article><article class="topic nested2" aria-labelledby="ariaid-title5" id="internal-errors"><h3 class="title topictitle3" id="ariaid-title5">Internal errors</h3><div class="body"><p class="p">All other errors are considered internal errors. The cause of the error is not displayed to the user. Regardless of the cause of the error, the error code <code class="ph codeph">-150600</code> is used.</p><p class="p">To be consistent with the client errors, the structure of the extensions object still contains a nested list of messages. However, the list contains only one entry. The message is a localized generic error message to indicate that an error occurred.
+The top-level code of <code class="ph codeph">-150600</code> is repeated for each error.</p><p class="p">Regardless of the tracing level, the cause of the error and the stack trace is logged.</p><p class="p">If tracing is set to a level of <code class="ph codeph">trace_on</code> or higher, further information about the cause of the error is included for debugging purposes. The information varies depending on the exception type of the cause of the error.</p><p class="p">The following code outlines the structure of the 'extensions' object:</p><pre class="pre codeblock"><code>"extensions": {
+  "code": -150600
+  "client_error": false
+  "error_messages": [
+    { 
+      "code": -150600,
+      "message": &lt;localized message to indicate something went wrong internally. May be displayed on a UI if desired.&gt;
+    }
+  ]
+}</code></pre><p class="p">The following code outlines an example of a full error response body for a client error:</p><pre class="pre codeblock"><code>{
+  "errors": [
+    {
+      "message":"Cannot retrieve information at this time. Please contact your administrator.",
+      "extensions":
+        {
+          "code":-150600,
+          "client_error":false,
+          "error_messages": [
+            {
+              "message":"Cannot retrieve information at this time. Please contact your administrator.",
+              "code":-150600
+            }
+          ],
+          "debug_info": {
+            "root_cause_exception_type":"curam.rest.exception.CuramWebApplicationException",
+            "root_cause_message":"The request is forbidden as the specified Referer header is not allowed.",
+            "root_cause_code":-150210
+          }
+        }
+      }
+    ],
+  "data": null
+}</code></pre></div></article></article></article></main></body></html>
