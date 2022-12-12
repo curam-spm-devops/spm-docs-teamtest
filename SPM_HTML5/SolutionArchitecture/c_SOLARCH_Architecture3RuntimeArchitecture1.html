@@ -1,0 +1,87 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="description" content="At a logical design level, Social Program Management applications are platform independent. The concrete realization of an Social Program Management application must be deployed in a real world environment."><title>Runtime architecture</title><link rel="stylesheet" type="text/css" href="../commonltr.css"><link rel="stylesheet" type="text/css" href="../dita-ot-doc.css"></head><body id="d1e308"><nav class="toc" role="navigation"><ul><li><a href="../product_overview/spm_prodname_intro.html">Product overview</a><ul><li><a href="../whats_new/Whats_new_single_topic.html">What's new</a><ul><li><a href="../whats_new/spm_800_whatsnew.html">What's new in IBM Cúram Social Program Management 8.0.0</a></li><li><a href="../whats_new/spm_801_whatsnew.html">What's new in IBM Cúram Social Program Management 8.0.1</a></li><li><a href="../whats_new/spm_802_whatsnew.html">What's new in IBM Cúram Social Program Management 8.0.2</a></li><li><a href="../getting_started/c_release_notes.html">Release notes</a></li></ul></li><li><a href="../product_overview/c_curam_social_program_management_overview.html">IBM Cúram Social Program Management architecture</a><ul><li><a href="../product_overview/c_social_program_management_platform.html">IBM Cúram Social Program Management Platform</a><ul><li><a href="../product_overview/c_case_management.html">Integrated Case Management</a></li></ul></li><li><a href="../product_overview/c_enterprise_modules.html">IBM Cúram Social Program Management Application Modules</a></li></ul></li><li><a href="../product_overview/c_curam_social_program_management_technical_overview.html">Technical overview</a><ul><li><a href="../SolutionArchitecture/c_SOLARCH_Environment1CuramApplicationDevelopmentEnvironm1_dup.html">The Cúram Application Development Environment (ADE)</a></li><li><a href="../SolutionArchitecture/c_SOLARCH_Architecture3RuntimeArchitecture1_dup.html">Runtime architecture</a></li><li><a href="../SolutionArchitecture/c_SOLARCH_Architecture2DevelopmentArchitecture1_dup.html">Development architecture</a></li><li><a href="../SolutionArchitecture/c_SOLARCH_Infrastructure3BusinessInfrastructure1_dup.html">Business infrastructure</a></li></ul></li><li><a href="../product_overview/c_pdf_library.html">PDF format</a></li><li><a href="../product_overview/c_KC_find_by_search.html">Finding information by searching</a></li><li><a href="../Accessibility/ctr_CuramAccessibilityUserGuide.html">Accessibility in Social Program Management</a><ul><li><a href="../product_overview/c_accessibility_statement.html">Accessibility</a></li><li><a href="../Accessibility/c_ACCESSIBILITYChapter2AccessibilityFeatures.html">Accessibility features for desktop</a><ul><li><a href="../Accessibility/t_ACCESSIBILITYChapter2KeyboardSelectionWidgets.html">Multiple-selection list boxes</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter2singleselectlist.html">Single select lists</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter2ReaderShortcutPanel.html">Section shortcut panel</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter2ReaderTabs.html">Tabs</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter2KeyboardRTE.html">Rich Text Editor</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter2IEGDatePicker.html">IEG date picker in the classic Universal Access application</a></li></ul></li><li><a href="../Accessibility/c_ACCESSIBILITYChapter3Alternatives.html">Accessible alternatives for desktop</a><ul><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderCalendar.html">The Calendar</a></li><li><a href="../Accessibility/c_ACCESSIBILITYChapter3ReaderCEREditor.html">The Cúram Express Rule Editor</a><ul><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderCEREditorNew.html">Creating a New Rule Set</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderCEREditorPublish.html">Changing Existing Published Rule Sets</a></li></ul></li><li><a href="../Accessibility/c_ACCESSIBILITYChapter3ReaderIEGDatastore.html">The Data Store Editor</a><ul><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderIEGDatastoreNew.html">Creating a Data Store Schema</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderIEGDatastoreModify.html">Modifying Existing Data Store Schemas</a></li></ul></li><li><a href="../Accessibility/c_ACCESSIBILITYChapter3ReaderIEGEditor.html">The Intelligent Evidence Gathering Editor</a><ul><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderIEGEditorNew.html">Creation of a New IEG Script</a></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ReaderIEGEditorModify.html">Modifying Existing IEG Scripts</a></li></ul></li><li><a href="../Accessibility/t_ACCESSIBILITYChapter3ZoomContextPanel.html">Context Panel</a></li><li><a href="../Accessibility/c_obj_act_list_view.html">Planning workspace</a></li><li><a href="../Accessibility/c_ACCESSIBILITY_PODS.html">Pods</a></li></ul></li></ul></li><li><a href="../product_overview/c_tablet_support.html">Tablet support</a></li><li><a href="../product_overview/c_deprecated_features.html">Deprecated functionality</a></li><li><a href="../../CodeRemovals/code_removals_toc.html">Removed features</a></li><li><a href="../common_files/pdf_notices.html">Notices</a><ul><li><a href="../common_files/doc_terms_and_conditions.html">Terms and conditions for product documentation</a></li><li><a href="../common_files/gdpr.html">GDPR</a></li><li><a href="../common_files/logs_pii.html">Log files and PII</a></li></ul></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">Runtime architecture</h1>
+
+<div class="body conbody"><p class="shortdesc">At a logical design level, <span class="keyword">Social Program Management</span> applications are platform
+independent. The concrete realization of an <span class="keyword">Social Program Management</span> application must be deployed in a
+<dfn class="term">real world</dfn> environment.</p>
+<p class="p"> As already mentioned, business objects can be deployed in various ways. The online client/server
+environment is one of the more important (and complex) ways. Online applications follow the Java EE
+architecture, which is a modern n-tier architecture with separate Presentation, Application, and
+Persistence tiers. This logical three-tier architecture has become the standard for developing
+client/server applications. Separating presentation, application logic, and persistent storage
+allows the different concerns of these tiers to be considered in relative isolation and promotes
+easier design. <span class="keyword">Social Program Management</span> simplifies
+this concept even further by hiding much of the complexity of n-tier application development.</p>
+<section class="section" id="d1e308__section_ibd_tvr_wfb"><h2 class="title sectiontitle">The relationship to Java EE architecture</h2>
+
+<p class="p">Consider the Java Enterprise Edition (J2EE) architectural layers, as described in the Distributed
+Multitiered Applications topic in the Jave EE 5 Tutorial.</p>
+<p class="p">For more information about the Distributed Multitiered Applications, see the <a class="xref" href="http://docs.oracle.com/javaee/5/tutorial/doc/" target="_blank" rel="external noopener">The Java EE 5 Tutorial
+</a>.</p>
+
+<p class="p">The <span class="keyword">IBM Cúram Social Program
+                                        Management</span> client-side presentation
+tier consists of HTML and JavaScript user interfaces that are rendered by a standard browser program
+on the user's desktop. Only HTML and JavaScript user interfaces are directly supported with client
+generation tools. Other types of clients can also be developed by using generated Server Access
+Beans to connect to the server.</p>
+<p class="p">At run time, the HTML user interface is generated by a server-side presentation layer that
+consists of JavaServer Pages. Browser clients communicate with this layer over HTTP, typically
+encrypted with SSL for security reasons.</p>
+<p class="p">The server-side presentation layer communicates with the server-side business logic through the
+RMI-IIOP protocol. Typically, business objects are presented in the business logic tier as Session
+EJBs although they can also be simple Java RMI objects for the simpler deployment option that is
+often used during application development. In summary, business objects are plain Java objects. Any
+required middleware connections are generated when the application is built.</p>
+<p class="p">The back end of the <span class="keyword">IBM Cúram Social Program
+                                        Management</span>
+architecture is a relational database plus other enterprise and legacy applications. Again, the
+middleware plumbing that is required to communicate with the EIS is generated.</p>
+</section>
+<section class="section" id="d1e308__section_ckh_tvr_wfb"><h2 class="title sectiontitle">Summary of Java Technologies used</h2>
+
+<p class="p">A summary of the Java Technologies used by <span class="keyword">Social Program Management</span>.</p>
+<dl class="dl">
+
+<dt class="dt dlterm">EJB Enterprise Java Beans</dt>
+<dd class="dd"><span class="keyword">Social Program Management</span> uses Enterprise Java
+Beans for its server component model.</dd>
+
+
+<dt class="dt dlterm">Java Servlets</dt>
+<dd class="dd">Java Servlets are used by the presentation tier.</dd>
+
+
+<dt class="dt dlterm">JSP Java Server Pages</dt>
+<dd class="dd">Java Server Pages are used to generate the user interface.</dd>
+
+
+<dt class="dt dlterm">JTA Java Transaction API</dt>
+<dd class="dd">Java Transaction API is used for starting and committing transactions.</dd>
+
+
+<dt class="dt dlterm">JDBC Java Database Connectivity</dt>
+<dd class="dd">Java Database Connectivity is used for the middleware to communicate with the application
+database.</dd>
+
+
+<dt class="dt dlterm">JMS Java Message Service</dt>
+<dd class="dd">Java Message Service is used for deferred processing and workflow within <span class="keyword">Social Program Management</span>.</dd>
+
+
+<dt class="dt dlterm">JNDI Java Naming and Directory Interface</dt>
+<dd class="dd">Java Naming and Directory Interface is used in <span class="keyword">Social Program Management</span> both for
+application initialization-time lookup of Data Sources and Queues as well as to locate Enterprise
+Java Beans from the Presentation Tier.</dd>
+
+
+<dt class="dt dlterm">RMI-IIOP Remote Method Invocation</dt>
+<dd class="dd">Remote Method Invocation over IIOP is used as the communications protocol between the
+presentation and application tiers.</dd>
+
+</dl>
+</section>
+</div>
+</article></main></body></html>

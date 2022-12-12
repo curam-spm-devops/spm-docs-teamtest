@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="description" content="Configure a type 2 JDBC universal driver (RRS) by setting up the IBM Db2 for z/OS environment variable, the database driver provider, and the database driver data source. Optionally, you can also set up the JVM property Db2.jcc.propertiesFile."><title>Configuring for a type 2 JDBC universal driver (RRS)</title><link rel="stylesheet" type="text/css" href="../commonltr.css"><link rel="stylesheet" type="text/css" href="../dita-ot-doc.css"></head><body id="d1e1493"><nav class="toc" role="navigation"><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/ctr_CuramDeploymentGuideForWebsphereApplicationServerOnZOS.html">Deploying on IBM  WebSphere Application Server for z/OS</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ThirdpartyTools1.html">Third-party tools</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Db2_for_ZOS.html">IBM  Db2 for z/OS</a><ul><li><a href="../install_DevelopmentEnvironment/c_install_Installing2RemoteDbForZosConnectivity1.html">Remote IBM  Db2 for z/OS connectivity</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1WebsphereApplicationServerForZos1.html">IBM  WebSphere Application Server for z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ApacheAnt1.html">Apache Ant</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1JreJavaEe1.html">Java SE and Java EE</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3BuildingEarFiles1.html">Building EAR files</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_instCur_onZOS.html">Installing IBM Cúram Social Program Management on IBM  z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3PropertyFiles1.html">Property files</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Bootstrapproperties1.html">Bootstrap properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Appserverproperties1.html">AppServer properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CheckingConfiguration1.html">Checking the configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6AltJarLocations.html">Alternative crypto JAR file locations</a></li></ul></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6ApplicationServerConfiguration1.html">Application server configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.html">Configuring IBM  WebSphere Application Server for z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityConfiguration1.html">Configuring security</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration6SpecialConfigurationStepsWhenUsingI1.html">Configuring identity only and LDAP</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.html">User registry</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6LoggingAuthenticationProcess1.html">Logging the authentication process</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6EstablishingAlternateExcludeUsernam1.html">Establishing an alternate exclude user name delimiter</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerCachingBe1.html">Application server caching behavior</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCustomProperties1.html">Security custom properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityHardeningMeasures1.html">Security hardening measures</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCryptography.html">Cúram cryptography</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.html">Starting and stopping WebSphere Application Server for z/OS</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment1.html">Deployment</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3PrecompilingJsps1.html">Precompiling JSPs</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment2.html">Deploying an application</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3InstallApplication1.html">Install an application</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3UninstallApplication1.html">Uninstall an application</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CreatingDatabase1.html">Populating the database</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3TestingDeployment1.html">Testing the deployment by logging in to the application</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ManualWebsphereApplicationServerCon1.html">Manual application server configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AdministrativeConsole1.html">The administrative console</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ScriptingSupport1.html">Scripting support</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.html">Creating the data source login alias</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigureDbForZosDataSources1.html">Configure IBM  Db2 for IBM  z/OS data sources</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv1.html">Configuring for a type 4 JDBC universal driver (XA)</a></li><li class="active"><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv2.html">Configuring for a type 2 JDBC universal driver (RRS)</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.html">Configuring administration security</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5RestartApplicationServer1.html">Restarting the application server</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5TestDbForZosConnection1.html">Testing the IBM  Db2 for z/OS connections</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureUsers1.html">Configuring users</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SetUpSystemJaasLoginModule1.html">Setting up the system JAAS login module</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AddLoginModule1.html">Adding the login module</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ReorderLoginModule1.html">Reordering the login module</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.html">Disabling cross-cluster authentication</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ServerConfiguration1.html">Configuring the server</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureBitSupport1.html">Configure 64-bit support</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJndiLookupPort1.html">Configure the JNDI lookup port</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourClassloaderSettings1.html">Configure ClassLoader settings</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourOrbPassByReference1.html">Configure ORB to pass by reference</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJavaVirtualMachine1.html">Configure the Java virtual machine</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureTimerService1.html">Configuring the timer service</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetUpPortAccess1.html">Set up the port access</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureSessionSecurityIntegration1.html">Configuring session security integration</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupServiceIntegrationBus1.html">Configuring the Service Integration Bus</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5JmsConfiguration1.html">Configuring JMS</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupJmsConnectionFactories1.html">Configuring the JMS connection factories</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueues1.html">Configuring the required queues</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopics1.html">Configuring the required topics</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueueActivationSpecifi1.html">Configuring the queue activation specifications</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopicActivationSpecifi1.html">Configuring the topic activation specifications</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5PostConfiguration1.html">Post configuration tasks</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ManualApplicationDeployment1.html">Manual application deployment</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5WebsphereNetworkDeployment1.html">Network deployment</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SynchronizingChanges1.html">Synchronizing changes</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigurationNode1.html">Configuring </a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DeployingOnNode1.html">Deploying on the node</a></li></ul></li></ul></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">Configuring for a type 2 JDBC universal driver (RRS)</h1>
+<div class="body conbody"><p class="shortdesc">Configure a type 2 JDBC universal driver (RRS) by setting up the <span class="keyword">IBM®
+Db2® for z/OS®</span> environment variable, the database driver
+provider, and the database driver data source. Optionally, you can also set up the JVM property
+Db2.jcc.propertiesFile. </p>
+<section class="section"><h2 class="title sectiontitle">Set up <span class="keyword">IBM
+Db2</span> environment
+variables</h2>
+
+<ol class="ol">
+<li class="li">Browse to <span class="ph menucascade"><span class="ph uicontrol">Environment</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">WebSphere variables</span></span>. The appropriate scope where the data source is defined is selected.</li>
+<li class="li">Select the <span class="ph uicontrol">DB2UNIVERSAL_JDBC_DRIVER_PATH</span> link from the list of
+environment variables.</li>
+<li class="li">Set the <span class="ph uicontrol">Value</span> field to point to the directory that contains the Type 2
+driver. This directory is normally the <span class="keyword">Db2</span> installation path that contains
+the <span class="ph filepath">db2jcc.jar</span> file.</li>
+<li class="li">Press <span class="ph uicontrol">OK</span> to confirm the changes.</li>
+<li class="li">Select the DB2UNIVERSAL_JDBC_DRIVER_NATIVEPATH link from the list of environment variables.</li>
+<li class="li">Set the <span class="ph uicontrol">Value</span> field to point to the directory that contains the <span class="keyword">IBM
+Db2 for z/OS</span> shared library links for the Type 2 driver.
+This directory is the installation path that contains the Type 2 Driver libraries (such as
+<span class="ph filepath">libdb2jcct2zos.so</span>, which varies by <span class="keyword">IBM
+Db2 for z/OS</span> version and 31 or 64-bit implementation)</li>
+<li class="li">Press <span class="ph uicontrol">OK</span> to confirm the changes.</li></ol></section>
+<section class="section"><h2 class="title sectiontitle">Set up the database driver provider</h2>
+
+<ol class="ol">
+<li class="li">Browse to <span class="ph uicontrol">Resources</span><span class="ph uicontrol">JDBC</span><span class="ph uicontrol">JDBC
+providers</span>. The appropriate scope where the data source is to be defined is
+selected.</li>
+<li class="li">Select <span class="ph uicontrol">New</span> to add a driver.</li>
+<li class="li">Select <span class="ph uicontrol">DB2</span> from the list of <span class="ph uicontrol">database types</span>
+supplied</li>
+<li class="li">Select <span class="ph uicontrol">DB2 Universal JDBC Driver Provider</span> from the list of
+<span class="ph uicontrol">provider types</span> supplied</li>
+<li class="li">Select <span class="ph uicontrol">Connection pool data source</span> from the list of
+<span class="ph uicontrol">implementation types</span> supplied</li>
+<li class="li">Press <span class="ph uicontrol">Next</span> to continue</li>
+<li class="li">Review the properties on the configuration screen that opens ensuring that the settings for
+<span class="ph filepath">Classpath</span> and <span class="ph filepath">Native library</span> paths are correct. Review the
+properties based on the values that you set for the environment variables
+DB2UNIVERSAL_JDBC_DRIVER_PATH and DB2UNIVERSAL_JDBC_DRIVER_NATIVEPATH. No changes should be
+required</li>
+<li class="li">Press <span class="ph menucascade"><span class="ph uicontrol">Next</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Finish</span></span> to confirm the changes.</li></ol></section>
+<section class="section"><h2 class="title sectiontitle">Set up the database driver data source</h2>
+
+<p class="p">Repeat the following steps for each of the application data sources, substituting
+<span class="keyword option">curamdb</span>, <span class="keyword option">curamsibdb</span> , and <span class="keyword option">curamtimerdb</span> for
+<var class="keyword varname">&lt;DatasourceName&gt;</var> (without the angle brackets) in the following steps:</p>
+<ol class="ol">
+<li class="li">Select <span class="keyword option">DB2 Universal JDBC Driver Provider</span> from the list of <span class="ph uicontrol">JDBC
+Providers</span>.</li>
+<li class="li">Select the <span class="ph uicontrol">Data Sources</span> link under <span class="ph uicontrol">Additional
+Properties</span></li>
+<li class="li">Press <span class="ph uicontrol">New</span> to add a data source</li>
+<li class="li">Set the fields as follows: <ul class="ul">
+<li class="li"><span class="ph uicontrol">Data source name</span>: <var class="keyword varname">&lt;DatasourceName&gt;</var></li>
+<li class="li"><span class="ph uicontrol">JNDI name</span>: <var class="keyword varname">jdbc/&lt;DatasourceName&gt;</var></li>
+</ul>
+</li>
+<li class="li">Select <span class="ph uicontrol">Next</span> to continue</li>
+<li class="li">Set the fields as follows: <ul class="ul">
+<li class="li"><span class="ph uicontrol">Database name</span>: The name of the <span class="keyword">IBM
+Db2 for z/OS</span> database</li>
+<li class="li"><span class="ph uicontrol">Driver type</span>: 2 </li>
+<li class="li">Leave all other fields untouched unless a specific change is required and select
+<span class="ph uicontrol">Next</span></li>
+</ul></li>
+
+<li class="li">Set the fields as follows: <ul class="ul">
+<li class="li">Set <span class="ph uicontrol">Component-managed authentication alias</span> to: <var class="keyword varname">&lt;valid for
+database&gt;</var></li>
+<li class="li">Set <span class="ph uicontrol">Mapping-configuration alias</span> to: DefaultPrinicipalMapping </li>
+<li class="li">Set <span class="ph uicontrol">Container-managed authentication alias</span> to: <var class="keyword varname">&lt;valid for
+database&gt;</var></li>
+</ul><p class="p">Where the <var class="keyword varname">&lt;valid for database&gt;</var> alias is the one that you set up in
+<a class="xref" href="t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.html" title="Use the administrator console to create the data source login alias.">Creating the data source login alias</a></p>
+<p class="p">Leave all other fields unchanged unless a specific change is required and click
+<span class="ph uicontrol">Next</span></p>
+</li>
+
+<li class="li">Select <span class="ph uicontrol">Finish</span> to confirm the changes.</li>
+<li class="li">Select the newly created <var class="keyword varname">DatasourceName</var> data source from the displayed
+list</li>
+<li class="li">Select the <span class="ph uicontrol">Custom Properties</span> link under <span class="ph uicontrol">Additional
+Properties</span></li>
+<li class="li">Select the <span class="keyword option">fullyMaterializeLobData</span> entry</li>
+<li class="li">Set the <span class="keyword option">value</span> to be <span class="ph tt" style="font-family: monospace">false</span></li>
+<li class="li">Select <span class="ph uicontrol">OK</span> to confirm the change.</li></ol></section>
+<section class="section"><h2 class="title sectiontitle">Set up the JVM property db2.jcc.propertiesFile (optional)</h2>
+
+<p class="p">If you want to use an external configuration file identified by the db2.jcc.propertiesFile
+property for your <span class="keyword">Db2</span> Type 2
+Universal JDBC Driver, then take the following steps:</p>
+<ol class="ol">
+<li class="li">Browse to <span class="ph menucascade"><span class="ph uicontrol">Servers</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Server Types</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">WebSphere application servers</span></span></li>
+<li class="li">Select the appropriate server from the list</li>
+<li class="li">In the <span class="keyword wintitle">Server Infrastructure</span> pane, expand <span class="ph uicontrol">Java and Process
+Management</span></li>
+<li class="li">Select the <span class="ph uicontrol">Process definition</span> link</li>
+<li class="li">In the <span class="keyword wintitle">processType</span> pane, take the following steps for each item in the list
+(Adjunct, Control, and Servant): <ol class="ol" type="a">
+<li class="li">Select the <span class="ph uicontrol">processType</span> link</li>
+<li class="li">In the Additional Properties pane, <span class="keyword wintitle"></span> select the <span class="ph uicontrol">Java Virtual
+Machine</span> link</li>
+<li class="li">In the Additional Properties pane, <span class="keyword wintitle"></span> select the <span class="ph uicontrol">Custom
+Properties</span> link</li>
+<li class="li">Select <span class="ph uicontrol">New</span> and set the property as follows:
+<p class="p"><span class="ph uicontrol">Name</span>: db2.jcc.propertiesFile</p>
+<p class="p"><span class="ph uicontrol">Value</span>: fully qualified name of the property file</p>
+<p class="p">Click <span class="ph uicontrol">OK</span>  to add the property.</p>
+<p class="p">See the information in <a class="xref" href="c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.html" title="Use the Ant configure target to configure WebSphere Application Server for z/OS">Configuring IBM WebSphere Application Server for z/OS</a> on how to set up the
+property file.</p></li>
+</ol></li></ol></section>
+<section class="section"><h2 class="title sectiontitle">Save the master configuration</h2>
+
+<p class="p">Click the <span class="ph uicontrol">Save</span> link in the <span class="ph uicontrol">Message(s)</span> box to save
+the master configuration. This box is displayed only after configuration changes are made.</p>
+</section></div><nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigureDbForZosDataSources1.html" title="Configure IBM Db2. You can either configure by using the Type 4 Db2 JDBC Universal Driver (XA) or the Type 2 Db2 JDBC Universal Driver (RRS).">Configure IBM Db2 for IBM z/OS data sources</a></div></div></nav></article></main></body></html>

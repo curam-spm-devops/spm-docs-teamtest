@@ -1,0 +1,103 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="description" content="AppServer.properties contains properties that are related to the application server environment."><title>AppServer properties</title><link rel="stylesheet" type="text/css" href="../commonltr.css"><link rel="stylesheet" type="text/css" href="../dita-ot-doc.css"></head><body id="d1e515"><nav class="toc" role="navigation"><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/ctr_CuramDeploymentGuideForWebsphereApplicationServerOnZOS.html">Deploying on IBM  WebSphere Application Server for z/OS</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ThirdpartyTools1.html">Third-party tools</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Db2_for_ZOS.html">IBM  Db2 for z/OS</a><ul><li><a href="../install_DevelopmentEnvironment/c_install_Installing2RemoteDbForZosConnectivity1.html">Remote IBM  Db2 for z/OS connectivity</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1WebsphereApplicationServerForZos1.html">IBM  WebSphere Application Server for z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1ApacheAnt1.html">Apache Ant</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Third1JreJavaEe1.html">Java SE and Java EE</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3BuildingEarFiles1.html">Building EAR files</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_instCur_onZOS.html">Installing IBM Cúram Social Program Management on IBM  z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3PropertyFiles1.html">Property files</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Bootstrapproperties1.html">Bootstrap properties</a></li><li class="active"><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3Appserverproperties1.html">AppServer properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CheckingConfiguration1.html">Checking the configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6AltJarLocations.html">Alternative crypto JAR file locations</a></li></ul></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6ApplicationServerConfiguration1.html">Application server configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerConfigura1.html">Configuring IBM  WebSphere Application Server for z/OS</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityConfiguration1.html">Configuring security</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration6SpecialConfigurationStepsWhenUsingI1.html">Configuring identity only and LDAP</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerUserRegis1.html">User registry</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6LoggingAuthenticationProcess1.html">Logging the authentication process</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6EstablishingAlternateExcludeUsernam1.html">Establishing an alternate exclude user name delimiter</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6WebsphereApplicationServerCachingBe1.html">Application server caching behavior</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCustomProperties1.html">Security custom properties</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityHardeningMeasures1.html">Security hardening measures</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6SecurityCryptography.html">Cúram cryptography</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration6StartingStoppingWebsphereServers1.html">Starting and stopping WebSphere Application Server for z/OS</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment1.html">Deployment</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3PrecompilingJsps1.html">Precompiling JSPs</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3Deployment2.html">Deploying an application</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3InstallApplication1.html">Install an application</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3UninstallApplication1.html">Uninstall an application</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3CreatingDatabase1.html">Populating the database</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Deployment3TestingDeployment1.html">Testing the deployment by logging in to the application</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ManualWebsphereApplicationServerCon1.html">Manual application server configuration</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AdministrativeConsole1.html">The administrative console</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ScriptingSupport1.html">Scripting support</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5CreatingDataSourceLoginAlias1.html">Creating the data source login alias</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigureDbForZosDataSources1.html">Configure IBM  Db2 for IBM  z/OS data sources</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv1.html">Configuring for a type 4 JDBC universal driver (XA)</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfiguringForTypeJdbcUniversalDriv2.html">Configuring for a type 2 JDBC universal driver (RRS)</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureAdministrationSecurity1.html">Configuring administration security</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5RestartApplicationServer1.html">Restarting the application server</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5TestDbForZosConnection1.html">Testing the IBM  Db2 for z/OS connections</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureUsers1.html">Configuring users</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SetUpSystemJaasLoginModule1.html">Setting up the system JAAS login module</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5AddLoginModule1.html">Adding the login module</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ReorderLoginModule1.html">Reordering the login module</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DisableCrossClusterAuthentication1.html">Disabling cross-cluster authentication</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ServerConfiguration1.html">Configuring the server</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureBitSupport1.html">Configure 64-bit support</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJndiLookupPort1.html">Configure the JNDI lookup port</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourClassloaderSettings1.html">Configure ClassLoader settings</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourOrbPassByReference1.html">Configure ORB to pass by reference</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureYourJavaVirtualMachine1.html">Configure the Java virtual machine</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureTimerService1.html">Configuring the timer service</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetUpPortAccess1.html">Set up the port access</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ConfigureSessionSecurityIntegration1.html">Configuring session security integration</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupServiceIntegrationBus1.html">Configuring the Service Integration Bus</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5JmsConfiguration1.html">Configuring JMS</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupJmsConnectionFactories1.html">Configuring the JMS connection factories</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueues1.html">Configuring the required queues</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopics1.html">Configuring the required topics</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredQueueActivationSpecifi1.html">Configuring the queue activation specifications</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5SetupRequiredTopicActivationSpecifi1.html">Configuring the topic activation specifications</a></li></ul></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5PostConfiguration1.html">Post configuration tasks</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/t_WEBSPHZOS_Configuration5ManualApplicationDeployment1.html">Manual application deployment</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5WebsphereNetworkDeployment1.html">Network deployment</a><ul><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5SynchronizingChanges1.html">Synchronizing changes</a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5ConfigurationNode1.html">Configuring </a></li><li><a href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Configuration5DeployingOnNode1.html">Deploying on the node</a></li></ul></li></ul></li></ul></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">AppServer properties</h1>
+<div class="body conbody"><p class="shortdesc"><span class="ph filepath">AppServer.properties</span> contains properties that are related to the
+application server environment.</p>
+<div class="p">Tables 1 to 3 identify the most relevant properties in <span class="ph filepath">AppServer.properties</span>.
+However, there are more security-related properties that are covered in more detail elsewhere. For
+more information, see <cite class="cite">Default Configuration for WebSphere</cite>. <div class="note note note_note"><span class="note__title">Note:</span> This file must be
+stored in ASCII format. EBCDIC format is not readable by the Ant tool.</div></div>
+<p class="p">Pay specific attention to the following properties:</p>
+<ul class="ul">
+<li class="li">Structure-related properties for <span class="keyword">WebSphere® Application Server for z/OS®</span> are shown in Table 1. <table class="table" id="d1e515__d1e550"><caption><span class="table--title-label">Table 1. </span><span class="title">Structure-related properties</span></caption><colgroup><col style="width:33.33333333333333%"><col style="width:66.66666666666666%"></colgroup><thead class="thead">
+<tr class="row">
+<th class="entry" id="d1e515__d1e550__entry__1">Property</th>
+<th class="entry" id="d1e515__d1e550__entry__2">Value</th>
+</tr>
+</thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">curam.server.host</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">The hostname or IP address of your <span class="keyword">IBM®
+z/OS</span> host.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">curam.server.name</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">Must match the name of the target <span class="keyword">WebSphere Application Server for z/OS</span> server name that is
+established during its configuration.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">cell.name</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">Must match the name of the target <span class="keyword">WebSphere Application Server for z/OS</span> cell name that is established
+during its configuration.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">node.name</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">Must match the name of the target <span class="keyword">WebSphere Application Server for z/OS</span> node name that is established
+during its configuration.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">profile.name</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">For <span class="keyword">WebSphere Application Server for z/OS</span>, the
+profile name is always "default".</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">as.vendor</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">Value must be set to <span class="ph uicontrol">IBM</span>.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e550__entry__1">curam.server.jvm.heap.size</td>
+<td class="entry" headers="d1e515__d1e550__entry__2">Used by the Ant <span class="keyword cmdname">configure</span> target to set the JVM heap size to the specified
+number of megabytes. The default value is 1024. Monitor the size and performance of your JVM heap to
+determine an optimal value.</td>
+</tr>
+</tbody></table></li>
+<li class="li">Port-related properties for <span class="keyword">WebSphere Application Server for z/OS</span> are shown in Table 2. <table class="table" id="d1e515__d1e523"><caption><span class="table--title-label">Table 2. </span><span class="title">Port-related properties</span></caption><colgroup><col style="width:38.02281368821293%"><col style="width:61.97718631178707%"></colgroup><thead class="thead">
+<tr class="row">
+<th class="entry" id="d1e515__d1e523__entry__1">Property</th>
+<th class="entry" id="d1e515__d1e523__entry__2">Value</th>
+</tr>
+</thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="d1e515__d1e523__entry__1">curam.server.port</td>
+<td class="entry" headers="d1e515__d1e523__entry__2">Must match the application server RMI port value.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e523__entry__1">curam.client.httpport</td>
+<td class="entry" headers="d1e515__d1e523__entry__2">Must be bound to the CuramClientEndPoint port definition as described in Set up the port
+access.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__d1e523__entry__1">curam.webservices.httpport</td>
+<td class="entry" headers="d1e515__d1e523__entry__2">Must be bound to the CuramWebServicesEndPoint port definition as described in Set up the port
+access.</td>
+</tr>
+</tbody></table></li>
+<li class="li">
+<table class="table" id="d1e515__table_kvd_zbs_y3b"><caption><span class="table--title-label">Table 3. </span><span class="title"> Security-related properties</span></caption><colgroup><col style="width:38.02281368821293%"><col style="width:61.97718631178707%"></colgroup><thead class="thead">
+<tr class="row">
+<th class="entry" id="d1e515__table_kvd_zbs_y3b__entry__1">Property</th>
+<th class="entry" id="d1e515__table_kvd_zbs_y3b__entry__2">Value</th>
+</tr>
+</thead><tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__1">security.username</td>
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__2">The user name for the <span class="keyword">WebSphere Application Server for z/OS</span> administrator.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__1">security.password</td>
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__2">The encrypted password for the <span class="keyword">WebSphere Application Server for z/OS</span> administrator. Generate the
+encrypted value by starting the Ant <span class="keyword cmdname">encrypt</span> target. For more information, see
+<a class="xref" href="../ServerDeveloper/ctr_CuramServerDeveloperGuide.html">Cúram Server Developers Guide</a>.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__1">curam.security.credentials.async.username</td>
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__2">The user name JMS invocations must run under, the default value is SYSTEM.</td>
+</tr>
+<tr class="row">
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__1">curam.security.credentials.async.password</td>
+<td class="entry" headers="d1e515__table_kvd_zbs_y3b__entry__2">The encrypted password associated with the JMS user name. The password must be encrypted by
+using the Ant <span class="keyword cmdname">encrypt</span> target. For more information, see the <a class="xref" href="../ServerDeveloper/ctr_CuramServerDeveloperGuide.html">Cúram Server Developers Guide</a>.</td>
+</tr>
+</tbody></table>
+</li></ul></div><nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../Deployment_WebsphereApplicationServerOnZOS/c_WEBSPHZOS_Building3PropertyFiles1.html" title="To run IBM Cúram Social Program Management Ant targets, you must have the required property files in the $SERVER_DIR/project/property directory.">Property files</a></div></div><div class="linklist relinfo"><strong>Related information</strong><br><ul class="linklist"><li class="linklist"><a class="link" href="../Security/c_SECHAND_Authentication1DefaultConfigurationForWebsphere1.html">Default Configuration for WebSphere</a></li></ul></div></nav></article></main></body></html>

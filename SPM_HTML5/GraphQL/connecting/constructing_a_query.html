@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><title>Constructing a GraphQL query</title><link rel="stylesheet" type="text/css" href="../../commonltr.css"><link rel="stylesheet" type="text/css" href="../../dita-ot-doc.css"></head><body id="constructing-a-graphql-query"><nav class="toc" role="navigation"><ul><li><a href="../../spm_welcome.html">IBM Cúram Social Program Management  8.0.0, 8.0.1, and 8.0.2</a></li><li><a href="../../spm_transition.html">Documentation updates from July 1 2022</a></li><li><a href="../../spm_prod_overview_toc.html">Product Overview</a></li><li><a href="../../glossary/glossary.html">Glossary</a></li><li><a href="../../common/ctr_deploying.html">Deploying Social Program Management</a><ul></ul></li><li><a href="../../GraphQL/summary_graphql.html">GraphQL</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Constructing a GraphQL query</h1><div class="body"><p class="p">A client decides what to add to a query by examining the GraphQL schema. The client then decides the APIs to call, and decides which attributes from the return object of the API to include in the response.</p><p class="p">The details are sent in the request body when it calls the <code class="ph codeph">POST https://&lt;server&gt;:&lt;port&gt;/Rest/graphql</code> endpoint.</p></div><article class="topic nested1" aria-labelledby="ariaid-title2" id="examples-of-a-request-body-for-a-graphql-query"><h2 class="title topictitle2" id="ariaid-title2">Examples of a request body for a GraphQL query</h2><div class="body"><p class="p">The following basic schema example defines two APIs and the two data objects that the APIs return:</p><pre class="pre codeblock"><code>type Query {
+ readIntegratedCase(case_id: GQL_ID): IntegratedCase
+ readPerson(person_id: GQL_ID): Person
+}
+
+type IntegratedCase {
+ id: GQL_ID
+ reference: String
+ registration_date: GQL_Date
+}
+
+type Person {
+ id: GQL_ID
+ name: String
+ date_of_birth: GQL_Date
+}</code></pre><p class="p">The following snippet outlines the code in the request body for a query that starts the <code class="ph codeph">readIntegratedCase</code> API and that requests only the reference of the case:</p><pre class="pre codeblock"><code>{
+ "query":"{
+  readIntegratedCase(case_id: "2012"){
+   reference
+  }
+ }
+}</code></pre><p class="p">The following JSON outlines an example of a response body from the preceding query:</p><pre class="pre codeblock"><code>{
+  "data": {
+    "readIntegratedCase": {
+      "reference": "203"
+    }
+  }
+}</code></pre><p class="p">The following snippet outlines the code in the request body for a query that starts both the <code class="ph codeph">readIntegratedCase</code> and <code class="ph codeph">readPerson</code> APIs and that requests all attributes for both entities:</p><pre class="pre codeblock"><code>{
+ "query":"{
+  readIntegratedCase(case_id: "2012"){
+   id
+   reference
+   registration_date
+
+  }  
+  readPerson(person_id: "101"){
+   id
+   name
+   date_of_birth
+  }
+ }
+}</code></pre><p class="p">The following JSON outlines an example of a response body from the preceding query:</p><pre class="pre codeblock"><code>{
+ "data": {
+    "readExpectedNextPaymentByCaseID": null,
+    "listNextPayments": null,
+    "readIntegratedCase": {
+      "id": "2012",
+      "reference": "2012",
+      "registration_date": "2020-04-14"
+    },
+    "readPerson": {
+     "id": "101",
+     "name": "Joe Bloggs",
+     "date_of_birth": "1999-01-01"
+    }
+  }
+}</code></pre><p class="p">For more information about how to create more complex queries and the use of fragments, see <a class="xref" href="https://graphql.org/learn/queries/" target="_blank" rel="external noopener">Queries and Mutations</a>.</p></div></article></article></main></body></html>
