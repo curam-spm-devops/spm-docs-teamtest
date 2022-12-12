@@ -6,7 +6,7 @@
                 dita2html5"/>
   <target name="dita2html5-custom-css.init">
     <property name="args.cssroot"
-          location="${com.spm.html5-custom-css}/css"/>
+          location="${dita.plugin.com.spm.html5-custom-css.dir}/css"/>
     <property name="args.css" value="custom.css"/>
     <property name="args.copycss" value="yes"/>
     <property name="args.csspath" value="css"/>
