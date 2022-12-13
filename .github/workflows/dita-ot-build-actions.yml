@@ -22,8 +22,8 @@ jobs:
             nodejs -v
 
             # Install plugins
-            dita install fox.jason.extend.css
-            dita install plugins/com.spm.html5-custom-css.zip           
+            dita install org.dita.html5
+            dita install fox.jason.extend.css           
             dita install org.doctales.xmltask
             dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
          build: |
