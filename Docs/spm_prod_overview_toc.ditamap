@@ -52,6 +52,7 @@
       <!--\\DSLVM348.curamsoftware.com\SCMBuildResults\DOC_CURAM_MAIN_20151116_224612_20151116_224801_ant.txt-->
       <topicref href="spm_whatsnew_toc.ditamap" format="ditamap"/>
 <!--<topicref href="product_overview/c_smarter_social_programs.dita"/>-->
+      <topicref href="product_overview/c_release_notes.dita"/>
       <topicref href="product_overview/c_curam_social_program_management_overview.dita"
          navtitle="Social Program Management overview">
          <topicref href="product_overview/c_social_program_management_platform.dita"
