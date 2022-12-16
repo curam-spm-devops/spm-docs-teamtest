@@ -14,7 +14,6 @@
 <conbody>
 <!--<section><title>Custom PDF files</title><p>You can create a custom PDF file from online information by completing the following steps. </p><ol><li>Sign in to IBM Knowledge Center</li><li>In the Table of Contents pane, right-click a topic and select a save option. The topic and its sub-topics are saved in the collection that you specify.</li><li>In the My Collections pane, select the collection.</li><li>Click Create PDF file</li></ol></section>-->
     <section>
-<title>Releases notes</title>
 <p><xref format="html" href="../release_notes/70100_iFix12.html">7.0.10.0 iFix 12</xref></p>
 </section>
 </conbody>
