@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_pdf_library" xml:lang="en-us">
+<title>Release notes</title>
+<!--To optimize search results, add tags that clarify product name, target platform, or other contexts. Use Edit > Un Comment to have the tags made live.-->
+<!--<titlealts><navtitle></navtitle><searchtitle></searchtitle></titlealts>-->
+<!--Put your short description next; used for first paragraph and abstract.-->
+<shortdesc>See the release notes for your version of Merative Social Program Management.
+        <!--for convenient printing--></shortdesc>
+<!--To optimize PDF retrievability, add prolog and indexing tags that help crystalize why users should be looking up this topic (purpose, task, and what they will learn)-->
+<!--<prolog><metadata><keywords><indexterm></indexterm></keywords></metadata></prolog>-->
+<conbody>
+<!--<section><title>Custom PDF files</title><p>You can create a custom PDF file from online information by completing the following steps. </p><ol><li>Sign in to IBM Knowledge Center</li><li>In the Table of Contents pane, right-click a topic and select a save option. The topic and its sub-topics are saved in the collection that you specify.</li><li>In the My Collections pane, select the collection.</li><li>Click Create PDF file</li></ol></section>-->
+    <section>
+<title>Releases notes</title>
+<p><xref format="html" href="../release_notes/70100_iFix12.html">7.0.10.0 iFix 12</xref></p>
+</section>
+</conbody>
+</concept>
