@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1074px" height="748px" viewBox="0 0 1074 748" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SPM Architecture Final</title>
+    <g id="SPM-Architecture-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1074" height="748"></rect>
+        <rect id="Background" fill="#F4F4F4" x="16" y="352" width="1042" height="379"></rect>
+        <text id="Evidence-Management" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="30" fill="#161616">
+            <tspan x="293" y="433">Evidence Management</tspan>
+            <tspan x="293" y="463">Eligibility and Entitlement</tspan>
+        </text>
+        <text id="Intake-Participant-M" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="30" fill="#161616">
+            <tspan x="32" y="433">Intake</tspan>
+            <tspan x="32" y="463">Participant Management</tspan>
+            <tspan x="32" y="493">Integrated Case Management</tspan>
+        </text>
+        <text id="Supervisor-Workspace" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="30" fill="#161616">
+            <tspan x="815" y="433">Supervisor Workspace</tspan>
+            <tspan x="815" y="463">Contribution Management</tspan>
+        </text>
+        <text id="Financial-Management" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="30" fill="#161616">
+            <tspan x="554" y="433">Financial Management</tspan>
+            <tspan x="554" y="463">Funded Program Management</tspan>
+        </text>
+        <rect id="Background" fill="#0F62FE" x="16" y="66" width="1043" height="48"></rect>
+        <rect id="Background" fill="#0F62FE" x="16" y="352" width="1043" height="48"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="277.5" y="114.5" width="261" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="538.5" y="114.5" width="261" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="799.5" y="114.5" width="259" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="16.5" y="187.5" width="261" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="277.5" y="187.5" width="261" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="538.5" y="187.5" width="261" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="799.5" y="187.5" width="259" height="73"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="16.5" y="260.5" width="261" height="72"></rect>
+        <rect id="Background" stroke="#A8A8A8" x="16.5" y="400.5" width="1042" height="331"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="277.5" y="260.5" width="261" height="72"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="538.5" y="260.5" width="261" height="72"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="799.5" y="260.5" width="259" height="72"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#FFFFFF" x="32.5" y="522.5" width="506" height="59"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#FFFFFF" x="32.5" y="581.5" width="506" height="134"></rect>
+        <rect id="Background" stroke="#A8A8A8" fill="#FFFFFF" x="538.5" y="522.5" width="504" height="59"></rect>
+        <text id="Social-Program-Manag" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="28" fill="#161616">
+            <tspan x="48" y="559">Social Program Management Data Model</tspan>
+        </text>
+        <rect id="Background" stroke="#A8A8A8" fill="#FFFFFF" x="538.5" y="581.5" width="504" height="134"></rect>
+        <text id="Administration-Appli" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="28" fill="#161616">
+            <tspan x="558" y="559">Administration Application</tspan>
+        </text>
+        <text id="Business-Services" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="28" fill="#161616">
+            <tspan x="48" y="617">Business Services</tspan>
+        </text>
+        <text id="Technical-Services" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="28" fill="#161616">
+            <tspan x="558" y="617">Technical Services</tspan>
+        </text>
+        <text id="Adaptors-—-EAI-Conne" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="30" letter-spacing="0.182857143" fill="#161616">
+            <tspan x="558" y="656">Adaptors — EAI Connectors — Web Services — Security —</tspan>
+            <tspan x="558" y="686">Multi-Channel Access — REST API</tspan>
+        </text>
+        <text id="Rules-—-Workflow-—-I" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="30" letter-spacing="0.182857143" fill="#161616">
+            <tspan x="48" y="656">Rules — Workflow — Intelligent Evidence Gathering — </tspan>
+            <tspan x="48" y="686">Decision Assist — Search — Calendaring — Correspondence</tspan>
+        </text>
+        <text id="Citizen-Engagement" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="293" y="147">Citizen Engagement</tspan>
+        </text>
+        <text id="Verification" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="554" y="146">Verification</tspan>
+        </text>
+        <text id="Outcome-Management" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="815" y="146">Outcome Management</tspan>
+        </text>
+        <text id="Income-Support-for-M" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="32" y="219">Income Support </tspan>
+            <tspan x="32" y="241">for Medical Assistance</tspan>
+        </text>
+        <text id="Evidence-Broker" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="554" y="219">Evidence Broker</tspan>
+        </text>
+        <text id="Life-Event-Managemen" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="293" y="219">Life Event Management</tspan>
+        </text>
+        <text id="Provider-Management" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="815" y="219">Provider Management</tspan>
+        </text>
+        <text id="Appeals" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="293" y="292">Appeals</tspan>
+        </text>
+        <text id="Business-Intelligenc" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="554" y="292">Business Intelligence</tspan>
+            <tspan x="554" y="314">and Analytics</tspan>
+        </text>
+        <text id="Social-Enterprise-Co" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="815" y="292">Social Enterprise Collaboration</tspan>
+        </text>
+        <text id="Child-Welfare" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="32" y="292">Child Welfare</tspan>
+        </text>
+        <text id="Application-Modules" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" line-spacing="28" fill="#FFFFFF">
+            <tspan x="32" y="101">Application Modules</tspan>
+        </text>
+        <rect id="Background" stroke="#A8A8A8" fill="#F4F4F4" x="16.5" y="114.5" width="261" height="73"></rect>
+        <text id="Income-Support" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22" fill="#161616">
+            <tspan x="32" y="146">Income Support</tspan>
+        </text>
+        <text id="IBM-Cúram-Social-Pro" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" line-spacing="28" fill="#0F62FE">
+            <tspan x="16" y="44">IBM Cúram Social Program Management architecture</tspan>
+        </text>
+        <text id="Social-Program-Manag" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" line-spacing="28" fill="#FFFFFF">
+            <tspan x="32" y="388">Social Program Management Platform</tspan>
+        </text>
+    </g>
+</svg>
