@@ -32,9 +32,8 @@ jobs:
          build: |
            dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5-bootstrap --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=collapsible --args.html5.toc=spm_toc
 
-         pagefind: |
-           npx -y pagefind --source SPM_HTML5 --serve
-
+      - name: Run pagefind for search
+        npx -y pagefind --source SPM_HTML5 --serve        
 
       - name: Deploy to Github packages
         # only deploy when pushing to main
