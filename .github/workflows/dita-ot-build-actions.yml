@@ -12,20 +12,23 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: |
+          set -v
+          apt-get update -q
+          apt-get install -qy --no-install-recommends nodejs
+          nodejs -v
+          which node
+          npm install
+          # Install npx for Pagefind search
+          npm install -g npx
+          npx pagefind
+          echo 'Finished installing npm and npx.'
       - name: Build HTML5 using DITA-OT commands
         uses: dita-ot/dita-ot-action@master
         with:
          install : |
             # Run some arbitrary installation commands
-            set -v
-            apt-get update -q
-            apt-get install -qy --no-install-recommends nodejs
-            nodejs -v
-            # Install npx for Pagefind search
-            npm install -g npx
-            npx pagefind
-            echo 'Finished installing npm and npx.'
-
             # Install plugins
             dita install plugins/com.example.html5-custom-css.zip
             dita install fox.jason.extend.css   
@@ -33,11 +36,6 @@ jobs:
             dita install org.doctales.xmltask
             dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
             echo 'Finished installing plugins.'
-         run:
-           node --version
-           npm -v
-           npx -v
-           which pagefind
          build: |
            dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5-bootstrap --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=collapsible --args.html5.toc=spm_toc
            echo 'Finished build.'
