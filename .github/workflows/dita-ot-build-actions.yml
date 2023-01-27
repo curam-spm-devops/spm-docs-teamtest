@@ -20,7 +20,7 @@ jobs:
             set -v
             apt-get update -q
             apt-get install -qy --no-install-recommends nodejs
- #           nodejs -v
+            # nodejs -v
             # Install npx for Pagefind search
             npx pagefind
             echo 'Finished installing npm and npx.'
