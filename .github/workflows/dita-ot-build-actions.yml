@@ -21,10 +21,12 @@ jobs:
             apt-get update -q
             apt-get install -qy --no-install-recommends nodejs
             nodejs -v
+            node --version
             # Install npx for Pagefind search
             npm install -g npx
-
-            echo 'Finished installing npx.'
+            npm -v
+            npx -v
+            echo 'Finished installing npm and npx.'
 
             # Install plugins
             dita install plugins/com.example.html5-custom-css.zip
