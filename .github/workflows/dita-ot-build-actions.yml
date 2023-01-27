@@ -23,6 +23,7 @@ jobs:
             nodejs -v
             # Install npx for Pagefind search
             npm install -g npx
+            npx pagefind
             echo 'Finished installing npm and npx.'
 
             # Install plugins
@@ -36,6 +37,7 @@ jobs:
            node --version
            npm -v
            npx -v
+           which pagefind
          build: |
            dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5-bootstrap --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=collapsible --args.html5.toc=spm_toc
            echo 'Finished build.'
