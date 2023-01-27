@@ -33,7 +33,7 @@ jobs:
            echo 'Finished build.'
       - name: Run pagefind for search
         run:
-         npx pagefind --source SPM_HTML5 --serve        
+         npx pagefind --source SPM_HTML5 #--serve        
       - name: Deploy to Github packages
         # only deploy when pushing to main
         if: ${{(github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.ref_name == 'main'}}
