@@ -21,10 +21,6 @@ jobs:
             apt-get update -q
             apt-get install -qy --no-install-recommends nodejs
             # nodejs -v
-            # Install npx for Pagefind search
-            npx pagefind
-            echo 'Finished installing npm and npx.'
-
             # Install plugins
             dita install plugins/com.example.html5-custom-css.zip
             dita install fox.jason.extend.css   
@@ -37,7 +33,7 @@ jobs:
            echo 'Finished build.'
       - name: Run pagefind for search
         run:
-          npx pagefind --source SPM_HTML5 --serve        
+         npx pagefind --source SPM_HTML5 --serve        
       - name: Deploy to Github packages
         # only deploy when pushing to main
         if: ${{(github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.ref_name == 'main'}}
