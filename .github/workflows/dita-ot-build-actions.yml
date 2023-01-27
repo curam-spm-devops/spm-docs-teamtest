@@ -12,23 +12,21 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
-      - name: Install Dependencies
-        run: |
-          set -v
-          apt-get update -q
-          apt-get install -qy --no-install-recommends nodejs
-          nodejs -v
-          which node
-          npm install
-          # Install npx for Pagefind search
-          npm install -g npx
-          npx pagefind
-          echo 'Finished installing npm and npx.'
       - name: Build HTML5 using DITA-OT commands
         uses: dita-ot/dita-ot-action@master
         with:
          install : |
             # Run some arbitrary installation commands
+            set -v
+            apt-get update -q
+            apt-get install -qy --no-install-recommends nodejs
+            nodejs -v
+            npm install -g npm
+            # Install npx for Pagefind search
+            npm install -g npx
+            npx pagefind
+            echo 'Finished installing npm and npx.'
+
             # Install plugins
             dita install plugins/com.example.html5-custom-css.zip
             dita install fox.jason.extend.css   
