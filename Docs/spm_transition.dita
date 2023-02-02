@@ -6,6 +6,7 @@
 company. For documentation updates, see the transitional WH Support Docs site.</shortdesc>
 <conbody>
 <section>
+            <p>&lt;linkhref<b>=</b>"/_pagefind/pagefind-ui.css"rel<b>=</b>"stylesheet">&lt;scriptsrc<b>=</b>"/_pagefind/pagefind-ui.js"type<b>=</b>"text/javascript">&lt;/script>&lt;divid<b>=</b>"search">&lt;/div>&lt;script>window.addEventListener('DOMContentLoaded',(event)=>{<b>new</b>PagefindUI({element<b>:</b>"#search"});});&lt;/script></p>
 <p><xref href="https://curam-spm-devops.github.io/wh-support-docs/spm/pdf-documentation"
 format="html" scope="external">WH Support Docs site</xref></p>
 </section>
