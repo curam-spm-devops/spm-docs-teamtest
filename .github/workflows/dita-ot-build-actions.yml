@@ -52,6 +52,8 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
     
       - name: Switch branch and move in _book
+        permissions:
+          contents: write
         run: |
           git fetch origin $PAGES_BRANCH
           git branch
