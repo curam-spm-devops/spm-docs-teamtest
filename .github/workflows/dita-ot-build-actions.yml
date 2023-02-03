@@ -7,13 +7,16 @@ env:
   PAGES_BRANCH: gh-pages     
 jobs:
   build-dita:
-    name: Build DITA
+    name: Build DITA and deploy to Gitbook
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12.18.2        
       - name: Build HTML5 using DITA-OT commands
         uses: dita-ot/dita-ot-action@master
         with:
@@ -33,18 +36,6 @@ jobs:
          build: |
            dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f markdown_gitbook --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=collapsible           
            echo 'Finished build.'
-
-  gitbook:
-    name: Gitbook
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write     
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 12.18.2
       - name: Install gitbook
         run: |
           npm install -g gitbook-cli markdownlint-cli
