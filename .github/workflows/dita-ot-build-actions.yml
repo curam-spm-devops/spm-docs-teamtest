@@ -52,6 +52,8 @@ jobs:
         shell: bash           
 
       - name: Setup Git
+        # only deploy when pushing to main
+        if: ${{(github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.ref_name == 'main'}}      
         run: |
           cd SPM_HTML5        
           git config --global user.name $GITHUB_ACTOR
