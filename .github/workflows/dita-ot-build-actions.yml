@@ -29,7 +29,7 @@ jobs:
             dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
             echo 'Finished installing plugins.'
          build: |
-           dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5-bootstrap --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=collapsible --args.html5.toc=spm_toc --args.hdf=Docs/pagefinderUI.xml
+           dita -i Docs/spm_navigation_sample.ditamap -o SPM_HTML5 -f html5-bootstrap --filter=Docs/cur_spm_test.ditaval:Docs/cur_spm802.ditaval:Docs/cur_base_spm800.ditaval --nav-toc=collapsible --args.html5.toc=spm_toc --args.hdr=Docs/pagefinderUI.xml
            echo 'Finished build.'
       - name: Run pagefind for search
         run:
