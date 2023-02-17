@@ -23,7 +23,6 @@ jobs:
             # nodejs -v
             # Install plugins
             dita install plugins/com.example.html5-custom-css.zip
-            dita install plugins/pagefinderUI.xml.zip
             dita install fox.jason.extend.css   
             dita install net.infotexture.dita-bootstrap        
             dita install org.doctales.xmltask
