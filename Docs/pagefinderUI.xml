@@ -6,5 +6,5 @@
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#search" });
     });
-</script>
+</script></link>
 </div>
